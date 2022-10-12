@@ -1,1 +1,116 @@
+//Highlight
+.banner {
+  // z-index: -1;
+  position: relative;
+  .menuBar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    .navigate {
+      display: flex;
+      justify-content: space-between;
+      button {
+        color: aliceblue;
+        text-transform: none;
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        padding: 0 1.5rem;
+        left: 2%;
+        &:hover {
+          font-weight: bolder;
+        }
+      }
+    }
+    .buttonContact {
+      button {
+        width: 180px;
+        height: 58px;
+        color: black;
+        background: #ffffff;
+        font-weight: 600;
+        font-size: 20px;
+        text-transform: none;
+        font-family: "Poppins";
+        font-style: normal;
+        border: 3px solid rgba(64, 161, 255, 1);
+        right: 10%;
+      }
+    }
+  }
+  .content {
+    .title {
+      position: absolute;
+      width: 590px;
+      height: 101px;
+      font-weight: 700;
+      font-size: 72px;
+      line-height: 140.8%;
+      color: #ffffff;
+      top: 11%;
+      left: 52%;
+    }
+    .body {
+      position: absolute;
+      color: #ffffff;
+      font-weight: 500;
+      font-size: 26px;
+      line-height: 147%;
+      width: 621px;
+      height: 231px;
+      top: 19.3%;
+      left: 53.5%;
+    }
+  }
 
+  .card {
+    display: flex;
+    position: absolute;
+    top: 840px;
+    left: 240px;
+  }
+  .cardItem {
+    position: relative;
+    margin: 0 0.8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    width: 367px;
+    height: 194px;
+    background: #ffffff;
+    box-shadow: 0px 100px 80px rgba(62, 116, 255, 0.07),
+      0px 30.1471px 24.1177px rgba(62, 116, 255, 0.0456112),
+      0px 12.5216px 10.0172px rgba(62, 116, 255, 0.035),
+      0px 4.5288px 3.62304px rgba(62, 116, 255, 0.0243888);
+  }
+  .cardIcon {
+    position: absolute;
+    left: 9%;
+  }
+  .cardContent {
+    position: absolute;
+    top: -9%;
+    left: 37%;
+    width: 56%;
+
+    h1 {
+      font-weight: 700;
+      font-size: 64px;
+      color: #0094ff;
+    }
+    p {
+      font-weight: 500;
+      font-size: 18px;
+      color: #333333;
+      position: absolute;
+      top: 60%;
+    }
+  }
+}
