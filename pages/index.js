@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import { HighLight } from "../components/home";
+import { HighLight, RpaProcess } from "../components/home";
 import className from "classnames/bind";
 import styles from "../styles/Home.module.scss";
 
@@ -17,6 +17,7 @@ export default function Home() {
       <main>
         <div>
           <HighLight />
+          <RpaProcess />
         </div>
       </main>
 

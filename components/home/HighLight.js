@@ -10,7 +10,6 @@ import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import className from "classnames/bind";
 import styles from "../../styles/Home.module.scss";
-import { margin } from "@mui/system";
 
 const cx = className.bind(styles);
 
