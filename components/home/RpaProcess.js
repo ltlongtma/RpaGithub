@@ -2,7 +2,6 @@ import React from "react";
 import arrowIcon from "../../public/arrowIcon.png";
 import iconGroup from "../../public/iconGroup.png";
 import Icon_Overview from "../../public/Icon_Overview.png";
-
 import Image from "next/image";
 import className from "classnames/bind";
 import styles from "../../styles/Home.module.scss";

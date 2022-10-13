@@ -1,9 +1,9 @@
 import Head from "next/head";
 import Image from "next/image";
-import { HighLight, RpaProcess } from "../components/home";
+import { HighLight, RpaProcess, Solutions, Overview } from "../components/home";
 import className from "classnames/bind";
 import styles from "../styles/Home.module.scss";
-import Overview from "../components/home/Overview";
+// import Overview from "../components/home/Overview";
 import document from "../pages/_document";
 
 const cx = className.bind(styles);
@@ -21,6 +21,7 @@ export default function Home() {
           <HighLight />
           <Overview />
           <RpaProcess />
+          <Solutions />
         </div>
       </main>
 

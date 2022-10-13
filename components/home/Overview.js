@@ -6,7 +6,7 @@ import icon from "../../public/icons-overview1.png";
 import icon2 from "../../public/icons-overview2.png";
 
 const cx = className.bind(styles);
-function Overview() {
+export function Overview() {
   return (
     <div className={cx("container")}>
       <div className={cx("content")}>
@@ -48,4 +48,3 @@ function Overview() {
     </div>
   );
 }
-export default Overview;
