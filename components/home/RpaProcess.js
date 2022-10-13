@@ -1,6 +1,7 @@
 import React from "react";
-import step1Frame from "../../public/step1Frame.png";
 import arrowIcon from "../../public/arrowIcon.png";
+import iconGroup from "../../public/iconGroup.png";
+import Icon_Overview from "../../public/Icon_Overview.png";
 
 import Image from "next/image";
 import className from "classnames/bind";
@@ -10,7 +11,10 @@ const cx = className.bind(styles);
 export const RpaProcess = () => {
   return (
     <div className={cx("wrap")}>
-      <h1 className={cx("title")}>RPA Process</h1>
+      <div className={cx("title")}>
+        <Image src={Icon_Overview} alt="Icon_Overview" />
+        <h1>RPA Process</h1>
+      </div>
       <div className={cx("process1")}>
         <div className={cx("step1")}>
           <h1>UNDERSTAND</h1>
@@ -30,8 +34,7 @@ export const RpaProcess = () => {
           <div className={cx("content2")}>
             <ul>
               <li>
-                Analyze clients&apos; system, break down processes and identify
-                where to automate
+                Analyze clients&apos; system, break down processes and identify where to automate
               </li>
             </ul>
           </div>
@@ -61,7 +64,11 @@ export const RpaProcess = () => {
         </div>
       </div>
       <div className={cx("process2")}>
-        <div className={cx("frame")}></div>
+        <div className={cx("frame")}>
+          <div className={cx("img")}>
+            <Image src={iconGroup} alt="iconGroup" />
+          </div>
+        </div>
         <div className={cx("frame")}>
           <ul>
             <li>Image</li>
