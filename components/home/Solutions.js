@@ -6,7 +6,9 @@ import IconLogistic from "../../public/IconLogistic.png";
 import IconFinance from "../../public/IconFinance.png";
 import IconEcommerce from "../../public/IconEcommerce.png";
 import IconHumanResource from "../../public/IconHumanResource.png";
+import MaskGroup from "../../public/MaskGroup.png";
 
+MaskGroup;
 import Image from "next/image";
 
 const cx = className.bind(styles);
@@ -82,7 +84,9 @@ export const Solutions = () => {
           </div>
         </div>
       </div>
-      <h1>haha</h1>
+      <div className={cx("ImageAtEnd")}>
+        <Image src={MaskGroup} alt="MaskGroup" />
+      </div>
     </div>
   );
 };

@@ -168,10 +168,10 @@
 //RPA Process
 .wrap {
   position: relative;
-
+  height: 1000px;
   .title {
     text-align: center;
-
+    margin-bottom: 3%;
     h1 {
       font-weight: 600;
       font-size: 72px;
@@ -380,7 +380,7 @@
     display: flex;
     margin: 0 5%;
     position: absolute;
-    bottom: -70%;
+    bottom: 0;
     .frame {
       position: relative;
       width: 431px;
@@ -425,19 +425,17 @@
 .solutions {
   position: relative;
   .imgBackground {
-    position: relative;
-    width: 100%;
     span {
       overflow: visible !important;
       width: 100% !important;
     }
     img {
-      top: 82% !important;
+      top: 17% !important;
     }
   }
   .title {
     position: absolute;
-    top: 45%;
+    top: 27%;
     left: 128px;
     h1 {
       width: 9em;
@@ -451,9 +449,13 @@
   .content {
     display: flex;
     justify-content: center;
+    position: absolute;
+    top: 55%;
+    margin: 0 7%;
+
     .item1 {
       position: relative;
-      width: 402px;
+      width: 426px;
       height: 531px;
       background: #ffffff;
       box-shadow: 0px 100px 80px rgba(207, 207, 207, 0.07),
@@ -494,8 +496,10 @@
       }
     }
     .item2 {
+      margin-left: 2%;
+
       position: relative;
-      width: 402px;
+      width: 426px;
       height: 531px;
       background: #ffffff;
       box-shadow: 0px 100px 80px rgba(207, 207, 207, 0.07),
@@ -515,7 +519,7 @@
       .itemBody {
         position: absolute;
         top: 32%;
-        left: 3%;
+        left: 2%;
         ul {
           list-style: none;
           width: 83%;
@@ -540,8 +544,10 @@
       }
     }
     .item3 {
+      margin-left: 2%;
+
       position: relative;
-      width: 402px;
+      width: 426px;
       height: 531px;
       background: #ffffff;
       box-shadow: 0px 100px 80px rgba(207, 207, 207, 0.07),
@@ -586,8 +592,10 @@
       }
     }
     .item4 {
+      margin-left: 2%;
+
       position: relative;
-      width: 402px;
+      width: 426px;
       height: 531px;
       background: #ffffff;
       box-shadow: 0px 100px 80px rgba(207, 207, 207, 0.07),
@@ -632,5 +640,10 @@
         }
       }
     }
+  }
+  .ImageAtEnd {
+    position: absolute;
+    left: 50%;
+    bottom: -27.4%;
   }
 }
