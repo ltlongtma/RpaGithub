@@ -19,7 +19,7 @@ export default function Home() {
       <main>
         <div>
           <HighLight />
-          <Overview/>
+          <Overview />
           <RpaProcess />
         </div>
       </main>

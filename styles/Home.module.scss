@@ -1,52 +1,7 @@
-<<<<<<< HEAD
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 7% 6%;
-  .wrap {
-    width: 720px;
-  }
-  .wrap1 {
-    width: 852px;
-    height: 622px;
-  }
-
-  .description {
-    .title {
-      color: #333333;
-    }
-    span {
-      line-height: 160%;
-      display: block;
-      margin-bottom: 20px;
-      font-weight: 400;
-      font-size: 20px;
-      color: #333333;
-    }
-  }
-
-  .experience {
-    display: flex;
-    .expand {
-      margin-right: 100px;
-      h2 {
-        height: 80px;
-        width: 181px;
-        color: #090909;
-        margin-top: 16px;
-        span {
-          color: #0094ff;
-        }
-      }
-
-      .overviewContent {
-        font-size: 20px;
-        font-weight: 500;
-=======
 //Highlight
 .banner {
   position: relative;
+  height: 1100px;
   .menuBar {
     display: flex;
     justify-content: space-around;
@@ -140,11 +95,12 @@
     }
     .cardContent {
       position: absolute;
-      top: -9%;
+      top: 9%;
       left: 34%;
       width: 56%;
 
       h1 {
+        margin-bottom: 8%;
         font-weight: 700;
         font-size: 64px;
         color: #0094ff;
@@ -159,11 +115,59 @@
     }
   }
 }
+//Overview
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 7% 6%;
+  .content {
+    width: 720px;
+  }
+  .iconGroup {
+    width: 852px;
+    height: 622px;
+  }
+
+  .description {
+    .title {
+      color: #333333;
+    }
+    span {
+      line-height: 160%;
+      display: block;
+      margin-bottom: 20px;
+      font-weight: 400;
+      font-size: 20px;
+      color: #333333;
+    }
+  }
+
+  .experience {
+    display: flex;
+    .expand {
+      margin-right: 100px;
+      h2 {
+        height: 80px;
+        width: 181px;
+        color: #090909;
+        margin-top: 16px;
+        span {
+          color: #0094ff;
+        }
+      }
+
+      .overviewContent {
+        font-size: 20px;
+        font-weight: 500;
+      }
+    }
+  }
+}
 
 //RPA Process
 .wrap {
   position: absolute;
-  top: 100%;
   width: 100%;
   height: 100%;
   .title {
@@ -378,7 +382,7 @@
     display: flex;
     margin: 0 5%;
     position: absolute;
-    bottom: 15%;
+    bottom: 18%;
     .frame {
       position: relative;
       width: 431px;
@@ -413,7 +417,6 @@
           width: 1.5em;
           margin-left: -1em;
         }
->>>>>>> a1566883838b97d7b7995c5b93c623a1a701a1b1
       }
     }
   }
