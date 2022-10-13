@@ -1,1 +1,48 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 7% 6%;
+  .wrap {
+    width: 720px;
+  }
+  .wrap1 {
+    width: 852px;
+    height: 622px;
+  }
 
+  .description {
+    .title {
+      color: #333333;
+    }
+    span {
+      line-height: 160%;
+      display: block;
+      margin-bottom: 20px;
+      font-weight: 400;
+      font-size: 20px;
+      color: #333333;
+    }
+  }
+
+  .experience {
+    display: flex;
+    .expand {
+      margin-right: 100px;
+      h2 {
+        height: 80px;
+        width: 181px;
+        color: #090909;
+        margin-top: 16px;
+        span {
+          color: #0094ff;
+        }
+      }
+
+      .overviewContent {
+        font-size: 20px;
+        font-weight: 500;
+      }
+    }
+  }
+}
