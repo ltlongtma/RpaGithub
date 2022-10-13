@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .container {
   display: flex;
   justify-content: space-between;
@@ -42,6 +43,377 @@
       .overviewContent {
         font-size: 20px;
         font-weight: 500;
+=======
+//Highlight
+.banner {
+  position: relative;
+  .menuBar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    .navigate {
+      display: flex;
+      justify-content: space-between;
+      button {
+        color: aliceblue;
+        text-transform: none;
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        padding: 0 1.5rem;
+        left: 2%;
+        &:hover {
+          font-weight: bolder;
+        }
+      }
+    }
+    .buttonContact {
+      button {
+        width: 180px;
+        height: 58px;
+        color: black;
+        background: #ffffff;
+        font-weight: 600;
+        font-size: 20px;
+        text-transform: none;
+        font-family: "Poppins";
+        font-style: normal;
+        border: 3px solid rgba(64, 161, 255, 1);
+        right: 10%;
+      }
+    }
+  }
+  .content {
+    .title {
+      position: absolute;
+      width: 590px;
+      height: 101px;
+      font-weight: 700;
+      font-size: 72px;
+      line-height: 140.8%;
+      color: #ffffff;
+      top: 11%;
+      left: 52%;
+    }
+    .body {
+      position: absolute;
+      color: #ffffff;
+      font-weight: 500;
+      font-size: 26px;
+      line-height: 147%;
+      width: 621px;
+      height: 231px;
+      top: 19.3%;
+      left: 53.5%;
+    }
+  }
+
+  .card {
+    display: flex;
+    position: absolute;
+    top: 840px;
+    left: 240px;
+    .cardItem {
+      position: relative;
+      margin: 0 0.8%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      justify-content: center;
+      width: 367px;
+      height: 194px;
+      background: #ffffff;
+      box-shadow: 0px 100px 80px rgba(62, 116, 255, 0.07),
+        0px 30.1471px 24.1177px rgba(62, 116, 255, 0.0456112),
+        0px 12.5216px 10.0172px rgba(62, 116, 255, 0.035),
+        0px 4.5288px 3.62304px rgba(62, 116, 255, 0.0243888);
+    }
+    .cardIcon {
+      position: absolute;
+      left: 9%;
+    }
+    .cardContent {
+      position: absolute;
+      top: -9%;
+      left: 34%;
+      width: 56%;
+
+      h1 {
+        font-weight: 700;
+        font-size: 64px;
+        color: #0094ff;
+      }
+      p {
+        font-weight: 500;
+        font-size: 18px;
+        color: #333333;
+        position: absolute;
+        top: 60%;
+      }
+    }
+  }
+}
+
+//RPA Process
+.wrap {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  height: 100%;
+  .title {
+    text-align: center;
+
+    h1 {
+      font-weight: 600;
+      font-size: 72px;
+      line-height: 108px;
+      color: #333333;
+      margin-top: 0;
+    }
+  }
+  .process1 {
+    display: flex;
+    margin: 0px 5%;
+    // position: relative;
+    .step1 {
+      position: relative;
+      // border: 1px solid red;
+      background-image: url(../public/step1Frame.png);
+      background-repeat: no-repeat;
+      height: 369px;
+      width: 100%;
+      h1 {
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 48px;
+        text-align: center;
+        text-transform: uppercase;
+        color: white;
+        top: 11%;
+        left: 18%;
+        position: absolute;
+      }
+      .content {
+        position: absolute;
+        top: 47%;
+        left: 2%;
+        width: 340px;
+        height: 126.12px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 160%;
+        color: #001835;
+        text-indent: -3%;
+        ul {
+          list-style: none;
+          padding-left: -2%;
+          li {
+            padding-bottom: 6%;
+          }
+          li:before {
+            content: "\2022";
+            color: #0094ff;
+            font-weight: bold;
+            display: inline-block;
+            width: 1.5em;
+            margin-left: -1em;
+          }
+        }
+      }
+    }
+    .step2 {
+      position: relative;
+      // border: 1px solid red;
+      background-image: url(../public/step2Frame.png);
+      background-repeat: no-repeat;
+      height: 369px;
+      width: 100%;
+      h1 {
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 48px;
+        text-align: center;
+        text-transform: uppercase;
+        color: white;
+        top: 11%;
+        left: 29%;
+        position: absolute;
+      }
+      .content2 {
+        position: absolute;
+        top: 47%;
+        left: 2%;
+        width: 340px;
+        height: 126.12px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 160%;
+        color: #001835;
+        text-indent: -3%;
+
+        ul {
+          list-style: none;
+          padding-left: -2%;
+          li {
+            padding-bottom: 6%;
+          }
+          li:before {
+            content: "\2022";
+            color: #0094ff;
+            font-weight: bold;
+            display: inline-block;
+            width: 1.5em;
+            margin-left: -1em;
+          }
+        }
+      }
+    }
+    .step3 {
+      position: relative;
+      // border: 1px solid red;
+      background-image: url(../public/step3Frame.png);
+      background-repeat: no-repeat;
+      height: 369px;
+      width: 100%;
+      h1 {
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 48px;
+        text-align: center;
+        text-transform: uppercase;
+        color: white;
+        top: 11%;
+        left: 25%;
+        position: absolute;
+      }
+      .content3 {
+        position: absolute;
+        top: 47%;
+        left: 2%;
+        width: 340px;
+        height: 126.12px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 160%;
+        color: #001835;
+        text-indent: -3%;
+
+        ul {
+          list-style: none;
+          padding-left: -2%;
+          li {
+            padding-bottom: 6%;
+          }
+          li:before {
+            content: "\2022";
+            color: #0094ff;
+            font-weight: bold;
+            display: inline-block;
+            width: 1.5em;
+            margin-left: -1em;
+          }
+        }
+      }
+    }
+    .step4 {
+      position: relative;
+      // border: 1px solid red;
+      background-image: url(../public/step4Frame.png);
+      background-repeat: no-repeat;
+      height: 369px;
+      width: 100%;
+      h1 {
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 48px;
+        text-align: center;
+        text-transform: uppercase;
+        color: white;
+        top: 11%;
+        left: 25%;
+        position: absolute;
+      }
+      .content4 {
+        position: absolute;
+        top: 47%;
+        left: 2%;
+        width: 340px;
+        height: 126.12px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 160%;
+        color: #001835;
+        text-indent: -3%;
+
+        ul {
+          list-style: none;
+          padding-left: -2%;
+          li {
+            padding-bottom: 6%;
+          }
+          li:before {
+            content: "\2022";
+            color: #0094ff;
+            font-weight: bold;
+            display: inline-block;
+            width: 1.5em;
+            margin-left: -1em;
+          }
+        }
+      }
+    }
+  }
+  .arrowIcon {
+    position: absolute;
+    left: 36%;
+    bottom: -25%;
+  }
+  .process2 {
+    display: flex;
+    margin: 0 5%;
+    position: absolute;
+    bottom: 15%;
+    .frame {
+      position: relative;
+      width: 431px;
+      height: 278px;
+      background: #f4f8ff;
+      opacity: 0.7;
+      margin-right: 1.9%;
+      .img {
+        align-items: center;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+      }
+
+      ul {
+        list-style: none;
+        position: absolute;
+        top: 8%;
+        left: 10%;
+        li {
+          padding-bottom: 10%;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 27px;
+        }
+        li:before {
+          content: "\2022";
+          color: #0094ff;
+          font-weight: bold;
+          display: inline-block;
+          width: 1.5em;
+          margin-left: -1em;
+        }
+>>>>>>> a1566883838b97d7b7995c5b93c623a1a701a1b1
       }
     }
   }
