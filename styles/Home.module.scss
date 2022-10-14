@@ -197,7 +197,7 @@
         text-align: center;
         text-transform: uppercase;
         color: white;
-        top: 11%;
+        top: 17%;
         left: 18%;
         position: absolute;
       }
@@ -243,7 +243,7 @@
         text-align: center;
         text-transform: uppercase;
         color: white;
-        top: 11%;
+        top: 17%;
         left: 29%;
         position: absolute;
       }
@@ -290,7 +290,7 @@
         text-align: center;
         text-transform: uppercase;
         color: white;
-        top: 11%;
+        top: 17%;
         left: 25%;
         position: absolute;
       }
@@ -337,7 +337,7 @@
         text-align: center;
         text-transform: uppercase;
         color: white;
-        top: 11%;
+        top: 17%;
         left: 25%;
         position: absolute;
       }
@@ -424,6 +424,7 @@
 //Solutions
 .solutions {
   position: relative;
+  height: 1549px;
   .imgBackground {
     span {
       overflow: visible !important;
@@ -641,9 +642,58 @@
       }
     }
   }
-  .ImageAtEnd {
-    position: absolute;
-    left: 50%;
-    bottom: -27.4%;
+}
+
+//Case Study
+.container {
+  display: inline-block;
+  .header {
+    position: relative;
+    .maskHeader {
+      position: absolute;
+      top: -339%;
+      right: -8%;
+    }
+    h1 {
+      font-weight: 600;
+      font-size: 72px;
+      line-height: 90px;
+      color: #333333;
+      margin-top: 3%;
+    }
+  }
+  .body {
+    .tabClassDynamic {
+      background: #f1f9ff;
+      width: 336px;
+      height: 95px;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 27px;
+      color: #0094ff;
+      display: flex;
+      justify-content: space-evenly;
+      padding: 0;
+      margin-right: 2%;
+    }
+    .tabClassStatic {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 27px;
+      font-family: "Poppins";
+      font-style: normal;
+      text-align: center;
+      color: #9f9f9f;
+      width: 336px;
+      height: 95px;
+      padding: 0;
+
+      span {
+        overflow: visible !important;
+        img {
+          margin-right: 37% !important;
+        }
+      }
+    }
   }
 }

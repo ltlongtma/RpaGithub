@@ -1,0 +1,61 @@
+.container {
+  .content {
+    margin-left: 5.5%;
+    margin-top: 2%;
+    h1 {
+      width: 139px;
+      height: 48px;
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 48px;
+      color: #090909;
+    }
+    ul {
+      list-style: none;
+      padding: 0px 0px;
+      li {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 243%;
+        color: #090909;
+
+        span {
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 32px;
+          line-height: 200%;
+          color: #0094ff;
+        }
+      }
+      li:before {
+        content: "\2022";
+        color: #0094ff;
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        font-size: 170%;
+      }
+      li:after {
+      }
+    }
+    .content1 {
+    }
+    .content2 {
+      margin-top: 4%;
+    }
+  }
+  .diagram {
+    position: relative;
+    margin-left: 5.5%;
+    margin-top: 3%;
+
+    span {
+      font-weight: 600;
+    }
+  }
+}

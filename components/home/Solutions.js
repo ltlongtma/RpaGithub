@@ -7,7 +7,6 @@ import IconFinance from "../../public/IconFinance.png";
 import IconEcommerce from "../../public/IconEcommerce.png";
 import IconHumanResource from "../../public/IconHumanResource.png";
 import MaskGroup from "../../public/MaskGroup.png";
-
 MaskGroup;
 import Image from "next/image";
 
@@ -83,9 +82,6 @@ export const Solutions = () => {
             </ul>
           </div>
         </div>
-      </div>
-      <div className={cx("ImageAtEnd")}>
-        <Image src={MaskGroup} alt="MaskGroup" />
       </div>
     </div>
   );
