@@ -1,5 +1,12 @@
 import Head from "next/head";
-import { HighLight, RpaProcess, Solutions, Overview, CaseStudy } from "../components/home";
+import {
+  HighLight,
+  RpaProcess,
+  Solutions,
+  Overview,
+  CaseStudy,
+  Contact,
+} from "../components/home";
 import className from "classnames/bind";
 import styles from "../styles/Home.module.scss";
 
@@ -20,6 +27,7 @@ export default function Home() {
           <RpaProcess />
           <Solutions />
           <CaseStudy />
+          <Contact />
         </div>
       </main>
 
