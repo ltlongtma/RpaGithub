@@ -6,7 +6,7 @@ import groupCase1 from "../../../public/CaseStudy/groupCase1.png";
 
 export const Case1 = () => {
   return (
-    <div className={cx("container")}>
+    <div className={cx("case")}>
       <div className={cx("content")}>
         <div className={cx("content1")}>
           <h1>Problem</h1>

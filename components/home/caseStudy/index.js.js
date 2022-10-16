@@ -5,7 +5,7 @@ import TabContext from "@mui/lab/TabContext";
 import TabList from "@mui/lab/TabList";
 import TabPanel from "@mui/lab/TabPanel";
 import className from "classnames/bind";
-import styles from "../../../styles/Home.module.scss";
+import styles from "./casetudy.module.scss";
 import Icon_Overview from "../../../public/Icon_Overview.png";
 import tab1 from "../../../public/CaseStudy/tab1.png";
 import tab2 from "../../../public/CaseStudy/tab2.png";
@@ -29,7 +29,7 @@ export const CaseStudy = () => {
     setValue(newValue);
   };
   return (
-    <div className={cx("container")}>
+    <div className={cx("container", "wrap")}>
       <div className={cx("header")}>
         <div className={cx("maskHeader")}>
           <Image src={MaskGroup} alt="MaskGroup" />
@@ -51,33 +51,43 @@ export const CaseStudy = () => {
                   value="1"
                   icon={<Image src={tab1} alt="imgTab1" />}
                   iconPosition="start"
-                  className={value == 1 ? cx("tabClassDynamic") : cx("tabClassStatic")}
+                  className={
+                    value == 1 ? cx("tabClassDynamic") : cx("tabClassStatic")
+                  }
                 />
                 <Tab
                   label="COD Status update"
                   value="2"
-                  className={value == 2 ? cx("tabClassDynamic") : cx("tabClassStatic")}
+                  className={
+                    value == 2 ? cx("tabClassDynamic") : cx("tabClassStatic")
+                  }
                   icon={<Image src={tab2} alt="imgTab2" />}
                   iconPosition="start"
                 />
                 <Tab
                   label="Logistics data process"
                   value="3"
-                  className={value == 3 ? cx("tabClassDynamic") : cx("tabClassStatic")}
+                  className={
+                    value == 3 ? cx("tabClassDynamic") : cx("tabClassStatic")
+                  }
                   icon={<Image src={tab3} alt="imgTab3" />}
                   iconPosition="start"
                 />
                 <Tab
                   label="Automatic debt reminder"
                   value="4"
-                  className={value == 4 ? cx("tabClassDynamic") : cx("tabClassStatic")}
+                  className={
+                    value == 4 ? cx("tabClassDynamic") : cx("tabClassStatic")
+                  }
                   icon={<Image src={tab4} alt="imgTab4" />}
                   iconPosition="start"
                 />
                 <Tab
                   label="Inventory alerts"
                   value="5"
-                  className={value == 5 ? cx("tabClassDynamic") : cx("tabClassStatic")}
+                  className={
+                    value == 5 ? cx("tabClassDynamic") : cx("tabClassStatic")
+                  }
                   icon={<Image src={tab5} alt="imgTab5" />}
                   iconPosition="start"
                 />

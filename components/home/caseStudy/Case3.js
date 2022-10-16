@@ -5,7 +5,7 @@ import groupCase3 from "../../../public/CaseStudy/groupCase3.png";
 import Image from "next/image";
 export const Case3 = () => {
   return (
-    <div className={cx("container")}>
+    <div className={cx("case")}>
       <div className={cx("content")}>
         <div className={cx("content1")}>
           <h1>Problem</h1>

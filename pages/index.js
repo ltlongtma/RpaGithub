@@ -23,7 +23,7 @@ export default function Home() {
       <main>
         <div>
           <HighLight />
-          <Overview />
+          {/* <Overview /> */}
           <RpaProcess />
           <Solutions />
           <CaseStudy />

@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export const Case5 = () => {
   return (
-    <div className={cx("container")}>
+    <div className={cx("case")}>
       <div className={cx("content")}>
         <div className={cx("content1")}>
           <h1>Problem</h1>

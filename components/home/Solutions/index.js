@@ -1,12 +1,12 @@
 import className from "classnames/bind";
-import styles from "../../styles/Home.module.scss";
-import backgroundSolutions from "../../public/backgroundSolutions.png";
-import Icon_Overview from "../../public/Icon_Overview.png";
-import IconLogistic from "../../public/IconLogistic.png";
-import IconFinance from "../../public/IconFinance.png";
-import IconEcommerce from "../../public/IconEcommerce.png";
-import IconHumanResource from "../../public/IconHumanResource.png";
-import MaskGroup from "../../public/MaskGroup.png";
+import styles from "./solution.module.scss";
+import backgroundSolutions from "../../../public/backgroundSolutions.png";
+import Icon_Overview from "../../../public/Icon_Overview.png";
+import IconLogistic from "../../../public/IconLogistic.png";
+import IconFinance from "../../../public/IconFinance.png";
+import IconEcommerce from "../../../public/IconEcommerce.png";
+import IconHumanResource from "../../../public/IconHumanResource.png";
+import MaskGroup from "../../../public/MaskGroup.png";
 MaskGroup;
 import Image from "next/image";
 

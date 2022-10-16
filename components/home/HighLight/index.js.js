@@ -1,22 +1,24 @@
 import Image from "next/image";
-import TmaLogo from "../../public/TmaLogo.png";
-import bannerHighLight from "../../public/bannerHighLight.png";
-import energyControlIcon from "../../public/energyControlIcon.png";
-import clockIcon from "../../public/clockIcon.png";
-import saveMoneyicon from "../../public/saveMoneyicon.png";
-import cogWheel from "../../public/cogWheel.png";
+import TmaLogo from "../../../public/TmaLogo.png";
+import bannerHighLight from "../../../public/bannerHighLight.png";
+import energyControlIcon from "../../../public/energyControlIcon.png";
+import clockIcon from "../../../public/clockIcon.png";
+import saveMoneyicon from "../../../public/saveMoneyicon.png";
+import cogWheel from "../../../public/cogWheel.png";
 import Button from "@mui/material/Button";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import className from "classnames/bind";
-import styles from "../../styles/Home.module.scss";
+import styles from "./highLight.module.scss";
 
 const cx = className.bind(styles);
 
 export const HighLight = () => {
   return (
-    <div className={cx("banner")}>
-      <Image src={bannerHighLight} alt="tma-logo" layout="responsive" />
+    <div className={cx("container-fluid")}>
+      <div className={cx("imgBackground")}>
+        <Image src={bannerHighLight} alt="tma-logo" layout="responsive" />
+      </div>
       <div className={cx("menuBar")}>
         <Image src={TmaLogo} alt="tma-logo" />
         <div className={cx("navigate")}>

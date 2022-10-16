@@ -1,4 +1,4 @@
-.container {
+.case {
   .content {
     margin-left: 5.5%;
     margin-top: 2%;
@@ -56,6 +56,62 @@
 
     span {
       font-weight: 600;
+    }
+  }
+}
+.wrap {
+  display: inline-block;
+  margin-left: 6%;
+  position: absolute;
+  width: 100%;
+  top: 380%;
+  .header {
+    position: relative;
+    .maskHeader {
+      position: absolute;
+      top: -339%;
+      right: -8%;
+    }
+    h1 {
+      font-weight: 600;
+      font-size: 72px;
+      line-height: 90px;
+      color: #333333;
+      margin-top: 3%;
+    }
+  }
+  .body {
+    .tabClassDynamic {
+      background: #f1f9ff;
+      width: 336px;
+      height: 95px;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 27px;
+      color: #0094ff;
+      display: flex;
+      justify-content: space-evenly;
+      padding: 0;
+      margin-right: 2%;
+    }
+    .tabClassStatic {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 27px;
+      font-family: "Poppins";
+      font-style: normal;
+      text-align: center;
+      color: #9f9f9f;
+      width: 336px;
+      height: 95px;
+      padding: 0;
+
+      span {
+        overflow: visible !important;
+        img {
+          margin-right: 37% !important;
+        }
+      }
     }
   }
 }
