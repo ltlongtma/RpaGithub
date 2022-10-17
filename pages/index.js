@@ -11,7 +11,6 @@ import {
 import className from "classnames/bind";
 import styles from "../styles/Home.module.scss";
 
-
 const cx = className.bind(styles);
 export default function Home() {
   return (
@@ -26,9 +25,9 @@ export default function Home() {
           <HighLight />
           <Overview />
           <AIML />
-            <RpaProcess />
-          <Solutions />
-          <CaseStudy />
+          {/* <RpaProcess /> */}
+          {/* <Solutions /> */}
+          {/* <CaseStudy /> */}
 
           <Contact />
         </div>

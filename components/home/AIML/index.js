@@ -3,38 +3,48 @@ import styles from "./AIML.module.scss";
 import className from "classnames/bind";
 import Image from "next/image";
 import AnalysisImage from "../../../public/AIMLImage.png";
-import icon2 from "../../../public/AIMLIcon.png";
+import maskGroupAIML from "../../../public/maskGroupAIML.svg";
+import maskGroupTopAIML from "../../../public/maskGroupTopAIML.svg";
 
 const cx = className.bind(styles);
 export const AIML = () => {
   return (
     <div className={cx("container")}>
-      <div className={cx("triangle")}>
+      <div className={cx("background")}>
+        <Image
+          src={maskGroupTopAIML}
+          alt="maskGroupTopAIML"
+          
+        />
+      </div>
+      {/* <div className={cx("triangle")}>
         <div className={cx("triangle-left")}></div>
         <div className={cx("triangle-right")}></div>
-      </div>
+      </div> */}
       <div className={cx("AIMLContent")}>
         <div className={cx("head")}>
-          <div>
-            <Image src={icon2} />
-          </div>
           <h1 className={cx("title")}>Empowered by TMA AI/ML ecosystem</h1>
         </div>
         <div className={cx("body")}>
           <div>
-            <Image src={AnalysisImage} />
+            <Image src={AnalysisImage} alt="AnalysisImage" />
           </div>
           <div className={cx("experience")}>
             <div className={cx("expandTop10")}>
               <h2>
                 <span className={cx("span")}>Top </span>10
-                <span className={cx("overviewContent")}> AI & IoT Enterprises</span>
+                <span className={cx("overviewContent")}>
+                  {" "}
+                  AI & IoT Enterprises
+                </span>
               </h2>
             </div>
             <div className={cx("expand400")}>
               <h2>
                 400<span className={cx("span")}>+ </span>
-                <span className={cx("overviewContent")}>Engineers AI/ML & Data Analytics</span>
+                <span className={cx("overviewContent")}>
+                  Engineers AI/ML & Data Analytics
+                </span>
               </h2>
             </div>
             <div className={cx("expand10Years")}>
@@ -45,6 +55,9 @@ export const AIML = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className={cx("mask")}>
+        <Image src={maskGroupAIML} alt="maskGroupAIML" />
       </div>
     </div>
   );

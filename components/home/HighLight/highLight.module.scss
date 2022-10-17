@@ -1,8 +1,4 @@
 .container-fluid {
-  // position: absolute;
-  // top: 0%;
-  //  height: 100%;
-  //   width: 100%;
   .wrap {
     position: absolute;
     height: 100%;
@@ -38,7 +34,7 @@
           padding: 0 1.5rem;
           left: 2%;
           &:hover {
-            font-weight: bolder;
+            background-color: #778fd4;
           }
         }
       }
@@ -60,23 +56,37 @@
     }
     .content {
       position: absolute;
-      top: 22%;
-      padding-left: 54%;
+      display: flex;
+      justify-content: space-between;
       width: 100%;
       height: 100%;
-      .title {
-        position: absolute;
-        font-weight: 700;
-        font-size: 72px;
-        color: #ffffff;
-        right: 17%;
+      .left {
+        width: 100%;
+        position: relative;
+        top: 10%;
+        left: 13%;
       }
-      .body {
-        position: absolute;
-        color: #ffffff;
-        font-weight: 500;
-        font-size: 26px;
-        top: 10.5%;
+      .right {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        top: 18%;
+        padding-left: 5%;
+        .title {
+          position: absolute;
+          font-weight: 700;
+          font-size: 72px;
+          color: #ffffff;
+          margin-left: -3%;
+        }
+        .body {
+          position: absolute;
+          color: #ffffff;
+          font-weight: 500;
+          font-size: 26px;
+          top: 10.5%;
+        }
       }
     }
 

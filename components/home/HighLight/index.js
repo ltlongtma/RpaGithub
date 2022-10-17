@@ -1,6 +1,10 @@
 import Image from "next/image";
 import TmaLogo from "../../../public/TmaLogo.png";
-import bannerHighLight from "../../../public/bannerHighLight.png";
+import backgroundHighLight from "../../../public/backgroundHighLight.svg";
+import iconGroupHighLight from "../../../public/iconGroupHighLight.svg";
+
+
+
 import energyControlIcon from "../../../public/energyControlIcon.png";
 import clockIcon from "../../../public/clockIcon.png";
 import saveMoneyicon from "../../../public/saveMoneyicon.png";
@@ -18,8 +22,9 @@ export const HighLight = () => {
     <div className={cx("container-fluid")}>
       <div className={cx("wrap")} onScroll={() => console.log("e >>>")}>
         <div className={cx("imgBackground")}>
-          <Image src={bannerHighLight} alt="tma-logo" layout="responsive" />
+          <Image src={backgroundHighLight} alt="tma-logo" layout="responsive" />
         </div>
+
         <div className={cx("menuBar")}>
           <Image src={TmaLogo} alt="tma-logo" />
           <div className={cx("navigate")}>
@@ -45,12 +50,17 @@ export const HighLight = () => {
           </div>
         </div>
         <div className={cx("content")}>
-          <h1 className={cx("title")}>TMA RPA Center</h1>
-          <div className={cx("body")}>
-            <p>Everything can be automated</p>
-            <p>Arm all of your employees with virtual assistant</p>
-            <p>Propelling digital transformation forward</p>
-            <p>Your processes are now more intelligent with AI</p>
+          <div className={cx("left")}>
+            <Image src={iconGroupHighLight} alt="iconGroupHighLight"/>
+          </div>
+          <div className={cx("right")}>
+            <h1 className={cx("title")}>TMA RPA Center</h1>
+            <div className={cx("body")}>
+              <p>Everything can be automated</p>
+              <p>Arm all of your employees with virtual assistant</p>
+              <p>Propelling digital transformation forward</p>
+              <p>Your processes are now more intelligent with AI</p>
+            </div>
           </div>
         </div>
         <div className={cx("card")}>

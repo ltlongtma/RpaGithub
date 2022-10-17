@@ -1,6 +1,6 @@
 import className from "classnames/bind";
 import styles from "./solution.module.scss";
-import backgroundSolutions from "../../../public/backgroundSolutions.png";
+import backgroundSolutions from "../../../public/backgroundSolutions.svg";
 import Icon_Overview from "../../../public/Icon_Overview.png";
 import IconLogistic from "../../../public/IconLogistic.png";
 import IconFinance from "../../../public/IconFinance.png";

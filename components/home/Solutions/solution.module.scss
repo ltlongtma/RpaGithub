@@ -1,9 +1,11 @@
 .solutions {
   position: absolute;
   height: 1549px;
-  // width: 100%;
+  width: 100%;
   top: 423%;
   .imgBackground {
+    position: absolute;
+    top: -56.5%;
     span {
       overflow: visible !important;
       width: 100% !important;
