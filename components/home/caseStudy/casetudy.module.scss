@@ -60,28 +60,19 @@
   }
 }
 .container-fluid {
-  // display: inline-block;
   margin-left: 6%;
   position: absolute;
-  // width: 100%;
   top: 581%;
   .wrap {
-    // // display: inline-block;
-    // // margin-left: 6%;
-    // position: relative;
-    // width: 100%;
-    // // top: 581%;
-
     margin-left: 6%;
     position: absolute;
-    // width: 100%;
     top: 581%;
     .header {
       position: relative;
       .maskHeader {
         position: absolute;
-        top: -334%;
-        right: 5.5%;
+        top: -344%;
+        right: -8%;
       }
       h1 {
         font-weight: 600;
