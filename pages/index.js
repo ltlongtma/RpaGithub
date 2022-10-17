@@ -4,6 +4,7 @@ import { HighLight, RpaProcess } from "../components/home";
 import className from "classnames/bind";
 import styles from "../styles/Home.module.scss";
 import Overview from "../components/home/Overview";
+import AIML from "../components/home/AIML";
 import document from "../pages/_document";
 
 const cx = className.bind(styles);
@@ -20,6 +21,7 @@ export default function Home() {
         <div>
           <HighLight />
           <Overview />
+          <AIML />
           <RpaProcess />
         </div>
       </main>
