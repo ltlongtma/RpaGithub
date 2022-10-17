@@ -16,7 +16,7 @@ const cx = className.bind(styles);
 export const HighLight = () => {
   return (
     <div className={cx("container-fluid")}>
-      <div className={cx("wrap")}>
+      <div className={cx("wrap")} onScroll={() => console.log("e >>>")}>
         <div className={cx("imgBackground")}>
           <Image src={bannerHighLight} alt="tma-logo" layout="responsive" />
         </div>
