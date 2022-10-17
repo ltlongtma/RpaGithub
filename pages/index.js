@@ -6,6 +6,7 @@ import {
   Overview,
   CaseStudy,
   Contact,
+  AIML,
 } from "../components/home";
 import className from "classnames/bind";
 import styles from "../styles/Home.module.scss";
@@ -23,7 +24,8 @@ export default function Home() {
       <main>
         <div>
           <HighLight />
-          {/* <Overview /> */}
+          <Overview />
+          <AIML />
           <RpaProcess />
           <Solutions />
           <CaseStudy />

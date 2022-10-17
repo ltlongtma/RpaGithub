@@ -1,15 +1,15 @@
 import * as React from "react";
-import styles from "../../styles/Home.module.scss";
+import styles from "./Overview.module.scss";
 import className from "classnames/bind";
 import Image from "next/image";
-import icon from "../../public/icons-overview1.png";
-import icon2 from "../../public/icons-overview2.png";
+import icon from "../../../public/icons-overview1.png";
+import icon2 from "../../../public/icons-overview2.png";
 
 const cx = className.bind(styles);
-export function Overview() {
+export const Overview = () => {
   return (
     <div className={cx("container")}>
-      <div className={cx("content")}>
+      <div className={cx("wrap")}>
         <div>
           <Image src={icon2} alt="icon2" />
         </div>
@@ -43,8 +43,8 @@ export function Overview() {
       </div>
 
       <div className={cx("wrap1")}>
-        <Image src={icon} />
+        <Image src={icon} alt="icon" />
       </div>
     </div>
   );
-}
+};

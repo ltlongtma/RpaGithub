@@ -1,7 +1,8 @@
-export * from "./HighLight/index.js";
+export * from "./HighLight/";
 export * from "./Process";
-export * from "./Solutions/index";
+export * from "./Solutions";
 export * from "./Overview";
-export * from "./CaseStudy/index.js";
-export * from "./Contact/index.js";
-
+export * from "./CaseStudy";
+export * from "./Contact";
+export * from "./AIML";
+export * from "./Overview";
