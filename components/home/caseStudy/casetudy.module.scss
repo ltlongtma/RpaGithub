@@ -60,21 +60,21 @@
   }
 }
 .container-fluid {
-  margin-left: 6%;
   position: absolute;
   top: 581%;
+  width: 100%;
   .wrap {
     margin-left: 6%;
+
     position: absolute;
-    // top: 581%;
-    .maskHeader {
-      position: absolute;
-      top: -74%;
-      width: 100%;
-      display: flex;
-      justify-content: end;
-      margin-left: 6%;
-    }
+    // .maskHeader {
+    //   position: absolute;
+    //   top: -71.5%;
+    //   width: 100%;
+    //   display: flex;
+    //   justify-content: end;
+    //   margin-left: 8%;
+    // }
     .header {
       position: relative;
       width: 100%;

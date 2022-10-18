@@ -25,9 +25,9 @@ export default function Home() {
           <HighLight />
           <Overview />
           <AIML />
-          {/* <RpaProcess /> */}
-          {/* <Solutions /> */}
-          {/* <CaseStudy /> */}
+          <RpaProcess />
+          <Solutions />
+          <CaseStudy />
 
           <Contact />
         </div>

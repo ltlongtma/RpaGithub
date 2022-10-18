@@ -1,8 +1,14 @@
 .container {
   height: 1400px;
+  background: #fafafa;
   position: absolute;
   top: 180%;
-  width: 100%;
+  .maskTop {
+    position: absolute;
+    top: -72%;
+    text-align: end;
+    width: 100%;
+  }
   .triangle {
     display: flex;
     flex-direction: row;
@@ -22,14 +28,6 @@
       border-right: 0vw solid transparent;
       border-top: 10vw solid white;
     }
-  }
-  .background {
-    position: absolute;
-    width: 100%;
-    left: 0;
-    top: -70%;
-    z-index: -1;
-    border: 1px solid red;
   }
 
   .AIMLContent {

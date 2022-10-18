@@ -22,7 +22,6 @@
         width: 56%;
         position: relative;
         left: 1%;
-
         button {
           color: aliceblue;
           text-transform: none;
@@ -35,6 +34,7 @@
           left: 2%;
           &:hover {
             background-color: #778fd4;
+            cursor: pointer;
           }
         }
       }

@@ -31,9 +31,9 @@ export const CaseStudy = () => {
   return (
     <div className={cx("container-fluid")}>
       <div className={cx("wrap")}>
-        <div className={cx("maskHeader")}>
+        {/* <div className={cx("maskHeader")}>
           <Image src={MaskGroup} alt="MaskGroup" />
-        </div>
+        </div> */}
         <div className={cx("header")}>
           <Image src={Icon_Overview} alt="Icon_Overview" />
           <h1>Sample Case Study</h1>

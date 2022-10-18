@@ -3,24 +3,23 @@ import TmaLogo from "../../../public/TmaLogo.png";
 import backgroundHighLight from "../../../public/backgroundHighLight.svg";
 import iconGroupHighLight from "../../../public/iconGroupHighLight.svg";
 
-
-
 import energyControlIcon from "../../../public/energyControlIcon.png";
 import clockIcon from "../../../public/clockIcon.png";
 import saveMoneyicon from "../../../public/saveMoneyicon.png";
 import cogWheel from "../../../public/cogWheel.png";
-import Button from "@mui/material/Button";
+// import Button from "@mui/material/Button";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import className from "classnames/bind";
 import styles from "./highLight.module.scss";
+import { Button } from "@mui/material";
 
 const cx = className.bind(styles);
 
 export const HighLight = () => {
   return (
     <div className={cx("container-fluid")}>
-      <div className={cx("wrap")} onScroll={() => console.log("e >>>")}>
+      <div className={cx("wrap")}>
         <div className={cx("imgBackground")}>
           <Image src={backgroundHighLight} alt="tma-logo" layout="responsive" />
         </div>
@@ -51,7 +50,7 @@ export const HighLight = () => {
         </div>
         <div className={cx("content")}>
           <div className={cx("left")}>
-            <Image src={iconGroupHighLight} alt="iconGroupHighLight"/>
+            <Image src={iconGroupHighLight} alt="iconGroupHighLight" />
           </div>
           <div className={cx("right")}>
             <h1 className={cx("title")}>TMA RPA Center</h1>

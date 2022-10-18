@@ -16,7 +16,7 @@ export const Solutions = () => {
   return (
     <div className={cx("solutions")}>
       <div className={cx("imgBackground")}>
-        <Image src={backgroundSolutions} alt="backGround_Solutions" />
+        <Image src={backgroundSolutions} alt="backGround_Solutions" layout="responsive" />
       </div>
       <div className={cx("title")}>
         <Image src={Icon_Overview} alt="Icon_Overview" />
@@ -83,6 +83,9 @@ export const Solutions = () => {
           </div>
         </div>
       </div>
+      <div className={cx("maskBottom")}>
+          <Image src={MaskGroup} alt="MaskGroup" />
+        </div>
     </div>
   );
 };

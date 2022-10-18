@@ -6,6 +6,7 @@
   .imgBackground {
     position: absolute;
     top: -56.5%;
+    width: 100%;
     span {
       overflow: visible !important;
       width: 100% !important;
@@ -16,8 +17,8 @@
   }
   .title {
     position: absolute;
-    top: 27%;
     left: 128px;
+    margin-top: 27%;
     h1 {
       width: 9em;
       font-weight: 600;
@@ -31,7 +32,7 @@
     display: flex;
     justify-content: center;
     position: absolute;
-    top: 55%;
+    top: 59%;
     margin: 0 7%;
 
     .item1 {
@@ -221,5 +222,12 @@
         }
       }
     }
+  }
+  .maskBottom {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    position: absolute;
+    bottom: -20.5%;
   }
 }
