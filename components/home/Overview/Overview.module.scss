@@ -6,13 +6,48 @@
   position: absolute;
   top: 120%;
   width: 100%;
-  .wrap {
+  .wrapText {
     width: 720px;
-    margin-top: -5%;
+    margin-top: -3%;
+    margin-right: -8%;
   }
-  .wrap1 {
+  .wrapImage {
+    display: flex;
+    flex-direction: row;
     width: 852px;
     height: 622px;
+    .icons {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      .blueprismImage {
+        position: absolute;
+        z-index: 1;
+        right: -15px;
+        top: 165px;
+      }
+      .UIpathPowerAuto {
+        position: absolute;
+        width: 324px;
+        left: 280px;
+        .topImage {
+          margin-top: 3%;
+        }
+        .botImage {
+          margin-top: -8%;
+        }
+      }
+      .automateImage {
+        position: absolute;
+        top: 165px;
+        left: 15px;
+      }
+      .UIpathPowerAuto {
+        position: absolute;
+        width: 324px;
+        left: 280px;
+      }
+    }
   }
 
   .description {
@@ -43,7 +78,6 @@
           color: #0094ff;
         }
       }
-
       .overviewContent {
         font-size: 20px;
         font-weight: 500;
