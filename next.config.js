@@ -37,24 +37,24 @@ const nextConfig = {
     unoptimized: false,
   },
 
-  webpack(config) {
-    config.resolve.alias = {
-      ...config.resolve.alias,
-      '@styles': path.resolve(__dirname, 'styles'),
-    };
+  // webpack(config) {
+  //   config.resolve.alias = {
+  //     ...config.resolve.alias,
+  //     '@styles': path.resolve(__dirname, 'styles'),
+  //   };
 
-    return config;
-  },
+  //   return config;
+  // },
 };
-const path = require("path");
-const withSass = require("@zeit/next-sass");
-module.exports = withSass();
+// const path = require("path");
+// const withSass = require("@zeit/next-sass");
+// module.exports = withSass();
 
-module.exports = {
-  sassOptions: {
-    includePaths: [path.join(__dirname, "styles")],
-  },
-};
+// module.exports = {
+//   sassOptions: {
+//     includePaths: [path.join(__dirname, "styles")],
+//   },
+// };
 
 
 

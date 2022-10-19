@@ -11,7 +11,7 @@ import emailIcon from "../../../public/emailIcon.png";
 import Link from "next/link";
 import PhoneInTalkIcon from "@mui/icons-material/PhoneInTalk";
 import Button from "@mui/material/Button";
-
+import { IconButton } from "@mui/material";
 const cx = className.bind(styles);
 export const Contact = () => {
   return (
@@ -22,21 +22,30 @@ export const Contact = () => {
           <div className={cx("left")}>
             <div>Connect with us</div>
             <div className={cx("icons")}>
-              <TwitterIcon sx={{ width: 32, height: 32 }} />
-              <LinkedInIcon sx={{ width: 32, height: 32 }} />
-              <Image src={emailIcon} alt="emailIcon" />
-              <PhoneInTalkIcon sx={{ width: 32, height: 32 }} />
+              <IconButton color="inherit">
+                <TwitterIcon sx={{ width: 32, height: 32 }} />
+              </IconButton>
+              <IconButton color="inherit">
+                <LinkedInIcon sx={{ width: 32, height: 32 }} />
+              </IconButton>
+
+              <IconButton color="inherit">
+                <Image src={emailIcon} alt="emailIcon" sx={{ width: 32, height: 32 }} />
+              </IconButton>
+              <IconButton color="inherit">
+                <PhoneInTalkIcon sx={{ width: 32, height: 32 }} />
+              </IconButton>
             </div>
           </div>
           <div className={cx("right")}>
-            <div>Home</div>
-            <div>About TMA</div>
-            <div>Solutions</div>
-            <div>Industries</div>
-            <div>Technologies</div>
-            <div>News</div>
-            <div>Contact</div>
-            <div>Others</div>
+            <Button>Home</Button>
+            <Button>About TMA</Button>
+            <Button>Solutions</Button>
+            <Button>Industries</Button>
+            <Button>Technologies</Button>
+            <Button>News</Button>
+            <Button>Contact</Button>
+            <Button>Others</Button>
           </div>
         </div>
         <div className={cx("bottomText")}>TMA Solutions &copy;2022 All Rights Reserved </div>

@@ -2,7 +2,7 @@
   margin-top: 16%;
   position: absolute;
   width: 100%;
-  top: 712%;
+  top: 760%;
 
   .footer {
     position: relative;
@@ -33,11 +33,20 @@
         margin-right: 3%;
         justify-content: space-evenly;
         width: 70%;
-        font-family: "THICCCBOI";
-        font-style: normal;
-        font-weight: 600;
-        font-size: 20px;
-        text-transform: uppercase;
+        button {
+          font-family: "THICCCBOI";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 20px;
+          text-transform: uppercase;
+          color: white;
+          padding: 0;
+          height: 50%;
+
+          &:hover {
+            background: #008DF3;
+          }
+        }
       }
     }
     .bottomText {

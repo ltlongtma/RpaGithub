@@ -1,4 +1,4 @@
-export * from "./HighLight/";
+export * from "./HighLight";
 export * from "./Process";
 export * from "./Solutions";
 export * from "./Overview";
