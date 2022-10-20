@@ -5,12 +5,13 @@
     height: 100%;
     width: 100%;
     .imgBackground {
+      background: url("../../../../../public/backgroundHighLight.svg") no-repeat ;
       border: solid 1px black;
       position: absolute;
       width: 100%;
       height: 100%;
-
-      .card {
+      border: solid 1px red;
+       .card {
         display: flex;
         position: absolute;
         bottom: -5%;

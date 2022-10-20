@@ -18,11 +18,11 @@ export const HighLight = () => {
   return (
       <div className={cx("container")}>
         <div className={cx("imgBackground")}>
-          <Image
+          {/* <Image
             src={backgroundHighLight}
             alt="tma-logo"
             priority
-          />
+          /> */}
           <div className={cx("card")}>
             <div className={cx("cardItem")}>
               <div className={cx("cardIcon")}>
