@@ -1,10 +1,11 @@
 @media screen and (min-width: 1024px) {
   .container {
-    // background: url("../../../../../public/backgroundHighLight.svg") no-repeat;
+    border: 1px solid red;
     position: absolute;
     height: 100%;
     width: 100%;
     .imgBackground {
+      border: solid 1px black;
       position: absolute;
       width: 100%;
       height: 100%;
@@ -93,49 +94,51 @@
           }
         }
       }
-    }
-    .menuBar {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      width: 100%;
-      height: 100px;
-      position: absolute;
-      top: 0;
-      .navigate {
+      .menuBar {
         display: flex;
-        justify-content: space-evenly;
-        width: 56%;
-        position: relative;
-        left: -2%;
-        button {
-          color: aliceblue;
-          text-transform: none;
-          font-family: "Poppins";
-          font-style: normal;
-          font-weight: 500;
-          font-size: 20px;
-          line-height: 30px;
-          padding: 0 1.5rem;
-          left: 2%;
-          &:hover {
-            background: #778fd4;
+        width: 100%;
+        justify-content: space-around;
+        position: absolute;
+        top: 3%;
+
+        .navigate {
+          display: flex;
+          justify-content: space-evenly;
+          width: 67%;
+
+          button {
+            color: aliceblue;
+            text-transform: none;
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            padding: 0;
+            // padding: 0 1.5rem;
+            margin: 0 1.5rem;
+
+            left: 2%;
+            &:hover {
+              background: #778fd4;
+            }
           }
         }
-      }
-      .buttonContact {
-        button {
-          width: 180px;
-          height: 58px;
-          color: black;
-          background: #ffffff;
-          font-weight: 600;
-          font-size: 20px;
-          text-transform: none;
-          font-family: "Poppins";
-          font-style: normal;
-          border: 3px solid rgba(64, 161, 255, 1);
-          right: 10%;
+        .buttonContact {
+          button {
+            // width: 180px;
+            // height: 58px;
+            // width: 11.25em;
+            // height: 3.625em;
+            color: black;
+            background: #ffffff;
+            font-weight: 600;
+            font-size: 20px;
+            text-transform: none;
+            font-family: "Poppins";
+            font-style: normal;
+            border: 3px solid rgba(64, 161, 255, 1);
+            right: 10%;
+          }
         }
       }
     }

@@ -21,7 +21,6 @@ export const HighLight = () => {
           <Image
             src={backgroundHighLight}
             alt="tma-logo"
-            // layout="responsive"
             priority
           />
           <div className={cx("card")}>
@@ -76,8 +75,7 @@ export const HighLight = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className={cx("menuBar")}>
+          <div className={cx("menuBar")}>
           <Image src={TmaLogo} alt="tma-logo" />
           <div className={cx("navigate")}>
             <Button>Home</Button>
@@ -101,8 +99,10 @@ export const HighLight = () => {
             <Button variant="contained">Contact Us</Button>
           </div>
         </div>
+        </div>
+       
 
-        <div></div>
+       
       </div>
   );
 };
