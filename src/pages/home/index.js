@@ -20,8 +20,8 @@ export default function Home() {
       <main>
         <div className={styles.container}>
           <HighLight />
-          {/* <Overview />
-          <AIML />
+          <Overview />
+          {/* <AIML />
           <RpaProcess />
           <Solutions />
           <CaseStudy />
