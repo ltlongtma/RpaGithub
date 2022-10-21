@@ -1,198 +1,55 @@
-@media screen and (min-width:1024px){
+@media screen and (min-width: 1024px) {
   .wrap {
     position: absolute;
-    height: 1000px;
-    top: 360%;
+    top: 63vw;
     width: 100%;
-  
+    border: 1px solid red;
+
     .title {
       text-align: center;
       margin-bottom: 3%;
-  
+
       h1 {
         font-weight: 600;
-        font-size: 72px;
-        line-height: 108px;
+        font-size: 4vw;
         color: #333333;
-        margin-top: 0;
       }
     }
     .process1 {
       display: flex;
-      margin: 0px 5%;
-  
-      .step1 {
-        position: relative;
-        background-image: url(../../../../../public/step1Frame.png);
-        background-repeat: no-repeat;
-        height: 369px;
-        width: 100%;
-        h1 {
-          font-weight: 600;
-          font-size: 32px;
-          line-height: 48px;
-          text-align: center;
-          text-transform: uppercase;
-          color: white;
-          top: 17%;
-          left: 18%;
-          position: absolute;
-        }
-        .content {
-          position: absolute;
-          top: 47%;
-          left: 2%;
-          width: 340px;
-          height: 126.12px;
-          font-weight: 400;
-          font-size: 18px;
-          line-height: 160%;
-          color: #001835;
-          text-indent: -3%;
-          ul {
-            list-style: none;
-            padding-left: -2%;
-            li {
-              padding-bottom: 6%;
-            }
-            li:before {
-              content: "\2022";
-              color: #0094ff;
-              font-weight: bold;
-              display: inline-block;
-              width: 1.5em;
-              margin-left: -1em;
-            }
-          }
-        }
-      }
-      .step2 {
-        position: relative;
-        // border: 1px solid red;
-        background-image: url(../../../../../public/step2Frame.png);
-  
-        background-repeat: no-repeat;
-        height: 369px;
-        width: 100%;
-        h1 {
-          font-weight: 600;
-          font-size: 32px;
-          line-height: 48px;
-          text-align: center;
-          text-transform: uppercase;
-          color: white;
-          top: 17%;
-          left: 29%;
-          position: absolute;
-        }
-        .content2 {
-          position: absolute;
-          top: 47%;
-          left: 2%;
-          width: 340px;
-          height: 126.12px;
-          font-weight: 400;
-          font-size: 18px;
-          line-height: 160%;
-          color: #001835;
-          text-indent: -3%;
-  
-          ul {
-            list-style: none;
-            padding-left: -2%;
-            li {
-              padding-bottom: 6%;
-            }
-            li:before {
-              content: "\2022";
-              color: #0094ff;
-              font-weight: bold;
-              display: inline-block;
-              width: 1.5em;
-              margin-left: -1em;
-            }
-          }
-        }
-      }
-      .step3 {
-        position: relative;
-        // border: 1px solid red;
-        background-image: url(../../../../../public/step3Frame.png);
-  
-        background-repeat: no-repeat;
-        height: 369px;
-        width: 100%;
-        h1 {
-          font-weight: 600;
-          font-size: 32px;
-          line-height: 48px;
-          text-align: center;
-          text-transform: uppercase;
-          color: white;
-          top: 17%;
-          left: 25%;
-          position: absolute;
-        }
-        .content3 {
-          position: absolute;
-          top: 47%;
-          left: 2%;
-          width: 340px;
-          height: 126.12px;
-          font-weight: 400;
-          font-size: 18px;
-          line-height: 160%;
-          color: #001835;
-          text-indent: -3%;
-  
-          ul {
-            list-style: none;
-            padding-left: -2%;
-            li {
-              padding-bottom: 6%;
-            }
-            li:before {
-              content: "\2022";
-              color: #0094ff;
-              font-weight: bold;
-              display: inline-block;
-              width: 1.5em;
-              margin-left: -1em;
-            }
-          }
-        }
-      }
+      justify-content: center;
+      margin: 0 4%;
+      position: relative;
+      left: 0.7%;
+      .step1,
+      .step2,
+      .step3,
       .step4 {
-        position: relative;
-        // border: 1px solid red;
-        background-image: url(../../../../../public/step4Frame.png);
-  
-        background-repeat: no-repeat;
-        height: 369px;
-        width: 100%;
+        width: 22vw;
+        height: 20vw;
         h1 {
           font-weight: 600;
-          font-size: 32px;
-          line-height: 48px;
+          font-size: 1.5vw;
           text-align: center;
           text-transform: uppercase;
           color: white;
-          top: 17%;
-          left: 25%;
+          top: 12%;
           position: absolute;
+          width: 100%;
         }
+        .content1,
+        .content2,
+        .content3,
         .content4 {
           position: absolute;
           top: 47%;
           left: 2%;
-          width: 340px;
-          height: 126.12px;
+
           font-weight: 400;
-          font-size: 18px;
-          line-height: 160%;
+          font-size: 0.9vw;
           color: #001835;
           text-indent: -3%;
-  
+          width: 17vw;
           ul {
             list-style: none;
             padding-left: -2%;
@@ -210,33 +67,60 @@
           }
         }
       }
+
+      .step1 {
+        background: url(../../../../../public/step1Frame.png);
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+      .step2 {
+        background: url(../../../../../public/step2Frame.png);
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+      .step3 {
+        background: url(../../../../../public/step3Frame.png);
+
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+      .step4 {
+        background: url(../../../../../public/step4Frame.png);
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
     }
     .arrowIcon {
-      position: absolute;
-      left: 36%;
-      bottom: -25%;
+      position: relative;
+      left: 9vw;
+      bottom: -21vw;
+      width: 4vw;
     }
     .process2 {
       display: flex;
-      margin: 0 5%;
-      position: absolute;
-      bottom: 0;
+      height: 25vw;
+      justify-content: center;
       .frame {
         position: relative;
-        width: 431px;
-        height: 278px;
+        width: 21vw;
+        height: 17vw;
         background: #f4f8ff;
         opacity: 0.7;
-        margin-right: 1.9%;
-  
+        top: 6vw;
+        margin: 0 0.7%;
+
         .img {
           align-items: center;
           display: flex;
-          width: 100%;
-          height: 100%;
+          width: 21vw;
+          height: 17vw;
           justify-content: center;
         }
-  
+
         ul {
           list-style: none;
           position: absolute;
@@ -245,8 +129,7 @@
           li {
             padding-bottom: 10%;
             font-weight: 400;
-            font-size: 18px;
-            line-height: 27px;
+            font-size: 1vw;
           }
           li:before {
             content: "\2022";
@@ -261,4 +144,3 @@
     }
   }
 }
-

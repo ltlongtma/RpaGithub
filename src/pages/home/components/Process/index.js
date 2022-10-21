@@ -17,7 +17,7 @@ export const RpaProcess = () => {
       <div className={cx("process1")}>
         <div className={cx("step1")}>
           <h1>UNDERSTAND</h1>
-          <div className={cx("content")}>
+          <div className={cx("content1")}>
             <ul>
               <li>Understand the working process of clients</li>
               <li>Collect information of tools and effort of each task</li>
@@ -33,8 +33,7 @@ export const RpaProcess = () => {
           <div className={cx("content2")}>
             <ul>
               <li>
-                Analyze clients&apos; system, break down processes and identify
-                where to automate
+                Analyze clients&apos; system, break down processes and identify where to automate
               </li>
             </ul>
           </div>

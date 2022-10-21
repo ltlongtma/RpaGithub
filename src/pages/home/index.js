@@ -20,12 +20,12 @@ export default function Home() {
       <main>
         <div className={styles.container}>
           <HighLight />
-          <Overview />
-          {/* <AIML />
-          <RpaProcess />
-          <Solutions />
-          <CaseStudy />
-          <Contact /> */}
+          {/* <Overview /> */}
+          {/* <AIML /> */}
+          {/* <RpaProcess /> */}
+          {/* <Solutions /> */}
+          {/* <CaseStudy /> */}
+          <Contact />
         </div>
       </main>
 

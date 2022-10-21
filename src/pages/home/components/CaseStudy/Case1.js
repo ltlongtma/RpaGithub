@@ -2,7 +2,7 @@ import className from "classnames/bind";
 const cx = className.bind(styles);
 import styles from "./casetudy.module.scss";
 import Image from "next/image";
-import groupCase1 from "../../../../../public/CaseStudy/groupCase1.png";
+import groupCase1 from "../../../../../public/CaseStudy/groupCase1.svg";
 
 export const Case1 = () => {
   return (

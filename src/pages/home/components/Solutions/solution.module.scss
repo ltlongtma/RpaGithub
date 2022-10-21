@@ -1,9 +1,17 @@
-@media screen and (min-width:1024px){
+@media screen and (min-width: 1024px) {
   .solutions {
-    position: absolute;
-    height: 1549px;
-    width: 100%;
-    top: 450%;
+    // position: absolute;
+    // height: 1549px;
+    // width: 100%;
+    // top: 450%;
+    background: url(/_next/static/media/backgroundSolutions.aa8e836e.svg);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 108vw;
+    top: 58vw;
+    border: 1px solid pink;
     .imgBackground {
       position: absolute;
       top: -56.5%;
@@ -17,200 +25,58 @@
       }
     }
     .title {
-      position: absolute;
-      left: 128px;
-      margin-top: 27%;
+      position: relative;
+      bottom: -51vw;
+      margin-left: 6vw;
+      span {
+        width: 4vw;
+      }
       h1 {
         width: 9em;
         font-weight: 600;
-        font-size: 72px;
-        line-height: 90px;
+        font-size: 4vw;
         color: #ffffff;
-        padding-top: 2%;
+        line-height: 5vw;
+        margin-top: 1vw;
       }
     }
     .content {
       display: flex;
       justify-content: center;
-      position: absolute;
-      top: 59%;
-      margin: 0 7%;
-  
-      .item1 {
-        position: relative;
-        width: 426px;
-        height: 531px;
-        background: #ffffff;
-        box-shadow: 0px 100px 80px rgba(207, 207, 207, 0.07),
-          0px 12.5216px 10.0172px rgba(207, 207, 207, 0.035);
-        .itemHead {
-          position: absolute;
-          left: 8%;
-          top: 8%;
-          h1 {
-            font-weight: 600;
-            font-size: 32px;
-            line-height: 48px;
-  
-            color: #333333;
-          }
-        }
-        .itemBody {
-          position: absolute;
-          top: 32%;
-          left: 2%;
-          ul {
-            list-style: none;
-            padding-left: -2%;
-            li {
-              padding-bottom: 5%;
-              font-weight: 400;
-              font-size: 20px;
-            }
-            li:before {
-              content: "\2022";
-              color: #0094ff;
-              font-weight: bold;
-              display: inline-block;
-              width: 1.5em;
-              margin-left: -1em;
-            }
-          }
-        }
-      }
-      .item2 {
-        margin-left: 2%;
-  
-        position: relative;
-        width: 426px;
-        height: 531px;
-        background: #ffffff;
-        box-shadow: 0px 100px 80px rgba(207, 207, 207, 0.07),
-          0px 12.5216px 10.0172px rgba(207, 207, 207, 0.035);
-        .itemHead {
-          position: absolute;
-          left: 8%;
-          top: 8%;
-          h1 {
-            font-weight: 600;
-            font-size: 32px;
-            line-height: 48px;
-  
-            color: #333333;
-          }
-        }
-        .itemBody {
-          position: absolute;
-          top: 32%;
-          left: 2%;
-          ul {
-            list-style: none;
-            width: 83%;
-            margin-left: 2%;
-            color: #333333;
-  
-            li {
-              padding-bottom: 5%;
-              font-weight: 400;
-              font-size: 20px;
-              text-indent: -3%;
-            }
-            li:before {
-              content: "\2022";
-              color: #0094ff;
-              font-weight: bold;
-              display: inline-block;
-              width: 1.5em;
-              margin-left: -1em;
-            }
-          }
-        }
-      }
-      .item3 {
-        margin-left: 2%;
-  
-        position: relative;
-        width: 426px;
-        height: 531px;
-        background: #ffffff;
-        box-shadow: 0px 100px 80px rgba(207, 207, 207, 0.07),
-          0px 12.5216px 10.0172px rgba(207, 207, 207, 0.035);
-        .itemHead {
-          position: absolute;
-          left: 8%;
-          top: 8%;
-          h1 {
-            font-weight: 600;
-            font-size: 32px;
-            line-height: 48px;
-  
-            color: #333333;
-          }
-        }
-        .itemBody {
-          position: absolute;
-          top: 32%;
-          left: 3%;
-          ul {
-            list-style: none;
-            width: 89%;
-            margin-left: 2%;
-            color: #333333;
-  
-            li {
-              padding-bottom: 5%;
-              font-weight: 400;
-              font-size: 20px;
-              text-indent: -3%;
-            }
-            li:before {
-              content: "\2022";
-              color: #0094ff;
-              font-weight: bold;
-              display: inline-block;
-              width: 1.5em;
-              margin-left: -1em;
-            }
-          }
-        }
-      }
+      position: relative;
+      justify-content: center;
+      top: 53vw;
+      .item1,
+      .item2,
+      .item3,
       .item4 {
-        margin-left: 2%;
-  
         position: relative;
-        width: 426px;
-        height: 531px;
         background: #ffffff;
-        box-shadow: 0px 100px 80px rgba(207, 207, 207, 0.07),
-          0px 12.5216px 10.0172px rgba(207, 207, 207, 0.035);
+        box-shadow: 0px 100px 80px rgb(207 207 207 / 7%),
+          0px 12.5216px 10.0172px rgb(207 207 207 / 4%);
+        width: 20vw;
+        height: 30vw;
+        margin-right: 2%;
         .itemHead {
-          position: absolute;
-          left: 8%;
-          top: 8%;
-  
+          margin-left: 1.5vw;
+          margin-top: 1.5vw;
           h1 {
-            font-weight: 600;
-            font-size: 32px;
-            line-height: 48px;
-  
-            color: #333333;
+            font-size: 1.5vw;
+            margin: 0;
           }
         }
         .itemBody {
-          position: absolute;
-          top: 32%;
-          left: 3%;
+          position: relative;
+          left: 4%;
+          width: 18vw;
+
           ul {
             list-style: none;
-            width: 100%;
-            margin-left: 2%;
-            color: #333333;
-  
+            padding-left: 2vw;
             li {
-              padding-bottom: 5%;
               font-weight: 400;
-              font-size: 20px;
-              text-indent: -3%;
+              font-size: 1vw;
+              margin: 5% 0;
             }
             li:before {
               content: "\2022";
@@ -218,19 +84,21 @@
               font-weight: bold;
               display: inline-block;
               width: 1.5em;
-              margin-left: -1em;
+              left: 0.5vw;
+              width: 15vw;
+              position: absolute;
             }
           }
         }
       }
+    
     }
     .maskBottom {
-      display: flex;
-      width: 100%;
-      justify-content: flex-end;
       position: absolute;
-      bottom: -20.5%;
+      bottom: -21vw;
+      width: 50vw;
+      height: 50vw;
+      left: 50vw;
     }
   }
 }
-

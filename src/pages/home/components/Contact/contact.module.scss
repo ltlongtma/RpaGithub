@@ -1,133 +1,132 @@
-.container-fluid {
-  margin-top: 16%;
-  position: absolute;
+.container {
+  position: relative;
   width: 100%;
-  top: 760%;
-
-  .footer {
-    position: relative;
-    top: 43%;
-    .mainContent {
-      display: flex;
-      width: 100%;
-      justify-content: center;
-      top: 60%;
-      position: absolute;
-      color: white;
-      .left {
-        width: 30%;
-        margin-left: 6%;
-        font-family: "Poppins";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 20px;
-        .icons {
-          display: flex;
-          justify-content: space-between;
-          width: 50%;
-          margin-top: 5%;
-        }
-      }
-      .right {
-        display: flex;
-        margin-right: 3%;
-        justify-content: space-evenly;
-        width: 70%;
-        button {
-          font-family: "THICCCBOI";
-          font-style: normal;
-          font-weight: 600;
-          font-size: 20px;
-          text-transform: uppercase;
-          color: white;
-          padding: 0;
-          height: 50%;
-
-          &:hover {
-            background: #008DF3;
-          }
-        }
-      }
-    }
-    .bottomText {
-      color: white;
-
-      position: absolute;
-      right: 6%;
-      bottom: 0;
+  top: 80vw;
+  .mainContent {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    top: 60%;
+    position: absolute;
+    color: white;
+    .left {
+      width: 30%;
+      margin-left: 6%;
       font-family: "Poppins";
       font-style: normal;
       font-weight: 400;
-      font-size: 16px;
-      line-height: 90px;
-    }
-    .contact {
-      position: absolute;
-      justify-content: center;
-      width: 88%;
-      top: -68%;
-      margin: 0 6%;
-      .content {
-        position: absolute;
-        top: 0;
+      font-size: 1vw;
+      .icons {
         display: flex;
-        flex-direction: column;
-        // justify-content: space-evenly;
-        width: 100%;
-        height: 100%;
-        align-items: center;
+        justify-content: space-between;
+        width: 16vw;
+        top: 26%;
+        position: relative;
+        // button{
+        //   width: 1vw;
+        // }
+      }
+    }
+    .right {
+      display: flex;
+      margin-right: 3%;
+      justify-content: space-evenly;
+      width: 70%;
+      button {
+        font-family: "THICCCBOI";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1vw;
+        text-transform: uppercase;
         color: white;
-        h1 {
-          position: absolute;
-          top: 16%;
-        }
-        .content1 {
-          position: absolute;
-          top: 36%;
-          width: 785px;
-          height: 60px;
-          font-size: 20px;
-          line-height: 30px;
-          text-align: center;
-          color: #ffffff;
-        }
-        .content2 {
-          position: absolute;
-          top: 53%;
+        padding: 0;
+        height: 50%;
 
-          width: 352px;
-          height: 90px;
-          font-weight: 400;
-          font-size: 32px;
-          line-height: 90px;
-          span {
-            overflow: visible !important;
-          }
-          img {
-            top: 30px !important;
-            left: -31px !important;
-          }
-          a {
-            text-decoration: underline;
-          }
+        &:hover {
+          background: #008df3;
         }
       }
-      .buttonContact {
-        button {
-          width: 180px;
-          height: 58px;
-          color: black;
-          background: #ffffff;
-          font-weight: 600;
-          font-size: 20px;
-          text-transform: none;
-          font-family: "Poppins";
-          font-style: normal;
-          border: 3px solid rgba(64, 161, 255, 1);
-          position: absolute;
-          top: 75%;
-          left: 45%;
+    }
+  }
+  .bottomText {
+    color: white;
+
+    position: absolute;
+    right: 6%;
+    bottom: 0;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1vw;
+    line-height: 90px;
+  }
+  .contact {
+    position: absolute;
+    justify-content: center;
+    width: 88%;
+    top: -68%;
+    margin: 0 6%;
+    .content {
+      position: absolute;
+      top: 0;
+      display: flex;
+      flex-direction: column;
+      // justify-content: space-evenly;
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      color: white;
+      h1 {
+        position: absolute;
+        top: 5%;
+        font-size: 3vw;
+        font-weight: 600;
+      }
+      .content1 {
+        position: absolute;
+        top: 36%;
+        width: 57vw;
+        font-size: 1.5vw;
+        line-height: 30px;
+        text-align: center;
+        color: #ffffff;
+      }
+      .content2 {
+        position: absolute;
+        top: 53%;
+        width: 88vw;
+        font-weight: 400;
+        font-size: 2vw;
+        line-height: 90px;
+        left: 33vw;
+        span {
+          overflow: visible !important;
+          width: 3vw;
         }
+        img {
+          top: 30px !important;
+          left: -31px !important;
+        }
+        a {
+          text-decoration: underline;
+        }
+      }
+    }
+    .buttonContact {
+      button {
+        width: 13vw;
+        height: 4vw;
+        color: black;
+        background: #ffffff;
+        font-weight: 600;
+        font-size: 1vw;
+        text-transform: none;
+        font-family: "Poppins";
+        font-style: normal;
+        border: 3px solid rgba(64, 161, 255, 1);
+        position: absolute;
+        top: 75%;
+        left: 43%;
       }
     }
   }

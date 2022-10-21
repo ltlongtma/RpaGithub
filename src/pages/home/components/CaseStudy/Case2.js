@@ -1,7 +1,7 @@
 import className from "classnames/bind";
 const cx = className.bind(styles);
 import styles from "./casetudy.module.scss";
-import groupCase2 from "../../../../../public/CaseStudy/groupCase2.png";
+import groupCase2 from "../../../../../public/CaseStudy/groupCase2.svg";
 import Image from "next/image";
 
 export const Case2 = () => {

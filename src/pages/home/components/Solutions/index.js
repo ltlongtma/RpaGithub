@@ -15,13 +15,6 @@ const cx = className.bind(styles);
 export const Solutions = () => {
   return (
     <div className={cx("solutions")}>
-      <div className={cx("imgBackground")}>
-        <Image
-          src={backgroundSolutions}
-          alt="backGround_Solutions"
-          layout="responsive"
-        />
-      </div>
       <div className={cx("title")}>
         <Image src={Icon_Overview} alt="Icon_Overview" />
         <h1>Sample Projects and Solutions</h1>
