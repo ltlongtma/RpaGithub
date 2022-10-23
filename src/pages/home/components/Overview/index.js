@@ -13,7 +13,7 @@ export const Overview = () => {
   return (
     <div className={cx("container")}>
       <div className={cx("wrapText")}>
-        <div>
+        <div className={cx("logo")}>
           <Image src={icon2} alt="icon2" />
         </div>
         <div className={cx("description")}>
@@ -46,14 +46,11 @@ export const Overview = () => {
           </div>
         </div>
       </div>
-
       <div className={cx("wrapImage")}>
-        <div className={cx("icons")}>
-          <div className={cx("blueprismImage")}>
+          <div className={cx("leftImg")}>
             <Image src={iconBlueprism} alt="icon" />
           </div>
-
-          <div className={cx("UIpathPowerAuto")}>
+          <div className={cx("centerImg")}>
             <div className={cx("topImage")}>
               <Image src={iconUIpath} alt="icon" />
             </div>
@@ -61,12 +58,10 @@ export const Overview = () => {
               <Image src={iconPowerAutomate} alt="icon" />
             </div>
           </div>
-
-          <div className={cx("automateImage")}>
+          <div className={cx("rightImg")}>
             <Image src={iconAutomation} alt="icon" />
           </div>
         </div>
-      </div>
     </div>
   );
 };

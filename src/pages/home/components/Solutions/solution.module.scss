@@ -1,16 +1,12 @@
 @media screen and (min-width: 1024px) {
   .solutions {
-    // position: absolute;
-    // height: 1549px;
-    // width: 100%;
-    // top: 450%;
-    background: url(/_next/static/media/backgroundSolutions.aa8e836e.svg);
+    background: url("../../../../../public/backgroundSolutions.svg");
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
     height: 108vw;
-    top: 58vw;
+    top: 47vw;
     border: 1px solid pink;
     .imgBackground {
       position: absolute;

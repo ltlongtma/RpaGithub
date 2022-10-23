@@ -20,11 +20,11 @@ export default function Home() {
       <main>
         <div className={styles.container}>
           <HighLight />
-          {/* <Overview /> */}
-          {/* <AIML /> */}
-          {/* <RpaProcess /> */}
-          {/* <Solutions /> */}
-          {/* <CaseStudy /> */}
+          <Overview />
+          <AIML />
+          <RpaProcess />
+          <Solutions />
+          <CaseStudy />
           <Contact />
         </div>
       </main>

@@ -1,90 +1,83 @@
-@media screen and (min-width:1024px){
+@media screen and (min-width: 1024px) {
   .container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-items: center;
-    position: absolute;
-    top: 120%;
+    border: red solid 1px;
+    position: relative;
+    top: 62vw;
     width: 100%;
+    height: 100%;
+    display: flex;
     .wrapText {
-      width: 720px;
-      margin-top: -3%;
-      margin-right: -8%;
+      width: 100%;
+      margin-left: 5vw;
+     .logo{
+
+     }
+      .description {
+        .title {
+          color: #333333;
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 4vw;
+          padding-right: 5vw;
+        }
+        span {
+          line-height: 160%;
+          display: block;
+          margin-bottom: 1vw;
+          font-weight: 400;
+          font-size: 1.3vw;
+          color: #333333;
+      
+        }
+      }
+      .experience {
+        display: flex;
+
+        .expand {
+          margin-right: 100px;
+          h2 {
+            height: 4vw;
+            color: #090909;
+            font-size: 3vw;
+            font-family: 'Poppins';
+            font-style: normal;
+            margin-bottom:  0;
+  
+            span {
+              color: #0094ff;
+            }
+          }
+          .overviewContent {
+            font-size: 1.5vw;
+            font-weight: 500;
+           
+          }
+        }
+      }
     }
     .wrapImage {
       display: flex;
-      flex-direction: row;
-      width: 852px;
-      height: 622px;
-      .icons {
+      width: 100%;
+      align-items: center;
+      .leftImg {
+      }
+      .centerImg {
         position: relative;
-        width: 100%;
-        height: 100%;
-        .blueprismImage {
-          position: absolute;
-          z-index: 1;
-          right: -15px;
-          top: 165px;
+        left: -3vw;
+        .topImage {
+          margin-top: 3%;
         }
-        .UIpathPowerAuto {
-          position: absolute;
-          width: 324px;
-          left: 280px;
-          .topImage {
-            margin-top: 3%;
-          }
-          .botImage {
-            margin-top: -8%;
-          }
+        .botImage {
+          margin-top: -8%;
         }
-        .automateImage {
-          position: absolute;
-          top: 165px;
-          left: 15px;
-        }
-        .UIpathPowerAuto {
-          position: absolute;
-          width: 324px;
-          left: 280px;
-        }
+      }
+      .rightImg {
+        position: relative;
+        left: -6vw;
       }
     }
-  
-    .description {
-      .title {
-        color: #333333;
-      }
-      span {
-        line-height: 160%;
-        display: block;
-        margin-bottom: 20px;
-        font-weight: 400;
-        font-size: 20px;
-        color: #333333;
-      }
-    }
-  
-    .experience {
-      display: flex;
-      .expand {
-        margin-right: 100px;
-        h2 {
-          height: 80px;
-          width: 181px;
-          color: #090909;
-          margin-top: 16px;
-  
-          span {
-            color: #0094ff;
-          }
-        }
-        .overviewContent {
-          font-size: 20px;
-          font-weight: 500;
-        }
-      }
-    }
+
+    
   }
 }
-

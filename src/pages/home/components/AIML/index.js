@@ -3,7 +3,7 @@ import styles from "./AIML.module.scss";
 import className from "classnames/bind";
 import Image from "next/image";
 import AnalysisImage from "../../../../../public/AIMLImage.png";
-import icon2 from "../../../../../public/AIMLIcon.png";
+import icon2 from "../../../../../public/AIMLIcon.svg";
 import maskGroupAIML from "../../../../../public/maskGroupAIML.svg";
 import maskTopAIML from "../../../../../public/maskTopAIML.svg";
 
@@ -11,14 +11,13 @@ const cx = className.bind(styles);
 export const AIML = () => {
   return (
     <div className={cx("container")}>
-      <div className={cx("maskTop")}>
-        <Image src={maskTopAIML} alt="maskTopAIML" />
-      </div>
+      
       <div className={cx("triangle")}>
         <div className={cx("triangle-left")}></div>
         <div className={cx("triangle-right")}></div>
       </div>
       <div className={cx("AIMLContent")}>
+      
         <div className={cx("head")}>
           <div>
             <Image src={icon2} alt="image" />
@@ -56,7 +55,10 @@ export const AIML = () => {
           </div>
         </div>
       </div>
-      <div className={cx("mask")}>
+      <div className={cx("maskTop")}>
+        <Image src={maskTopAIML} alt="maskTopAIML" />
+      </div>
+      <div className={cx("maskBottom")}>
         <Image src={maskGroupAIML} alt="maskGroupAIML" />
       </div>
     </div>

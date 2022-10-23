@@ -1,15 +1,10 @@
 @media screen and (min-width: 1024px) {
   .container {
-    height: 1400px;
     background: #fafafa;
-    position: absolute;
-    top: 200%;
-    .maskTop {
-      position: absolute;
-      top: -72%;
-      text-align: end;
-      width: 100%;
-    }
+    position: relative;
+    top: 69vw;
+    border: solid 1px red;
+    height: 70vw;
     .triangle {
       display: flex;
       flex-direction: row;
@@ -30,29 +25,35 @@
         border-top: 10vw solid white;
       }
     }
-
     .AIMLContent {
+      position: relative;
       .head {
         text-align: center;
         width: 40%;
         margin: 0% auto;
+        img {
+          width: 6vw;
+          height: 6vw;
+        }
         .title {
           color: #333333;
+          font-size: 3.5vw;
         }
       }
       .body {
-        margin-left: 12%;
-        margin-top: 2%;
         display: flex;
-        flex-direction: row;
         align-items: center;
-        // justify-content: center;
+        justify-content: center;
+        span {
+          width: 53vw !important;
+          height: 37vw !important;
+        }
         .experience {
           h2 {
-            font-size: 40px;
+            font-size: 2.5vw;
             align-items: center;
-            height: 80px;
             color: #090909;
+
             .span {
               color: #0094ff;
             }
@@ -76,10 +77,21 @@
         }
       }
     }
-    .mask {
+    .maskTop {
       position: absolute;
-      top: 62%;
-      left: -2%;
+
+      top: -51vw;
+    }
+    .maskBottom {
+      position: absolute;
+
+      width: 50%;
+      height: auto;
+
+      position: absolute;
+
+      bottom: -20%;
+      left: -1.5%;
     }
   }
 }

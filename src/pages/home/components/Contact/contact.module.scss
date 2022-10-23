@@ -1,7 +1,6 @@
 .container {
   position: relative;
-  width: 100%;
-  top: 80vw;
+  top: 76vw;
   .mainContent {
     display: flex;
     width: 100%;
@@ -94,14 +93,12 @@
       .content2 {
         position: absolute;
         top: 53%;
-        width: 88vw;
         font-weight: 400;
         font-size: 2vw;
         line-height: 90px;
-        left: 33vw;
         span {
           overflow: visible !important;
-          width: 3vw;
+          width: 3vw!important;
         }
         img {
           top: 30px !important;
