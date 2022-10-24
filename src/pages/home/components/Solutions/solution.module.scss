@@ -4,29 +4,26 @@
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100vw;
     height: 108vw;
     top: 47vw;
-    border: 1px solid pink;
-    .imgBackground {
-      position: absolute;
-      top: -56.5%;
-      width: 100%;
-      span {
-        overflow: visible !important;
-        width: 100% !important;
-      }
-      img {
-        top: 17% !important;
-      }
-    }
+    // border: 1px solid red;
+    // .imgBackground {
+    //   position: absolute;
+    //   top: -56.5%;
+    //   width: 100%;
+    //   span {
+    //     overflow: visible !important;
+    //     width: 100% !important;
+    //   }
+    //   img {
+    //     top: 17% !important;
+    //   }
+    // }
     .title {
       position: relative;
       bottom: -51vw;
       margin-left: 6vw;
-      span {
-        width: 4vw;
-      }
+
       h1 {
         width: 9em;
         font-weight: 600;
@@ -87,7 +84,6 @@
           }
         }
       }
-    
     }
     .maskBottom {
       position: absolute;
