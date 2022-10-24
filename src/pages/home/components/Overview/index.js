@@ -7,9 +7,20 @@ import iconBlueprism from "../../../../../public/Overview-Blueprism.png";
 import iconPowerAutomate from "../../../../../public/Overview-PowerAutomate.png";
 import iconUIpath from "../../../../../public/Overview-UIpath.png";
 import icon2 from "../../../../../public/icons-overview2.png";
+import { useEffect } from 'react';
 
 const cx = className.bind(styles);
 const Overview = () => {
+  const handleScroll = () => {
+    window.scrollTo(1001,  2000)
+  };
+  useEffect(() => {
+   if(typeof window !== 'undefined'){
+
+     window.addEventListener("scroll", handleScroll);
+   }
+    return () => window.removeEventListener("scroll", handleScroll);
+  });
   return (
     <div className={cx("container")}>
       <div className={cx("wrapText")}>

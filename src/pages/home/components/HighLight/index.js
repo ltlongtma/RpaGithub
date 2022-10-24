@@ -11,14 +11,24 @@ import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import className from "classnames/bind";
 import styles from "./highLight.module.scss";
+import { useEffect } from 'react';
 
 const cx = className.bind(styles);
 
 const HighLight = () => {
+  const handleScroll = () => {
+    window.scrollTo(0,  1000)
+  };
+  useEffect(() => {
+   if(typeof window !== 'undefined'){
+
+     window.addEventListener("scroll", handleScroll);
+   }
+    return () => window.removeEventListener("scroll", handleScroll);
+  });
   return (
     <div className={cx("container")}>
-      <div className={cx("imgBackground")}>
-        <Image src={backgroundHighLight} alt="tma-logo" priority />
+        <Image src={backgroundHighLight} alt="tma-logo" priority={true} />
         <div className={cx("card")}>
           <div className={cx("cardItem")}>
             <div className={cx("cardIcon")}>
@@ -99,7 +109,6 @@ const HighLight = () => {
           </div>
         </div>
       </div>
-    </div>
   );
 };
 export default HighLight;

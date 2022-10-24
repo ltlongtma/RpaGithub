@@ -20,23 +20,28 @@
       padding: 0 5%;
       .tabClassDynamic {
         background: #f1f9ff;
-        width: 19vw;
-        font-weight: 700;
-        font-size: 1.2vw;
         color: #0094ff;
+        width: 15vw;
+        font-weight: 700;
+        font-size: 1vw;
+        font-family: "Poppins";
+        font-style: normal;
         display: flex;
         justify-content: space-evenly;
         padding: 0;
-        margin-right: 2%;
+        // margin-right: 2%;
       }
       .tabClassStatic {
+        color: #9f9f9f;
+        width: 19vw;
         font-weight: 500;
         font-size: 1vw;
         font-family: "Poppins";
         font-style: normal;
-        text-align: start;
-        color: #9f9f9f;
-        width: 19vw;
+        // text-align: start;
+        display: flex;
+        justify-content: center;
+        padding: 0;
 
         span {
           overflow: visible !important;
