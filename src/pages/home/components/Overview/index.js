@@ -9,7 +9,7 @@ import iconUIpath from "../../../../../public/Overview-UIpath.png";
 import icon2 from "../../../../../public/icons-overview2.png";
 
 const cx = className.bind(styles);
-export const Overview = () => {
+const Overview = () => {
   return (
     <div className={cx("container")}>
       <div className={cx("wrapText")}>
@@ -19,16 +19,14 @@ export const Overview = () => {
         <div className={cx("description")}>
           <h1 className={cx("title")}>Overview </h1>
           <span>
-            With a wide range of solution from AI/ML, document parsing, object
-            detection and popular tools (Automation Anywhere, Ui Path, Power
-            Automate, Blueprism), TMA RPA Center have provided automation
-            solutions for a variety of industries, including finance, banking,
+            With a wide range of solution from AI/ML, document parsing, object detection and popular
+            tools (Automation Anywhere, Ui Path, Power Automate, Blueprism), TMA RPA Center have
+            provided automation solutions for a variety of industries, including finance, banking,
             logistics, human resources, and e-commerce.
           </span>
           <span>
-            TMA RPA Center provides solutions for automation projects or
-            dedicated teams for a full automation program with multiple
-            projects.
+            TMA RPA Center provides solutions for automation projects or dedicated teams for a full
+            automation program with multiple projects.
           </span>
         </div>
         <div className={cx("experience")}>
@@ -47,21 +45,22 @@ export const Overview = () => {
         </div>
       </div>
       <div className={cx("wrapImage")}>
-          <div className={cx("leftImg")}>
-            <Image src={iconBlueprism} alt="icon" />
+        <div className={cx("leftImg")}>
+          <Image src={iconBlueprism} alt="icon" />
+        </div>
+        <div className={cx("centerImg")}>
+          <div className={cx("topImage")}>
+            <Image src={iconUIpath} alt="icon" />
           </div>
-          <div className={cx("centerImg")}>
-            <div className={cx("topImage")}>
-              <Image src={iconUIpath} alt="icon" />
-            </div>
-            <div className={cx("botImage")}>
-              <Image src={iconPowerAutomate} alt="icon" />
-            </div>
-          </div>
-          <div className={cx("rightImg")}>
-            <Image src={iconAutomation} alt="icon" />
+          <div className={cx("botImage")}>
+            <Image src={iconPowerAutomate} alt="icon" />
           </div>
         </div>
+        <div className={cx("rightImg")}>
+          <Image src={iconAutomation} alt="icon" />
+        </div>
+      </div>
     </div>
   );
 };
+export default Overview;

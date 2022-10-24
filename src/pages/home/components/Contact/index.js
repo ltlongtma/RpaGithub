@@ -13,7 +13,7 @@ import PhoneInTalkIcon from "@mui/icons-material/PhoneInTalk";
 import Button from "@mui/material/Button";
 import { IconButton } from "@mui/material";
 const cx = className.bind(styles);
-export const Contact = () => {
+const Contact = () => {
   return (
     <div className={cx("container")}>
       <Image src={footerBackground} alt="footerBackground" layout="responsive" />
@@ -70,3 +70,4 @@ export const Contact = () => {
     </div>
   );
 };
+export default Contact;

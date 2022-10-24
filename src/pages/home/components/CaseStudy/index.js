@@ -13,16 +13,15 @@ import tab3 from "../../../../../public/CaseStudy/tab3.png";
 import tab4 from "../../../../../public/CaseStudy/tab4.png";
 import tab5 from "../../../../../public/CaseStudy/tab5.png";
 import Image from "next/image";
-import { Case1 } from "./Case1";
-import { Case2 } from "./Case2";
-import { Case3 } from "./Case3";
-import { Case4 } from "./Case4";
-import { Case5 } from "./Case5";
-
+import Case1 from "./Case1";
+import Case2 from "./Case2";
+import Case3 from "./Case3";
+import Case4 from "./Case4";
+import Case5 from "./Case5";
 
 const cx = className.bind(styles);
 
-export const CaseStudy = () => {
+export default function CaseStudy() {
   const [value, setValue] = React.useState("1");
 
   const handleChange = (event, newValue) => {
@@ -100,6 +99,4 @@ export const CaseStudy = () => {
       </div>
     </div>
   );
-};
-
-
+}

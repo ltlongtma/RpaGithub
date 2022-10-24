@@ -14,7 +14,7 @@ import styles from "./highLight.module.scss";
 
 const cx = className.bind(styles);
 
-export const HighLight = () => {
+const HighLight = () => {
   return (
     <div className={cx("container")}>
       <div className={cx("imgBackground")}>
@@ -36,7 +36,8 @@ export const HighLight = () => {
             <div className={cx("cardContent")}>
               <h1>90%</h1>
               <p>
-                Reduce of<br/> processing time
+                Reduce of
+                <br /> processing time
               </p>
             </div>
           </div>
@@ -101,3 +102,4 @@ export const HighLight = () => {
     </div>
   );
 };
+export default HighLight;

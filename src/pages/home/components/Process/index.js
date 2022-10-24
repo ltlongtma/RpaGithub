@@ -7,7 +7,7 @@ import className from "classnames/bind";
 import styles from "./process.module.scss";
 
 const cx = className.bind(styles);
-export const RpaProcess = () => {
+ const RpaProcess = () => {
   return (
     <div className={cx("wrap")}>
       <div className={cx("title")}>
@@ -96,3 +96,4 @@ export const RpaProcess = () => {
     </div>
   );
 };
+export default RpaProcess

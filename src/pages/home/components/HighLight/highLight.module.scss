@@ -1,4 +1,4 @@
-@media screen and (min-width: 1024px)  {
+@media screen and (min-width: 1024px) {
   .container {
     .imgBackground {
       // border: solid 1px red;
@@ -58,7 +58,8 @@
           display: flex;
           justify-content: center;
           width: 75%;
-
+          align-items: center;
+          height: 3vw;
           button {
             color: aliceblue;
             text-transform: none;
@@ -71,6 +72,7 @@
             margin: 0 1.3vw;
             margin: 0 1.5rem;
             left: 2%;
+            height: 2vw;
             &:hover {
               background: #778fd4;
               border-radius: 10%;
@@ -120,12 +122,12 @@
         .cardContent {
           left: -5%;
           position: relative;
-         
+
           h1 {
             color: #0094ff;
             font-weight: 700;
             font-size: 3vw;
-            margin:0
+            margin: 0;
           }
           p {
             color: #333333;

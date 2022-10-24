@@ -1,11 +1,11 @@
 import Head from "next/head";
-import { HighLight } from "./components/HighLight/index";
-import { Overview } from "./components/Overview/index";
-import { AIML } from "./components/AIML/index";
-import { RpaProcess } from "./components/Process/index";
-import { Solutions } from "./components/Solutions/index";
-import { CaseStudy } from "./components/CaseStudy/index";
-import { Contact } from "./components/Contact/index";
+import  HighLight  from "./components/HighLight/index";
+import  Overview  from "./components/Overview/index";
+import AIML from "./components/AIML/index";
+import  RpaProcess  from "./components/Process/index";
+import Solutions  from "./components/Solutions/index";
+import CaseStudy from "./components/CaseStudy/index";
+import  Contact  from "./components/Contact/index";
 import styles from "./home.module.scss";
 
 export default function Home() {

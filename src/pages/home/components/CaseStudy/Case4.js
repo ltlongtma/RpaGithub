@@ -4,7 +4,7 @@ import styles from "./casetudy.module.scss";
 import groupCase4 from "../../../../../public/CaseStudy/groupCase4.svg";
 import Image from "next/image";
 
-export const Case4 = () => {
+ const Case4 = () => {
   return (
     <div className={cx("case")}>
       <div className={cx("content")}>
@@ -32,3 +32,4 @@ export const Case4 = () => {
     </div>
   );
 };
+export default Case4

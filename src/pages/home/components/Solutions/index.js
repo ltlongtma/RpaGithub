@@ -12,7 +12,7 @@ import Image from "next/image";
 
 const cx = className.bind(styles);
 
-export const Solutions = () => {
+ const Solutions = () => {
   return (
     <div className={cx("solutions")}>
       <div className={cx("title")}>
@@ -87,3 +87,4 @@ export const Solutions = () => {
     </div>
   );
 };
+export default Solutions;
