@@ -5,6 +5,7 @@
     position: relative;
     top: 69vw;
     height: 70vw;
+    overflow: hidden;
     .triangle {
       display: flex;
       flex-direction: row;
@@ -23,6 +24,7 @@
         border-left: 6vw solid transparent;
         border-right: 0vw solid transparent;
         border-top: 10vw solid white;
+        z-index: 1;
       }
     }
     .AIMLContent {
@@ -79,8 +81,9 @@
     }
     .maskTop {
       position: absolute;
-
-      top: -51vw;
+      top: 0.5vw;
+      right: -2vw;
+      overflow: hidden;
     }
     .maskBottom {
       position: absolute;

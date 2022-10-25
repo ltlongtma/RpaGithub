@@ -27,6 +27,7 @@ export default function CaseStudy() {
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
+
   return (
     <div className={cx("container")}>
       <div className={cx("header")}>

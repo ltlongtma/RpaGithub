@@ -2,27 +2,23 @@ import * as React from "react";
 import styles from "./Overview.module.scss";
 import className from "classnames/bind";
 import Image from "next/image";
-import iconAutomation from "../../../../../public/Overview-Automation.png";
+import iconAutomation from "../../../../../public/Overview-Automation.svg";
 import iconBlueprism from "../../../../../public/Overview-Blueprism.png";
 import iconPowerAutomate from "../../../../../public/Overview-PowerAutomate.png";
 import iconUIpath from "../../../../../public/Overview-UIpath.png";
 import icon2 from "../../../../../public/icons-overview2.png";
-import { useEffect } from 'react';
+import { useEffect } from "react";
 
 const cx = className.bind(styles);
 const Overview = () => {
   const handleScroll = () => {
-    // window.scrollTo(0,  2000)
+    window.scrollTo({
+      top: 2300,
+      behavior: "smooth",
+    });
   };
-  useEffect(() => {
-   if(typeof window !== 'undefined'){
-
-     window.addEventListener("scroll", handleScroll);
-   }
-    return () => window.removeEventListener("scroll", handleScroll);
-  });
   return (
-    <div className={cx("container")}>
+    <div className={cx("container")} onWheel={handleScroll}>
       <div className={cx("wrapText")}>
         <div className={cx("logo")}>
           <Image src={icon2} alt="icon2" />

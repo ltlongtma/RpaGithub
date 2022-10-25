@@ -6,22 +6,18 @@ import AnalysisImage from "../../../../../public/AIMLImage.png";
 import icon2 from "../../../../../public/AIMLIcon.svg";
 import maskGroupAIML from "../../../../../public/maskGroupAIML.svg";
 import maskTopAIML from "../../../../../public/maskTopAIML.svg";
-import { useEffect } from 'react';
 
 const cx = className.bind(styles);
 const AIML = () => {
-  // const handleScroll = () => {
-  //   window.scrollTo(0,  1000)
-  // };
-  // useEffect(() => {
-  //  if(typeof window !== 'undefined'){
+  const handleScroll = () => {
+    window.scrollTo({
+      top: 3700,
+      behavior: "smooth",
+    });
+  };
 
-  //    window.addEventListener("scroll", handleScroll);
-  //  }
-  //   return () => window.removeEventListener("scroll", handleScroll);
-  // });
   return (
-    <div className={cx("container")}>
+    <div className={cx("container")} onWheel={handleScroll}>
       <div className={cx("triangle")}>
         <div className={cx("triangle-left")}></div>
         <div className={cx("triangle-right")}></div>
