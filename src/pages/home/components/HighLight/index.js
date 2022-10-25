@@ -17,7 +17,10 @@ const cx = className.bind(styles);
 
 const HighLight = () => {
   const handleScroll = () => {
-    window.scrollTo(0,  1000)
+    window.scrollTo({
+      // top: 1000,
+      // behavior: 'smooth'
+    })
   };
   useEffect(() => {
    if(typeof window !== 'undefined'){
@@ -25,7 +28,7 @@ const HighLight = () => {
      window.addEventListener("scroll", handleScroll);
    }
     return () => window.removeEventListener("scroll", handleScroll);
-  });
+  },['scroll']);
   return (
     <div className={cx("container")}>
         <Image src={backgroundHighLight} alt="tma-logo" priority={true} />

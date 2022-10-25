@@ -10,16 +10,16 @@ import { useEffect } from 'react';
 
 const cx = className.bind(styles);
 const AIML = () => {
-  const handleScroll = () => {
-    window.scrollTo(0,  1000)
-  };
-  useEffect(() => {
-   if(typeof window !== 'undefined'){
+  // const handleScroll = () => {
+  //   window.scrollTo(0,  1000)
+  // };
+  // useEffect(() => {
+  //  if(typeof window !== 'undefined'){
 
-     window.addEventListener("scroll", handleScroll);
-   }
-    return () => window.removeEventListener("scroll", handleScroll);
-  });
+  //    window.addEventListener("scroll", handleScroll);
+  //  }
+  //   return () => window.removeEventListener("scroll", handleScroll);
+  // });
   return (
     <div className={cx("container")}>
       <div className={cx("triangle")}>

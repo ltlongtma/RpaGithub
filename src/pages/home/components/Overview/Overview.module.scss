@@ -20,14 +20,14 @@
           font-style: normal;
           font-weight: 600;
           font-size: 4vw;
-          padding-right: 5vw;
+          margin: 1vw 0;
         }
         span {
           line-height: 160%;
           display: block;
           margin-bottom: 1vw;
           font-weight: 400;
-          font-size: 1.3vw;
+          font-size: 1.1vw;
           color: #333333;
         }
       }
@@ -61,24 +61,23 @@
       align-items: center;
       position: relative;
       left: -1vw;
-    width: 115vw;
+      width: 113vw;
       .leftImg {
-        left: -1vw;
+        left: 0vw;
         position: relative;
       }
       .centerImg {
         position: relative;
         left: -3vw;
         .topImage {
-          margin-top: 3%;
         }
         .botImage {
-          margin-top: -8%;
+          margin-top: -11%;
         }
       }
       .rightImg {
         position: relative;
-        left: -5vw;
+        left: -6vw;
       }
     }
   }

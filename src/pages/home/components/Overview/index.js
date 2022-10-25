@@ -12,7 +12,7 @@ import { useEffect } from 'react';
 const cx = className.bind(styles);
 const Overview = () => {
   const handleScroll = () => {
-    window.scrollTo(1001,  2000)
+    // window.scrollTo(0,  2000)
   };
   useEffect(() => {
    if(typeof window !== 'undefined'){
