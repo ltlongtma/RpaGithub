@@ -5,6 +5,7 @@
     position: relative;
     top: 69vw;
     height: 70vw;
+    // overflow: hidden;
     .triangle {
       display: flex;
       flex-direction: row;
@@ -81,7 +82,7 @@
     .maskTop {
       position: absolute;
       top: 0.7vw;
-      right: -2vw;
+      right: 0vw;
       overflow: hidden;
     }
     .maskBottom {
@@ -92,7 +93,7 @@
 
       position: absolute;
 
-      bottom: -20%;
+      bottom: -14vw;
       left: -1.5%;
     }
   }
@@ -178,9 +179,9 @@
     }
     .maskTop {
       position: absolute;
-      top: 0.5vw;
-      right: -2vw;
-      overflow: hidden;
+      top: 1.5vw;
+      right: 1vw;
+      width: 14vw;
       span {
         width: 20vw !important;
         top: -1vw;
