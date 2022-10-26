@@ -4,23 +4,21 @@ import styles from "./casetudy.module.scss";
 import groupCase2 from "../../../../../public/CaseStudy/groupCase2.svg";
 import Image from "next/image";
 
- const Case2 = () => {
+const Case2 = () => {
   return (
     <div className={cx("case")}>
-      <div className={cx("content")}>
-        <div className={cx("content1")}>
+      <div className={cx("content")} style={{ display: "flex" }}>
+        <div className={cx("content1")} style={{ width: "50%" , lineHeight:"2vw"}}>
           <h1>Problem</h1>
           <ul>
-            <li>
-              Complex process, need to manipulate files in different systems​
-            </li>
+            <li style={{marginBottom:"2vw"}}>Complex process, need to manipulate files in different systems​</li>
             <li>Human errors may occur when collating large data daily</li>
           </ul>
         </div>
-        <div className={cx("content2")}>
+        <div className={cx("content2")} style={{ marginTop: 0, width: "50%", lineHeight:"2vw" }}>
           <h1>Result</h1>
           <ul>
-            <li>
+            <li  style={{marginBottom:"2vw"}}>
               <span>12000</span> hours returned in year one
             </li>
             <li>
@@ -35,4 +33,4 @@ import Image from "next/image";
     </div>
   );
 };
-export default Case2
+export default Case2;

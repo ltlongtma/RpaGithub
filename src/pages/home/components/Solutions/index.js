@@ -13,14 +13,18 @@ import Image from "next/image";
 const cx = className.bind(styles);
 
 const Solutions = () => {
-  // const handleScroll = () => {
-  //   window.scrollTo({
-  //     top: 6400,
-  //     behavior: "smooth",
-  //   });
-  // };
+  
+  const handleScroll = () => {
+    // console.log("E >>>", window.pageYOffset);
+    if (window.pageYOffset > 3500) {
+      window.scrollTo({
+        top: 5200,
+        behavior: "smooth",
+      });
+    }
+  };
   return (
-    <div className={cx("solutions")}>
+    <div className={cx("solutions")} onWheel = {handleScroll}>
       <div className={cx("title")}>
         <Image src={Icon_Overview} alt="Icon_Overview" />
         <h1>Sample Projects and Solutions</h1>

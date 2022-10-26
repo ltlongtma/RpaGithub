@@ -10,6 +10,9 @@
       position: relative;
       bottom: -51vw;
       margin-left: 6vw;
+      span {
+        width: 4vw !important;
+      }
 
       h1 {
         width: 9em;
@@ -76,7 +79,7 @@
       bottom: -21vw;
       width: 50vw;
       height: 50vw;
-      left: 49vw;
+      left: 48vw;
     }
   }
 }
@@ -90,8 +93,8 @@
     top: 47vw;
     .title {
       position: relative;
-      bottom: -45vw;
-      margin-left: 6vw;
+      bottom: -50vw;
+      padding-left: 6vw;
       span {
         width: 4vw !important;
       }
@@ -109,7 +112,7 @@
       justify-content: center;
       position: relative;
       justify-content: center;
-      top: 48vw;
+      top: 53vw;
       .item1,
       .item2,
       .item3,
@@ -159,10 +162,10 @@
     }
     .maskBottom {
       position: absolute;
-      bottom: -21vw;
-      width: 50vw;
+      bottom: -24vw;
+      width: 45vw;
       height: 50vw;
-      left: 49vw;
+      left: 52vw;
     }
   }
 }

@@ -15,15 +15,17 @@ import { useEffect } from "react";
 
 const cx = className.bind(styles);
 const HighLight = () => {
-
-  // const handleScroll = () => {
-  //   window.scrollTo({
-  //     top:1100,
-  //     behavior: "smooth"
-  //   })
-  // };
+  const handleScroll = () => {
+    // console.log("E >>>", window.pageYOffset);
+    if (window.pageYOffset > 100) {
+      window.scrollTo({
+        top: 900,
+        behavior: "smooth",
+      });
+    }
+  };
   return (
-    <div className={cx("container")}  >
+    <div className={cx("container")} onWheel={handleScroll}>
       <Image src={backgroundHighLight} alt="tma-logo" priority={true} />
       <div className={cx("card")}>
         <div className={cx("cardItem", "cardItem1")}>
@@ -68,7 +70,7 @@ const HighLight = () => {
       </div>
       <div className={cx("content")}>
         <div className={cx("left")}>
-          <Image src={iconGroupHighLight} alt="iconGroupHighLight" />
+          <Image src={iconGroupHighLight} alt="iconGroupHighLight" priority={true} />
         </div>
         <div className={cx("right")}>
           <h1 className={cx("title")}>TMA RPA Center</h1>
@@ -81,7 +83,7 @@ const HighLight = () => {
         </div>
       </div>
       <div className={cx("menuBar")}>
-        <Image src={TmaLogo} alt="tma-logo" />
+        <Image src={TmaLogo} alt="tma-logo" priority={true} />
         <div className={cx("navigate")}>
           <Button>Home</Button>
           <Button>About TMA</Button>

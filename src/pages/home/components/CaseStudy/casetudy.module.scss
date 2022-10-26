@@ -8,7 +8,9 @@
       width: 100%;
       top: -26%;
       padding-left: 5%;
-
+      span {
+        width: 4vw !important;
+      }
       h1 {
         font-weight: 600;
         font-size: 4vw;
@@ -17,7 +19,7 @@
       }
     }
     .body {
-      padding: 0 5%;
+      margin: 0 5%;
       .tabClassDynamic {
         background: #f1f9ff;
         color: #0094ff;
@@ -33,7 +35,7 @@
       }
       .tabClassStatic {
         color: #9f9f9f;
-        width: 19vw;
+        width: 21vw;
         font-weight: 500;
         font-size: 1vw;
         font-family: "Poppins";
@@ -115,6 +117,7 @@
     position: relative;
     button {
       min-height: 1px;
+      min-width: 1px !important;
       height: 5vw;
     }
     .header {
@@ -134,14 +137,17 @@
     }
     .body {
       padding: 0 5%;
+
       .tabs {
         position: relative;
         top: 8vw;
       }
+
       .tabClassDynamic {
         background: #f1f9ff;
         color: #0094ff;
         width: 15vw;
+        min-width: 1px;
         font-weight: 700;
         font-size: 1vw;
         font-family: "Poppins";
@@ -149,7 +155,7 @@
         display: flex;
         justify-content: space-evenly;
         padding: 0;
-        // margin-right: 2%;
+
         span {
           width: 3vw !important;
         }
@@ -157,11 +163,12 @@
       .tabClassStatic {
         color: #9f9f9f;
         width: 19vw;
+        min-width: 1px;
         font-weight: 500;
         font-size: 1vw;
         font-family: "Poppins";
         font-style: normal;
-        // text-align: start;
+
         display: flex;
         justify-content: center;
         padding: 0;

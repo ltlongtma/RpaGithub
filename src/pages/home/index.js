@@ -7,31 +7,13 @@ import Solutions from "./components/Solutions/index";
 import CaseStudy from "./components/CaseStudy/index";
 import Contact from "./components/Contact/index";
 import styles from "./home.module.scss";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 
 export default function Home() {
-  // gsap.registerPlugin(ScrollTrigger);
-  // useEffect(() => {
-  //   const components = document.querySelectorAll("#component");
-  //   const container = document.querySelector("#container");
-  //   gsap.to(components, {
-  //     // yPercent: -100 * (components.length - 1),
-  //     y: 500,
-  //     ease: "none",
-  //     scrollTrigger: {
-  //       trigger: container,
-  //       pin: true,
-  //       scrub: 1,
-  //       snap: 1 / (components.length - 1),
-  //       end: () => "+=" + container.offsetHeight,
-  //     },
-  //   });
-  // }, []);
- 
   return (
-    <div >
+    <div>
       <Head>
         <title>RPA_TMA</title>
         <link rel="icon" href="/TmaLogo.svg" />
@@ -40,25 +22,25 @@ export default function Home() {
       </Head>
       <main>
         <div className={styles.container} id="container">
-          <div id="component" >
+          <div id="highLight">
             <HighLight />
           </div>
-          <div id="component">
+          <div id="overview">
             <Overview />
           </div>
-          <div id="component">
+          <div id="aiml">
             <AIML />
           </div>
-          <div id="component">
+          <div id="rpaProcess">
             <RpaProcess />
           </div>
-          <div id="component">
+          <div id="solutions">
             <Solutions />
           </div>
-          <div id="component">
+          <div id="caseStudy">
             <CaseStudy />
           </div>
-          <div id="component">
+          <div id="contact">
             <Contact />
           </div>
         </div>

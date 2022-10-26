@@ -10,14 +10,17 @@ import icon2 from "../../../../../public/icons-overview2.svg";
 
 const cx = className.bind(styles);
 const Overview = () => {
-  // const handleScroll = () => {
-  //   window.scrollTo({
-  //     top: 2300,
-  //     behavior: "smooth",
-  //   });
-  // };
+  const handleScroll = () => {
+    // console.log("E >>>", window.pageYOffset);
+    if (window.pageYOffset > 1000) {
+      window.scrollTo({
+        top: 1850,
+        behavior: "smooth",
+      });
+    }
+  };
   return (
-    <div className={cx("container")}>
+    <div className={cx("container")} onWheel={handleScroll}>
       <div className={cx("wrapText")}>
         <div className={cx("logo")}>
           <Image src={icon2} alt="icon2" />
@@ -53,7 +56,6 @@ const Overview = () => {
       <div className={cx("wrapImage")}>
         <div className={cx("leftImg")}>
           <Image src={iconAutomation} alt="icon" />
-
         </div>
         <div className={cx("centerImg")}>
           <div className={cx("topImage")}>
@@ -65,7 +67,6 @@ const Overview = () => {
         </div>
         <div className={cx("rightImg")}>
           <Image src={iconBlueprism} alt="icon" />
-
         </div>
       </div>
     </div>
