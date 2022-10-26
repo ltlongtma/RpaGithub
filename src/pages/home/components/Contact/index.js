@@ -4,6 +4,8 @@ import styles from "./contact.module.scss";
 import Image from "next/image";
 import footerImage from "../../../../../public/footerImage.svg";
 import downloadIcon from "../../../../../public/downloadIcon.svg";
+import maskContact from "../../../../../public/maskContact.svg";
+
 import footerBackground from "../../../../../public/footerBackground.svg";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -16,7 +18,11 @@ const cx = className.bind(styles);
 const Contact = () => {
   return (
     <div className={cx("container")}>
-      <Image src={footerBackground} alt="footerBackground" layout="responsive" />
+      <Image
+        src={footerBackground}
+        alt="footerBackground"
+        layout="responsive"
+      />
       <div className={cx("mainContent")}>
         <div className={cx("left")}>
           <div>Connect with us</div>
@@ -29,7 +35,11 @@ const Contact = () => {
             </IconButton>
 
             <IconButton color="inherit">
-              <Image src={emailIcon} alt="emailIcon" sx={{ width: 32, height: 32 }} />
+              <Image
+                src={emailIcon}
+                alt="emailIcon"
+                sx={{ width: 32, height: 32 }}
+              />
             </IconButton>
             <IconButton color="inherit">
               <PhoneInTalkIcon sx={{ width: 32, height: 32 }} />
@@ -47,14 +57,20 @@ const Contact = () => {
           <Button>Others</Button>
         </div>
       </div>
-      <div className={cx("bottomText")}>TMA Solutions &copy;2022 All Rights Reserved </div>
+      <div className={cx("bottomText")}>
+        TMA Solutions &copy;2022 All Rights Reserved{" "}
+      </div>
       <div className={cx("contact")}>
-        <Image src={footerImage} alt="footerImage" layout="responsive" />
+        <div className={cx("triangle")}></div>
+        <div className={cx("mask")}>
+          <Image src={maskContact} alt="mask" />
+        </div>
         <div className={cx("content")}>
           <h1>Find out how we can help you</h1>
           <div className={cx("content1")}>
-            We&apos; d Love To Hear From You. Please indicate your interest in the form below. TMA
-            will contact you shortly after receiving your request.
+            We&apos; d Love To Hear From You. Please indicate your interest in
+            the form below. TMA will contact you shortly after receiving your
+            request.
           </div>
           <div className={cx("content2")}>
             <Image src={downloadIcon} alt="downloadIcon" />{" "}

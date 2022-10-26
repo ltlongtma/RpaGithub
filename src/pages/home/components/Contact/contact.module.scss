@@ -68,11 +68,29 @@
       line-height: 90px;
     }
     .contact {
+      background-color: #008df3;
       position: absolute;
       justify-content: center;
       width: 88%;
-      top: -68%;
+      height:100%;
+      top: -55%;
       margin: 0 6%;
+      .triangle{
+        width: 0;
+        height: 0;
+        border-right: 0vw solid transparent;
+        border-left: 9vw solid transparent;
+        border-top: 6vw solid white;
+        z-index: 1;
+        position: absolute;
+        right: 0;
+      }
+      .mask{
+        position: absolute;
+        right: 0;
+        bottom: -0.3vw;
+        width: 37vw;
+      }
       .content {
         position: absolute;
         top: 0;
@@ -94,7 +112,7 @@
           top: 36%;
           width: 57vw;
           font-size: 1.5vw;
-          line-height: 30px;
+          line-height: 2vw;
           text-align: center;
           color: #ffffff;
         }
@@ -213,11 +231,30 @@
       line-height: 3vw;
     }
     .contact {
+      background-color: #008df3;
+
       position: absolute;
       justify-content: center;
       width: 88%;
+      height: 100%;
       top: -68%;
       margin: 0 6%;
+      .triangle{
+        width: 0;
+        height: 0;
+        border-right: 0vw solid transparent;
+        border-left: 9vw solid transparent;
+        border-top: 6vw solid white;
+        z-index: 1;
+        position: absolute;
+        right: 0;
+      }
+      .mask{
+        position: absolute;
+        right: 0;
+        bottom: -1.5vw;
+        width: 37vw;
+      }
       .content {
         position: absolute;
         top: 0;

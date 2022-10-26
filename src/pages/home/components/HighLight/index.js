@@ -16,7 +16,7 @@ import { useEffect } from "react";
 const cx = className.bind(styles);
 const HighLight = () => {
   const handleScroll = () => {
-    // console.log("E >>>", window.pageYOffset);
+  
     if (window.pageYOffset > 100) {
       window.scrollTo({
         top: 900,
