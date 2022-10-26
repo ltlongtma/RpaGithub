@@ -113,10 +113,14 @@
     // border: solid 1px red;
     top: 55vw;
     position: relative;
+    button {
+      min-height: 1px;
+      height: 5vw;
+    }
     .header {
       position: relative;
       width: 100%;
-      top: -26%;
+      top: 7vw;
       padding-left: 5%;
       span {
         width: 6vw !important;
@@ -130,6 +134,10 @@
     }
     .body {
       padding: 0 5%;
+      .tabs {
+        position: relative;
+        top: 8vw;
+      }
       .tabClassDynamic {
         background: #f1f9ff;
         color: #0094ff;
@@ -142,9 +150,8 @@
         justify-content: space-evenly;
         padding: 0;
         // margin-right: 2%;
-        span{
+        span {
           width: 3vw !important;
-
         }
       }
       .tabClassStatic {

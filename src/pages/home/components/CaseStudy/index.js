@@ -37,7 +37,7 @@ export default function CaseStudy() {
       <div className={cx("body")}>
         <Box sx={{ width: "100%", typography: "body1" }}>
           <TabContext value={value}>
-            <Box sx={{ marginTop: "6%" }}>
+            <Box sx={{ marginTop: "6%" }} className={cx("tabs")}>
               <TabList
                 onChange={handleChange}
                 aria-label="tab"

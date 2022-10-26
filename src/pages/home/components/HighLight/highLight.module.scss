@@ -74,6 +74,7 @@
           margin: 0;
           left: 2%;
           height: 2vw;
+
           &:hover {
             background: linear-gradient(
               213.12deg,
@@ -220,6 +221,8 @@
       }
       span {
         margin: 1% 0;
+        position: relative;
+        left: 2vw;
       }
 
       .navigate {
@@ -241,6 +244,8 @@
           margin: 0;
           left: 2%;
           height: 2vw;
+          min-width: 1px !important;
+
           &:hover {
             background: linear-gradient(
               213.12deg,
@@ -270,6 +275,8 @@
           border: 3px solid rgba(64, 161, 255, 1);
           right: 10%;
           margin: 1% 0;
+          padding: 1vw !important;
+          min-width: 1px;
         }
       }
     }
