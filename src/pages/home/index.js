@@ -46,9 +46,9 @@ export default function Home() {
           <div id="component">
             <Overview />
           </div>
-          <div id="component">
+          {/* <div id="component">
             <AIML />
-          </div>
+          </div> */}
           <div id="component">
             <RpaProcess />
           </div>

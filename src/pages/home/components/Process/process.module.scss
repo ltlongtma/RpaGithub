@@ -144,3 +144,158 @@
     }
   }
 }
+@media screen and (max-width: 1023px) {
+  .wrap {
+    // border: 1px solid red;
+    position: relative;
+    top: 78vw;
+    width: 100%;
+
+    .title {
+      text-align: center;
+      margin-bottom: 3%;
+      span {
+        width: 7vw !important;
+      }
+      h1 {
+        font-weight: 600;
+        font-size: 4vw;
+        color: #333333;
+      }
+    }
+    .process1 {
+      display: flex;
+      justify-content: center;
+      margin: 0 4%;
+      position: relative;
+      left: 0.7%;
+      .step1,
+      .step2,
+      .step3,
+      .step4 {
+        width: 22vw;
+        height: 20vw;
+        h1 {
+          font-weight: 600;
+          font-size: 1.5vw;
+          text-align: center;
+          text-transform: uppercase;
+          color: white;
+          top: 12%;
+          position: absolute;
+          width: 100%;
+        }
+        .content1,
+        .content2,
+        .content3,
+        .content4 {
+          position: absolute;
+          top: 47%;
+          left: 2%;
+
+          font-weight: 400;
+          font-size: 1vw;
+          color: #001835;
+          text-indent: -3%;
+          width: 17vw;
+          ul {
+            list-style: none;
+            padding-left: -2%;
+            padding: 0;
+            margin-left: 3vw;
+            li {
+              padding-bottom: 6%;
+            }
+            li:before {
+              content: "\2022";
+              color: #0094ff;
+              font-weight: bold;
+              display: inline-block;
+              width: 1.5em;
+              margin-left: -1em;
+            }
+          }
+        }
+      }
+
+      .step1 {
+        background: url(../../../../../public/step1Frame.svg);
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+      .step2 {
+        background: url(../../../../../public/step2Frame.svg);
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+      .step3 {
+        background: url(../../../../../public/step3Frame.svg);
+
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+      .step4 {
+        background: url(../../../../../public/step4Frame.svg);
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+    .arrowIcon {
+      position: relative;
+      left: 9vw;
+      bottom: -21vw;
+      width: 4vw;
+    }
+    .process2 {
+      display: flex;
+      height: 25vw;
+      justify-content: center;
+      .frame {
+        position: relative;
+        width: 21vw;
+        height: 17vw;
+        background: #f4f8ff;
+        opacity: 0.7;
+        top: 6vw;
+        margin: 0 0.7%;
+
+        .img {
+          align-items: center;
+          display: flex;
+          width: 21vw;
+          height: 17vw;
+          justify-content: center;
+          span{
+            width: 10vw !important;
+          }
+        }
+
+        ul {
+          list-style: none;
+          position: absolute;
+          top: 8%;
+          left: 10%;
+          padding: 0;
+          margin-left: 3vw;
+          li {
+            padding-bottom: 10%;
+            font-weight: 400;
+            font-size: 1vw;
+          }
+          li:before {
+            content: "\2022";
+            color: #0094ff;
+            font-weight: bold;
+            display: inline-block;
+            width: 1.5em;
+            margin-left: -1em;
+          }
+        }
+      }
+    }
+  }
+}

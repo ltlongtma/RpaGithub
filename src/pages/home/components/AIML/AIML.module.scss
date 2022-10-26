@@ -98,3 +98,103 @@
     }
   }
 }
+@media screen and (max-width: 1023px) {
+  .container {
+    // border: solid 1px red;
+    background: #fafafa;
+    position: relative;
+    top: 69vw;
+    height: 70vw;
+    overflow: hidden;
+    .triangle {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      .triangle-left {
+        width: 0;
+        height: 0;
+        border-top: 0px solid transparent;
+        border-bottom: 90px solid transparent;
+        border-left: 93vw solid white;
+      }
+
+      .triangle-right {
+        width: 0;
+        height: 0;
+        border-left: 6vw solid transparent;
+        border-right: 0vw solid transparent;
+        border-top: 10vw solid white;
+        z-index: 1;
+      }
+    }
+    .AIMLContent {
+      position: relative;
+      .head {
+        text-align: center;
+        width: 40%;
+        margin: 0% auto;
+        img {
+          width: 6vw;
+          height: 6vw;
+        }
+        .title {
+          color: #333333;
+          font-size: 3.5vw;
+        }
+      }
+      .body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        span {
+          width: 53vw !important;
+          height: 37vw !important;
+        }
+        .experience {
+          h2 {
+            font-size: 2.5vw;
+            align-items: center;
+            color: #090909;
+
+            .span {
+              color: #0094ff;
+            }
+            .overviewContent {
+              font-size: 20px;
+              font-weight: 500;
+            }
+          }
+          .expandTop10 {
+            align-items: center;
+            margin-top: 2%;
+          }
+          .expand400 {
+            margin-left: 5%;
+            margin-top: 4%;
+            width: 100%;
+          }
+          .expand10Years {
+            margin-top: 1%;
+          }
+        }
+      }
+    }
+    .maskTop {
+      position: absolute;
+      top: 0.5vw;
+      right: -2vw;
+      overflow: hidden;
+    }
+    .maskBottom {
+      position: absolute;
+
+      width: 50%;
+      height: auto;
+
+      position: absolute;
+
+      bottom: -20%;
+      left: -1.5%;
+    }
+  }
+}

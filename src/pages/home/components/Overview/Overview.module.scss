@@ -82,3 +82,87 @@
     }
   }
 }
+@media screen and (max-width: 1023px) {
+  .container {
+    // border: red solid 1px;
+    position: relative;
+    top: 62vw;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    .wrapText {
+      width: 100%;
+      margin-left: 6vw;
+      margin-right: 6vw;
+      .logo {
+        width: 4vw;
+      }
+      .description {
+        .title {
+          color: #333333;
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 4vw;
+          margin: 1vw 0;
+        }
+        span {
+          line-height: 160%;
+          display: block;
+          margin-bottom: 1vw;
+          font-weight: 400;
+          font-size: 1.1vw;
+          color: #333333;
+        }
+      }
+      .experience {
+        display: flex;
+
+        .expand {
+          margin-right: 100px;
+          h2 {
+            height: 3.5vw;
+            color: #090909;
+            font-size: 2.5vw;
+            font-family: "Poppins";
+            font-style: normal;
+            margin-bottom: 0;
+
+            span {
+              color: #0094ff;
+            }
+          }
+          .overviewContent {
+            font-size: 1.2vw;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+    .wrapImage {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      position: relative;
+      left: -1vw;
+      width: 113vw;
+      .leftImg {
+        left: 0vw;
+        position: relative;
+      }
+      .centerImg {
+        position: relative;
+        left: -3vw;
+        .topImage {
+        }
+        .botImage {
+          margin-top: -11%;
+        }
+      }
+      .rightImg {
+        position: relative;
+        left: -6vw;
+      }
+    }
+  }
+}

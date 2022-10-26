@@ -1,129 +1,278 @@
-.container {
-  position: relative;
-  top: 76vw;
-  .mainContent {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    top: 60%;
-    position: absolute;
-    color: white;
-    .left {
-      width: 30%;
-      margin-left: 6%;
+@media screen and (min-width: 1024px) {
+  .container {
+    position: relative;
+    top: 76vw;
+    .mainContent {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      top: 60%;
+      position: absolute;
+      color: white;
+      .left {
+        width: 30%;
+        margin-left: 6%;
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1vw;
+        .icons {
+          display: flex;
+          justify-content: space-between;
+          width: 16vw;
+          left: -1vw;
+          position: relative;
+          button {
+            svg,
+            span {
+              width: 2vw !important;
+            }
+          }
+        }
+      }
+      .right {
+        display: flex;
+        margin-right: 3%;
+        justify-content: space-evenly;
+        width: 70%;
+        button {
+          font-family: "THICCCBOI";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 1vw;
+          text-transform: uppercase;
+          color: white;
+          padding: 1vw;
+          height: 50%;
+
+          &:hover {
+            background: linear-gradient(
+              209.47deg,
+              #396afc 38.93%,
+              #0094ff 81.95%
+            );
+          }
+        }
+      }
+    }
+    .bottomText {
+      color: white;
+
+      position: absolute;
+      right: 6%;
+      bottom: 0;
       font-family: "Poppins";
       font-style: normal;
       font-weight: 400;
       font-size: 1vw;
-      .icons {
-        display: flex;
-        justify-content: space-between;
-        width: 16vw;
-        top: 26%;
-        position: relative;
-        // button{
-        //   width: 1vw;
-        // }
-      }
+      line-height: 90px;
     }
-    .right {
-      display: flex;
-      margin-right: 3%;
-      justify-content: space-evenly;
-      width: 70%;
-      button {
-        font-family: "THICCCBOI";
-        font-style: normal;
-        font-weight: 600;
-        font-size: 1vw;
-        text-transform: uppercase;
-        color: white;
-        padding: 1vw;
-        height: 50%;
-
-        &:hover {
-          background: linear-gradient(209.47deg, #396afc 38.93%, #0094ff 81.95%);
-        }
-      }
-    }
-  }
-  .bottomText {
-    color: white;
-
-    position: absolute;
-    right: 6%;
-    bottom: 0;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1vw;
-    line-height: 90px;
-  }
-  .contact {
-    position: absolute;
-    justify-content: center;
-    width: 88%;
-    top: -68%;
-    margin: 0 6%;
-    .content {
+    .contact {
       position: absolute;
-      top: 0;
-      display: flex;
-      flex-direction: column;
-      // justify-content: space-evenly;
-      width: 100%;
-      height: 100%;
-      align-items: center;
-      color: white;
-      h1 {
+      justify-content: center;
+      width: 88%;
+      top: -68%;
+      margin: 0 6%;
+      .content {
         position: absolute;
-        top: 5%;
-        font-size: 3vw;
-        font-weight: 600;
-      }
-      .content1 {
-        position: absolute;
-        top: 36%;
-        width: 57vw;
-        font-size: 1.5vw;
-        line-height: 30px;
-        text-align: center;
-        color: #ffffff;
-      }
-      .content2 {
-        position: absolute;
-        top: 53%;
-        font-weight: 400;
-        font-size: 2vw;
-        line-height: 90px;
-        span {
-          overflow: visible !important;
-          width: 3vw !important;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        // justify-content: space-evenly;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        color: white;
+        h1 {
+          position: absolute;
+          top: 5%;
+          font-size: 3vw;
+          font-weight: 600;
         }
-        img {
-          top: 1vw !important;
-          width: 2vw !important;
+        .content1 {
+          position: absolute;
+          top: 36%;
+          width: 57vw;
+          font-size: 1.5vw;
+          line-height: 30px;
+          text-align: center;
+          color: #ffffff;
         }
-        a {
-          text-decoration: underline;
+        .content2 {
+          position: absolute;
+          top: 53%;
+          font-weight: 400;
+          font-size: 2vw;
+          line-height: 90px;
+          span {
+            overflow: visible !important;
+            width: 3vw !important;
+          }
+          img {
+            top: 1vw !important;
+            width: 2vw !important;
+          }
+          a {
+            text-decoration: underline;
+          }
+        }
+      }
+      .buttonContact {
+        button {
+          width: 11vw;
+          height: 4vw;
+          color: black;
+          background: #ffffff;
+          font-weight: 600;
+          font-size: 1vw;
+          text-transform: none;
+          font-family: "Poppins";
+          font-style: normal;
+          border: 3px solid rgba(64, 161, 255, 1);
+          position: absolute;
+          top: 75%;
+          left: 43%;
         }
       }
     }
-    .buttonContact {
-      button {
-        width: 11vw;
-        height: 4vw;
-        color: black;
-        background: #ffffff;
-        font-weight: 600;
-        font-size: 1vw;
-        text-transform: none;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .container {
+    position: relative;
+    top: 76vw;
+    .mainContent {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      top: 60%;
+      position: absolute;
+      color: white;
+      .left {
+        width: 100%;
+        margin-left: 6%;
         font-family: "Poppins";
         font-style: normal;
-        border: 3px solid rgba(64, 161, 255, 1);
+        font-weight: 400;
+        font-size: 1vw;
+        .icons {
+          display: flex;
+          justify-content: space-between;
+          width: 16vw;
+          left: -1vw;
+          position: relative;
+          button {
+            svg,
+            span {
+              width: 2vw !important;
+            }
+          }
+        }
+      }
+      .right {
+        display: inline-table;
+        justify-content: space-evenly;
+        width: 100%;
+        position: relative;
+        top: -3vw;
+        right: 2vw;
+        height: 1vw !important;
+        button {
+          font-family: "THICCCBOI";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 1vw;
+          text-transform: uppercase;
+          color: white;
+          padding: 1vw;
+          height: 50%;
+
+          &:hover {
+            background: linear-gradient(
+              209.47deg,
+              #396afc 38.93%,
+              #0094ff 81.95%
+            );
+          }
+        }
+      }
+    }
+    .bottomText {
+      color: white;
+
+      position: absolute;
+      right: 6%;
+      bottom: 0;
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1vw;
+      line-height: 3vw;
+    }
+    .contact {
+      position: absolute;
+      justify-content: center;
+      width: 88%;
+      top: -68%;
+      margin: 0 6%;
+      .content {
         position: absolute;
-        top: 75%;
-        left: 43%;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        // justify-content: space-evenly;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        color: white;
+        h1 {
+          position: absolute;
+          top: 5%;
+          font-size: 3vw;
+          font-weight: 600;
+        }
+        .content1 {
+          position: absolute;
+          top: 36%;
+          width: 57vw;
+          font-size: 1.5vw;
+          text-align: center;
+          color: #ffffff;
+        }
+        .content2 {
+          position: absolute;
+          top: 59%;
+          font-weight: 400;
+          font-size: 2vw;
+          span {
+            overflow: visible !important;
+            width: 3vw !important;
+          }
+          img {
+            top: 1vw !important;
+            width: 2vw !important;
+          }
+          a {
+            text-decoration: underline;
+          }
+        }
+      }
+      .buttonContact {
+        button {
+          width: 14vw;
+          height: 5vw;
+          color: black;
+          background: #ffffff;
+          font-weight: 600;
+          font-size: 1vw;
+          text-transform: none;
+          font-family: "Poppins";
+          font-style: normal;
+          border: 3px solid rgba(64, 161, 255, 1);
+          position: absolute;
+          top: 75%;
+          left: 43%;
+        }
       }
     }
   }
