@@ -63,22 +63,36 @@
       left: -1vw;
       width: 113vw;
       top: 2vw;
+
       .leftImg {
         left: 0vw;
         position: relative;
+        &:hover {
+          transform: scale(1.3);
+          z-index: 1;
+        }
       }
       .centerImg {
         position: relative;
         left: -3vw;
         .topImage {
+          &:hover {
+            transform: scale(1.3);
+          }
         }
         .botImage {
           margin-top: -11%;
+          &:hover {
+            transform: scale(1.3);
+          }
         }
       }
       .rightImg {
-        position: relative;
         left: -6vw;
+        position: relative;
+        &:hover {
+          transform: scale(1.3);
+        }
       }
     }
   }
@@ -92,7 +106,7 @@
     height: 100%;
     display: flex;
     .wrapText {
-      width: 100%;
+      // width: 100%;
       margin-left: 6vw;
       margin-right: 6vw;
       .logo {
@@ -120,7 +134,7 @@
         display: flex;
 
         .expand {
-          margin-right: 100px;
+          margin-right: 10vw;
           h2 {
             height: 3.5vw;
             color: #090909;
@@ -128,6 +142,7 @@
             font-family: "Poppins";
             font-style: normal;
             margin-bottom: 0;
+            width: 10vw;
 
             span {
               color: #0094ff;
@@ -142,18 +157,22 @@
     }
     .wrapImage {
       display: flex;
-      width: 100%;
+      top: 4vw;
       align-items: center;
       position: relative;
-      left: -1vw;
-      width: 113vw;
+      // left: -11vw;
       .leftImg {
         left: 0vw;
         position: relative;
+        min-width: 10vw;
+        width: 15vw;
       }
       .centerImg {
         position: relative;
         left: -3vw;
+        min-width: 10vw;
+        width: 15vw;
+
         .topImage {
         }
         .botImage {
@@ -163,6 +182,8 @@
       .rightImg {
         position: relative;
         left: -6vw;
+        min-width: 10vw;
+        width: 15vw;
       }
     }
   }

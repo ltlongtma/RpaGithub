@@ -15,27 +15,15 @@ import { useEffect } from "react";
 
 const cx = className.bind(styles);
 const HighLight = () => {
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     window.scrollTo({
-  //       top: 1000,
-  //       behavior: "smooth",
-  //     });
-  //   };
-  //   if (typeof window !== "undefined") {
-  //     window.addEventListener("scroll", handleScroll);
 
-  //     return () => window.removeEventListener("scroll", handleScroll);
-  //   }
-  // }, []);
-  const handleScroll = () => {
-    window.scrollTo({
-      top:1100,
-      behavior: "smooth"
-    })
-  };
+  // const handleScroll = () => {
+  //   window.scrollTo({
+  //     top:1100,
+  //     behavior: "smooth"
+  //   })
+  // };
   return (
-    <div className={cx("container")} onWheel={handleScroll} >
+    <div className={cx("container")}  >
       <Image src={backgroundHighLight} alt="tma-logo" priority={true} />
       <div className={cx("card")}>
         <div className={cx("cardItem", "cardItem1")}>

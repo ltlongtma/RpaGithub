@@ -3,22 +3,21 @@ import styles from "./Overview.module.scss";
 import className from "classnames/bind";
 import Image from "next/image";
 import iconAutomation from "../../../../../public/Overview-Automation.svg";
-import iconBlueprism from "../../../../../public/Overview-Blueprism.png";
-import iconPowerAutomate from "../../../../../public/Overview-PowerAutomate.png";
-import iconUIpath from "../../../../../public/Overview-UIpath.png";
-import icon2 from "../../../../../public/icons-overview2.png";
-import { useEffect } from "react";
+import iconBlueprism from "../../../../../public/Overview-Blueprism.svg";
+import iconPowerAutomate from "../../../../../public/Overview-PowerAutomate.svg";
+import iconUIpath from "../../../../../public/Overview-UIpath.svg";
+import icon2 from "../../../../../public/icons-overview2.svg";
 
 const cx = className.bind(styles);
 const Overview = () => {
-  const handleScroll = () => {
-    window.scrollTo({
-      top: 2300,
-      behavior: "smooth",
-    });
-  };
+  // const handleScroll = () => {
+  //   window.scrollTo({
+  //     top: 2300,
+  //     behavior: "smooth",
+  //   });
+  // };
   return (
-    <div className={cx("container")} onWheel={handleScroll}>
+    <div className={cx("container")}>
       <div className={cx("wrapText")}>
         <div className={cx("logo")}>
           <Image src={icon2} alt="icon2" />
@@ -53,7 +52,8 @@ const Overview = () => {
       </div>
       <div className={cx("wrapImage")}>
         <div className={cx("leftImg")}>
-          <Image src={iconBlueprism} alt="icon" />
+          <Image src={iconAutomation} alt="icon" />
+
         </div>
         <div className={cx("centerImg")}>
           <div className={cx("topImage")}>
@@ -64,7 +64,8 @@ const Overview = () => {
           </div>
         </div>
         <div className={cx("rightImg")}>
-          <Image src={iconAutomation} alt="icon" />
+          <Image src={iconBlueprism} alt="icon" />
+
         </div>
       </div>
     </div>

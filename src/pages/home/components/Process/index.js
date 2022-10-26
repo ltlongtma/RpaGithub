@@ -1,21 +1,21 @@
 import React from "react";
 import arrowIcon from "../../../../../public/arrowIcon.svg";
 import iconGroup from "../../../../../public/iconGroup.svg";
-import Icon_Overview from "../../../../../public/Icon_Overview.png";
+import Icon_Overview from "../../../../../public/icons-overview2.svg";
 import Image from "next/image";
 import className from "classnames/bind";
 import styles from "./process.module.scss";
 
 const cx = className.bind(styles);
- const RpaProcess = () => {
-  const handleScroll = () => {
-    window.scrollTo({
-      top: 5150,
-      behavior: "smooth",
-    });
-  };
+const RpaProcess = () => {
+  // const handleScroll = () => {
+  //   window.scrollTo({
+  //     top: 5150,
+  //     behavior: "smooth",
+  //   });
+  // };
   return (
-    <div className={cx("wrap")} onWheel = {handleScroll}>
+    <div className={cx("wrap")}>
       <div className={cx("title")}>
         <Image src={Icon_Overview} alt="Icon_Overview" />
         <h1>RPA Process</h1>
@@ -102,4 +102,4 @@ const cx = className.bind(styles);
     </div>
   );
 };
-export default RpaProcess
+export default RpaProcess;

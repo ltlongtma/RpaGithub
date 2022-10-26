@@ -9,15 +9,15 @@ import maskTopAIML from "../../../../../public/maskTopAIML.svg";
 
 const cx = className.bind(styles);
 const AIML = () => {
-  const handleScroll = () => {
-    window.scrollTo({
-      top: 3700,
-      behavior: "smooth",
-    });
-  };
+  // const handleScroll = () => {
+  //   window.scrollTo({
+  //     top: 3700,
+  //     behavior: "smooth",
+  //   });
+  // };
 
   return (
-    <div className={cx("container")} onWheel={handleScroll}>
+    <div className={cx("container")}>
       <div className={cx("triangle")}>
         <div className={cx("triangle-left")}></div>
         <div className={cx("triangle-right")}></div>

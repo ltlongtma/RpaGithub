@@ -1,28 +1,27 @@
 import className from "classnames/bind";
 import styles from "./solution.module.scss";
 import backgroundSolutions from "../../../../../public/backgroundSolutions.svg";
-import Icon_Overview from "../../../../../public/Icon_Overview.png";
-import IconLogistic from "../../../../../public/IconLogistic.png";
-import IconFinance from "../../../../../public/IconFinance.png";
-import IconEcommerce from "../../../../../public/IconEcommerce.png";
-import IconHumanResource from "../../../../../public/IconHumanResource.png";
+import Icon_Overview from "../../../../../public/icons-overview2.svg";
+import IconLogistic from "../../../../../public/IconLogistic.svg";
+import IconFinance from "../../../../../public/IconFinance.svg";
+import IconEcommerce from "../../../../../public/IconEcommerce.svg";
+import IconHumanResource from "../../../../../public/IconHumanResource.svg";
 import MaskGroup from "../../../../../public/MaskGroup.png";
 MaskGroup;
 import Image from "next/image";
 
 const cx = className.bind(styles);
 
- const Solutions = () => {
-  const handleScroll = () => {
-    window.scrollTo({
-      top: 6400,
-      behavior: "smooth",
-    });
-  };
+const Solutions = () => {
+  // const handleScroll = () => {
+  //   window.scrollTo({
+  //     top: 6400,
+  //     behavior: "smooth",
+  //   });
+  // };
   return (
-    <div className={cx("solutions")} onWheel ={handleScroll}>
+    <div className={cx("solutions")}>
       <div className={cx("title")}>
-
         <Image src={Icon_Overview} alt="Icon_Overview" />
         <h1>Sample Projects and Solutions</h1>
       </div>
