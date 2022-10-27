@@ -24,10 +24,9 @@ const HighLight = () => {
     }
   };
   return (
-    <div>
-      <div className={cx("container")}>
-        {/* <Image src={backgroundHighLight} alt="tma-logo" priority={true} /> */}
-        {/* <div className={cx("card")}>
+    <div className={cx("container")}>
+  
+      <div className={cx("card")}>
         <div className={cx("cardItem", "cardItem1")}>
           <div className={cx("cardIcon")}>
             <Image src={energyControlIcon} alt="energyControlIcon" />
@@ -67,58 +66,55 @@ const HighLight = () => {
             <p>Reduce human effort</p>
           </div>
         </div>
-      </div> */}
-        {/* <div className={cx("triangle")}>
-        <div classname={cx("triangleLeft")}></div>
-        <div classname={cx("triangleBottom")}></div>
-        <div classname={cx("triangleRight")}></div>
+      </div>
 
-      </div> */}
-        <div className={cx("content")}>
-          <div className={cx("left")}>
-            <Image src={iconGroupHighLight} alt="iconGroupHighLight" priority={true} />
-          </div>
-          <div className={cx("right")}>
-            <h1 className={cx("title")}>TMA RPA Center</h1>
-            <div className={cx("body")}>
-              <p>Everything can be automated</p>
-              <p>Arm all of your employees with virtual assistant</p>
-              <p>Propelling digital transformation forward</p>
-              <p>Your processes are now more intelligent with AI</p>
-            </div>
+      <div className={cx("content")}>
+        <div className={cx("left")}>
+          <Image
+            src={iconGroupHighLight}
+            alt="iconGroupHighLight"
+            priority={true}
+          />
+        </div>
+        <div className={cx("right")}>
+          <h1 className={cx("title")}>TMA RPA Center</h1>
+          <div className={cx("body")}>
+            <p>Everything can be automated</p>
+            <p>Arm all of your employees with virtual assistant</p>
+            <p>Propelling digital transformation forward</p>
+            <p>Your processes are now more intelligent with AI</p>
           </div>
         </div>
-        <div className={cx("menuBar")}>
-          <Image src={TmaLogo} alt="tma-logo" priority={true} />
-          <div className={cx("navigate")}>
-            <Button>Home</Button>
-            <Button>About TMA</Button>
-            <Button>
-              Solutions
-              <KeyboardArrowUpIcon />
-            </Button>
-            <Button>
-              Industries
-              <KeyboardArrowDownIcon />
-            </Button>
-            <Button>
-              Technologies
-              <KeyboardArrowDownIcon />
-            </Button>
-            <Button>News</Button>
-            <Button>Others</Button>
-          </div>
-          <div className={cx("buttonContact")}>
-            <Button variant="contained">Contact Us</Button>
-          </div>
+      </div>
+      <div className={cx("menuBar")}>
+        <Image src={TmaLogo} alt="tma-logo" priority={true} />
+        <div className={cx("navigate")}>
+          <Button>Home</Button>
+          <Button>About TMA</Button>
+          <Button>
+            Solutions
+            <KeyboardArrowUpIcon />
+          </Button>
+          <Button>
+            Industries
+            <KeyboardArrowDownIcon />
+          </Button>
+          <Button>
+            Technologies
+            <KeyboardArrowDownIcon />
+          </Button>
+          <Button>News</Button>
+          <Button>Others</Button>
         </div>
-        <div className={cx("triangle")}>
+        <div className={cx("buttonContact")}>
+          <Button variant="contained">Contact Us</Button>
+        </div>
+      </div>
+      <div className={cx("triangle")}>
         <div className={cx("triangleLeft")}></div>
         <div className={cx("triangleBottom")}></div>
         <div className={cx("triangleRight")}></div>
       </div>
-      </div>
-    
     </div>
   );
 };

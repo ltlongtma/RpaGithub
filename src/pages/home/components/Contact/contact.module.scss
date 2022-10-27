@@ -153,9 +153,8 @@
       }
     }
     .maskFooter {
-      position: relative;
-      bottom: -5vw;
-      // width: 99vw;
+      position: absolute;
+         bottom: 0; 
     }
   }
 }

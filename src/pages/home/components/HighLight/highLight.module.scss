@@ -18,6 +18,9 @@
         display: flex;
         justify-content: center;
         margin-left: 14%;
+        span{
+          width:41vw !important;
+        }
       }
       .right {
         // border:red solid 1px;
@@ -78,7 +81,11 @@
           height: 2vw;
 
           &:hover {
-            background: linear-gradient(213.12deg, #396afc 39.51%, #0094ff 80.26%);
+            background: linear-gradient(
+              213.12deg,
+              #396afc 39.51%,
+              #0094ff 80.26%
+            );
             border-radius: 7%;
           }
           svg {
@@ -109,6 +116,7 @@
       position: absolute;
       bottom: -2%;
       justify-content: center;
+      z-index: 2;
       .cardItem {
         position: relative;
         left: 3%;
@@ -161,35 +169,18 @@
         }
       }
     }
-    // .triangle {
-    //   border: solid red 1px;
-    //   // width: 100%;
-    //   // height: 100%;
-    //   .triangleLeft {
-    //   }
-    //   .triangleBottom {
-    //     width: 0;
-    //     height: 0;
-    //     border-bottom: 0vw solid transparent;
-    //     border-top: 7vw solid transparent;
-    //     border-right: 100vw solid white;
-    //     border-left: 0vw
-    //   }
-    //   .triangleRight {
-    //   }
-    // }
+
     .triangle {
-   
       position: absolute;
       top: 38.5vw;
       width: 100%;
       height: 13vw;
-      border: 1px solid red;
+      overflow: hidden;
       .triangleLeft {
         position: absolute;
         border-bottom: 0vw solid transparent;
-        border-top: 9vw solid transparent;
-        border-left: 6vw solid #841313;
+        border-top: 10vw solid transparent;
+        border-left: 8vw solid white;
         border-right: 0vw solid transparent;
         width: 0;
         height: 0;
@@ -202,7 +193,7 @@
         height: 0;
         border-bottom: 0vw solid transparent;
         border-top: 6vw solid transparent;
-        border-right: 100vw solid #841313;
+        border-right: 100vw solid white;
       }
       .triangleRight {
         position: absolute;
@@ -210,16 +201,17 @@
         height: 0;
         border-bottom: 0vw solid transparent;
         border-top: 9vw solid transparent;
-        border-right: 5vw solid #841313;
+        border-right: 5vw solid white;
         border-left: 95vw solid transparent;
       }
     }
   }
- 
 }
 @media screen and (max-width: 1023px) {
   .container {
-    // border: solid 1px red;
+    background: linear-gradient(213.12deg, #396afc 39.51%, #0094ff 80.26%);
+    width: 100%;
+    height: 51vw;
     position: absolute;
     .content {
       position: absolute;
@@ -299,7 +291,11 @@
           min-width: 1px !important;
 
           &:hover {
-            background: linear-gradient(213.12deg, #396afc 39.51%, #0094ff 80.26%);
+            background: linear-gradient(
+              213.12deg,
+              #396afc 39.51%,
+              #0094ff 80.26%
+            );
             border-radius: 7%;
           }
           svg {
@@ -334,6 +330,7 @@
       position: absolute;
       bottom: -4%;
       justify-content: center;
+      z-index: 2;
       .cardItem {
         position: relative;
         left: 3%;
@@ -384,6 +381,42 @@
           position: relative;
           top: -0.4vw;
         }
+      }
+    }
+    .triangle {
+      position: absolute;
+      top: 38.5vw;
+      width: 100%;
+      height: 13vw;
+      overflow: hidden;
+
+      .triangleLeft {
+        position: absolute;
+        border-bottom: 0vw solid transparent;
+        border-top: 10vw solid transparent;
+        border-left: 8vw solid white;
+        border-right: 0vw solid transparent;
+        width: 0;
+        height: 0;
+        bottom: 0vw;
+      }
+      .triangleBottom {
+        position: absolute;
+        bottom: 0;
+        width: 0;
+        height: 0;
+        border-bottom: 0vw solid transparent;
+        border-top: 6vw solid transparent;
+        border-right: 100vw solid white;
+      }
+      .triangleRight {
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-bottom: 0vw solid transparent;
+        border-top: 9vw solid transparent;
+        border-right: 5vw solid white;
+        border-left: 95vw solid transparent;
       }
     }
   }
