@@ -37,7 +37,7 @@ export default function CaseStudy() {
       <div className={cx("body")}>
         <Box sx={{ width: "100%", typography: "body1" }}>
           <TabContext value={value}>
-            <Box sx={{ marginTop: "6%" }} className={cx("tabs")}  >
+            <Box sx={{ marginTop: "6%" }} className={cx("tabs")}>
               <TabList
                 onChange={handleChange}
                 aria-label="tab"
@@ -91,19 +91,19 @@ export default function CaseStudy() {
                 />
               </TabList>
             </Box>
-            <TabPanel value="1">
+            <TabPanel value="1" className={cx("tabPanel")}>
               <Case1 />
             </TabPanel>
-            <TabPanel value="2">
+            <TabPanel value="2" className={cx("tabPanel")} >
               <Case2 />
             </TabPanel>
-            <TabPanel value="3">
+            <TabPanel value="3" className={cx("tabPanel")}>
               <Case3 />
             </TabPanel>
-            <TabPanel value="4">
+            <TabPanel value="4" className={cx("tabPanel")}>
               <Case4 />
             </TabPanel>
-            <TabPanel value="5">
+            <TabPanel value="5" className={cx("tabPanel")}>
               <Case5 />
             </TabPanel>
           </TabContext>

@@ -310,12 +310,14 @@
           text-transform: none;
           font-family: "Poppins";
           font-style: normal;
-          border: 3px solid rgba(64, 161, 255, 1);
+          border: 1vw solid rgba(64, 161, 255, 1);
           position: absolute;
           top: 75%;
           left: 43%;
           min-width: 1px;
-          width: 1vw;
+          width: 13vw;
+          min-height: 1px;
+          padding: 0;
         }
       }
     }
