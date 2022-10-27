@@ -16,7 +16,6 @@ import { useEffect } from "react";
 const cx = className.bind(styles);
 const HighLight = () => {
   const handleScroll = () => {
-  
     if (window.pageYOffset > 100) {
       window.scrollTo({
         top: 900,
@@ -25,7 +24,7 @@ const HighLight = () => {
     }
   };
   return (
-    <div className={cx("container")} onWheel={handleScroll}>
+    <div className={cx("container")}>
       <Image src={backgroundHighLight} alt="tma-logo" priority={true} />
       <div className={cx("card")}>
         <div className={cx("cardItem", "cardItem1")}>
@@ -68,6 +67,12 @@ const HighLight = () => {
           </div>
         </div>
       </div>
+      {/* <div className={cx("triangle")}>
+        <div classname={cx("triangleLeft")}></div>
+        <div classname={cx("triangleBottom")}></div>
+        <div classname={cx("triangleRight")}></div>
+
+      </div> */}
       <div className={cx("content")}>
         <div className={cx("left")}>
           <Image src={iconGroupHighLight} alt="iconGroupHighLight" priority={true} />

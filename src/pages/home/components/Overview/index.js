@@ -11,7 +11,6 @@ import icon2 from "../../../../../public/icons-overview2.svg";
 const cx = className.bind(styles);
 const Overview = () => {
   const handleScroll = () => {
-    // console.log("E >>>", window.pageYOffset);
     if (window.pageYOffset > 1000) {
       window.scrollTo({
         top: 1850,
@@ -20,7 +19,7 @@ const Overview = () => {
     }
   };
   return (
-    <div className={cx("container")} onWheel={handleScroll}>
+    <div className={cx("container")}>
       <div className={cx("wrapText")}>
         <div className={cx("logo")}>
           <Image src={icon2} alt="icon2" />

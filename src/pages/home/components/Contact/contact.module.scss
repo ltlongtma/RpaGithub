@@ -1,5 +1,8 @@
 @media screen and (min-width: 1024px) {
   .container {
+    background: black;
+    width: 100%;
+    height: 27vw;
     position: relative;
     top: 76vw;
     .mainContent {
@@ -46,11 +49,7 @@
           height: 50%;
 
           &:hover {
-            background: linear-gradient(
-              209.47deg,
-              #396afc 38.93%,
-              #0094ff 81.95%
-            );
+            background: linear-gradient(209.47deg, #396afc 38.93%, #0094ff 81.95%);
           }
         }
       }
@@ -72,10 +71,10 @@
       position: absolute;
       justify-content: center;
       width: 88%;
-      height:100%;
-      top: -55%;
+      height: 100%;
+      top: -52%;
       margin: 0 6%;
-      .triangle{
+      .triangle {
         width: 0;
         height: 0;
         border-right: 0vw solid transparent;
@@ -85,7 +84,7 @@
         position: absolute;
         right: 0;
       }
-      .mask{
+      .mask {
         position: absolute;
         right: 0;
         bottom: -0.3vw;
@@ -153,10 +152,18 @@
         }
       }
     }
+    .maskFooter {
+      position: relative;
+      bottom: -5vw;
+      // width: 99vw;
+    }
   }
 }
 @media screen and (max-width: 1023px) {
   .container {
+    background: black;
+    width: 100%;
+    height: 27vw;
     position: relative;
     top: 76vw;
     .mainContent {
@@ -209,11 +216,7 @@
           min-width: 1px;
 
           &:hover {
-            background: linear-gradient(
-              209.47deg,
-              #396afc 38.93%,
-              #0094ff 81.95%
-            );
+            background: linear-gradient(209.47deg, #396afc 38.93%, #0094ff 81.95%);
           }
         }
       }
@@ -237,9 +240,9 @@
       justify-content: center;
       width: 88%;
       height: 100%;
-      top: -68%;
+      top: -55%;
       margin: 0 6%;
-      .triangle{
+      .triangle {
         width: 0;
         height: 0;
         border-right: 0vw solid transparent;
@@ -249,7 +252,7 @@
         position: absolute;
         right: 0;
       }
-      .mask{
+      .mask {
         position: absolute;
         right: 0;
         bottom: -1.5vw;
@@ -316,6 +319,11 @@
           width: 1vw;
         }
       }
+    }
+    .maskFooter {
+      position: relative;
+      bottom: -7vw;
+      width: 100vw;
     }
   }
 }

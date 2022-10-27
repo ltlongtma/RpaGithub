@@ -24,7 +24,7 @@ const Solutions = () => {
     }
   };
   return (
-    <div className={cx("solutions")} onWheel = {handleScroll}>
+    <div className={cx("solutions")} >
       <div className={cx("title")}>
         <Image src={Icon_Overview} alt="Icon_Overview" />
         <h1>Sample Projects and Solutions</h1>

@@ -18,7 +18,7 @@ const RpaProcess = () => {
     }
   };
   return (
-    <div className={cx("wrap")} onWheel={handleScroll}>
+    <div className={cx("wrap")} >
       <div className={cx("title")}>
         <Image src={Icon_Overview} alt="Icon_Overview" />
         <h1>RPA Process</h1>
