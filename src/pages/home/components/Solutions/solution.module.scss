@@ -28,6 +28,7 @@
       justify-content: center;
       position: relative;
       top: 52vw !important;
+
       .item1,
       .item2,
       .item3,
@@ -39,6 +40,13 @@
         width: 20vw;
         height: 30vw;
         margin-right: 2%;
+        .miniMask {
+          display: unset;
+          span {
+            left: 11.9vw;
+            top: 2.3vw;
+          }
+        }
         .itemHead {
           margin-left: 1.5vw;
           margin-top: 1.5vw;
@@ -72,6 +80,12 @@
             }
           }
         }
+      }
+      .mask {
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        background-size: 54%;
+        background-image: url("../../../../../public/SolutionsMiniMask.svg");
       }
     }
     .maskBottom {
@@ -158,6 +172,12 @@
             }
           }
         }
+      }
+      .mask {
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        background-size: 54%;
+        background-image: url("../../../../../public/SolutionsMiniMask.svg");
       }
     }
     .maskBottom {
