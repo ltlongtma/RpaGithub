@@ -5,6 +5,142 @@
     height: 27vw;
     position: relative;
     top: 76vw;
+
+    .contact {
+      background-color: #008df3;
+      position: absolute;
+      justify-content: center;
+      width: 88%;
+      height: 100%;
+      top: -52%;
+      margin: 0 6%;
+      z-index: 2;
+      .triangle {
+        width: 0;
+        height: 0;
+        border-right: 0vw solid transparent;
+        border-left: 9vw solid transparent;
+        border-top: 6vw solid white;
+        z-index: 1;
+        position: absolute;
+        right: 0;
+      }
+      .mask {
+        position: absolute;
+        right: 0;
+        bottom: -0.3vw;
+        width: 37vw;
+      }
+      .content {
+        position: absolute;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        color: white;
+        h1 {
+          position: absolute;
+          top: 5%;
+          font-size: 3vw;
+          font-weight: 600;
+        }
+        .content1 {
+          position: absolute;
+          top: 36%;
+          width: 57vw;
+          font-size: 1.5vw;
+          line-height: 2vw;
+          text-align: center;
+          color: #ffffff;
+        }
+        .content2 {
+          position: absolute;
+          top: 53%;
+          font-weight: 400;
+          font-size: 2vw;
+          line-height: 90px;
+          span {
+            overflow: visible !important;
+            width: 3vw !important;
+          }
+          img {
+            top: 1vw !important;
+            width: 2vw !important;
+          }
+          a {
+            text-decoration: underline;
+          }
+        }
+        .buttonContact {
+          button {
+            width: 11vw;
+            height: 4vw;
+            color: black;
+            background: #ffffff;
+            font-weight: 600;
+            font-size: 1vw;
+            text-transform: none;
+            font-family: "Poppins";
+            font-style: normal;
+            border: 3px solid rgba(64, 161, 255, 1);
+            position: absolute;
+            top: 75%;
+            left: 43%;
+            transition: all .3s;
+            overflow: hidden;
+            z-index: 1;
+            &:after {
+              content: '';
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              border-radius: 10rem;
+              z-index: -2;
+            }
+            &:before {
+              content: '';
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              width: 0%;
+              height: 100%;
+              background-color: darken(#2121aa, 15%);
+              transition: all .3s;
+              z-index: -1;
+            }
+            &:hover {
+              color: #fff;
+              &:before {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+
+      .iconJumpUp {
+        animation: blinker 2s linear infinite;
+        position: absolute;
+        bottom: 0vw;
+        right: -5vw;
+        button {
+          svg,
+          span {
+            width: 3vw !important;
+            height: 3vw !important;
+          }
+        }
+        @keyframes blinker {
+          50% {
+            opacity: 0;
+          }
+        }
+      }
+    }
     .mainContent {
       display: flex;
       width: 100%;
@@ -54,6 +190,10 @@
         }
       }
     }
+    .maskFooter {
+      position: absolute;
+      bottom: 0;
+    }
     .bottomText {
       color: white;
 
@@ -65,96 +205,6 @@
       font-weight: 400;
       font-size: 1vw;
       line-height: 90px;
-    }
-    .contact {
-      background-color: #008df3;
-      position: absolute;
-      justify-content: center;
-      width: 88%;
-      height: 100%;
-      top: -52%;
-      margin: 0 6%;
-      .triangle {
-        width: 0;
-        height: 0;
-        border-right: 0vw solid transparent;
-        border-left: 9vw solid transparent;
-        border-top: 6vw solid white;
-        z-index: 1;
-        position: absolute;
-        right: 0;
-      }
-      .mask {
-        position: absolute;
-        right: 0;
-        bottom: -0.3vw;
-        width: 37vw;
-      }
-      .content {
-        position: absolute;
-        top: 0;
-        display: flex;
-        flex-direction: column;
-        // justify-content: space-evenly;
-        width: 100%;
-        height: 100%;
-        align-items: center;
-        color: white;
-        h1 {
-          position: absolute;
-          top: 5%;
-          font-size: 3vw;
-          font-weight: 600;
-        }
-        .content1 {
-          position: absolute;
-          top: 36%;
-          width: 57vw;
-          font-size: 1.5vw;
-          line-height: 2vw;
-          text-align: center;
-          color: #ffffff;
-        }
-        .content2 {
-          position: absolute;
-          top: 53%;
-          font-weight: 400;
-          font-size: 2vw;
-          line-height: 90px;
-          span {
-            overflow: visible !important;
-            width: 3vw !important;
-          }
-          img {
-            top: 1vw !important;
-            width: 2vw !important;
-          }
-          a {
-            text-decoration: underline;
-          }
-        }
-      }
-      .buttonContact {
-        button {
-          width: 11vw;
-          height: 4vw;
-          color: black;
-          background: #ffffff;
-          font-weight: 600;
-          font-size: 1vw;
-          text-transform: none;
-          font-family: "Poppins";
-          font-style: normal;
-          border: 3px solid rgba(64, 161, 255, 1);
-          position: absolute;
-          top: 75%;
-          left: 43%;
-        }
-      }
-    }
-    .maskFooter {
-      position: absolute;
-      bottom: 0;
     }
   }
 }
@@ -181,7 +231,7 @@
         font-size: 1vw;
         position: absolute;
         height: 5vw;
-        div{
+        div {
           margin-bottom: 3vw;
         }
         .icons {
@@ -238,7 +288,7 @@
     }
     .contact {
       background-color: #008df3;
-
+      z-index: 2;
       position: absolute;
       justify-content: center;
       width: 88%;

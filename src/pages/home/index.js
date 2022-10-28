@@ -7,11 +7,43 @@ import Solutions from "./components/Solutions/index";
 import CaseStudy from "./components/CaseStudy/index";
 import Contact from "./components/Contact/index";
 import styles from "./home.module.scss";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
+import Link from "next/link";
 
 export default function Home() {
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    let panels = gsap.utils.toArray(".panel"),
+      scrollTween;
+
+    function goToSection(i) {
+      scrollTween = gsap.to(window, {
+        scrollToOptions: { y: i * innerHeight, autoKill: false },
+        // duration: 1,
+        onComplete: () => (scrollTween = null),
+        overwrite: true,
+      });
+    }
+
+    panels.forEach((panel, i) => {
+      ScrollTrigger.create({
+        trigger: panel,
+        start: "top bottom",
+        end: "+=200%",
+        onToggle: (self) => self.isActive && !scrollTween && goToSection(i),
+      });
+    });
+
+    // just in case the user forces the scroll to an inbetween spot (like a momentum scroll on a Mac that ends AFTER the scrollTo tween finishes):
+    ScrollTrigger.create({
+      start: 0,
+      end: "max",
+      snap: 1 / (panels.length - 1),
+    });
+  }, []);
   return (
     <div>
       <Head>
@@ -22,27 +54,27 @@ export default function Home() {
       </Head>
       <main>
         <div className={styles.container} id="container">
-          <div id="highLight">
-            <HighLight />
-          </div>
-          <div id="overview">
+          <section className="panel highLight">
+            <HighLight test="aiml" />
+          </section>
+          <section className="panel overview">
             <Overview />
-          </div>
-          <div id="aiml">
+          </section>
+          <section className="panel aiml">
             <AIML />
-          </div>
-          <div id="rpaProcess">
+          </section>
+          <section className="panel rpaProcess">
             <RpaProcess />
-          </div>
-          <div id="solutions">
+          </section>
+          <section className="panel solutions">
             <Solutions />
-          </div>
-          <div id="caseStudy">
+          </section>
+          <section className="panel caseStudy">
             <CaseStudy />
-          </div>
-          <div id="contact">
+          </section>
+          <section className="panel contact">
             <Contact />
-          </div>
+          </section>
         </div>
       </main>
 

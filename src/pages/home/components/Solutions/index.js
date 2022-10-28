@@ -13,15 +13,7 @@ import Image from "next/image";
 const cx = className.bind(styles);
 
 const Solutions = () => {
-  const handleScroll = () => {
-    // console.log("E >>>", window.pageYOffset);
-    if (window.pageYOffset > 3500) {
-      window.scrollTo({
-        top: 5200,
-        behavior: "smooth",
-      });
-    }
-  };
+
   return (
     <div className={cx("solutions")}>
       <div className={cx("title")}>

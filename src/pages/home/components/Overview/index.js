@@ -10,14 +10,7 @@ import icon2 from "../../../../../public/icons-overview2.svg";
 
 const cx = className.bind(styles);
 const Overview = () => {
-  const handleScroll = () => {
-    if (window.pageYOffset > 1000) {
-      window.scrollTo({
-        top: 1850,
-        behavior: "smooth",
-      });
-    }
-  };
+
   return (
     <div className={cx("container")}>
       <div className={cx("wrapText")}>

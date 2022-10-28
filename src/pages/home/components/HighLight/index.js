@@ -14,18 +14,11 @@ import styles from "./highLight.module.scss";
 import { useEffect } from "react";
 
 const cx = className.bind(styles);
-const HighLight = () => {
-  const handleScroll = () => {
-    if (window.pageYOffset > 100) {
-      window.scrollTo({
-        top: 900,
-        behavior: "smooth",
-      });
-    }
-  };
+const HighLight = ({ test }) => {
+ 
+
   return (
-    <div className={cx("container")}>
-  
+    <div className={cx("container")} >
       <div className={cx("card")}>
         <div className={cx("cardItem", "cardItem1")}>
           <div className={cx("cardIcon")}>
@@ -70,11 +63,7 @@ const HighLight = () => {
 
       <div className={cx("content")}>
         <div className={cx("left")}>
-          <Image
-            src={iconGroupHighLight}
-            alt="iconGroupHighLight"
-            priority={true}
-          />
+          <Image src={iconGroupHighLight} alt="iconGroupHighLight" priority={true} />
         </div>
         <div className={cx("right")}>
           <h1 className={cx("title")}>TMA RPA Center</h1>

@@ -8,17 +8,9 @@ import styles from "./process.module.scss";
 
 const cx = className.bind(styles);
 const RpaProcess = () => {
-  const handleScroll = () => {
-    console.log("E >>>", window.pageYOffset);
-    if (window.pageYOffset > 2900) {
-      window.scrollTo({
-        top: 4100,
-        behavior: "smooth",
-      });
-    }
-  };
+
   return (
-    <div className={cx("wrap")} >
+    <div className={cx("wrap")}>
       <div className={cx("title")}>
         <Image src={Icon_Overview} alt="Icon_Overview" />
         <h1>RPA Process</h1>
