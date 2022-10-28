@@ -248,10 +248,13 @@
       }
     }
     .arrowIcon {
-      position: relative;
-      left: 9vw;
-      bottom: -21vw;
+      position: absolute;
       width: 4vw;
+      top: 19vw;
+      right: 10vw;
+      min-height: 1px;
+      height: 8vw;
+      display: flex;
     }
     .process2 {
       display: flex;
@@ -280,10 +283,12 @@
         ul {
           list-style: none;
           position: absolute;
-          top: 8%;
-          left: 10%;
+          top: 3vw;
+          left: 0vw;
           padding: 0;
           margin-left: 3vw;
+          margin-top: 0;
+          margin-bottom: 0;
           li {
             padding-bottom: 10%;
             font-weight: 400;

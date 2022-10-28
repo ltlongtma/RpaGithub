@@ -154,7 +154,7 @@
     }
     .maskFooter {
       position: absolute;
-         bottom: 0; 
+      bottom: 0;
     }
   }
 }
@@ -172,20 +172,26 @@
       top: 60%;
       position: absolute;
       color: white;
+      height: 10vw;
       .left {
-        // width: 100%;
         margin-left: 6%;
         font-family: "Poppins";
         font-style: normal;
         font-weight: 400;
         font-size: 1vw;
+        position: absolute;
+        height: 5vw;
+        div{
+          margin-bottom: 3vw;
+        }
         .icons {
           display: flex;
           justify-content: space-between;
           width: 16vw;
           left: -1vw;
-          position: relative;
-          top: -3vw;
+          position: absolute;
+          top: 0;
+          height: 6vw;
           button {
             padding: 1vw;
             svg,
@@ -198,11 +204,9 @@
       .right {
         display: flex;
         justify-content: space-evenly;
-        // width: 100%;
-        position: relative;
-        top: -3vw;
-        right: -9vw;
-        // height: 1vw !important;
+        position: absolute;
+        right: 5vw;
+        height: 2vw;
         button {
           font-family: "THICCCBOI";
           font-style: normal;
@@ -310,21 +314,22 @@
           text-transform: none;
           font-family: "Poppins";
           font-style: normal;
-          border: 1vw solid rgba(64, 161, 255, 1);
+          border: 3px solid rgba(64, 161, 255, 1);
           position: absolute;
           top: 75%;
           left: 43%;
           min-width: 1px;
-          width: 13vw;
+          width: 9vw;
           min-height: 1px;
+          height: 4vw;
           padding: 0;
         }
       }
     }
     .maskFooter {
-      position: relative;
-      bottom: -7vw;
+      position: absolute;
       width: 100vw;
+      bottom: 0;
     }
   }
 }
