@@ -14,10 +14,13 @@ import tab4 from "../../../../../public/CaseStudy/tab4.png";
 import tab5 from "../../../../../public/CaseStudy/tab5.png";
 import Image from "next/image";
 import Case1 from "./Case1";
+import Case1_2 from "./Case1_2";
+
 import Case2 from "./Case2";
 import Case3 from "./Case3";
 import Case4 from "./Case4";
 import Case5 from "./Case5";
+import Case2_2 from "./Case2_2";
 
 const cx = className.bind(styles);
 
@@ -53,34 +56,52 @@ export default function CaseStudy() {
                     value == 1 ? cx("tabClassDynamic") : cx("tabClassStatic")
                   }
                 />
-                <Tab
-                  label="COD Status update"
+                 <Tab
+                  label="Automatic CV input"
                   value="2"
+                  icon={<Image src={tab1} alt="imgTab1" />}
+                  iconPosition="start"
                   className={
                     value == 2 ? cx("tabClassDynamic") : cx("tabClassStatic")
+                  }
+                />
+                   <Tab
+                  label="COD Status update"
+                  value="3"
+                  className={
+                    value == 3 ? cx("tabClassDynamic") : cx("tabClassStatic")
+                  }
+                  icon={<Image src={tab2} alt="imgTab2" />}
+                  iconPosition="start"
+                />
+                <Tab
+                  label="COD Status update"
+                  value="4"
+                  className={
+                    value == 4 ? cx("tabClassDynamic") : cx("tabClassStatic")
                   }
                   icon={<Image src={tab2} alt="imgTab2" />}
                   iconPosition="start"
                 />
                 <Tab
                   label="Logistics data process"
-                  value="3"
+                  value="5"
                   className={
-                    value == 3 ? cx("tabClassDynamic") : cx("tabClassStatic")
+                    value == 5 ? cx("tabClassDynamic") : cx("tabClassStatic")
                   }
                   icon={<Image src={tab3} alt="imgTab3" />}
                   iconPosition="start"
                 />
-                <Tab
+                {/* <Tab
                   label="Automatic debt reminder"
-                  value="4"
+                  value="5"
                   className={
-                    value == 4 ? cx("tabClassDynamic") : cx("tabClassStatic")
+                    value == 5 ? cx("tabClassDynamic") : cx("tabClassStatic")
                   }
                   icon={<Image src={tab4} alt="imgTab4" />}
                   iconPosition="start"
-                />
-                <Tab
+                /> */}
+                {/* <Tab
                   label="Inventory alerts"
                   value="5"
                   className={
@@ -88,23 +109,23 @@ export default function CaseStudy() {
                   }
                   icon={<Image src={tab5} alt="imgTab5" />}
                   iconPosition="start"
-                />
+                /> */}
               </TabList>
             </Box>
             <TabPanel value="1" className={cx("tabPanel")}>
               <Case1 />
             </TabPanel>
             <TabPanel value="2" className={cx("tabPanel")} >
-              <Case2 />
+              <Case1_2 />
             </TabPanel>
             <TabPanel value="3" className={cx("tabPanel")}>
-              <Case3 />
+              <Case2 />
             </TabPanel>
             <TabPanel value="4" className={cx("tabPanel")}>
-              <Case4 />
+              <Case2_2 />
             </TabPanel>
             <TabPanel value="5" className={cx("tabPanel")}>
-              <Case5 />
+              <Case3 />
             </TabPanel>
           </TabContext>
         </Box>

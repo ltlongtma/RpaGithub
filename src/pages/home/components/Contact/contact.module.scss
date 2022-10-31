@@ -4,7 +4,7 @@
     width: 100%;
     height: 27vw;
     position: relative;
-    top: 76vw;
+    top: 45vw;
 
     .contact {
       background-color: #008df3;
@@ -20,7 +20,7 @@
         height: 0;
         border-right: 0vw solid transparent;
         border-left: 9vw solid transparent;
-        border-top: 6vw solid white;
+        border-top: 6vw solid ghostwhite;
         z-index: 1;
         position: absolute;
         right: 0;
@@ -39,7 +39,7 @@
         width: 100%;
         height: 100%;
         align-items: center;
-        color: white;
+        color: ghostwhite;
         h1 {
           position: absolute;
           top: 5%;
@@ -88,11 +88,11 @@
             position: absolute;
             top: 75%;
             left: 43%;
-            transition: all .3s;
+            transition: all 0.3s;
             overflow: hidden;
             z-index: 1;
             &:after {
-              content: '';
+              content: "";
               position: absolute;
               bottom: 0;
               left: 0;
@@ -102,14 +102,14 @@
               z-index: -2;
             }
             &:before {
-              content: '';
+              content: "";
               position: absolute;
               bottom: 0;
               left: 0;
               width: 0%;
               height: 100%;
               background-color: darken(#2121aa, 15%);
-              transition: all .3s;
+              transition: all 0.3s;
               z-index: -1;
             }
             &:hover {
@@ -147,7 +147,7 @@
       justify-content: center;
       top: 60%;
       position: absolute;
-      color: white;
+      color: ghostwhite;
       .left {
         width: 30%;
         margin-left: 6%;
@@ -180,7 +180,7 @@
           font-weight: 600;
           font-size: 1vw;
           text-transform: uppercase;
-          color: white;
+          color: ghostwhite;
           padding: 1vw;
           height: 50%;
 
@@ -195,7 +195,7 @@
       bottom: 0;
     }
     .bottomText {
-      color: white;
+      color: ghostwhite;
 
       position: absolute;
       right: 6%;
@@ -221,7 +221,7 @@
       justify-content: flex-start;
       top: 60%;
       position: absolute;
-      color: white;
+      color: ghostwhite;
       height: 10vw;
       .left {
         margin-left: 6%;
@@ -263,7 +263,7 @@
           font-weight: 600;
           font-size: 1vw;
           text-transform: uppercase;
-          color: white;
+          color: ghostwhite;
           padding: 1vw;
           height: 50%;
           min-width: 1px;
@@ -275,7 +275,7 @@
       }
     }
     .bottomText {
-      color: white;
+      color: ghostwhite;
 
       position: absolute;
       right: 6%;
@@ -300,7 +300,7 @@
         height: 0;
         border-right: 0vw solid transparent;
         border-left: 9vw solid transparent;
-        border-top: 6vw solid white;
+        border-top: 6vw solid ghostwhite;
         z-index: 1;
         position: absolute;
         right: 0;
@@ -320,7 +320,7 @@
         width: 100%;
         height: 100%;
         align-items: center;
-        color: white;
+        color: ghostwhite;
         h1 {
           position: absolute;
           top: 5%;

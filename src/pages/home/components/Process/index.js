@@ -18,6 +18,9 @@ const RpaProcess = () => {
       <div className={cx("process1")}>
         <div className={cx("step1")}>
           <h1>UNDERSTAND</h1>
+          <div className={cx("arrowIcon")}>
+            <Image src={arrowIcon} alt="arrowIcon" />
+          </div>
           <div className={cx("content1")}>
             <ul>
               <li>Understand the working process of clients</li>
