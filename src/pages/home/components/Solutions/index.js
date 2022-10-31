@@ -6,8 +6,8 @@ import IconLogistic from "../../../../../public/IconLogistic.svg";
 import IconFinance from "../../../../../public/IconFinance.svg";
 import IconEcommerce from "../../../../../public/IconEcommerce.svg";
 import IconHumanResource from "../../../../../public/IconHumanResource.svg";
-import MaskGroup from "../../../../../public/MaskGroup.png";
-MaskGroup;
+import MaskGroupBottom from "../../../../../public/MaskGroup.png";
+import MaskGroupTop from "../../../../../public/MaskGroupTop_Solutions.svg";
 import Image from "next/image";
 
 const cx = className.bind(styles);
@@ -16,6 +16,10 @@ const Solutions = () => {
 
   return (
     <div className={cx("solutions")}>
+     <div className={cx("triangle")}>
+        <div className={cx("triangleLeft")}></div>
+        <div className={cx("triangleRight")}></div>
+      </div>
       <div className={cx("title")}>
         <Image src={Icon_Overview} alt="Icon_Overview" />
         <h1>Sample Projects and Solutions</h1>
@@ -81,8 +85,11 @@ const Solutions = () => {
           </div>
         </div>
       </div>
+      <div className={cx("maskTop")}>
+        <Image src={MaskGroupTop} alt="MaskGroup" />
+      </div>
       <div className={cx("maskBottom")}>
-        <Image src={MaskGroup} alt="MaskGroup" />
+        <Image src={MaskGroupBottom} alt="MaskGroup" />
       </div>
     </div>
   );
