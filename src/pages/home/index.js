@@ -13,36 +13,38 @@ import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import Link from "next/link";
 
 export default function Home() {
-  useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
+  // useEffect(() => {
+  //   gsap.registerPlugin(ScrollTrigger);
 
-    let panels = gsap.utils.toArray(".panel"),
-      scrollTween;
+  //   let panels = gsap.utils.toArray(".panel"),
+  //     scrollTween;
 
-    function goToSection(i) {
-      scrollTween = gsap.to(window, {
-        scrollToOptions: { y: i * innerHeight, autoKill: false },
-        onComplete: () => (scrollTween = null),
-        overwrite: true,
-      });
-    }
+  //   function goToSection(i) {
+  //     // console.log("E >>>", innerHeight);
 
-    panels.forEach((panel, i) => {
-      ScrollTrigger.create({
-        trigger: "panel",
-        start: "top top",
-        // end: "+=200%",
-        onToggle: (self) => self.isActive && !scrollTween && goToSection(i),
-      });
-    });
+  //     scrollTween = gsap.to("window", {
+  //       scrollToOptions: { y: i * innerHeight, autoKill: false },
+  //       onComplete: () => (scrollTween = null),
+  //       overwrite: true,
+  //     });
+  //   }
 
-    // just in case the user forces the scroll to an inbetween spot (like a momentum scroll on a Mac that ends AFTER the scrollTo tween finishes):
-    ScrollTrigger.create({
-      start: 0,
-      end: "max",
-      snap: 1 / (panels.length - 1),
-    });
-  }, []);
+  //   panels.forEach((panel, i) => {
+  //     ScrollTrigger.create({
+  //       trigger: "panel",
+  //       start: "top top",
+  //       end: "+=200%",
+  //       onToggle: (self) => self.isActive && !scrollTween && goToSection(i),
+  //     });
+  //   });
+
+  //   // just in case the user forces the scroll to an inbetween spot (like a momentum scroll on a Mac that ends AFTER the scrollTo tween finishes):
+  //   ScrollTrigger.create({
+  //     start: 0,
+  //     end: "max",
+  //     snap: 1 / (panels.length - 1),
+  //   });
+  // }, []);
   return (
     <div>
       <Head>
