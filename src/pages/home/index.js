@@ -13,42 +13,42 @@ import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import Link from "next/link";
 
 export default function Home() {
-  // useEffect(() => {
-  //   gsap.registerPlugin(ScrollTrigger);
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
 
-  //   let panels = gsap.utils.toArray(".panel"),
-  //     scrollTween;
+    let panels = gsap.utils.toArray(".panel"),
+      scrollTween;
 
-  //   function goToSection(i) {
-  //     // console.log("E >>>", innerHeight);
+    function goToSection(i) {
+      // console.log("E >>>", innerHeight);
 
-  //     scrollTween = gsap.to("window", {
-  //       scrollToOptions: { y: i * innerHeight, autoKill: false },
-  //       onComplete: () => (scrollTween = null),
-  //       overwrite: true,
-  //     });
-  //   }
+      scrollTween = gsap.to("window", {
+        scrollToOptions: { y: i * innerHeight, autoKill: false },
+        onComplete: () => (scrollTween = null),
+        overwrite: true,
+      });
+    }
 
-  //   panels.forEach((panel, i) => {
-  //     ScrollTrigger.create({
-  //       trigger: panel,
-  //       start: "top top",
-  //       end: "bottom",
-  //       onToggle: (self) => self.isActive && !scrollTween && goToSection(i),
-  //       // pin: true,
-  //       // pinSpacing: false,
-  //     });
-  //   });
+    panels.forEach((panel, i) => {
+      ScrollTrigger.create({
+        trigger: panel,
+        start: "top top",
+        end: "bottom",
+        onToggle: (self) => self.isActive && !scrollTween && goToSection(i),
+        // pin: true,
+        // pinSpacing: false,
+      });
+    });
 
-  //   // just in case the user forces the scroll to an inbetween spot (like a momentum scroll on a Mac that ends AFTER the scrollTo tween finishes):
+    // just in case the user forces the scroll to an inbetween spot (like a momentum scroll on a Mac that ends AFTER the scrollTo tween finishes):
 
-  //   ScrollTrigger.create({
-  //     start: 0,
-  //     end: 0,
+    ScrollTrigger.create({
+      start: 0,
+      end: 0,
     
-  //     snap: 1 / (panels.length - 1),
-  //   });
-  // }, []);
+      snap: 1 / (panels.length - 1),
+    });
+  }, []);
 
   // const handleScroll1 = (e) => {
   //   // console.log("E >>>", e.view.innerWidth);

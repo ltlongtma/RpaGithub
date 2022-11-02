@@ -3,7 +3,7 @@ const cx = className.bind(styles);
 import styles from "./casetudy.module.scss";
 import groupCase3 from "../../../../../public/CaseStudy/groupCase3.svg";
 import Image from "next/image";
- const Case3 = () => {
+const Case3 = () => {
   return (
     <div className={cx("case")}>
       <div className={cx("content")}>
@@ -21,7 +21,10 @@ import Image from "next/image";
           <h1>Result</h1>
           <ul>
             <li>
-              Reduce <span>90%</span> processing time​
+              Reduce <span>90%</span> processing time​{" "}
+              <span style={{ lineHeight: 0, visibility: "hidden" }}>
+                This is the draft sentense for pushing below line down
+              </span>
             </li>
             <li>
               <span>3000</span> hours saved to workers annually
@@ -35,4 +38,4 @@ import Image from "next/image";
     </div>
   );
 };
-export default Case3
+export default Case3;
