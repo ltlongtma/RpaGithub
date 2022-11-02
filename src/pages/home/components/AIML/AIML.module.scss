@@ -3,7 +3,7 @@
     // border: solid 1px red;
     background: #fafafa;
     position: relative;
-    top: 51vw;
+    top: 54vw;
     height: 70vw;
     // overflow: hidden;
     .triangle {
@@ -35,13 +35,15 @@
         margin: 0% auto;
         span {
           width: 5vw !important;
+          top: 2vw;
         }
         .title {
           color: #333333;
           font-size: 3.5vw;
-            line-height: 4vw !important;
-            margin-top: 2vw !important;
-         
+          line-height: 4vw !important;
+          margin-top: 2vw !important;
+          position: relative;
+          top: 2vw;
         }
       }
       .body {

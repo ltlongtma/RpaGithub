@@ -14,11 +14,9 @@ import styles from "./highLight.module.scss";
 import { useEffect } from "react";
 
 const cx = className.bind(styles);
-const HighLight = ({ test }) => {
- 
-
+const HighLight = () => {
   return (
-    <div className={cx("container")} >
+    <div className={cx("container")}>
       <div className={cx("card")}>
         <div className={cx("cardItem", "cardItem1")}>
           <div className={cx("cardIcon")}>
