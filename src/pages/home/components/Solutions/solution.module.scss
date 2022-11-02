@@ -3,7 +3,7 @@
     background: #008df3;
     position: relative;
     height: 62vw;
-    top: 50vw;
+    top: 54vw;
     overflow: hidden;
     .title {
       margin-left: 6vw;
@@ -113,7 +113,7 @@
         height: 0;
         border-top: 0vw solid transparent;
         border-bottom: 4vw solid transparent;
-        border-left: 4vw solid ghostwhite;
+        border-left: 4vw solid #FFFAFA;
       }
       .triangleRight {
         position: absolute;
@@ -121,7 +121,7 @@
         height: 0;
         border-top: 0vw solid transparent;
         border-bottom: 13vw solid transparent;
-        border-right: 100vw solid ghostwhite;
+        border-right: 100vw solid #FFFAFA;
       }
     }
   }
@@ -250,7 +250,7 @@
         height: 0;
         border-top: 0vw solid transparent;
         border-bottom: 4vw solid transparent;
-        border-left: 4vw solid ghostwhite;
+        border-left: 4vw solid #FFFAFA;
       }
       .triangleRight {
         position: absolute;
@@ -258,7 +258,7 @@
         height: 0;
         border-top: 0vw solid transparent;
         border-bottom: 13vw solid transparent;
-        border-right: 100vw solid ghostwhite;
+        border-right: 100vw solid #FFFAFA;
       }
     }
   }
