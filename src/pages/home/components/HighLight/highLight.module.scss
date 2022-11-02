@@ -3,7 +3,7 @@
     background: linear-gradient(213.12deg, #396afc 39.51%, #0094ff 80.26%);
     width: 100%;
     height: 45vw;
-    position: absolute;
+    position: relative;
     .content {
       position: absolute;
       display: flex;
@@ -81,7 +81,11 @@
           height: 2vw;
 
           &:hover {
-            background: linear-gradient(213.12deg, #396afc 39.51%, #0094ff 80.26%);
+            background: linear-gradient(
+              213.12deg,
+              #396afc 39.51%,
+              #0094ff 80.26%
+            );
             border-radius: 7%;
           }
           svg {
@@ -208,7 +212,7 @@
         position: absolute;
         border-bottom: 0vw solid transparent;
         border-top: 8vw solid transparent;
-        border-left: 8vw solid #FFFAFA;
+        border-left: 8vw solid #fffafa;
         border-right: 0vw solid transparent;
         width: 0;
         height: 0;
@@ -221,7 +225,7 @@
         height: 0;
         border-bottom: 0vw solid transparent;
         border-top: 6vw solid transparent;
-        border-right: 100vw solid #FFFAFA;
+        border-right: 100vw solid #fffafa;
       }
       .triangleRight {
         position: absolute;
@@ -229,7 +233,7 @@
         height: 0;
         border-bottom: 0vw solid transparent;
         border-top: 9vw solid transparent;
-        border-right: 5vw solid #FFFAFA;
+        border-right: 5vw solid #fffafa;
         border-left: 95vw solid transparent;
       }
     }
@@ -319,7 +323,11 @@
           min-width: 1px !important;
 
           &:hover {
-            background: linear-gradient(213.12deg, #396afc 39.51%, #0094ff 80.26%);
+            background: linear-gradient(
+              213.12deg,
+              #396afc 39.51%,
+              #0094ff 80.26%
+            );
             border-radius: 7%;
           }
           svg {
@@ -419,7 +427,7 @@
         position: absolute;
         border-bottom: 0vw solid transparent;
         border-top: 10vw solid transparent;
-        border-left: 8vw solid #FFFAFA;
+        border-left: 8vw solid #fffafa;
         border-right: 0vw solid transparent;
         width: 0;
         height: 0;
@@ -432,7 +440,7 @@
         height: 0;
         border-bottom: 0vw solid transparent;
         border-top: 6vw solid transparent;
-        border-right: 100vw solid #FFFAFA;
+        border-right: 100vw solid #fffafa;
       }
       .triangleRight {
         position: absolute;
@@ -440,7 +448,7 @@
         height: 0;
         border-bottom: 0vw solid transparent;
         border-top: 9vw solid transparent;
-        border-right: 5vw solid #FFFAFA;
+        border-right: 5vw solid #fffafa;
         border-left: 95vw solid transparent;
       }
     }

@@ -35,7 +35,7 @@ const Contact = () => {
           <div className={cx("content2")}>
             <Image src={downloadIcon} alt="downloadIcon" />{" "}
             <Link href="/">
-              <a>TMA RPA brochure</a>
+              <a>TMA RPA Brochure</a>
             </Link>
           </div>
           <div className={cx("buttonContact")}>
