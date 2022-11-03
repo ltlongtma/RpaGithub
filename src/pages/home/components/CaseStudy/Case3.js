@@ -11,8 +11,8 @@ const Case3 = () => {
           <h1>Problem</h1>
           <ul>
             <li>
-              Hundreds of arrival notices to process with different format from
-              multiple partners daily
+              Hundreds of arrival notices to process with different format from multiple partners
+              daily
             </li>
             <li>Repeated and time-consuming task</li>
           </ul>
@@ -22,8 +22,10 @@ const Case3 = () => {
           <ul>
             <li>
               Reduce <span>90%</span> processing time​{" "}
-              <span style={{ lineHeight: 0, visibility: "hidden" }}>
-                This is the draft sentense for pushing below line down
+              <span
+                style={{ lineHeight: 0, fontSize: "1.5vw", fontWeight: 100, visibility: "hidden" }}
+              >
+                This is the draft sentense for pushing below line down !!!
               </span>
             </li>
             <li>
