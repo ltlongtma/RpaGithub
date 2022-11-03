@@ -1,6 +1,6 @@
 @media screen and (min-width: 1024px) {
   .container {
-    top: 56vw;
+    top: 9vw;
     position: relative;
     .header {
       width: 100%;
@@ -35,41 +35,50 @@
           }
         }
         .tabClassDynamic {
-          background: #f1f9ff;
-          color: #0094ff;
-          // width: 15vw;
+          // background: #f1f9ff;
           font-weight: 700;
-          // font-size: 1vw;
-          // font-family: "Poppins";
-          // font-style: normal;
+          font-size: 1vw;
+          font-family: "Poppins";
+          font-style: normal;
+          color: #0094ff;
           display: flex;
+          // width: 18vw;
+          justify-content: space-evenly;
+
           // justify-content: space-evenly;
           padding: 0;
-            span {
-              right: 1vw !important;
+          span {
+            overflow: visible !important;
+            width: 2vw !important;
+            img {
+              margin-right: 37% !important;
             }
+          }
         }
         .tabClassStatic {
           color: #9f9f9f;
-          // width: 18vw;
           font-weight: 500;
-          // font-size: 1vw;
-          // font-family: "Poppins";
+          font-size: 1vw;
+          font-family: "Poppins";
+          display: flex;
+          // width: 18vw;
+
           // font-style: normal;
           // text-align: start;
-          display: flex;
           // justify-content: center;
           padding: 0;
-  
+
           span {
             overflow: visible !important;
+            width: 2vw !important;
+
             img {
               margin-right: 37% !important;
             }
           }
         }
       }
-     
+
       .case {
         margin-top: 2%;
         width: 100%;
