@@ -25,12 +25,6 @@
         position: absolute;
         right: 0;
       }
-      .mask {
-        position: absolute;
-        right: 0;
-        bottom: -0.3vw;
-        width: 37vw;
-      }
       .content {
         position: absolute;
         top: 0;
@@ -141,6 +135,12 @@
         }
       }
     }
+    .mask {
+      background-repeat: no-repeat;
+      background-position: right bottom;
+      background-size: 43%;
+      background-image: url("../../../../../public/maskContact.svg");
+    }
     .mainContent {
       display: flex;
       width: 100%;
@@ -162,6 +162,10 @@
           left: -1vw;
           position: relative;
           button {
+            &:hover {
+              filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(190deg)
+                brightness(118%) contrast(119%);
+            }
             svg,
             span {
               width: 2vw !important;
@@ -185,14 +189,14 @@
           height: 50%;
 
           &:hover {
-            background: linear-gradient(209.47deg, #396afc 38.93%, #0094ff 81.95%);
+            background: linear-gradient(
+              209.47deg,
+              #396afc 38.93%,
+              #0094ff 81.95%
+            );
           }
         }
       }
-    }
-    .maskFooter {
-      position: absolute;
-      bottom: 0;
     }
     .bottomText {
       color: #FFFAFA;
@@ -206,6 +210,12 @@
       font-size: 1vw;
       line-height: 90px;
     }
+  }
+  .maskFooter {
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 95%;
+    background-image: url("../../../../../public/maskFooter.svg");
   }
 }
 @media screen and (max-width: 1023px) {
@@ -243,6 +253,10 @@
           top: 0;
           height: 6vw;
           button {
+            &:hover {
+              filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(190deg)
+                brightness(118%) contrast(119%);
+            }
             padding: 1vw;
             svg,
             span {
@@ -269,7 +283,11 @@
           min-width: 1px;
 
           &:hover {
-            background: linear-gradient(209.47deg, #396afc 38.93%, #0094ff 81.95%);
+            background: linear-gradient(
+              209.47deg,
+              #396afc 38.93%,
+              #0094ff 81.95%
+            );
           }
         }
       }
@@ -305,12 +323,6 @@
         position: absolute;
         right: 0;
       }
-      .mask {
-        position: absolute;
-        right: 0;
-        bottom: -1.5vw;
-        width: 37vw;
-      }
       .content {
         position: absolute;
         top: 0;
@@ -321,6 +333,7 @@
         height: 100%;
         align-items: center;
         color: ghostwhite;
+
         h1 {
           position: absolute;
           top: 5%;
@@ -394,10 +407,17 @@
         }
       }
     }
-    .maskFooter {
-      position: absolute;
-      width: 100vw;
-      bottom: 0;
+    .mask {
+      background-repeat: no-repeat;
+      background-position: right bottom;
+      background-size: 43%;
+      background-image: url("../../../../../public/maskContact.svg");
     }
+  }
+  .maskFooter {
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 95%;
+    background-image: url("../../../../../public/maskFooter.svg");
   }
 }
