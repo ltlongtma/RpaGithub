@@ -6,72 +6,70 @@ import RpaProcess from "./components/Process/index";
 import Solutions from "./components/Solutions/index";
 import CaseStudy from "./components/CaseStudy/index";
 import Contact from "./components/Contact/index";
-import styles from "./home.module.scss";
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
+import className from "classnames/bind";
+import styles from "./home.module.scss";
 
+const cx = className.bind(styles);
 export default function Home() {
-  useEffect(() => {
-    let section1Height = document
-      .getElementById("highLight")
-      .getBoundingClientRect().height;
-    let section2Height = document
-      .getElementById("overview")
-      .getBoundingClientRect().height;
-    let section3Height = document
-      .getElementById("aiml")
-      .getBoundingClientRect().height;
-    let section4Height = document
-      .getElementById("process")
-      .getBoundingClientRect().height;
-    let section5Height = document
-      .getElementById("solutions")
-      .getBoundingClientRect().height;
-    let section6Height = document
-      .getElementById("caseStudy")
-      .getBoundingClientRect().height;
-    let section7Height = document
-      .getElementById("contact")
-      .getBoundingClientRect().height;
+  // useEffect(() => {
+  //   let section1Height = document.getElementById("highLight").getBoundingClientRect().height;
+  //   let section2Height = document.getElementById("overview").getBoundingClientRect().height;
+  //   let section3Height = document.getElementById("aiml").getBoundingClientRect().height;
+  //   let section4Height = document.getElementById("process").getBoundingClientRect().height;
+  //   let section5Height = document.getElementById("solutions").getBoundingClientRect().height;
+  //   let section6Height = document.getElementById("caseStudy").getBoundingClientRect().height;
+  //   let section7Height = document.getElementById("contact").getBoundingClientRect().height;
 
-    // let pageYOffset = window.pageYOffset;
-    // console.log("E  >", pageYOffset);
+  //   // let pageYOffset = window.pageYOffset;
+  //   // console.log("E  >", pageYOffset);
 
-    const handleScroll = (e) => {
-      // window.scrollTo({
-      //   top: section1Height,
-      //   left: 0,
-      //   behavior: "smooth",
-      // });
+  //   const handleScroll = (e) => {
+  //     // window.scrollTo({
+  //     //   top: section1Height,
+  //     //   left: 0,
+  //     //   behavior: "smooth",
+  //     // });
 
-      if (window.pageYOffset > 0 && window.pageYOffset < section1Height) {
-        window.scrollTo({
-          top: section1Height,
-          left: 0,
-          // behavior: "smooth",
-        });
-      } 
-      //  if (
-      //   window.pageYOffset > section1Height 
-      // ) {
-      //   window.scrollTo({
-      //     top: section1Height + section2Height,
-      //     left: 0,
-      //     // behavior: "smooth",
-      //   });
-      // }
+  //     if (window.pageYOffset > 0 && window.pageYOffset < 200) {
+  //       window.scrollTo({
+  //         top: section1Height,
+  //       });
+  //     } else if (window.pageYOffset > 100 && window.pageYOffset < section1Height) {
+  //       window.scrollTo({
+  //         top: 0,
+  //       });
+  //     }
+  //     else if (window.pageYOffset >= section1Height + 100) {
+  //       window.scrollTo({
+  //         top: section1Height + section2Height,
+  //       });
+  //     }
+  //     // else if (
+  //     //   window.pageYOffset > section1Height + section2Height &&
+  //     //   window.pageYOffset < section1Height + (section2Height + (section2Height / 100) * 70)
+  //     // ) {
+  //     //   window.scrollTo({
+  //     //     top: section1Height,
+  //     //   });
+  //     // }
+  //     console.log("pageYOffset >>", window.pageYOffset);
+  //     console.log("total 1+2 >>", section1Height + section2Height);
+  //     console.log(
+  //       "total 1+2 plus>>",
+  //       section1Height + (section2Height + (section2Height / 100) * 70)
+  //     );
+  //   };
 
-      // console.log("pageYOffset >>", window.pageYOffset);
-      // console.log("section1Height >>", section1Height);
+  //   window.addEventListener("scroll", handleScroll);
 
-    };
-    window.addEventListener("scroll", handleScroll);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
   // useEffect(() => {
   //   gsap.registerPlugin(ScrollTrigger);
 
@@ -109,33 +107,30 @@ export default function Home() {
       <Head>
         <title>RPA_TMA</title>
         <link rel="icon" href="/TmaLogo.svg" />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1.0"
-        ></meta>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
         <meta name="description" content="Generated by DC22" />
       </Head>
       <main>
-        <div className={styles.container} id="wrap">
-          <section className="panel highLight" id="highLight">
+        <div className={cx("container")} id="wrap">
+          <section className={cx("hightLight")} id="highLight">
             <HighLight />
           </section>
-          <section className="panel overview" id="overview">
+          <section className={cx("overview")} id="overview">
             <Overview />
           </section>
-          <section className="panel aiml" id="aiml">
+          <section className={cx("aiml")} id="aiml">
             <AIML />
           </section>
-          <section className="panel rpaProcess" id="process">
+          <section className={cx("rpaProcess")} id="rpaProcess">
             <RpaProcess />
           </section>
-          <section className="panel solutions" id="solutions">
+          <section className={cx("solutions")} id="solutions">
             <Solutions />
           </section>
-          <section className="panel caseStudy" id="caseStudy">
+          <section className={cx("caseStudy")} id="caseStudy">
             <CaseStudy />
           </section>
-          <section className="panel contact" id="contact">
+          <section className={cx("contact")} id="contact">
             <Contact />
           </section>
         </div>
