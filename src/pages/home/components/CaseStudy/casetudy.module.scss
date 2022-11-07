@@ -1,5 +1,6 @@
 @media screen and (min-width: 1024px) {
   .container {
+    height: 100%;
     .header {
       width: 100%;
       padding-left: 5%;
@@ -53,7 +54,7 @@
           .tabClassDynamic {
             // background: #f1f9ff;
             font-weight: 700;
-            font-size: 1vw;
+            font-size: 0.8vw;
             font-family: "Poppins";
             font-style: normal;
             color: #0094ff;
@@ -74,7 +75,7 @@
           .tabClassStatic {
             color: #9f9f9f;
             font-weight: 500;
-            font-size: 1vw;
+            font-size: 0.8vw;
             font-family: "Poppins";
             display: flex;
 
@@ -120,7 +121,6 @@
               font-style: normal;
               font-weight: 500;
               font-size: 1.5vw;
-              margin-bottom: 1vw;
               color: #090909;
 
               span {

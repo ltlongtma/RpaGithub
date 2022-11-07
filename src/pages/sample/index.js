@@ -10,7 +10,6 @@ import Solutions from "../home/components/Solutions";
 
 export default function Sample() {
   useEffect(() => {
-
     const slides = document.querySelectorAll("section");
     const container = document.querySelector("#panelWrap");
     let dots = document.querySelector(".dots");
@@ -151,15 +150,20 @@ export default function Sample() {
   }, []);
 
   return (
-    <div class="hideMe">
-      <svg id="downArrow" class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-        <g stroke-linejoin="round" stroke-linecap="round">
+    <div className="hideMe">
+      <svg
+        id="downArrow"
+        className="arrow"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 100 100"
+      >
+        <g strokeLinejoin="round" strokeLinecap="round">
           <circle r="46" cx="50" cy="50" />
           <polyline points="25 40, 50 70, 75 40"></polyline>
         </g>
       </svg>
-      <svg id="upArrow" class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-        <g stroke-linejoin="round" stroke-linecap="round">
+      <svg id="upArrow" className="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+        <g strokeLinejoin="round" strokeLinecap="round">
           <circle r="46" cx="50" cy="50" />
           <polyline points="25 60, 50 30, 75 60"></polyline>
         </g>
@@ -191,14 +195,14 @@ export default function Sample() {
         </div>
       </div>
 
-      <div class="dots"></div>
-      {/* <div class="toolTips">
-        <div class="toolTip">Slider Control</div>
-        <div class="toolTip">Powered by GSAP</div>
-        <div class="toolTip">Side animation</div>
-        <div class="toolTip">Random dog</div>
-        <div class="toolTip">Sliders are useful</div>
-        <div class="toolTip">Follow on Twitter</div>
+      <div className="dots"></div>
+      {/* <div className="toolTips">
+        <div className="toolTip">Slider Control</div>
+        <div className="toolTip">Powered by GSAP</div>
+        <div className="toolTip">Side animation</div>
+        <div className="toolTip">Random dog</div>
+        <div className="toolTip">Sliders are useful</div>
+        <div className="toolTip">Follow on Twitter</div>
       </div> */}
     </div>
   );

@@ -4,7 +4,7 @@ import styles from "./casetudy.module.scss";
 import groupCase4 from "../../../../../public/CaseStudy/groupCase4.svg";
 import Image from "next/image";
 
- const Case4 = () => {
+const Case4 = () => {
   return (
     <div className={cx("case")}>
       <div className={cx("content")}>
@@ -20,16 +20,16 @@ import Image from "next/image";
           <ul>
             <li>
               <span>2500</span>
-              <span style={{ color: "black", fontWeight: 600 }}>+</span> hours
-              returned to office workers annually
+              <span style={{ color: "black", fontWeight: 600 }}>+</span> hours returned to office
+              workers annually
             </li>
           </ul>
         </div>
       </div>
-      <div className={cx("diagram")}>
+      <div className={cx("diagram")} style={{ marginTop: "-1%" }}>
         <Image src={groupCase4} alt={groupCase4} />
       </div>
     </div>
   );
 };
-export default Case4
+export default Case4;

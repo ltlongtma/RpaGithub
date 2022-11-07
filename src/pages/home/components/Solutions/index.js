@@ -16,7 +16,6 @@ const Solutions = () => {
 
   return (
     <div className={cx("container")}>
-
     <div className={cx("solutions")}>
      <div className={cx("triangle")}>
         <div className={cx("triangleLeft")}></div>

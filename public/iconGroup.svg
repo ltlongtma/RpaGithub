@@ -2,8 +2,8 @@
 <path d="M91.724 27.0837L81.724 21.3102V32.8572L91.724 27.0837ZM50.3398 28.0837H82.724V26.0837H50.3398V28.0837Z" fill="#2BC128"/>
 <path d="M120.299 94.0866L126.072 84.0866L114.525 84.0866L120.299 94.0866ZM119.299 49.7464L119.299 85.0866L121.299 85.0866L121.299 49.7464L119.299 49.7464Z" fill="#007BEA"/>
 <path d="M27.6777 55.6585L21.9042 65.6585L33.4512 65.6585L27.6777 55.6585ZM28.6777 96.0573L28.6777 64.6585L26.6777 64.6585L26.6777 96.0573L28.6777 96.0573Z" fill="#FF9900"/>
-<circle cx="27.1848" cy="27.5764" r="24.1848" stroke="#007BEA" stroke-width="6" stroke-linejoin="round"/>
-<circle cx="119.807" cy="122.169" r="24.1848" stroke="#69B8FF" stroke-width="6" stroke-linejoin="round"/>
-<rect y="-4.23058" width="36.0732" height="36.0732" transform="matrix(0.709111 0.705097 -0.709111 0.705097 116.666 5.14399)" stroke="#FF9900" stroke-width="6" stroke-linejoin="round"/>
-<rect x="3" y="97.9839" width="48.3695" height="48.3695" stroke="#2BC128" stroke-width="6" stroke-linejoin="round"/>
+<circle cx="27.1848" cy="27.5764" r="24.1848" stroke="#007BEA" stroke-width="6" strokeLinejoin="round"/>
+<circle cx="119.807" cy="122.169" r="24.1848" stroke="#69B8FF" stroke-width="6" strokeLinejoin="round"/>
+<rect y="-4.23058" width="36.0732" height="36.0732" transform="matrix(0.709111 0.705097 -0.709111 0.705097 116.666 5.14399)" stroke="#FF9900" stroke-width="6" strokeLinejoin="round"/>
+<rect x="3" y="97.9839" width="48.3695" height="48.3695" stroke="#2BC128" stroke-width="6" strokeLinejoin="round"/>
 </svg>

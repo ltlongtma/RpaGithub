@@ -1,19 +1,17 @@
 @media screen and (min-width: 1024px) {
   .container {
-    background: black;
     width: 100%;
-    height: 27vw;
-    
+    height: 100%;
 
     .contact {
       background-color: #008df3;
       position: absolute;
       justify-content: center;
       width: 88%;
-      height: 100%;
-      top: -52%;
+      height: 60%;
       margin: 0 6%;
       z-index: 2;
+      top: 12%;
       .triangle {
         width: 0;
         height: 0;
@@ -134,84 +132,93 @@
           }
         }
       }
+      .mask {
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        background-size: 43%;
+        background-image: url("../../../../../public/maskContact.svg");
+      }
     }
-    .mask {
-      background-repeat: no-repeat;
-      background-position: right bottom;
-      background-size: 43%;
-      background-image: url("../../../../../public/maskContact.svg");
-    }
-    .mainContent {
-      display: flex;
-      width: 100%;
-      justify-content: center;
-      top: 60%;
+
+    .footer {
+      background: black;
+      height: 50%;
       position: absolute;
-      color: #fffafa;
-      .left {
-        width: 30%;
-        margin-left: 6%;
+      bottom: 0;
+      width: 100%;
+
+      .mainContent {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        top: 60%;
+        position: absolute;
+        color: #fffafa;
+        .left {
+          width: 30%;
+          margin-left: 6%;
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 1vw;
+          .icons {
+            display: flex;
+            justify-content: space-between;
+            width: 16vw;
+            left: -1vw;
+            position: relative;
+            button {
+              &:hover {
+                filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(190deg) brightness(118%)
+                  contrast(119%);
+              }
+              svg,
+              span {
+                width: 2vw !important;
+              }
+            }
+          }
+        }
+        .right {
+          display: flex;
+          margin-right: 3%;
+          justify-content: space-evenly;
+          width: 70%;
+          button {
+            font-family: "THICCCBOI";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 1vw;
+            text-transform: uppercase;
+            color: #fffafa;
+            padding: 1vw;
+            height: 50%;
+
+            &:hover {
+              background: linear-gradient(209.47deg, #396afc 38.93%, #0094ff 81.95%);
+            }
+          }
+        }
+      }
+      .bottomText {
+        color: #fffafa;
+
+        position: absolute;
+        right: 6%;
+        bottom: 0;
         font-family: "Poppins";
         font-style: normal;
         font-weight: 400;
         font-size: 1vw;
-        .icons {
-          display: flex;
-          justify-content: space-between;
-          width: 16vw;
-          left: -1vw;
-          position: relative;
-          button {
-            &:hover {
-              filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(190deg) brightness(118%)
-                contrast(119%);
-            }
-            svg,
-            span {
-              width: 2vw !important;
-            }
-          }
-        }
-      }
-      .right {
-        display: flex;
-        margin-right: 3%;
-        justify-content: space-evenly;
-        width: 70%;
-        button {
-          font-family: "THICCCBOI";
-          font-style: normal;
-          font-weight: 600;
-          font-size: 1vw;
-          text-transform: uppercase;
-          color: #fffafa;
-          padding: 1vw;
-          height: 50%;
-
-          &:hover {
-            background: linear-gradient(209.47deg, #396afc 38.93%, #0094ff 81.95%);
-          }
-        }
+        line-height: 90px;
       }
     }
-    .bottomText {
-      color: #fffafa;
-
-      position: absolute;
-      right: 6%;
-      bottom: 0;
-      font-family: "Poppins";
-      font-style: normal;
-      font-weight: 400;
-      font-size: 1vw;
-      line-height: 90px;
+    .maskFooter {
+      background-repeat: no-repeat;
+      background-position: left bottom;
+      background-size: 95%;
+      background-image: url("../../../../../public/maskFooter.svg");
     }
-  }
-  .maskFooter {
-    background-repeat: no-repeat;
-    background-position: left bottom;
-    background-size: 95%;
-    background-image: url("../../../../../public/maskFooter.svg");
   }
 }
 @media screen and (max-width: 1023px) {
