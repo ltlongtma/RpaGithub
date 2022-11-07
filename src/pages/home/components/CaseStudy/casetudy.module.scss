@@ -1,7 +1,5 @@
 @media screen and (min-width: 1024px) {
   .container {
-    top: 9vw;
-    position: relative;
     .header {
       width: 100%;
       padding-left: 5%;
@@ -163,7 +161,7 @@
   .container {
     top: 80vw;
     position: relative;
-    .tabs{
+    .tabs {
       border: none;
       .tabLists {
         button {
@@ -173,9 +171,7 @@
           height: 5vw;
         }
       }
-
     }
-    
 
     .header {
       position: relative;

@@ -2,7 +2,9 @@
   // max-width: 1920px;
   margin: 0 auto;
   width: 100%;
-  .highLight{
+
+  .highLight {
+    position: relative;
   }
   .overview {
     position: relative;
@@ -12,14 +14,20 @@
     position: relative;
     top: 6vw;
   }
-  .rpaProces {
+  .process {
     position: relative;
     top: 6vw;
   }
   .solutions {
+    position: relative;
+    top: 6vw;
   }
   .caseStudy {
+    top: 9vw;
+    position: relative;
   }
   .contact {
+    position: relative;
+    top: 23vw;
   }
 }

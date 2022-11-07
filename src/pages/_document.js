@@ -18,7 +18,38 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
           rel="stylesheet"
         ></link>
-        
+        <script
+          src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+          async
+        ></script>
+        <script
+          src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"
+          async
+        ></script>
+        <script
+          src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollToPlugin.min.js"
+          async
+        ></script>
+        <script
+          src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+          async
+        ></script>
+        <script
+          src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/Draggable.min.js"
+          async
+        ></script>
+        <script
+          src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js?r=435"
+          async
+        ></script>
+        <script
+          src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/Draggable3.min.js?r=897"
+          async
+        ></script>
+        <script
+          src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/InertiaPlugin.min.js?r=1789"
+          async
+        ></script>
       </Head>
       <body>
         <Main />
