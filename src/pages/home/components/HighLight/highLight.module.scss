@@ -16,15 +16,31 @@
         display: flex;
         justify-content: center;
         height: 67vh;
-        // width: 35vw;
         top: 12%;
+        width: 50%;
+        span:nth-last-child(1) {
+          position: relative !important;
+          top: 4% !important;
+        }
+        h1 {
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 800;
+          font-size: 3.5vw;
+          color: #ffffff;
+          position: relative;
+          margin: auto;
+          z-index: 100;
+          left: 38%;
+          top: 0%;
+        }
       }
       .right {
         display: flex;
         justify-content: center;
         position: relative;
         flex-direction: column;
-        top: -7.3vw;
+        top: -7.5vw;
         width: 50%;
         .title {
           font-weight: 700;
@@ -40,8 +56,16 @@
           font-size: 1.5vw;
           margin-left: 3%;
           width: 100%;
-          line-height: 3.8vh;
+          line-height: 3.2vw;
           position: relative;
+          margin: 0;
+          margin-top: 0;
+          margin-bottom: 0;
+          margin-left: 3%;
+          p {
+            margin-top: 0 !important;
+            margin-bottom: 0 !important;
+          }
         }
       }
     }
@@ -79,11 +103,7 @@
           height: 2vw;
 
           &:hover {
-            background: linear-gradient(
-              213.12deg,
-              #396afc 39.51%,
-              #0094ff 80.26%
-            );
+            background: linear-gradient(213.12deg, #396afc 39.51%, #0094ff 80.26%);
             border-radius: 7%;
           }
           svg {
@@ -243,8 +263,8 @@
   .container {
     background: linear-gradient(213.12deg, #396afc 39.51%, #0094ff 80.26%);
     width: 100%;
-    height: 51vw;
-    position: absolute;
+    height: 100%;
+    position: relative;
     .content {
       position: absolute;
       display: flex;
@@ -323,11 +343,7 @@
           min-width: 1px !important;
 
           &:hover {
-            background: linear-gradient(
-              213.12deg,
-              #396afc 39.51%,
-              #0094ff 80.26%
-            );
+            background: linear-gradient(213.12deg, #396afc 39.51%, #0094ff 80.26%);
             border-radius: 7%;
           }
           svg {
@@ -418,16 +434,15 @@
     }
     .triangle {
       position: absolute;
-      top: 38.5vw;
+      bottom: 0;
       width: 100%;
-      height: 13vw;
+      height: 25vh;
       overflow: hidden;
-
       .triangleLeft {
         position: absolute;
         border-bottom: 0vw solid transparent;
-        border-top: 10vw solid transparent;
-        border-left: 8vw solid #fffafa;
+        border-top: 18vh solid transparent;
+        border-left: 18vh solid #fffafa;
         border-right: 0vw solid transparent;
         width: 0;
         height: 0;
@@ -437,7 +452,7 @@
         position: absolute;
         bottom: 0;
         width: 0;
-        height: 0;
+        height: 16vh;
         border-bottom: 0vw solid transparent;
         border-top: 6vw solid transparent;
         border-right: 100vw solid #fffafa;
@@ -447,9 +462,9 @@
         width: 0;
         height: 0;
         border-bottom: 0vw solid transparent;
-        border-top: 9vw solid transparent;
-        border-right: 5vw solid #fffafa;
-        border-left: 95vw solid transparent;
+        border-top: 20vw solid transparent;
+        border-right: 15vw solid #fffafa;
+        border-left: 85vw solid transparent;
       }
     }
   }

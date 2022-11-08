@@ -1,7 +1,7 @@
 import Image from "next/image";
 import TmaLogo from "../../../../../public/TmaLogo.svg";
-import backgroundHighLight from "../../../../../public/backgroundHighLight.svg";
-import iconGroupHighLight from "../../../../../public/iconGroupHighLight.svg";
+import iconRpa from "../../../../../public/iconRpa.svg";
+import arrowAfterIconRpa from "../../../../../public/arrowAfterIconRpa.svg";
 import energyControlIcon from "../../../../../public/energyControlIcon.png";
 import clockIcon from "../../../../../public/clockIcon.png";
 import saveMoneyicon from "../../../../../public/saveMoneyicon.png";
@@ -11,7 +11,6 @@ import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import className from "classnames/bind";
 import styles from "./HighLight.module.scss";
-import { useEffect } from "react";
 
 const cx = className.bind(styles);
 const HighLight = () => {
@@ -61,7 +60,9 @@ const HighLight = () => {
 
       <div className={cx("content")}>
         <div className={cx("left")}>
-          <Image src={iconGroupHighLight} alt="iconGroupHighLight" priority={true} />
+          <h1>RPA</h1>
+          <Image src={iconRpa} alt="iconRpa" priority={true}></Image>
+          <Image src={arrowAfterIconRpa} alt="arrowAfterIconRpa" priority={true} />
         </div>
         <div className={cx("right")}>
           <h1 className={cx("title")}>TMA RPA Center</h1>

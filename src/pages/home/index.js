@@ -22,10 +22,6 @@ export default function Home() {
     let offsets = [];
     let toolTipAnims = [];
     let ih = window.innerHeight;
-    // const mouseAnim = gsap.timeline({ repeat: -1, repeatDelay: 1 });
-    // const handAnim = gsap.timeline({ repeat: -1, repeatDelay: 1 });
-    // const cursorAnim = gsap.timeline({ repeat: -1, repeatDelay: 1 });
-    // const arrowAnim = gsap.timeline({ repeat: -1, repeatDelay: 1 });
 
     // create nev dots and add tooltip listeners
     for (let i = 0; i < slides.length; i++) {
@@ -118,6 +114,10 @@ export default function Home() {
       zIndexBoost: false,
       allowNativeTouchScrolling: false,
       bounds: "#masterWrap",
+      activeCursor: "grabbing",
+      cursor: "auto",
+      // dragClickables: true,
+      // clickableTest: (e) => console.log("E >>", e),
     });
 
     dragMe[0].id = "dragger";
@@ -181,9 +181,11 @@ export default function Home() {
 
           <div className="dots"></div>
           <div className="toolTips">
-            <div className="toolTip">RPA Center</div>
-            <div className="toolTip">RPA Process</div>
-            <div className="toolTip">RPA solutions</div>
+            <div className="toolTip">Center</div>
+            <div className="toolTip">Overview</div>
+            <div className="toolTip">Ecosystem</div>
+            <div className="toolTip">Process</div>
+            <div className="toolTip">Solutions</div>
             <div className="toolTip">Case Study</div>
             <div className="toolTip">Contact</div>
           </div>

@@ -10,7 +10,6 @@ import Solutions from "../home/components/Solutions";
 
 export default function Sample() {
   useEffect(() => {
-    console.clear()
     const slides = document.querySelectorAll("section");
     const container = document.querySelector("#panelWrap");
     let dots = document.querySelector(".dots");
@@ -22,17 +21,14 @@ export default function Sample() {
     let offsets = [];
     let toolTipAnims = [];
     let ih = window.innerHeight;
-    const mouseAnim = gsap.timeline({ repeat: -1, repeatDelay: 1 });
-    const handAnim = gsap.timeline({ repeat: -1, repeatDelay: 1 });
-    const cursorAnim = gsap.timeline({ repeat: -1, repeatDelay: 1 });
-    const arrowAnim = gsap.timeline({ repeat: -1, repeatDelay: 1 });
+  
     document.querySelector("#upArrow").addEventListener("click", slideAnim);
     document.querySelector("#downArrow").addEventListener("click", slideAnim);
 
     // create nev dots and add tooltip listeners
     for (let i = 0; i < slides.length; i++) {
       let tl = gsap.timeline({ paused: true, reversed: true });
-      // gsap.set(slides[i], { backgroundColor: colorArray[i] });
+      gsap.set(slides[i], { backgroundColor: colorArray[i] });
       let newDot = document.createElement("div");
       newDot.className = "dot";
       newDot.index = i;
@@ -46,24 +42,6 @@ export default function Sample() {
       toolTipAnims.push(tl);
     }
 
-    // get elements positioned
-    gsap.set(".dots", { yPercent: -50 });
-    gsap.set(".toolTips", { yPercent: -50 });
-
-    // side screen animation with nav dots
-    const dotAnim = gsap.timeline({ paused: true });
-    dotAnim.to(
-      ".dot",
-      {
-        stagger: { each: 1, yoyo: true, repeat: 1 },
-        scale: 2.1,
-        rotation: 0.1,
-        ease: "none",
-      },
-      0.5
-    );
-    dotAnim.time(1);
-
     // tooltips hovers
     function dotHover() {
       toolTipAnims[this.index].reversed()
@@ -73,6 +51,7 @@ export default function Sample() {
 
     // figure out which of the 4 nav controls called the function
     function slideAnim(e) {
+      
       oldSlide = activeSlide;
       // dragging the panels
       if (this.id === "dragger") {

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import className from "classnames/bind";
 import styles from "./contact.module.scss";
 import Image from "next/image";
@@ -36,7 +36,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className={cx("iconJumpUp")}>
+        {/* <div className={cx("iconJumpUp")}>
           <Link href="/">
             <Tooltip title="Back to top" placement="bottom">
               <IconButton color="primary">
@@ -44,7 +44,7 @@ const Contact = () => {
               </IconButton>
             </Tooltip>
           </Link>
-        </div>
+        </div> */}
       </div>
       <div className={cx("footer", "maskFooter")}>
         <div className={cx("mainContent")}>
@@ -57,7 +57,6 @@ const Contact = () => {
               <IconButton color="inherit">
                 <LinkedInIcon sx={{ width: 32, height: 32 }} />
               </IconButton>
-
               <IconButton color="inherit">
                 <Image src={emailIcon} alt="emailIcon" sx={{ width: 32, height: 32 }} />
               </IconButton>
