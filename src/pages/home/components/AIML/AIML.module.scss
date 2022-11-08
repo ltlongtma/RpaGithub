@@ -2,9 +2,16 @@
   .container {
     // border: solid 1px red;
     background: #fafafa;
-    
+<<<<<<< HEAD
+    position: relative;
+    height: 100vh;
+    // overflow: hidden;
+=======
+
     height: 70vw;
+>>>>>>> 6f63fe1bf2582220d4084b52b69eb8d226db8e58
     .triangle {
+      height: 10%;
       display: flex;
       flex-direction: row;
       justify-content: flex-end;
@@ -13,7 +20,7 @@
         height: 0;
         border-top: 0px solid transparent;
         border-bottom: 90px solid transparent;
-        border-left: 93vw solid #FFFAFA;
+        border-left: 93vw solid #fffafa;
       }
 
       .triangle-right {
@@ -21,11 +28,12 @@
         height: 0;
         border-left: 6vw solid transparent;
         border-right: 0vw solid transparent;
-        border-top: 10vw solid #FFFAFA;
+        border-top: 10vw solid #fffafa;
         z-index: 1;
       }
     }
     .AIMLContent {
+      height: 90%;
       position: relative;
       .head {
         text-align: center;
@@ -33,26 +41,78 @@
         margin: 0% auto;
         span {
           width: 5vw !important;
-          top: 2vw;
         }
         .title {
           color: #333333;
           font-size: 3.5vw;
           line-height: 4vw !important;
-          margin-top: 2vw !important;
+          margin: 0%;
           position: relative;
-          top: 2vw;
         }
       }
       .body {
-        display: flex;
+        width: 100vw;
         align-items: center;
         justify-content: center;
+        display: flex;
         span {
           width: 53vw !important;
           height: 37vw !important;
         }
-        .experience {
+        .left {
+          width: 25vw;
+          margin-right: 2vw;
+        }
+        .center {
+          width: 24vw;
+          span {
+            height: unset !important;
+            width: unset !important;
+          }
+          .image {
+            text-align: right;
+            width: 100%;
+          }
+          .top {
+            position: relative;
+            left: -3.5vw;
+            top: 4vw;
+            height: auto;
+            display: flex;
+            .left {
+              height: auto;
+            }
+            .right {
+              top: -3vw;
+              position: relative;
+              height: auto;
+            }
+          }
+          .bot {
+            position: relative;
+            left: -3.5vw;
+            top: -5vw;
+            height: auto;
+            display: flex;
+            .left {
+              height: auto;
+            }
+            .right {
+              top: 3vw;
+              position: relative;
+              height: auto;
+            }
+          }
+          .icons {
+            &:hover {
+              transform: scale(1.15);
+              z-index: 1;
+            }
+            width: 9vw;
+          }
+        }
+        .right {
+          display: flex;
           h2 {
             font-size: 2.5vw;
             align-items: center;
@@ -68,15 +128,12 @@
           }
           .expandTop10 {
             align-items: center;
-            margin-top: 2%;
           }
           .expand400 {
             margin-left: 5%;
-            margin-top: 4%;
             width: 100%;
           }
           .expand10Years {
-            margin-top: 1%;
           }
         }
       }
@@ -112,7 +169,7 @@
         height: 0;
         border-top: 0px solid transparent;
         border-bottom: 6vw solid transparent;
-        border-left: 93vw solid #FFFAFA;
+        border-left: 93vw solid #fffafa;
       }
 
       .triangle-right {
@@ -120,7 +177,7 @@
         height: 0;
         border-left: 6vw solid transparent;
         border-right: 0vw solid transparent;
-        border-top: 10vw solid #FFFAFA;
+        border-top: 10vw solid #fffafa;
         z-index: 1;
       }
     }

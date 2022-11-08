@@ -1,8 +1,16 @@
 @media screen and (min-width: 1024px) {
-  .container {  
+  .container {
+<<<<<<< HEAD
+    // border: red solid 1px;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+=======
     width: 100%;
     height: 100%;
+>>>>>>> 6f63fe1bf2582220d4084b52b69eb8d226db8e58
     display: flex;
+    align-items: center;
     .wrapText {
       width: 100%;
       margin-left: 6vw;
@@ -18,6 +26,7 @@
           font-weight: 600;
           font-size: 4vw;
           margin: 1vw 0;
+          margin-top: 0;
         }
         span {
           line-height: 160%;
@@ -58,14 +67,14 @@
       align-items: center;
       position: relative;
       left: -1vw;
-      width: 113vw;
+      width: 134vw;
       top: 2vw;
 
       .leftImg {
         left: 0vw;
         position: relative;
         &:hover {
-          transform: scale(1.15);
+          transform: scale(1.16);
           z-index: 1;
         }
       }
@@ -76,7 +85,7 @@
           position: relative;
 
           &:hover {
-            transform: scale(1.15);
+            transform: scale(1.16);
             z-index: 1;
           }
         }
@@ -84,7 +93,7 @@
           margin-top: -11%;
           position: relative;
           &:hover {
-            transform: scale(1.15);
+            transform: scale(1.16);
             z-index: 1;
           }
         }
@@ -93,7 +102,7 @@
         left: -6vw;
         position: relative;
         &:hover {
-          transform: scale(1.15);
+          transform: scale(1.16);
         }
       }
     }
