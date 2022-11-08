@@ -1,15 +1,16 @@
 @media screen and (min-width: 1024px) {
   .wrap {
     // border: 1px solid red;
-   
+
     width: 100%;
 
     .title {
       text-align: center;
-      margin-bottom: 1%;
+      position: relative;
+      top: 1vw;
       span {
         width: 5vw !important;
-        top: 1vw;
+        top: 3vw;
       }
 
       h1 {
@@ -126,6 +127,9 @@
           width: 21vw;
           height: 17vw;
           justify-content: center;
+          span {
+            width: 8vw !important;
+          }
         }
 
         ul {

@@ -1,15 +1,9 @@
 @media screen and (min-width: 1024px) {
   .container {
-    // border: solid 1px red;
     background: #fafafa;
-<<<<<<< HEAD
-    position: relative;
     height: 100vh;
-    // overflow: hidden;
-=======
-
-    height: 70vw;
->>>>>>> 6f63fe1bf2582220d4084b52b69eb8d226db8e58
+    position: relative;
+    top: -2vw;
     .triangle {
       height: 10%;
       display: flex;
@@ -113,6 +107,7 @@
         }
         .right {
           display: flex;
+          line-height: 2vw;
           h2 {
             font-size: 2.5vw;
             align-items: center;

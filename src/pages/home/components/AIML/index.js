@@ -29,7 +29,7 @@ const AIML = () => {
         </div>
         <div className={cx("body")}>
           <div className={cx("left")}>
-            <Image src={anaLeftImage} alt="image" />
+            <Image src={anaLeftImage} alt="image" priority />
           </div>
           <div className={cx("center")}>
             <div className={cx("top")}>

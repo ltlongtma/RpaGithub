@@ -158,12 +158,12 @@ export default function Home() {
               <section>
                 <HighLight />
               </section>
-              {/* <section>
+              <section>
                 <Overview />
               </section>
               <section>
                 <AIML />
-              </section> */}
+              </section>
               <section>
                 <RpaProcess />
               </section>
