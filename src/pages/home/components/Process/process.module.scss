@@ -1,8 +1,7 @@
 @media screen and (min-width: 1024px) {
   .wrap {
     // border: 1px solid red;
-    position: relative;
-    top: 6vw;
+   
     width: 100%;
 
     .title {
@@ -17,7 +16,8 @@
         font-weight: 600;
         font-size: 4vw;
         color: #333333;
-        margin: 0;
+        margin-top: 2vw;
+        margin-bottom: 1vw;
       }
     }
     .process1 {
@@ -49,12 +49,11 @@
           position: absolute;
           top: 37%;
           left: 2%;
-
+          width: 19vw;
           font-weight: 400;
           font-size: 1vw;
           color: #001835;
-          text-indent: -3%;
-          width: 17vw;
+          // text-indent: -3%;
           ul {
             list-style: none;
             padding-left: -2%;
@@ -67,7 +66,7 @@
               color: #0094ff;
               font-weight: bold;
               display: inline-block;
-              width: 1.5em;
+              width: 1em;
               margin-left: -1em;
             }
           }
@@ -133,7 +132,7 @@
           list-style: none;
           position: absolute;
           top: 8%;
-          left: 10%;
+          left: 4%;
           li {
             padding-bottom: 10%;
             font-weight: 400;
@@ -144,7 +143,7 @@
             color: #0094ff;
             font-weight: bold;
             display: inline-block;
-            width: 1.5em;
+            width: 1em;
             margin-left: -1em;
           }
         }

@@ -15,6 +15,8 @@ const cx = className.bind(styles);
 const Solutions = () => {
 
   return (
+    <div className={cx("container")}>
+
     <div className={cx("solutions")}>
      <div className={cx("triangle")}>
         <div className={cx("triangleLeft")}></div>
@@ -91,6 +93,7 @@ const Solutions = () => {
       <div className={cx("maskBottom")}>
         <Image src={MaskGroupBottom} alt="MaskGroup" />
       </div>
+    </div>
     </div>
   );
 };

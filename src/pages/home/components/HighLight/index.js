@@ -10,7 +10,7 @@ import Button from "@mui/material/Button";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import className from "classnames/bind";
-import styles from "./highLight.module.scss";
+import styles from "./HighLight.module.scss";
 import { useEffect } from "react";
 
 const cx = className.bind(styles);

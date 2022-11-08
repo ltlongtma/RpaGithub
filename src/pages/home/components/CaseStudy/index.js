@@ -18,6 +18,7 @@ import Case2 from "./Case2";
 import Case3 from "./Case3";
 import Case4 from "./Case4";
 import Case5 from "./Case5";
+import { Divider } from "@mui/material";
 const cx = className.bind(styles);
 
 export default function CaseStudy() {
@@ -34,9 +35,10 @@ export default function CaseStudy() {
         <h1>Sample Case Study</h1>
       </div>
       <div className={cx("body")}>
-        <Box sx={{ width: "100%", typography: "body1" }}>
+        <Box sx={{ width: "100%" }}>
           <TabContext value={value}>
-            <Box sx={{ marginTop: "6%" }} className={cx("tabs")}>
+            <fieldset className={cx("tabs")}>
+              <Divider />
               <TabList
                 onChange={handleChange}
                 aria-label="tab"
@@ -49,7 +51,7 @@ export default function CaseStudy() {
                   icon={<Image src={tab1} alt="imgTab1" />}
                   iconPosition="start"
                   className={value == 1 ? cx("tabClassDynamic") : cx("tabClassStatic")}
-                  allowScrollButtonsMobile={true}
+                  disableRipple
                 />
 
                 <Tab
@@ -57,6 +59,7 @@ export default function CaseStudy() {
                   value="2"
                   className={value == 2 ? cx("tabClassDynamic") : cx("tabClassStatic")}
                   icon={<Image src={tab2} alt="imgTab2" />}
+                  disableRipple
                   iconPosition="start"
                 />
                 <Tab
@@ -65,6 +68,7 @@ export default function CaseStudy() {
                   className={value == 3 ? cx("tabClassDynamic") : cx("tabClassStatic")}
                   icon={<Image src={tab3} alt="imgTab3" />}
                   iconPosition="start"
+                  disableRipple
                 />
                 <Tab
                   label="Automatic debt reminder"
@@ -72,6 +76,7 @@ export default function CaseStudy() {
                   className={value == 4 ? cx("tabClassDynamic") : cx("tabClassStatic")}
                   icon={<Image src={tab4} alt="imgTab4" />}
                   iconPosition="start"
+                  disableRipple
                 />
                 <Tab
                   label="Inventory alerts"
@@ -79,9 +84,11 @@ export default function CaseStudy() {
                   className={value == 5 ? cx("tabClassDynamic") : cx("tabClassStatic")}
                   icon={<Image src={tab5} alt="imgTab5" />}
                   iconPosition="start"
+                  disableRipple
                 />
               </TabList>
-            </Box>
+              <Divider />
+            </fieldset>
             <TabPanel value="1" className={cx("tabPanel")}>
               <Case1 />
             </TabPanel>

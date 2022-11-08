@@ -1,7 +1,5 @@
 @media screen and (min-width: 1024px) {
   .container {
-    top: 9vw;
-    position: relative;
     .header {
       width: 100%;
       padding-left: 5%;
@@ -15,72 +13,86 @@
         margin-top: 3%;
         margin: 0;
         position: relative;
-        top: -1vw;
       }
     }
     .body {
       margin: 0 5%;
       top: -4vw;
       position: relative;
-      .tabLists {
-        overflow: visible !important;
-        button {
+      .tabs {
+        margin-top: 6%;
+        border: none;
+        .tabLists {
           overflow: visible !important;
-        }
-        div {
-          overflow: visible !important;
-
-          div {
-            justify-content: space-between;
-          }
-        }
-        .tabClassDynamic {
-          // background: #f1f9ff;
-          font-weight: 700;
-          font-size: 1vw;
-          font-family: "Poppins";
-          font-style: normal;
-          color: #0094ff;
-          display: flex;
-          // width: 18vw;
-          justify-content: space-evenly;
-
-          // justify-content: space-evenly;
-          padding: 0;
-          span {
+          button {
             overflow: visible !important;
-            width: 2vw !important;
-            img {
-              margin-right: 37% !important;
+          }
+          button:after {
+            content: "";
+            position: absolute;
+            background: rgb(175, 178, 207);
+            width: 1px;
+            height: 40px;
+            transform: translateY(-50%);
+            position: relative;
+            left: 2vw;
+            top: 1vw;
+          }
+          button:last-child:after {
+            content: "";
+            position: absolute;
+            background: white;
+          }
+          div {
+            overflow: visible !important;
+
+            div {
+              justify-content: space-between;
             }
           }
-        }
-        .tabClassStatic {
-          color: #9f9f9f;
-          font-weight: 500;
-          font-size: 1vw;
-          font-family: "Poppins";
-          display: flex;
-          // width: 18vw;
+          .tabClassDynamic {
+            // background: #f1f9ff;
+            font-weight: 700;
+            font-size: 1vw;
+            font-family: "Poppins";
+            font-style: normal;
+            color: #0094ff;
+            display: flex;
+            // width: 18vw;
+            justify-content: space-evenly;
 
-          // font-style: normal;
-          // text-align: start;
-          // justify-content: center;
-          padding: 0;
+            // justify-content: space-evenly;
+            padding: 0;
+            span {
+              overflow: visible !important;
+              width: 2vw !important;
+              img {
+                margin-right: 37% !important;
+              }
+            }
+          }
+          .tabClassStatic {
+            color: #9f9f9f;
+            font-weight: 500;
+            font-size: 1vw;
+            font-family: "Poppins";
+            display: flex;
 
-          span {
-            overflow: visible !important;
-            width: 2vw !important;
+            padding: 0;
 
-            img {
-              margin-right: 37% !important;
+            span {
+              overflow: visible !important;
+              width: 2vw !important;
+
+              img {
+                margin-right: 37% !important;
+              }
             }
           }
         }
       }
 
       .case {
-        margin-top: 2%;
         width: 100%;
         padding: 0 5vw;
         .content {
@@ -135,9 +147,9 @@
       }
       .diagram {
         position: relative;
-        margin-top: 4%;
+        // margin-top: 4%;
         scale: 1.3;
-        padding: 0 7vw;
+        margin: 4% 7vw 0 7vw;
         span {
           font-weight: 600;
         }
@@ -149,13 +161,15 @@
   .container {
     top: 80vw;
     position: relative;
-    .tabLists {
-      margin-top: 5vw;
-      button {
-        overflow: visible !important;
-        min-height: 1px;
-        min-width: 1px !important;
-        height: 5vw;
+    .tabs {
+      border: none;
+      .tabLists {
+        button {
+          overflow: visible !important;
+          min-height: 1px;
+          min-width: 1px !important;
+          height: 5vw;
+        }
       }
     }
 

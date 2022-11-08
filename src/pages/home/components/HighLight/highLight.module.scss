@@ -2,35 +2,28 @@
   .container {
     background: linear-gradient(213.12deg, #396afc 39.51%, #0094ff 80.26%);
     width: 100%;
-    height: 45vw;
+    height: 100%;
     position: relative;
     .content {
       position: absolute;
       display: flex;
       justify-content: center;
       width: 100%;
-      height: 67%;
+      height: 70vh;
       top: 14%;
       .left {
-        // border: solid;
         width: 50%;
         position: relative;
         display: flex;
         justify-content: center;
-        margin-left: 10%;
-        span {
-          width: 41vw !important;
-        }
       }
       .right {
-        // border:red solid 1px;
         width: 50%;
         display: flex;
         justify-content: center;
         position: relative;
         flex-direction: column;
         top: -9%;
-        left: -5%;
         line-height: 1.5vw;
         .title {
           font-weight: 700;
@@ -81,11 +74,7 @@
           height: 2vw;
 
           &:hover {
-            background: linear-gradient(
-              213.12deg,
-              #396afc 39.51%,
-              #0094ff 80.26%
-            );
+            background: linear-gradient(213.12deg, #396afc 39.51%, #0094ff 80.26%);
             border-radius: 7%;
           }
           svg {
@@ -204,7 +193,7 @@
 
     .triangle {
       position: absolute;
-      top: 32.5vw;
+      bottom: 0;
       width: 100%;
       height: 13vw;
       overflow: hidden;
@@ -323,11 +312,7 @@
           min-width: 1px !important;
 
           &:hover {
-            background: linear-gradient(
-              213.12deg,
-              #396afc 39.51%,
-              #0094ff 80.26%
-            );
+            background: linear-gradient(213.12deg, #396afc 39.51%, #0094ff 80.26%);
             border-radius: 7%;
           }
           svg {

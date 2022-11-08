@@ -4,7 +4,7 @@ import styles from "./casetudy.module.scss";
 import groupCase5 from "../../../../../public/CaseStudy/groupCase5.svg";
 import Image from "next/image";
 
- const Case5 = () => {
+const Case5 = () => {
   return (
     <div className={cx("case")}>
       <div className={cx("content")}>
@@ -12,15 +12,19 @@ import Image from "next/image";
           <h1>Problem</h1>
           <ul>
             <li>Inventory needs to be checked and updated regularly​​</li>
-            <li>
-              Late notifications or human errors can result in losing sales
-            </li>
+            <li>Late notifications or human errors can result in losing sales</li>
           </ul>
         </div>
         <div className={cx("content2")}>
           <h1>Result</h1>
           <ul>
-            <li>Inventory can be scheduled to check 24/7​</li>
+            <li>
+              Inventory can be scheduled to check 24/7
+              <span style={{ lineHeight: 0, fontSize: "1.5vw", fontWeight: 100, visibility:"hidden"}}>
+                .draft sentense
+              </span>
+              ​
+            </li>
             <li>
               <span>3500+</span> hours returned to office workers annually
             </li>
@@ -33,4 +37,4 @@ import Image from "next/image";
     </div>
   );
 };
-export default Case5
+export default Case5;
