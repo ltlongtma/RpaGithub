@@ -3,7 +3,6 @@
     background: #fafafa;
     height: 100vh;
     position: relative;
-    top: -2vw;
     .triangle {
       height: 10%;
       display: flex;
@@ -29,6 +28,8 @@
     .AIMLContent {
       height: 90%;
       position: relative;
+      top: -2vw;
+
       .head {
         text-align: center;
         width: 40%;
