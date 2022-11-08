@@ -16,6 +16,7 @@
         display: flex;
         justify-content: center;
         height: 67vh;
+        width: 35vw;
         top: 12%;
       }
       .right {
@@ -78,7 +79,11 @@
           height: 2vw;
 
           &:hover {
-            background: linear-gradient(213.12deg, #396afc 39.51%, #0094ff 80.26%);
+            background: linear-gradient(
+              213.12deg,
+              #396afc 39.51%,
+              #0094ff 80.26%
+            );
             border-radius: 7%;
           }
           svg {
@@ -318,7 +323,11 @@
           min-width: 1px !important;
 
           &:hover {
-            background: linear-gradient(213.12deg, #396afc 39.51%, #0094ff 80.26%);
+            background: linear-gradient(
+              213.12deg,
+              #396afc 39.51%,
+              #0094ff 80.26%
+            );
             border-radius: 7%;
           }
           svg {

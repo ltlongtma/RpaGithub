@@ -8,9 +8,9 @@
       position: relative;
       height: 100%;
       .title {
-        margin-left: 6vw;
+        margin-left: 7%;
         position: absolute;
-        top: 10vw;
+        top: 11%;
         span {
           width: 3vw !important;
         }
@@ -30,7 +30,7 @@
         justify-content: center;
         width: 100%;
         bottom: 3%;
-        height: 53vh;
+        height: 27vw;
 
         .item1,
         .item2,
@@ -51,10 +51,13 @@
             }
           }
           .itemHead {
-            margin-left: 1.5vw;
-            margin-top: 1.5vw;
+            margin-left: 1vw;
+            margin-top: 1vw;
+            span{
+              width: 4vw !important;
+            }
             h1 {
-              font-size: 1.5vw;
+              font-size: 1.3vw;
               margin: 0;
             }
           }
