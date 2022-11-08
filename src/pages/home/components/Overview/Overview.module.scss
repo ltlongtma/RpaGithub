@@ -1,9 +1,14 @@
 @media screen and (min-width: 1024px) {
   .container {
+<<<<<<< HEAD
     // border: red solid 1px;
     position: relative;
     width: 100vw;
     height: 100vh;
+=======
+    width: 100%;
+    height: 100%;
+>>>>>>> 6f63fe1bf2582220d4084b52b69eb8d226db8e58
     display: flex;
     align-items: center;
     .wrapText {
