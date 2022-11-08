@@ -10,7 +10,7 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 export default function Home() {
   useEffect(() => {
-    console.clear();
+    // console.clear();
     const slides = document.querySelectorAll("section");
     const container = document.querySelector("#panelWrap");
     let toolTips = document.querySelectorAll(".toolTip");

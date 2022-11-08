@@ -65,6 +65,17 @@ section {
   top: 50%;
   right: 50px;
   z-index: 1000;
+  .toolTip {
+    background-color: #0094ff;
+    color: white;
+    width: 5vw;
+    height: 1.5vw;
+    border-radius: 5px;
+    margin: auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
 }
 @media (hover: none) {
   .toolTips,
