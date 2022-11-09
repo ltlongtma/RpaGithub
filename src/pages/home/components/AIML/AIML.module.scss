@@ -3,7 +3,6 @@
     background: #fafafa;
     height: 100vh;
     position: relative;
-    border: 1px red solid;
     .triangle {
       height: 10%;
       display: flex;
@@ -29,7 +28,7 @@
     .AIMLContent {
       height: 90%;
       position: relative;
-      top: -2vw;
+      top: -4vw;
 
       .head {
         text-align: center;
@@ -61,6 +60,8 @@
         }
         .center {
           width: 24vw;
+          position: relative;
+          top: -2vw;
           span {
             height: unset !important;
             width: unset !important;
@@ -109,7 +110,9 @@
         }
         .right {
           display: flex;
-          line-height: 2vw;
+          line-height: 2.5vw;
+          position: relative;
+          top: -2.5vw;
           h2 {
             font-size: 2.5vw;
             align-items: center;

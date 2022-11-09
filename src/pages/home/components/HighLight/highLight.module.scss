@@ -64,7 +64,8 @@
           font-size: 1.5vw;
           margin-left: 3%;
           width: 100%;
-          line-height: 3.2vw;
+          line-height: 3vw;
+          top: 0.5%;
           position: relative;
           margin: 0;
           margin-top: 0;
@@ -111,7 +112,11 @@
           height: 2vw;
 
           &:hover {
-            background: linear-gradient(213.12deg, #396afc 39.51%, #0094ff 80.26%);
+            background: linear-gradient(
+              213.12deg,
+              #396afc 39.51%,
+              #0094ff 80.26%
+            );
             border-radius: 7%;
           }
           svg {
@@ -192,10 +197,10 @@
           0px 12.5216px 10.0172px rgba(62, 116, 255, 0.035),
           0px 4.5288px 3.62304px rgba(62, 116, 255, 0.0243888);
       }
-     .cardItem:nth-of-type(1){
-      display: flex;
-      justify-content: flex-start;
-     }
+      .cardItem:nth-of-type(1) {
+        display: flex;
+        justify-content: flex-start;
+      }
       .cardIcon {
         width: 4vw;
         margin: 0 1.5vw;
@@ -344,7 +349,11 @@
           min-width: 1px !important;
 
           &:hover {
-            background: linear-gradient(213.12deg, #396afc 39.51%, #0094ff 80.26%);
+            background: linear-gradient(
+              213.12deg,
+              #396afc 39.51%,
+              #0094ff 80.26%
+            );
             border-radius: 7%;
           }
           svg {
