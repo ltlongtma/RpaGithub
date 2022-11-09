@@ -48,10 +48,10 @@ const Solutions = () => {
           </div>
           <div className={cx("itemBody")}>
             <ul>
-              <li>Debt reminder</li>
+              <li>Debt Reminder</li>
               <li>Insurance Claim Payment Process</li>
-              <li>Finance report mismatches detection</li>
-              <li>Identity card & Driver&apos;s license parser</li>
+              <li>Finance Report Mismatches Detection</li>
+              <li>Identity Card & Driver&apos;s License Parser</li>
               <li>Bank & Tax Statement OCR</li>
             </ul>
           </div>

@@ -2,10 +2,10 @@ import Image from "next/image";
 import TmaLogo from "../../../../../public/TmaLogo.svg";
 import iconRpa from "../../../../../public/iconRpa.svg";
 import arrowAfterIconRpa from "../../../../../public/arrowAfterIconRpa.svg";
-import energyControlIcon from "../../../../../public/energyControlIcon.png";
-import clockIcon from "../../../../../public/clockIcon.png";
-import saveMoneyicon from "../../../../../public/saveMoneyicon.png";
-import cogWheel from "../../../../../public/cogWheel.png";
+import energyControlIcon from "../../../../../public/energyControlIcon.svg";
+import clockIcon from "../../../../../public/clockIcon.svg";
+import saveMoneyicon from "../../../../../public/saveMoneyicon.svg";
+import cogWheel from "../../../../../public/cogWheel.svg";
 import Button from "@mui/material/Button";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
@@ -19,7 +19,7 @@ const HighLight = () => {
   return (
     <div className={cx("container")}>
       <div className={cx("card")}>
-        <div className={cx("cardItem", "cardItem1")}>
+        <div className={cx("cardItem")}>
           <div className={cx("cardIcon")}>
             <Image src={energyControlIcon} alt="energyControlIcon" />
           </div>
@@ -29,7 +29,7 @@ const HighLight = () => {
             <p style={{ visibility: "hidden" }}>Draft content </p>
           </div>
         </div>
-        <div className={cx("cardItem", "cardItem2")}>
+        <div className={cx("cardItem")}>
           <div className={cx("cardIcon")}>
             <Image src={clockIcon} alt="clockIcon" />
           </div>

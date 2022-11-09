@@ -49,7 +49,7 @@ const RpaProcess = () => {
           </div>
           <div className={cx("content3")}>
             <ul>
-              <li>Listdown all parts of the process those can be automated</li>
+              <li>Listdown all parts of the process that can be automated</li>
             </ul>
           </div>
         </div>
@@ -78,15 +78,17 @@ const RpaProcess = () => {
             <li>Video</li>
             <li>Voice</li>
             <li>Text</li>
+            <li>Data</li>
+
           </ul>
         </div>
         <div className={cx("frame")}>
           <ul>
             <li>Document Parser</li>
             <li>ID card Parser</li>
-            <li>License parser</li>
+            <li>License Parser</li>
             <li>OCR</li>
-            <li>Video analytic</li>
+            <li>Video Analysis</li>
           </ul>
         </div>
         <div className={cx("frame")}>
