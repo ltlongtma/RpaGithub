@@ -6,8 +6,9 @@ import RpaProcess from "./components/Process/index";
 import Solutions from "./components/Solutions/index";
 import CaseStudy from "./components/CaseStudy/index";
 import Contact from "./components/Contact/index";
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 import { gsap } from "gsap";
+
 export default function Home() {
   useEffect(() => {
     // console.clear();
@@ -143,6 +144,7 @@ export default function Home() {
       });
     }
   }, []);
+
   return (
     <div>
       <Head>

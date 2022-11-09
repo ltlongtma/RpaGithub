@@ -10,7 +10,9 @@ import icon2 from "../../../../../public/icons-overview2.svg";
 
 const cx = className.bind(styles);
 const Overview = () => {
-
+  // React.useEffect(() => {
+  //   gsap.to(".wrapText", { x: 500, duration: 5 });
+  // }, []);
   return (
     <div className={cx("container")}>
       <div className={cx("wrapText")}>

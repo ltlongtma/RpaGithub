@@ -18,9 +18,17 @@
         height: 67vh;
         top: 12%;
         width: 50%;
-        span:nth-last-child(1) {
+
+        .mainIcon {
+          margin: auto;
+          span {
+            overflow: visible !important;
+          }
+        }
+        .arrowAfterIconRpa {
+          margin: auto;
           position: relative !important;
-          top: 4% !important;
+          top: 5% !important;
         }
         h1 {
           font-family: "Poppins";

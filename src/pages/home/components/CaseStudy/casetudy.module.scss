@@ -5,9 +5,9 @@
       width: 100%;
       padding-left: 5%;
       height: 20%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
       span {
         width: 3vw !important;
       }
@@ -22,7 +22,7 @@
     }
     .body {
       margin: 0 5%;
-      top: -4vw;
+      top: -5vw;
       position: relative;
       .tabs {
         margin-top: 6%;
@@ -115,6 +115,7 @@
             font-weight: 700;
             font-size: 2vw;
             color: #090909;
+            margin: 0;
           }
           ul {
             list-style: none;

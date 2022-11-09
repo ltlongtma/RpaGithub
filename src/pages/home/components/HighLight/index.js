@@ -11,9 +11,16 @@ import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import className from "classnames/bind";
 import styles from "./HighLight.module.scss";
+import { useEffect } from "react";
+import gsap from "gsap";
 
 const cx = className.bind(styles);
 const HighLight = () => {
+
+  useEffect(() => {
+    gsap.to(".img", { duration: 15, rotation: 360, ease: Power0.easeNone, repeat: -1 });
+  }, []);
+
   return (
     <div className={cx("container")}>
       <div className={cx("card")}>
@@ -61,8 +68,12 @@ const HighLight = () => {
       <div className={cx("content")}>
         <div className={cx("left")}>
           <h1>RPA</h1>
-          <Image src={iconRpa} alt="iconRpa" priority={true}></Image>
-          <Image src={arrowAfterIconRpa} alt="arrowAfterIconRpa" priority={true} />
+          <div className={cx("mainIcon")}>
+            <Image className={cx("img")} src={iconRpa} alt="iconRpa" priority={true}></Image>
+          </div>
+          <div className={cx("arrowAfterIconRpa")}>
+            <Image src={arrowAfterIconRpa} alt="arrowAfterIconRpa" priority={true} />
+          </div>
         </div>
         <div className={cx("right")}>
           <h1 className={cx("title")}>TMA RPA Center</h1>
