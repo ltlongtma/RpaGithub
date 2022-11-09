@@ -22,13 +22,13 @@ const Overview = () => {
         <div className={cx("description")}>
           <h1 className={cx("title")}>Overview </h1>
           <span>
-            With a wide range of solution from AI/ML, document parsing, object detection and popular
-            tools (Automation Anywhere, Ui Path, Power Automate, Blueprism), TMA RPA Center have
-            provided automation solutions for a variety of industries, including finance, banking,
+            With a wide range of solutions from AI/ML, document parsing, object detection and popular
+            tools (Automation Anywhere, UiPath, Power Automate, Blueprism, Intelligent), TMA RPA Center have
+            provided robotic automation solutions for RPA projects, including finance, banking,
             logistics, human resources, and e-commerce.
           </span>
           <span>
-            TMA RPA Center provides solutions for automation projects or dedicated teams for a full
+            TMA RPA Center provides solutions for an RPA program or dedicated teams for a full
             automation program with multiple projects.
           </span>
         </div>

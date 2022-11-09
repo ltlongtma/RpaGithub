@@ -16,11 +16,6 @@ import gsap from "gsap";
 
 const cx = className.bind(styles);
 const HighLight = () => {
-
-  useEffect(() => {
-    gsap.to(".img", { duration: 15, rotation: 360, ease: Power0.easeNone, repeat: -1 });
-  }, []);
-
   return (
     <div className={cx("container")}>
       <div className={cx("card")}>
@@ -30,7 +25,8 @@ const HighLight = () => {
           </div>
           <div className={cx("cardContent")}>
             <h1>85%</h1>
-            <p>Effiency gain</p>
+            <p>Effiency Gain </p>
+            <p style={{ visibility: "hidden" }}>Draft content </p>
           </div>
         </div>
         <div className={cx("cardItem", "cardItem2")}>
@@ -39,10 +35,7 @@ const HighLight = () => {
           </div>
           <div className={cx("cardContent")}>
             <h1>90%</h1>
-            <p>
-              Reduce of
-              <br /> processing time
-            </p>
+            <p>Processing Time Reduction</p>
           </div>
         </div>
         <div className={cx("cardItem")}>
@@ -51,7 +44,7 @@ const HighLight = () => {
           </div>
           <div className={cx("cardContent")}>
             <h1>60%</h1>
-            <p>Save operating cost</p>
+            <p>Operating Cost Saving</p>
           </div>
         </div>
         <div className={cx("cardItem")}>
@@ -60,7 +53,7 @@ const HighLight = () => {
           </div>
           <div className={cx("cardContent")}>
             <h1>70%</h1>
-            <p>Reduce human effort</p>
+            <p>Manual Effort Reduction</p>
           </div>
         </div>
       </div>

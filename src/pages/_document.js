@@ -46,10 +46,7 @@ export default function Document() {
           src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/Draggable3.min.js?r=897"
           async
         ></script>
-        <script
-          src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/InertiaPlugin.min.js?r=1789"
-          async
-        ></script>
+      
       </Head>
       <body>
         <Main />
