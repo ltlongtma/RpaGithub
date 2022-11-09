@@ -115,24 +115,24 @@
         }
       }
 
-      .iconJumpUp {
-        animation: blinker 2s linear infinite;
-        position: absolute;
-        bottom: 0vw;
-        right: -5vw;
-        button {
-          svg,
-          span {
-            width: 3vw !important;
-            height: 3vw !important;
-          }
-        }
-        @keyframes blinker {
-          50% {
-            opacity: 0;
-          }
-        }
-      }
+      // .iconJumpUp {
+      //   animation: blinker 2s linear infinite;
+      //   position: absolute;
+      //   bottom: 0vw;
+      //   right: -5vw;
+      //   button {
+      //     svg,
+      //     span {
+      //       width: 3vw !important;
+      //       height: 3vw !important;
+      //     }
+      //   }
+      //   @keyframes blinker {
+      //     50% {
+      //       opacity: 0;
+      //     }
+      //   }
+      // }
       .mask {
         background-repeat: no-repeat;
         background-position: right bottom;
