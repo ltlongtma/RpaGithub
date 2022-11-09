@@ -89,8 +89,10 @@
       span {
         margin: 1% 0;
         width: 8vw !important;
+        img:hover {
+          cursor: pointer;
+        }
       }
-
       .navigate {
         display: flex;
         justify-content: center;
