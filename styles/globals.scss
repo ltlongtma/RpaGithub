@@ -45,10 +45,10 @@ section {
 .dot {
   width: 12px;
   height: 12px;
-  border: 2px solid rgb(63, 90, 165);
+  border: 2px solid rgb(255, 255, 255);
   border-radius: 100%;
   position: relative;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgb(64, 161, 255, 1);
   margin: 12px;
   cursor: pointer;
 }
