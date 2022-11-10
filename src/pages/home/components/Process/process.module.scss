@@ -10,6 +10,7 @@
       position: relative;
       span {
         width: 5vw !important;
+        top: -1vw;
       }
 
       h1 {
@@ -19,7 +20,7 @@
         margin-top: 0vw;
         margin-bottom: 0vw;
         position: relative;
-        top: -1vw;
+        top: -2vw;
       }
     }
     .process1 {
@@ -27,7 +28,7 @@
       justify-content: center;
       margin: 0 4%;
       position: relative;
-      top: -2vw;
+      top: -3vw;
       left: 0.7%;
       .step1,
       .step2,
@@ -113,7 +114,7 @@
       height: 100%;
       justify-content: center;
       position: relative;
-      top: 1vw;
+      top: 0vw;
       .frame {
         position: relative;
         width: 21vw;

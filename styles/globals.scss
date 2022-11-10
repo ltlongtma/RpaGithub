@@ -63,26 +63,36 @@ section {
 .toolTips {
   position: absolute;
   top: 50%;
-  right: 50px;
+  // right: 7px;
+  // top: 25vw;
+  right: 40px;
   z-index: 1000;
+
   .toolTip {
     background-color: #0094ff;
     color: white;
-    width: 5vw;
-    height: 1.5vw;
-    border-radius: 5px;
+    // width: 100%;
+    // padding: 11px;
+    width: 7vw;
+    padding: 0 11px;
+    height: 24px;
+    font-size: 0.8vw;
+    border-radius: 30px;
     margin: auto;
     align-items: center;
     display: flex;
     justify-content: center;
+    text-align: center;
   }
 }
+
 @media (hover: none) {
-  .toolTips,
-  p.navDotInfo {
+  .toolTips {
     visibility: hidden;
+    // display: none;
   }
 }
+
 .toolTip {
   opacity: 0;
   text-align: right;
