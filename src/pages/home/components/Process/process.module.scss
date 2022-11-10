@@ -10,15 +10,17 @@
       // top: -1vw;
       span {
         width: 5vw !important;
-        top: 3vw;
+        // top: 3vw;
       }
 
       h1 {
         font-weight: 600;
         font-size: 4vw;
         color: #333333;
-        margin-top: 2vw;
-        margin-bottom: 1vw;
+        margin-top: 0vw;
+        margin-bottom: 0vw;
+        position: relative;
+        top: -1vw;
       }
     }
     .process1 {
@@ -26,6 +28,7 @@
       justify-content: center;
       margin: 0 4%;
       position: relative;
+      top: -2vw;
       left: 0.7%;
       .step1,
       .step2,
@@ -111,7 +114,7 @@
       height: 25vw;
       justify-content: center;
       position: relative;
-      top: -3vw;
+      top: -5vw;
       .frame {
         position: relative;
         width: 21vw;
