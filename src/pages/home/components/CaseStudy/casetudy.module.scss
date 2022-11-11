@@ -116,20 +116,18 @@
             background: #0094ff;
             width: 1px;
             height: 40px;
-            transform: translateY(-50%);
             position: relative;
             left: 18%;
-            top: 1vw;
+            border: 1px solid;
           }
           button.tabClassDynamic:before {
             content: "";
             background: #0094ff;
             width: 1px;
             height: 40px;
-            transform: translateY(-50%);
             position: relative;
             left: -26%;
-            top: 1vw;
+            border: 1px solid;
           }
           // button.tabClassStatic:first-child:before {
           //   content: "";
