@@ -88,47 +88,175 @@
               }
             }
           }
+          button:nth-child(1).tabClassStatic:after {
+            content: "";
+            background: rgb(175, 178, 207);
+            width: 1px;
+            height: 40px;
+            position: relative;
+            left: 30%;
+          }
+          button:nth-child(2).tabClassStatic:before {
+            content: "";
+            background: rgb(175, 178, 207);
+            width: 1px;
+            height: 40px;
+            position: relative;
+            left: -38%;
+          }
+          button:nth-child(2).tabClassStatic:after {
+            content: "";
+            background: rgb(175, 178, 207);
+            width: 1px;
+            height: 40px;
+            position: relative;
+            left: 36%;
+          }
+          button:nth-child(3).tabClassStatic:before {
+            content: "";
+            background: rgb(175, 178, 207);
+            width: 1px;
+            height: 40px;
+            position: relative;
+            left: -28%;
+          }
+          button:nth-child(3).tabClassStatic:after {
+            content: "";
+            background: rgb(175, 178, 207);
+            width: 1px;
+            height: 40px;
+            position: relative;
+            left: 29%;
+          }
+          button:nth-child(4).tabClassStatic:before {
+            content: "";
+            background: rgb(175, 178, 207);
+            width: 1px;
+            height: 40px;
+            position: relative;
+            left: -27%;
+          }
+          button:nth-child(4).tabClassStatic:after {
+            content: "";
+            background: rgb(175, 178, 207);
+            width: 1px;
+            height: 40px;
+            position: relative;
+            left: 28%;
+          }
+          button:nth-child(5).tabClassStatic:before {
+            content: "";
+            background: rgb(175, 178, 207);
+            width: 1px;
+            height: 40px;
+            position: relative;
+            left: -37%;
+          }
+          button:nth-child(1).tabClassDynamic:after {
+            content: "";
+            background: #0094ff;
+            width: 3px;
+            height: 40px;
+            position: relative;
+            left: 30.5%;
+            z-index: 100;
+          }
+          button:nth-child(2).tabClassDynamic:before {
+            content: "";
+            background: #0094ff;
+            width: 3px;
 
-          // button.tabClassStatic:before {
-          //   content: "";
-          //   position: absolute;
-          //   background: rgb(175, 178, 207);
-          //   width: 1px;
-          //   height: 40px;
-          //   transform: translateY(-50%);
-          //   position: relative;
-          //   // left: -37%;
-          //   top: 1vw;
-          // }
-          // button.tabClassStatic:after {
-          //   content: "";
-          //   position: absolute;
-          //   background: rgb(175, 178, 207);
-          //   width: 1px;
-          //   height: 40px;
-          //   transform: translateY(-50%);
-          //   position: relative;
-          //   // left: 34%;
-          //   top: 1vw;
-          // }
-          button.tabClassDynamic:after {
+            height: 40px;
+            z-index: 100;
+            position: relative;
+            left: -37%;
+          }
+          button:nth-child(2).tabClassDynamic:after {
             content: "";
             background: #0094ff;
-            width: 1px;
+
+            width: 3px;
+
             height: 40px;
+            z-index: 100;
+
             position: relative;
-            left: 18%;
-            border: 1px solid;
+            left: 36%;
           }
-          button.tabClassDynamic:before {
+          button:nth-child(3).tabClassDynamic:before {
             content: "";
             background: #0094ff;
-            width: 1px;
+            width: 3px;
+
             height: 40px;
+            z-index: 100;
             position: relative;
-            left: -26%;
-            border: 1px solid;
+            left: -27%;
           }
+          button:nth-child(3).tabClassDynamic:after {
+            content: "";
+            background: #0094ff;
+
+            width: 3px;
+
+            height: 40px;
+            z-index: 100;
+
+            position: relative;
+            left: 28%;
+          }
+          button:nth-child(4).tabClassDynamic:before {
+            content: "";
+            background: #0094ff;
+            width: 3px;
+
+            height: 40px;
+            z-index: 100;
+            position: relative;
+            left: -27%;
+          }
+          button:nth-child(4).tabClassDynamic:after {
+            content: "";
+            background: #0094ff;
+
+            width: 3px;
+
+            height: 40px;
+            z-index: 100;
+
+            position: relative;
+            left: 27%;
+          }
+          button:nth-child(5).tabClassDynamic:before {
+            content: "";
+            background: #0094ff;
+
+            width: 3px;
+
+            height: 40px;
+            z-index: 100;
+
+            position: relative;
+            left: -36%;
+          }
+          // button.tabClassDynamic:after {
+          //   content: "";
+          //   background: #0094ff;
+          //   width: 1px;
+          //   height: 40px;
+          //   position: relative;
+          //   left: 18%;
+          //   border: 1px solid;
+          // }
+          // button.tabClassDynamic:before {
+          //   content: "";
+          //   background: #0094ff;
+          //   width: 1px;
+          //   height: 40px;
+          //   position: relative;
+          //   left: -26%;
+          //   border: 1px solid;
+          // }
           // button.tabClassStatic:first-child:before {
           //   content: "";
           //   position: absolute;
@@ -154,18 +282,18 @@
           //   visibility: hidden;
           // }
 
-          button.tabClassDynamic:last-child:after {
-            content: "";
-            position: absolute;
-            background: white;
-            visibility: hidden;
-          }
-          button.tabClassDynamic:first-child:before {
-            content: "";
-            position: absolute;
-            background: white;
-            visibility: hidden;
-          }
+          // button.tabClassDynamic:last-child:after {
+          //   content: "";
+          //   position: absolute;
+          //   background: white;
+          //   visibility: hidden;
+          // }
+          // button.tabClassDynamic:first-child:before {
+          //   content: "";
+          //   position: absolute;
+          //   background: white;
+          //   visibility: hidden;
+          // }
         }
       }
 
