@@ -1,6 +1,7 @@
 import Image from "next/image";
 import TmaLogo from "../../../../../public/TmaLogo.svg";
 import iconRpa from "../../../../../public/iconRpa.svg";
+
 import arrowAfterIconRpa from "../../../../../public/arrowAfterIconRpa.svg";
 import energyControlIcon from "../../../../../public/energyControlIcon.svg";
 import clockIcon from "../../../../../public/clockIcon.svg";
@@ -12,10 +13,8 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import className from "classnames/bind";
 import styles from "./HighLight.module.scss";
 
-
 const cx = className.bind(styles);
 const HighLight = () => {
- 
   return (
     <div className={cx("container")}>
       <div className={cx("card")}>

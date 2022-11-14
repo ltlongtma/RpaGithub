@@ -29,6 +29,17 @@
           margin: auto;
           position: relative !important;
           top: 5% !important;
+          animation: arrow 3s;
+        }
+        @keyframes arrow {
+          0% {
+            transform: translateX(-100%);
+            opacity: 0;
+          }
+          100% {
+            transform: translateX(0);
+            opacity: 1;
+          }
         }
         h1 {
           font-family: "Poppins";
@@ -50,6 +61,19 @@
         flex-direction: column;
         top: -7.5vw;
         width: 50%;
+        animation: contentRight 2s linear 2s forwards; 
+        opacity: 0;
+        @keyframes contentRight {
+          0% {
+            // transform: translateX(-100%);
+            opacity: 0;
+          }
+          100% {
+            // transform: translateX(0);
+            opacity: 1;
+          }
+        }
+
         .title {
           font-weight: 700;
           font-size: 4vw;

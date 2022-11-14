@@ -152,8 +152,8 @@ export default function Home() {
         <title>RPA_TMA</title>
         <link
           rel="icon"
-          href="../../../public/tmaLogoTitleBar.ico"
-          // type="image/x-icon"
+          href="https://www.tma.vn/modules/orchard.themes//orchard.ico"
+          type="image/x-icon"
         />
         <meta
           name="viewport"
