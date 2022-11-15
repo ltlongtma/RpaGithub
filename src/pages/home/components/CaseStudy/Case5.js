@@ -12,7 +12,9 @@ const Case5 = () => {
           <h1>Problem</h1>
           <ul>
             <li>Inventory needs to be checked and updated regularly​​</li>
-            <li>Late notifications or human errors can result in losing sales</li>
+            <li>
+              Late notifications or human errors can result in losing sales
+            </li>
           </ul>
         </div>
         <div className={cx("content2")}>
@@ -20,13 +22,20 @@ const Case5 = () => {
           <ul>
             <li>
               Inventory can be scheduled to check 24/7
-              <span style={{ lineHeight: 0, fontSize: "1.5vw", fontWeight: 100, visibility:"hidden"}}>
+              <span
+                style={{
+                  lineHeight: 0,
+                  fontSize: "1.5vw",
+                  fontWeight: 100,
+                  visibility: "hidden",
+                }}
+              >
                 .draft sentense
               </span>
               ​
             </li>
             <li>
-              <span>3500+</span> hours returned to office workers annually
+              <span>3500</span> hours returned to office workers annually
             </li>
           </ul>
         </div>

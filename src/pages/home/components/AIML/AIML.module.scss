@@ -28,13 +28,16 @@
     .AIMLContent {
       height: 90%;
       position: relative;
-      top: -4vw;
+      top: -2vw;
+      align-items: center;
+      display: flex;
 
       .head {
         text-align: center;
         width: 40%;
         margin: 0% auto;
-        span {
+        position: relative;
+        height: 236px span {
           width: 5vw !important;
         }
         .title {
@@ -50,25 +53,29 @@
         align-items: center;
         justify-content: center;
         display: flex;
+        top: -2vw;
+        position: relative;
         span {
           width: 53vw !important;
           height: 37vw !important;
         }
         .left {
           width: 25vw;
-          margin-right: 2vw;
         }
         .center {
-          width: 24vw;
+          width: 19vw;
           position: relative;
-          top: -2vw;
+          right: -2vw;
           span {
             height: unset !important;
             width: unset !important;
           }
           .image {
-            text-align: right;
-            width: 100%;
+            position: relative;
+            &:hover {
+              transform: scale(1.06);
+              z-index: 1;
+            }
           }
           .top {
             position: relative;
@@ -83,6 +90,7 @@
               top: -3vw;
               position: relative;
               height: auto;
+              left: 2vw;
             }
           }
           .bot {
@@ -98,6 +106,7 @@
               top: 3vw;
               position: relative;
               height: auto;
+              left: 2vw;
             }
           }
           .icons {
@@ -112,7 +121,13 @@
           display: flex;
           line-height: 2.5vw;
           position: relative;
-          top: -2.5vw;
+          left: -2.5vw;
+          align-items: center;
+          .bullet-left {
+            top: 0.3vw;
+            position: relative;
+            width: 10vw;
+          }
           h2 {
             font-size: 2.5vw;
             align-items: center;

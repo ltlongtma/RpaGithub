@@ -20,8 +20,8 @@ const Case4 = () => {
           <ul>
             <li>
               <span>2500</span>
-              <span style={{ color: "black", fontWeight: 600 }}>+</span> hours returned to office
-              workers annually
+              <span style={{ color: "black", fontWeight: 600 }}></span> hours
+              returned to office workers annually
             </li>
           </ul>
         </div>
