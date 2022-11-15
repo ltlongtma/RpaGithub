@@ -29,7 +29,7 @@
           margin: auto;
           position: relative !important;
           top: 5% !important;
-          animation: arrow 3s;
+          animation: arrow 3s infinite;
         }
         @keyframes arrow {
           0% {
@@ -62,7 +62,6 @@
         top: -7.5vw;
         width: 50%;
         animation: contentRight 2s linear 2s forwards; 
-        opacity: 0;
         @keyframes contentRight {
           0% {
             // transform: translateX(-100%);

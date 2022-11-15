@@ -31,23 +31,7 @@
           button {
             overflow: visible !important;
           }
-          // button:after {
-          //   content: "";
-          //   position: absolute;
-          //   background: rgb(175, 178, 207);
-          //   width: 1px;
-          //   height: 40px;
-          //   transform: translateY(-50%);
-          //   position: relative;
-          //   left: 3vw;
-          //   top: 1vw;
-          // }
-          // button:last-child:after {
-          //   content: "";
-          //   position: absolute;
-          //   background: white;
-          //   visibility: hidden;
-          // }
+
           div {
             overflow: visible !important;
 
@@ -56,13 +40,15 @@
             }
           }
           .tabClassDynamic {
+            width: 20%;
             font-weight: 700;
             font-size: 0.8vw;
             font-family: "Poppins";
             font-style: normal;
             color: #0094ff;
             display: flex;
-            justify-content: space-evenly;
+            border: 3px #0094ff solid;
+            border-radius: 30px 30px 0 0;
             padding: 0;
             span {
               overflow: visible !important;
@@ -73,6 +59,9 @@
             }
           }
           .tabClassStatic {
+            width: 20%;
+            border: groove;
+            border-radius: 30px 30px 0 0;
             color: #9f9f9f;
             font-weight: 500;
             font-size: 0.8vw;
@@ -88,211 +77,156 @@
               }
             }
           }
-          button:nth-child(1).tabClassStatic:after {
-            content: "";
-            background: rgb(175, 178, 207);
-            width: 1px;
-            height: 40px;
-            position: relative;
-            left: 30%;
-          }
-          button:nth-child(2).tabClassStatic:before {
-            content: "";
-            background: rgb(175, 178, 207);
-            width: 1px;
-            height: 40px;
-            position: relative;
-            left: -38%;
-          }
-          button:nth-child(2).tabClassStatic:after {
-            content: "";
-            background: rgb(175, 178, 207);
-            width: 1px;
-            height: 40px;
-            position: relative;
-            left: 36%;
-          }
-          button:nth-child(3).tabClassStatic:before {
-            content: "";
-            background: rgb(175, 178, 207);
-            width: 1px;
-            height: 40px;
-            position: relative;
-            left: -28%;
-          }
-          button:nth-child(3).tabClassStatic:after {
-            content: "";
-            background: rgb(175, 178, 207);
-            width: 1px;
-            height: 40px;
-            position: relative;
-            left: 29%;
-          }
-          button:nth-child(4).tabClassStatic:before {
-            content: "";
-            background: rgb(175, 178, 207);
-            width: 1px;
-            height: 40px;
-            position: relative;
-            left: -27%;
-          }
-          button:nth-child(4).tabClassStatic:after {
-            content: "";
-            background: rgb(175, 178, 207);
-            width: 1px;
-            height: 40px;
-            position: relative;
-            left: 28%;
-          }
-          button:nth-child(5).tabClassStatic:before {
-            content: "";
-            background: rgb(175, 178, 207);
-            width: 1px;
-            height: 40px;
-            position: relative;
-            left: -37%;
-          }
-          button:nth-child(1).tabClassDynamic:after {
-            content: "";
-            background: #0094ff;
-            width: 3px;
-            height: 40px;
-            position: relative;
-            left: 30.5%;
-            z-index: 100;
-          }
-          button:nth-child(2).tabClassDynamic:before {
-            content: "";
-            background: #0094ff;
-            width: 3px;
-
-            height: 40px;
-            z-index: 100;
-            position: relative;
-            left: -37%;
-          }
-          button:nth-child(2).tabClassDynamic:after {
-            content: "";
-            background: #0094ff;
-
-            width: 3px;
-
-            height: 40px;
-            z-index: 100;
-
-            position: relative;
-            left: 36%;
-          }
-          button:nth-child(3).tabClassDynamic:before {
-            content: "";
-            background: #0094ff;
-            width: 3px;
-
-            height: 40px;
-            z-index: 100;
-            position: relative;
-            left: -27%;
-          }
-          button:nth-child(3).tabClassDynamic:after {
-            content: "";
-            background: #0094ff;
-
-            width: 3px;
-
-            height: 40px;
-            z-index: 100;
-
-            position: relative;
-            left: 28%;
-          }
-          button:nth-child(4).tabClassDynamic:before {
-            content: "";
-            background: #0094ff;
-            width: 3px;
-
-            height: 40px;
-            z-index: 100;
-            position: relative;
-            left: -27%;
-          }
-          button:nth-child(4).tabClassDynamic:after {
-            content: "";
-            background: #0094ff;
-
-            width: 3px;
-
-            height: 40px;
-            z-index: 100;
-
-            position: relative;
-            left: 27%;
-          }
-          button:nth-child(5).tabClassDynamic:before {
-            content: "";
-            background: #0094ff;
-
-            width: 3px;
-
-            height: 40px;
-            z-index: 100;
-
-            position: relative;
-            left: -36%;
-          }
-          // button.tabClassDynamic:after {
+          // button:nth-child(1).tabClassStatic:after {
           //   content: "";
-          //   background: #0094ff;
+          //   background: rgb(175, 178, 207);
           //   width: 1px;
           //   height: 40px;
           //   position: relative;
-          //   left: 18%;
-          //   border: 1px solid;
+          //   left: 30%;
           // }
-          // button.tabClassDynamic:before {
+          // button:nth-child(2).tabClassStatic:before {
           //   content: "";
-          //   background: #0094ff;
+          //   background: rgb(175, 178, 207);
           //   width: 1px;
           //   height: 40px;
           //   position: relative;
-          //   left: -26%;
-          //   border: 1px solid;
+          //   left: -38%;
           // }
-          // button.tabClassStatic:first-child:before {
+          // button:nth-child(2).tabClassStatic:after {
           //   content: "";
-          //   position: absolute;
-          //   background: white;
-          //   visibility: hidden;
+          //   background: rgb(175, 178, 207);
+          //   width: 1px;
+          //   height: 40px;
+          //   position: relative;
+          //   left: 36%;
           // }
-          // button.tabClassStatic:first-child:after {
+          // button:nth-child(3).tabClassStatic:before {
           //   content: "";
-          //   position: absolute;
-          //   background: white;
-          //   visibility: hidden;
+          //   background: rgb(175, 178, 207);
+          //   width: 1px;
+          //   height: 40px;
+          //   position: relative;
+          //   left: -28%;
           // }
-          // button.tabClassStatic:last-child:after {
+          // button:nth-child(3).tabClassStatic:after {
           //   content: "";
-          //   position: absolute;
-          //   background: white;
-          //   visibility: hidden;
+          //   background: rgb(175, 178, 207);
+          //   width: 1px;
+          //   height: 40px;
+          //   position: relative;
+          //   left: 29%;
           // }
-          // button.tabClassStatic:last-child:before {
+          // button:nth-child(4).tabClassStatic:before {
           //   content: "";
-          //   position: absolute;
-          //   background: white;
-          //   visibility: hidden;
+          //   background: rgb(175, 178, 207);
+          //   width: 1px;
+          //   height: 40px;
+          //   position: relative;
+          //   left: -27%;
           // }
+          // button:nth-child(4).tabClassStatic:after {
+          //   content: "";
+          //   background: rgb(175, 178, 207);
+          //   width: 1px;
+          //   height: 40px;
+          //   position: relative;
+          //   left: 28%;
+          // }
+          // button:nth-child(5).tabClassStatic:before {
+          //   content: "";
+          //   background: rgb(175, 178, 207);
+          //   width: 1px;
+          //   height: 40px;
+          //   position: relative;
+          //   left: -37%;
+          // }
+          // button:nth-child(1).tabClassDynamic:after {
+          //   content: "";
+          //   background: #0094ff;
+          //   width: 3px;
+          //   height: 40px;
+          //   position: relative;
+          //   left: 30.5%;
+          //   z-index: 100;
+          // }
+          // button:nth-child(2).tabClassDynamic:before {
+          //   content: "";
+          //   background: #0094ff;
+          //   width: 3px;
 
-          // button.tabClassDynamic:last-child:after {
-          //   content: "";
-          //   position: absolute;
-          //   background: white;
-          //   visibility: hidden;
+          //   height: 40px;
+          //   z-index: 100;
+          //   position: relative;
+          //   left: -37%;
           // }
-          // button.tabClassDynamic:first-child:before {
+          // button:nth-child(2).tabClassDynamic:after {
           //   content: "";
-          //   position: absolute;
-          //   background: white;
-          //   visibility: hidden;
+          //   background: #0094ff;
+
+          //   width: 3px;
+
+          //   height: 40px;
+          //   z-index: 100;
+
+          //   position: relative;
+          //   left: 36%;
+          // }
+          // button:nth-child(3).tabClassDynamic:before {
+          //   content: "";
+          //   background: #0094ff;
+          //   width: 3px;
+
+          //   height: 40px;
+          //   z-index: 100;
+          //   position: relative;
+          //   left: -27%;
+          // }
+          // button:nth-child(3).tabClassDynamic:after {
+          //   content: "";
+          //   background: #0094ff;
+
+          //   width: 3px;
+
+          //   height: 40px;
+          //   z-index: 100;
+
+          //   position: relative;
+          //   left: 28%;
+          // }
+          // button:nth-child(4).tabClassDynamic:before {
+          //   content: "";
+          //   background: #0094ff;
+          //   width: 3px;
+
+          //   height: 40px;
+          //   z-index: 100;
+          //   position: relative;
+          //   left: -27%;
+          // }
+          // button:nth-child(4).tabClassDynamic:after {
+          //   content: "";
+          //   background: #0094ff;
+
+          //   width: 3px;
+
+          //   height: 40px;
+          //   z-index: 100;
+
+          //   position: relative;
+          //   left: 27%;
+          // }
+          // button:nth-child(5).tabClassDynamic:before {
+          //   content: "";
+          //   background: #0094ff;
+
+          //   width: 3px;
+
+          //   height: 40px;
+          //   z-index: 100;
+
+          //   position: relative;
+          //   left: -36%;
           // }
         }
       }

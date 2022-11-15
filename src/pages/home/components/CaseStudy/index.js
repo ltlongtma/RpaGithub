@@ -38,7 +38,7 @@ export default function CaseStudy() {
         <Box sx={{ width: "100%" }}>
           <TabContext value={value}>
             <fieldset className={cx("tabs")}>
-              <Divider sx={{ background: "lightskyblue" }} />
+              {/* <Divider sx={{ background: "lightskyblue" }} /> */}
               <TabList
                 onChange={handleChange}
                 aria-label="tab"
@@ -87,7 +87,7 @@ export default function CaseStudy() {
                   disableRipple
                 />
               </TabList>
-              <Divider sx={{ background: "lightskyblue" }} />
+              {/* <Divider sx={{ background: "lightskyblue" }} /> */}
             </fieldset>
             <TabPanel value="1" className={cx("tabPanel")}>
               <Case1 />
