@@ -105,9 +105,12 @@
     }
     .arrowIcon {
       position: relative;
-      left: 8vw;
+      left: 29%;
       bottom: -19.5vw;
-      width: 4vw;
+      span {
+        width: 8vw !important;
+        height: 3vw !important;
+      }
     }
     .process2 {
       display: flex;
@@ -131,6 +134,7 @@
           justify-content: center;
           span {
             width: 8vw !important;
+            height: 8vw !important;
           }
         }
 

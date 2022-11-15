@@ -23,6 +23,8 @@
           margin: auto;
           span {
             overflow: visible !important;
+            width: 28vw !important;
+            height: 30vw !important;
           }
         }
         .arrowAfterIconRpa {
@@ -30,6 +32,10 @@
           position: relative !important;
           top: 5% !important;
           animation: arrow 3s infinite;
+          span {
+            width: 11vw !important;
+            height: 10vw !important;
+          }
         }
         @keyframes arrow {
           0% {
@@ -112,7 +118,9 @@
 
       span {
         margin: 1% 0;
-        width: 8vw !important;
+        // width: 8vw !important;
+        width: 7vw !important;
+        height: 3vw !important;
         img:hover {
           cursor: pointer;
         }
@@ -226,6 +234,10 @@
       .cardIcon {
         width: 4vw;
         margin: 0 1.5vw;
+        span {
+          width: 4vw !important;
+          height: 3vw !important;
+        }
       }
       .cardContent {
         left: -5%;
