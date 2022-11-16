@@ -1,14 +1,17 @@
 import Image from "next/image";
 import TmaLogo from "../../../../../public/TmaLogo.svg";
 import iconRpa from "../../../../../public/iconRpa.svg";
-
 import arrowAfterIconRpa from "../../../../../public/arrowAfterIconRpa.svg";
 import energyControlIcon from "../../../../../public/energyControlIcon.svg";
 import clockIcon from "../../../../../public/clockIcon.svg";
 import saveMoneyicon from "../../../../../public/saveMoneyicon.svg";
-import spotLight from "../../../../../public/spotLight.jpg";
-
 import cogWheel from "../../../../../public/cogWheel.svg";
+import iconRpav1 from "../../../../../public/iconRpav1.gif";
+import iconRpav2 from "../../../../../public/iconRpav2.gif";
+
+import iconRpa7 from "../../../../../public/iconRpa7.gif";
+
+
 import Button from "@mui/material/Button";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
@@ -62,13 +65,13 @@ const HighLight = () => {
         <div className={cx("left")}>
           <h1>RPA</h1>
           <div className={cx("mainIcon")}>
-            <Image className={cx("img")} src={iconRpa} alt="iconRpa" priority={true}></Image>
-            {/* <Image
+            {/* <Image className={cx("img")} src={iconRpa} alt="iconRpa" priority={true}></Image> */}
+            <Image
               className={cx("img")}
-              src={spotLight}
+              src={iconRpav1}
               alt="iconRpa"
               priority={true}
-            ></Image> */}
+            ></Image>
           </div>
           <div className={cx("arrowAfterIconRpa")}>
             <Image src={arrowAfterIconRpa} alt="arrowAfterIconRpa" priority={true} />
