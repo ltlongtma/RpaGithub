@@ -16,7 +16,7 @@ import Button from "@mui/material/Button";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import className from "classnames/bind";
-import styles from "./HighLight.module.scss";
+import styles from "./highLight.module.scss";
 
 const cx = className.bind(styles);
 const HighLight = () => {
@@ -74,7 +74,11 @@ const HighLight = () => {
             ></Image>
           </div>
           <div className={cx("arrowAfterIconRpa")}>
-            <Image src={arrowAfterIconRpa} alt="arrowAfterIconRpa" priority={true} />
+            <Image
+              src={arrowAfterIconRpa}
+              alt="arrowAfterIconRpa"
+              priority={true}
+            />
           </div>
         </div>
         <div className={cx("right")}>
@@ -88,7 +92,12 @@ const HighLight = () => {
         </div>
       </div>
       <div className={cx("menuBar")}>
-        <Image src={TmaLogo} alt="tma-logo" priority={true} onClick={() => location.reload()} />
+        <Image
+          src={TmaLogo}
+          alt="tma-logo"
+          priority={true}
+          onClick={() => location.reload()}
+        />
         <div className={cx("navigate")}>
           <Button>Home</Button>
           <Button>About TMA</Button>
