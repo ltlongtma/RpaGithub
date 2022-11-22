@@ -4,6 +4,18 @@
     height: 100vh;
     display: flex;
     align-items: center;
+    animation: arrow 3s;
+
+    // @keyframes arrow {
+    //   0% {
+    //     transform: translateY(300%);
+    //     opacity: 0;
+    //   }
+    //   100% {
+    //     transform: translateY(0);
+    //     opacity: 1;
+    //   }
+    // }
     .wrapText {
       width: 100%;
       margin-left: 6vw;
