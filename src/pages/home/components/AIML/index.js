@@ -31,10 +31,10 @@ const AIML = () => {
               <h1 className={cx("title")}>Empowered by TMA AI/ML ecosystem</h1>
             </div>
             <div className={cx("body")}>
-              <div className={cx("left")}>
+              <div className={cx("main-image-wraper")}>
                 <Image src={anaLeftImage} alt="image" priority />
               </div>
-              <div className={cx("center")}>
+              <div className={cx("item-center-wrap")}>
                 <div className={cx("top")}>
                   <div className={cx(["left", "icons"])}>
                     <Image src={image} alt="image" />
@@ -56,7 +56,7 @@ const AIML = () => {
                   </div>
                 </div>
               </div>
-              <div className={cx("right")}>
+              <div className={cx("experience-wraper")}>
                 <div className={cx("bullet-left")}>
                   <Image src={threeLine} alt="image" />
                 </div>
