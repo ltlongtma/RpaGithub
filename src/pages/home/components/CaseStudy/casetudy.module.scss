@@ -1,6 +1,6 @@
 @media screen and (min-width: 1024px) {
   .container {
-    height: 90%;
+    height: 100%;
     .header {
       width: 100%;
       padding-left: 5%;
@@ -9,7 +9,7 @@
       flex-direction: column;
       justify-content: space-evenly;
       span {
-        width: 4vw !important;
+        width: 3vw !important;
       }
       h1 {
         font-weight: 600;
@@ -28,8 +28,13 @@
         margin-bottom: 0.5vw;
         .tabLists {
           overflow: visible !important;
+          justify-content: space-between;
+          display: flex;
+          width: 100%;
           button {
             overflow: visible !important;
+            // flex: 1;
+            justify-content: center;
           }
 
           div {
@@ -40,15 +45,13 @@
             }
           }
           .tabClassDynamic {
-            width: 20%;
             font-weight: 700;
             font-size: 0.8vw;
             font-family: "Poppins";
             font-style: normal;
             color: #0094ff;
             display: flex;
-            border: 3px #0094ff solid;
-            border-radius: 30px 30px 0 0;
+            justify-content: center;
             padding: 0;
             span {
               overflow: visible !important;
@@ -59,14 +62,12 @@
             }
           }
           .tabClassStatic {
-            width: 20%;
-            border: groove;
-            border-radius: 30px 30px 0 0;
             color: #9f9f9f;
             font-weight: 500;
             font-size: 0.8vw;
             font-family: "Poppins";
             display: flex;
+            justify-content: center;
             padding: 0;
             span {
               overflow: visible !important;
@@ -85,6 +86,7 @@
           //   position: relative;
           //   left: 30%;
           // }
+
           // button:nth-child(2).tabClassStatic:before {
           //   content: "";
           //   background: rgb(175, 178, 207);
@@ -93,6 +95,7 @@
           //   position: relative;
           //   left: -38%;
           // }
+
           // button:nth-child(2).tabClassStatic:after {
           //   content: "";
           //   background: rgb(175, 178, 207);
@@ -101,6 +104,7 @@
           //   position: relative;
           //   left: 36%;
           // }
+
           // button:nth-child(3).tabClassStatic:before {
           //   content: "";
           //   background: rgb(175, 178, 207);
@@ -141,93 +145,93 @@
           //   position: relative;
           //   left: -37%;
           // }
-          // button:nth-child(1).tabClassDynamic:after {
-          //   content: "";
-          //   background: #0094ff;
-          //   width: 3px;
-          //   height: 40px;
-          //   position: relative;
-          //   left: 30.5%;
-          //   z-index: 100;
-          // }
-          // button:nth-child(2).tabClassDynamic:before {
-          //   content: "";
-          //   background: #0094ff;
-          //   width: 3px;
+          button:nth-child(1).tabClassDynamic:after {
+            content: "";
+            background: #0094ff;
+            width: 2px;
+            height: 40px;
+            position: relative;
+            left: 28%;
+            z-index: 100;
+          }
+          button:nth-child(2).tabClassDynamic:before {
+            content: "";
+            background: #0094ff;
+            width: 2px;
 
-          //   height: 40px;
-          //   z-index: 100;
-          //   position: relative;
-          //   left: -37%;
-          // }
-          // button:nth-child(2).tabClassDynamic:after {
-          //   content: "";
-          //   background: #0094ff;
+            height: 40px;
+            z-index: 100;
+            position: relative;
+            left: -37%;
+          }
+          button:nth-child(2).tabClassDynamic:after {
+            content: "";
+            background: #0094ff;
 
-          //   width: 3px;
+            width: 2px;
 
-          //   height: 40px;
-          //   z-index: 100;
+            height: 40px;
+            z-index: 100;
 
-          //   position: relative;
-          //   left: 36%;
-          // }
-          // button:nth-child(3).tabClassDynamic:before {
-          //   content: "";
-          //   background: #0094ff;
-          //   width: 3px;
+            position: relative;
+            left: 28%;
+          }
+          button:nth-child(3).tabClassDynamic:before {
+            content: "";
+            background: #0094ff;
+            width: 2px;
 
-          //   height: 40px;
-          //   z-index: 100;
-          //   position: relative;
-          //   left: -27%;
-          // }
-          // button:nth-child(3).tabClassDynamic:after {
-          //   content: "";
-          //   background: #0094ff;
+            height: 40px;
+            z-index: 100;
+            position: relative;
+            left: -30%;
+          }
+          button:nth-child(3).tabClassDynamic:after {
+            content: "";
+            background: #0094ff;
 
-          //   width: 3px;
+            width: 2px;
 
-          //   height: 40px;
-          //   z-index: 100;
+            height: 40px;
+            z-index: 100;
 
-          //   position: relative;
-          //   left: 28%;
-          // }
-          // button:nth-child(4).tabClassDynamic:before {
-          //   content: "";
-          //   background: #0094ff;
-          //   width: 3px;
+            position: relative;
+            left: 22%;
+          }
+          button:nth-child(4).tabClassDynamic:before {
+            content: "";
+            background: #0094ff;
+            width: 2px;
 
-          //   height: 40px;
-          //   z-index: 100;
-          //   position: relative;
-          //   left: -27%;
-          // }
-          // button:nth-child(4).tabClassDynamic:after {
-          //   content: "";
-          //   background: #0094ff;
+            height: 40px;
+            z-index: 100;
+            position: relative;
+            left: -28%;
+          }
+          button:nth-child(4).tabClassDynamic:after {
+            content: "";
+            background: #0094ff;
 
-          //   width: 3px;
+            width: 2px;
 
-          //   height: 40px;
-          //   z-index: 100;
+            height: 40px;
+            z-index: 100;
 
-          //   position: relative;
-          //   left: 27%;
-          // }
-          // button:nth-child(5).tabClassDynamic:before {
-          //   content: "";
-          //   background: #0094ff;
+            position: relative;
+            left: 22%;
+          }
+          button:nth-child(5).tabClassDynamic:before {
+            content: "";
+            background: #0094ff;
 
-          //   width: 3px;
+            width: 2px;
 
-          //   height: 40px;
-          //   z-index: 100;
+            height: 40px;
+            z-index: 100;
 
-          //   position: relative;
-          //   left: -36%;
-          // }
+            position: relative;
+            left: -39%;
+          }
         }
       }
 
@@ -290,7 +294,6 @@
         top: -2.5vw;
         scale: 1.3;
         margin: 4% 7vw 0 7vw;
-        text-align: center;
         span {
           font-weight: 600;
         }

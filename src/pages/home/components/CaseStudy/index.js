@@ -41,8 +41,10 @@ export default function CaseStudy() {
               {/* <Divider sx={{ background: "lightskyblue" }} /> */}
               <TabList
                 onChange={handleChange}
-                aria-label="tab"
-                TabIndicatorProps={{ style: { backgroundColor: "lightskyblue" } }}
+                // aria-label="tab"
+                TabIndicatorProps={{
+                  style: { backgroundColor: "lightskyblue"},
+                }}
                 className={cx("tabLists")}
               >
                 <Tab

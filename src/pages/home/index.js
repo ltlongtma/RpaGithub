@@ -96,12 +96,12 @@ export default function Home() {
           onUpdate: tweenDot,
         });
       }
-      let tl = gsap.timeline(); //create the timeline
-      tl.fromTo(
-        "#panelWrap",
-        { x: "random(-1000, 2000)" },
-        { x: 0, opacity: 1, ease: "power2.inOut", duration: 1.5 }
-      ); //start sequencing
+      // let tl = gsap.timeline(); //create the timeline
+      // tl.fromTo(
+      //   "#panelWrap",
+      //   { x: "random(-1000, 2000)" },
+      //   { x: 0, opacity: 1, ease: "power2.inOut", duration: 1.5 }
+      // ); //start sequencing
     }
 
     gsap.set(".hideMe", { opacity: 1 });
