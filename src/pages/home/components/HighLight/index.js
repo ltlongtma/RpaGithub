@@ -6,10 +6,9 @@ import energyControlIcon from "../../../../../public/energyControlIcon.svg";
 import clockIcon from "../../../../../public/clockIcon.svg";
 import saveMoneyicon from "../../../../../public/saveMoneyicon.svg";
 import cogWheel from "../../../../../public/cogWheel.svg";
-import iconRpav1 from "../../../../../public/iconRpav1.gif";
-import iconRpav2 from "../../../../../public/iconRpav2.gif";
+import verST from "../../../../../public/verST.gif";
+import iconRpa_Thanh_1_5 from "../../../../../public/iconRpa_Thanh_1_5.gif";
 
-import iconRpa7 from "../../../../../public/iconRpa7.gif";
 
 
 import Button from "@mui/material/Button";
@@ -68,7 +67,7 @@ const HighLight = () => {
             {/* <Image className={cx("img")} src={iconRpa} alt="iconRpa" priority={true}></Image> */}
             <Image
               className={cx("img")}
-              src={iconRpav1}
+              src={verST}
               alt="iconRpa"
               priority={true}
             ></Image>
