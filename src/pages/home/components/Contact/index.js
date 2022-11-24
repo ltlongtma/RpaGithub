@@ -32,7 +32,11 @@ const Contact = () => {
             </Link>
           </div>
           <div className={cx("buttonContact")}>
-            <Button variant="contained">Contact Us</Button>
+            <Button variant="contained">
+              <Link href="https://www.tmasolutions.com/contact">
+                <a>Contact us</a>
+              </Link>
+            </Button>
           </div>
         </div>
 
@@ -66,14 +70,46 @@ const Contact = () => {
             </div>
           </div>
           <div className={cx("right")}>
-            <Button>Home</Button>
-            <Button>About TMA</Button>
-            <Button>Solutions</Button>
-            <Button>Industries</Button>
-            <Button>Technologies</Button>
-            <Button>News</Button>
-            <Button>Contact</Button>
-            <Button>Others</Button>
+            <Button>
+              <Link href="https://www.tmasolutions.com/">
+                <a>Home</a>
+              </Link>
+            </Button>
+            <Button>
+              <Link href="https://www.tmasolutions.com/about-us">
+                <a>About TMA</a>
+              </Link>
+            </Button>
+            <Button>
+              <Link href="https://www.tmasolutions.com/services">
+                <a>Solutions</a>
+              </Link>
+            </Button>
+            <Button>
+              <Link href="https://www.tmasolutions.com/industries">
+                <a>Industries</a>
+              </Link>
+            </Button>
+            <Button>
+              <Link href="https://www.tmasolutions.com/competencies">
+                <a>Technologies</a>
+              </Link>
+            </Button>
+            <Button>
+              <Link href="https://www.tmasolutions.com/news-events">
+                <a>News</a>
+              </Link>
+            </Button>
+            <Button>
+              <Link href="https://www.tmasolutions.com/contact">
+                <a>Contact</a>
+              </Link>
+            </Button>
+            <Button>
+              <Link href="https://www.tma.vn/Why-TMA/Hoat-dong-ngoai-khoa-phong-phu">
+                <a>Others</a>
+              </Link>
+            </Button>
           </div>
         </div>
         <div className={cx("bottomText")}>TMA Solutions &copy;2022 All Rights Reserved </div>

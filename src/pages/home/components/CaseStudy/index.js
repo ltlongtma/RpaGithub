@@ -32,7 +32,7 @@ export default function CaseStudy() {
     <div className={cx("container")}>
       <div className={cx("header")}>
         <Image src={Icon_Overview} alt="Icon_Overview" />
-        <h1>Sample Case Study</h1>
+        <h1>Sample Case Studies</h1>
       </div>
       <div className={cx("body")}>
         <Box sx={{ width: "100%" }}>

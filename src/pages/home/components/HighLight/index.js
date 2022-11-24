@@ -10,8 +10,7 @@ import iconRpav1 from "../../../../../public/iconRpav1.gif";
 import iconRpav2 from "../../../../../public/iconRpav2.gif";
 
 import iconRpa7 from "../../../../../public/iconRpa7.gif";
-
-
+import Link from "next/link";
 import Button from "@mui/material/Button";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
@@ -66,19 +65,10 @@ const HighLight = () => {
           <h1>RPA</h1>
           <div className={cx("mainIcon")}>
             {/* <Image className={cx("img")} src={iconRpa} alt="iconRpa" priority={true}></Image> */}
-            <Image
-              className={cx("img")}
-              src={iconRpav1}
-              alt="iconRpa"
-              priority={true}
-            ></Image>
+            <Image className={cx("img")} src={iconRpav1} alt="iconRpa" priority={true}></Image>
           </div>
           <div className={cx("arrowAfterIconRpa")}>
-            <Image
-              src={arrowAfterIconRpa}
-              alt="arrowAfterIconRpa"
-              priority={true}
-            />
+            <Image src={arrowAfterIconRpa} alt="arrowAfterIconRpa" priority={true} />
           </div>
         </div>
         <div className={cx("right")}>
@@ -92,32 +82,53 @@ const HighLight = () => {
         </div>
       </div>
       <div className={cx("menuBar")}>
-        <Image
-          src={TmaLogo}
-          alt="tma-logo"
-          priority={true}
-          onClick={() => location.reload()}
-        />
+        <Image src={TmaLogo} alt="tma-logo" priority={true} onClick={() => location.reload()} />
         <div className={cx("navigate")}>
-          <Button>Home</Button>
-          <Button>About TMA</Button>
           <Button>
-            Solutions
-            <KeyboardArrowUpIcon />
+            <Link href="https://www.tmasolutions.com/">
+              <a>Home</a>
+            </Link>
           </Button>
           <Button>
-            Industries
+            <Link href="https://www.tmasolutions.com/about-us">
+              <a>About TMA</a>
+            </Link>
+          </Button>
+          <Button>
+            <Link href="https://www.tmasolutions.com/services">
+              <a>Solutions</a>
+            </Link>
+          </Button>
+          <Button>
+            <Link href="https://www.tmasolutions.com/industries">
+              <a>Industries</a>
+            </Link>
             <KeyboardArrowDownIcon />
           </Button>
           <Button>
-            Technologies
+            <Link href="https://www.tmasolutions.com/competencies">
+              <a>Technologies</a>
+            </Link>
             <KeyboardArrowDownIcon />
           </Button>
-          <Button>News</Button>
-          <Button>Others</Button>
+          <Button>
+            <Link href="https://www.tmasolutions.com/news-events">
+              <a>News</a>
+            </Link>
+          </Button>
+          <Button>
+            <Link href="https://www.tma.vn/Why-TMA/Hoat-dong-ngoai-khoa-phong-phu">
+              <a>Others</a>
+            </Link>
+          </Button>
         </div>
         <div className={cx("buttonContact")}>
-          <Button variant="contained">Contact Us</Button>
+          {/* <Button variant="contained">Contact Us</Button> */}
+          <Button variant="contained">
+            <Link href="https://www.tmasolutions.com/contact">
+              <a>Contact us</a>
+            </Link>
+          </Button>
         </div>
       </div>
       <div className={cx("triangle")}>
