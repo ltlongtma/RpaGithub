@@ -45,7 +45,7 @@
             }
           }
           .tabClassDynamic {
-            font-weight: 700;
+            font-weight: 500;
             font-size: 0.8vw;
             font-family: "Poppins";
             font-style: normal;
@@ -78,159 +78,122 @@
               }
             }
           }
-          // button:nth-child(1).tabClassStatic:after {
-          //   content: "";
-          //   background: rgb(175, 178, 207);
-          //   width: 1px;
-          //   height: 40px;
-          //   position: relative;
-          //   left: 30%;
-          // }
-
-          // button:nth-child(2).tabClassStatic:before {
-          //   content: "";
-          //   background: rgb(175, 178, 207);
-          //   width: 1px;
-          //   height: 40px;
-          //   position: relative;
-          //   left: -38%;
-          // }
-
-          // button:nth-child(2).tabClassStatic:after {
-          //   content: "";
-          //   background: rgb(175, 178, 207);
-          //   width: 1px;
-          //   height: 40px;
-          //   position: relative;
-          //   left: 36%;
-          // }
-
-          // button:nth-child(3).tabClassStatic:before {
-          //   content: "";
-          //   background: rgb(175, 178, 207);
-          //   width: 1px;
-          //   height: 40px;
-          //   position: relative;
-          //   left: -28%;
-          // }
-          // button:nth-child(3).tabClassStatic:after {
-          //   content: "";
-          //   background: rgb(175, 178, 207);
-          //   width: 1px;
-          //   height: 40px;
-          //   position: relative;
-          //   left: 29%;
-          // }
-          // button:nth-child(4).tabClassStatic:before {
-          //   content: "";
-          //   background: rgb(175, 178, 207);
-          //   width: 1px;
-          //   height: 40px;
-          //   position: relative;
-          //   left: -27%;
-          // }
-          // button:nth-child(4).tabClassStatic:after {
-          //   content: "";
-          //   background: rgb(175, 178, 207);
-          //   width: 1px;
-          //   height: 40px;
-          //   position: relative;
-          //   left: 28%;
-          // }
-          // button:nth-child(5).tabClassStatic:before {
-          //   content: "";
-          //   background: rgb(175, 178, 207);
-          //   width: 1px;
-          //   height: 40px;
-          //   position: relative;
-          //   left: -37%;
-          // }
-          button:nth-child(1).tabClassDynamic:after {
+          button:nth-child(1).tabClassStatic:after {
             content: "";
-            background: #0094ff;
-            width: 2px;
+            background: rgb(175, 178, 207);
+            width: 1px;
             height: 40px;
             position: relative;
-            left: 28%;
+            left: 34%;
+          }
+          button:nth-child(1).tabClassDynamic:after {
+            content: "";
+            background: #87cefa;
+            width: 3px;
+            height: 40px;
+            position: relative;
+            left: 34%;
             z-index: 100;
+          }
+
+          button:nth-child(2).tabClassStatic:after {
+            content: "";
+            background: rgb(175, 178, 207);
+            width: 1px;
+            height: 40px;
+            position: relative;
+            left: 31%;
           }
           button:nth-child(2).tabClassDynamic:before {
             content: "";
-            background: #0094ff;
-            width: 2px;
-
+            background: #87cefa;
+            width: 3px;
             height: 40px;
             z-index: 100;
             position: relative;
-            left: -37%;
+            left: -35.5%;
           }
           button:nth-child(2).tabClassDynamic:after {
             content: "";
-            background: #0094ff;
-
-            width: 2px;
-
+            background: #87cefa;
+            width: 3px;
             height: 40px;
             z-index: 100;
-
             position: relative;
             left: 28%;
           }
+
+          button:nth-child(3).tabClassStatic:after {
+            content: "";
+            background: rgb(175, 178, 207);
+            width: 1px;
+            height: 40px;
+            position: relative;
+            left: 30%;
+          }
           button:nth-child(3).tabClassDynamic:before {
             content: "";
-            background: #0094ff;
-            width: 2px;
-
+            background: #87cefa;
+            width: 3px;
             height: 40px;
             z-index: 100;
             position: relative;
-            left: -30%;
+            left: -33%;
           }
           button:nth-child(3).tabClassDynamic:after {
             content: "";
-            background: #0094ff;
-
-            width: 2px;
-
+            background: #87cefa;
+            width: 3px;
             height: 40px;
             z-index: 100;
-
             position: relative;
-            left: 22%;
+            left: 29%;
           }
+
+          button:nth-child(4).tabClassStatic:after {
+            content: "";
+            background: rgb(175, 178, 207);
+            width: 1px;
+            height: 40px;
+            position: relative;
+            left: 28%;
+          }
+          button:nth-child(5).tabClassStatic:before {
+            content: "";
+            background: rgb(175, 178, 207);
+            width: 1px;
+            height: 40px;
+            position: relative;
+            left: -39%;
+          }
+
           button:nth-child(4).tabClassDynamic:before {
             content: "";
-            background: #0094ff;
-            width: 2px;
+            background: #87cefa;
+            width: 3px;
 
             height: 40px;
             z-index: 100;
             position: relative;
-            left: -28%;
+            left: -27%;
           }
           button:nth-child(4).tabClassDynamic:after {
             content: "";
-            background: #0094ff;
-
-            width: 2px;
-
+            background: #87cefa;
+            width: 3px;
             height: 40px;
             z-index: 100;
-
             position: relative;
-            left: 22%;
+            left: 27.5%;
           }
           button:nth-child(5).tabClassDynamic:before {
             content: "";
-            background: #0094ff;
-
-            width: 2px;
-
+            background: #87cefa;
+            width: 3px;
             height: 40px;
             z-index: 100;
-
             position: relative;
-            left: -39%;
+            left: -38.5%;
           }
         }
       }

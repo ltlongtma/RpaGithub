@@ -1,7 +1,7 @@
 @media screen and (min-width: 1024px) {
   .container {
     // background: linear-gradient(213.12deg, #396afc 39.51%, #0094ff 80.26%);
-    background:#0066ff;
+    background: #0066ff;
     width: 100%;
     height: 100%;
     position: relative;
@@ -32,15 +32,75 @@
         .arrowAfterIconRpa {
           margin: auto;
           position: relative !important;
-          top: 5% !important;
-          animation: arrow 3s infinite;
-          span {
-            width: 11vw !important;
-            height: 10vw !important;
+          top: 7% !important;
+          display: flex;
+          flex-direction: column;
+          .height {
+            height: 1.5vh;
+          }
+          // animation: arrow 3s infinite;
+          .animation-arrow1 {
+            animation: arrow1 8s infinite;
+            margin-bottom: 2.2vw;
+            // animation-delay: 8s infinite;
+          }
+          .animation-arrow2 {
+            animation: arrow2 8s infinite;
+            margin-bottom: 2.2vw;
+          }
+          .animation-arrow3 {
+            animation: arrow3 8s infinite;
+            margin-bottom: 2.2vw;
+          }
+          .animation-arrow4 {
+            animation: arrow4 8s infinite;
+            margin-bottom: 2.2vw;
           }
         }
-        @keyframes arrow {
+        @keyframes arrow1 {
           0% {
+            transform: translateX(-100%);
+            opacity: 0;
+          }
+          25% {
+            transform: translateX(0);
+            opacity: 1;
+          }
+        }
+        @keyframes arrow2 {
+          0% {
+            transform: translateX(-100%);
+            opacity: 0;
+          }
+          25% {
+            transform: translateX(-100%);
+            opacity: 0;
+          }
+          50% {
+            transform: translateX(0);
+            opacity: 1;
+          }
+        }
+        @keyframes arrow3 {
+          0% {
+            transform: translateX(-100%);
+            opacity: 0;
+          }
+          50% {
+            transform: translateX(-100%);
+            opacity: 0;
+          }
+          75% {
+            transform: translateX(0);
+            opacity: 1;
+          }
+        }
+        @keyframes arrow4 {
+          0% {
+            transform: translateX(-100%);
+            opacity: 0;
+          }
+          70% {
             transform: translateX(-100%);
             opacity: 0;
           }
@@ -49,6 +109,7 @@
             opacity: 1;
           }
         }
+
         h1 {
           font-family: "Poppins";
           font-style: normal;
@@ -69,18 +130,6 @@
         flex-direction: column;
         top: -7.5vw;
         width: 50%;
-        opacity: 0;
-        animation: contentRight 2s linear 1.5s forwards;
-        @keyframes contentRight {
-          0% {
-            // transform: translateX(-100%);
-            opacity: 0;
-          }
-          100% {
-            // transform: translateX(0);
-            opacity: 1;
-          }
-        }
 
         .title {
           font-weight: 700;
@@ -106,6 +155,54 @@
           p {
             margin-top: 0 !important;
             margin-bottom: 0 !important;
+          }
+          p:nth-child(1) {
+            opacity: 0;
+            animation: arrow 5s 1s linear forwards;
+            @keyframes arrow {
+              0% {
+                opacity: 0;
+              }
+              100% {
+                opacity: 1;
+              }
+            }
+          }
+          p:nth-child(2) {
+            opacity: 0;
+            animation: arrow 5s 3s linear forwards;
+            @keyframes arrow {
+              0% {
+                opacity: 0;
+              }
+              100% {
+                opacity: 1;
+              }
+            }
+          }
+          p:nth-child(3) {
+            opacity: 0;
+            animation: arrow 4s 5.5s linear forwards;
+            @keyframes arrow {
+              0% {
+                opacity: 0;
+              }
+              100% {
+                opacity: 1;
+              }
+            }
+          }
+          p:nth-child(4) {
+            opacity: 0;
+            animation: arrow 4s 7s linear forwards;
+            @keyframes arrow {
+              0% {
+                opacity: 0;
+              }
+              100% {
+                opacity: 1;
+              }
+            }
           }
         }
       }

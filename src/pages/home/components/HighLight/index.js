@@ -1,20 +1,16 @@
 import Image from "next/image";
 import TmaLogo from "../../../../../public/TmaLogo.svg";
-import iconRpa from "../../../../../public/iconRpa.svg";
-import arrowAfterIconRpa from "../../../../../public/arrowAfterIconRpa.svg";
+import arrowAfterIconRpa from "../../../../../public/HighlightArrow.svg";
 import energyControlIcon from "../../../../../public/energyControlIcon.svg";
 import clockIcon from "../../../../../public/clockIcon.svg";
 import saveMoneyicon from "../../../../../public/saveMoneyicon.svg";
 import cogWheel from "../../../../../public/cogWheel.svg";
-import verST from "../../../../../public/verST.gif";
-import arrowHighLight from "../../../../../public/arrowHighLight.svg";
-
 import Link from "next/link";
 import Button from "@mui/material/Button";
-import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import className from "classnames/bind";
 import styles from "./highLight.module.scss";
+import verST from "../../../../../public/verST.gif";
 
 const cx = className.bind(styles);
 const HighLight = () => {
@@ -68,7 +64,36 @@ const HighLight = () => {
             <Image className={cx("img")} src={verST} alt="iconRpa" priority={true}></Image>
           </div>
           <div className={cx("arrowAfterIconRpa")}>
-            <Image src={arrowAfterIconRpa} alt="arrowAfterIconRpa" priority={true} />
+
+            <div className={cx(["animation-arrow1", "height"])}>
+              <Image
+                src={arrowAfterIconRpa}
+                alt="arrowAfterIconRpa"
+                priority={true}
+              />
+            </div>
+            <div className={cx(["animation-arrow2", "height"])}>
+              <Image
+                src={arrowAfterIconRpa}
+                alt="arrowAfterIconRpa"
+                priority={true}
+              />
+            </div>
+            <div className={cx(["animation-arrow3", "height"])}>
+              <Image
+                src={arrowAfterIconRpa}
+                alt="arrowAfterIconRpa"
+                priority={true}
+              />
+            </div>
+            <div className={cx(["animation-arrow4", "height"])}>
+              <Image
+                src={arrowAfterIconRpa}
+                alt="arrowAfterIconRpa"
+                priority={true}
+              />
+            </div>
+
           </div>
         </div>
         <div className={cx("right")}>

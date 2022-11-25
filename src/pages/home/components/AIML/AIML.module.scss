@@ -56,7 +56,7 @@
         align-items: center;
         justify-content: center;
         display: flex;
-        top: -2vw;
+        top: -1vw;
         position: relative;
         span {
           width: 53vw !important;
@@ -126,12 +126,43 @@
           left: -3.5vw;
           align-items: center;
           .bullet-left {
-            top: 0.1vw;
+            top: 1.1vw;
             position: relative;
-            width: 10vw;
-            animation: arrow 3s infinite;
-            @keyframes arrow {
+            width: 11vw;
+            span {
+              width: 8vw !important;
+              height: 1vw !important;
+            }
+            @keyframes arrow1 {
               0% {
+                transform: translateX(-100%);
+                opacity: 0;
+              }
+              50% {
+                transform: translateX(0);
+                opacity: 1;
+              }
+            }
+            @keyframes arrow2 {
+              0% {
+                transform: translateX(-100%);
+                opacity: 0;
+              }
+              38% {
+                transform: translateX(-100%);
+                opacity: 0;
+              }
+              75% {
+                transform: translateX(0);
+                opacity: 1;
+              }
+            }
+            @keyframes arrow3 {
+              0% {
+                transform: translateX(-100%);
+                opacity: 0;
+              }
+              75% {
                 transform: translateX(-100%);
                 opacity: 0;
               }
@@ -139,6 +170,20 @@
                 transform: translateX(0);
                 opacity: 1;
               }
+            }
+            .animation-arrow1 {
+              animation: arrow1 5s infinite;
+              margin-bottom: 2.2vw;
+            }
+            .animation-arrow2 {
+              animation: arrow2 5s infinite;
+              margin-bottom: 2.2vw;
+              position: relative;
+              left: 3vw;
+            }
+            .animation-arrow3 {
+              animation: arrow3 5s infinite;
+              margin-bottom: 2.2vw;
             }
           }
           .exp {

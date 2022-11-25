@@ -10,7 +10,7 @@ import voice from "../../../../../public/AnaVoice.svg";
 import image from "../../../../../public/AnaImageVideo.svg";
 import data from "../../../../../public/AnaData.svg";
 import anaImage from "../../../../../public/AIMLAnaCenter.svg";
-import threeLine from "../../../../../public/AIML3Line.svg";
+import arrow1 from "../../../../../public/AIMLArrow1.svg";
 import anaLeftImage from "../../../../../public/anaLeftImage.svg";
 
 const cx = className.bind(styles);
@@ -58,7 +58,15 @@ const AIML = () => {
               </div>
               <div className={cx("experience-wraper")}>
                 <div className={cx("bullet-left")}>
-                  <Image src={threeLine} alt="image" />
+                  <div className={cx("animation-arrow1")}>
+                    <Image src={arrow1} alt="image" />
+                  </div>
+                  <div className={cx("animation-arrow2")}>
+                    <Image src={arrow1} alt="image" />
+                  </div>
+                  <div className={cx("animation-arrow3")}>
+                    <Image src={arrow1} alt="image" />
+                  </div>
                 </div>
                 <div className={cx("exp")}>
                   <div className={cx("expandTop10")}>
