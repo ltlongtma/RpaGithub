@@ -1,7 +1,7 @@
 import Image from "next/image";
 import TmaLogo from "../../../../../public/TmaLogo.svg";
 import iconRpa from "../../../../../public/iconRpa.svg";
-import arrowAfterIconRpa from "../../../../../public/arrowAfterIconRpa.svg";
+import arrowAfterIconRpa from "../../../../../public/HighlightArrow.svg";
 import energyControlIcon from "../../../../../public/energyControlIcon.svg";
 import clockIcon from "../../../../../public/clockIcon.svg";
 import saveMoneyicon from "../../../../../public/saveMoneyicon.svg";
@@ -10,7 +10,6 @@ import iconRpav1 from "../../../../../public/iconRpav1.gif";
 import iconRpav2 from "../../../../../public/iconRpav2.gif";
 
 import iconRpa7 from "../../../../../public/iconRpa7.gif";
-
 
 import Button from "@mui/material/Button";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
@@ -74,11 +73,34 @@ const HighLight = () => {
             ></Image>
           </div>
           <div className={cx("arrowAfterIconRpa")}>
-            <Image
-              src={arrowAfterIconRpa}
-              alt="arrowAfterIconRpa"
-              priority={true}
-            />
+            <div className={cx(["animation-arrow1", "height"])}>
+              <Image
+                src={arrowAfterIconRpa}
+                alt="arrowAfterIconRpa"
+                priority={true}
+              />
+            </div>
+            <div className={cx(["animation-arrow2", "height"])}>
+              <Image
+                src={arrowAfterIconRpa}
+                alt="arrowAfterIconRpa"
+                priority={true}
+              />
+            </div>
+            <div className={cx(["animation-arrow3", "height"])}>
+              <Image
+                src={arrowAfterIconRpa}
+                alt="arrowAfterIconRpa"
+                priority={true}
+              />
+            </div>
+            <div className={cx(["animation-arrow4", "height"])}>
+              <Image
+                src={arrowAfterIconRpa}
+                alt="arrowAfterIconRpa"
+                priority={true}
+              />
+            </div>
           </div>
         </div>
         <div className={cx("right")}>
