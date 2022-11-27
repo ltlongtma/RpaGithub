@@ -10,7 +10,7 @@ import Button from "@mui/material/Button";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import className from "classnames/bind";
 import styles from "./highLight.module.scss";
-import verST from "../../../../../public/verST.gif";
+import ver5_1 from "../../../../../public/ver5_1.gif";
 
 const cx = className.bind(styles);
 const HighLight = () => {
@@ -61,7 +61,7 @@ const HighLight = () => {
           <div className={cx("mainIcon")}>
             {/* <Image className={cx("img")} src={iconRpa} alt="iconRpa" priority={true}></Image> */}
 
-            <Image className={cx("img")} src={verST} alt="iconRpa" priority={true}></Image>
+            <Image className={cx("img")} src={ver5_1} alt="iconRpa" priority={true}></Image>
           </div>
           <div className={cx("arrowAfterIconRpa")}>
 

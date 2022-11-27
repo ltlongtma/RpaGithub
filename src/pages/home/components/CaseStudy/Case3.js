@@ -11,7 +11,7 @@ const Case3 = () => {
           <h1>Problem</h1>
           <ul>
             <li>
-              Hundreds of arrival notices to process with different format from multiple partners
+              Hundreds of arrival notices to process with different formats from multiple partners
               daily
             </li>
             <li>Repeated and time-consuming task</li>
