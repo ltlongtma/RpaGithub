@@ -10,18 +10,26 @@ const Case4 = () => {
       <div className={cx("content")}>
         <div className={cx("content1")}>
           <h1>Problem</h1>
-          <ul>
-            <li>Debts need to be checked to remind customers regularly​</li>
-            <li>Overdue debts may be missed sometime</li>
+          <ul style={{ marginTop: "5%" }}>
+            <li>
+              <p>Debts need to be checked to remind customers regularly​</p>
+            </li>
+            <li style={{ position: "relative", top: "1vw" }}>
+              <p style={{ position: "relative", top: "-1vw" }}>
+                Overdue debts may be missed sometime
+              </p>
+            </li>
           </ul>
         </div>
         <div className={cx("content2")}>
           <h1>Result</h1>
-          <ul>
-            <li>
-              <span>2500</span>
-              <span style={{ color: "black", fontWeight: 600 }}></span> hours
-              returned to office workers annually
+          <ul style={{ marginTop: "5%" }}>
+            <li style={{ position: "relative", top: "-0.5vw" }}>
+              <p>
+                <span>2500</span>
+                <span style={{ color: "black", fontWeight: 600 }}></span> hours returned to office
+                workers annually
+              </p>
             </li>
           </ul>
         </div>

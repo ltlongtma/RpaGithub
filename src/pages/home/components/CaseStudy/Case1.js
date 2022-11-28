@@ -10,23 +10,27 @@ const Case1_2 = () => {
       <div className={cx("content")}>
         <div className={cx("content1")}>
           <h1>Problem</h1>
-          <ul>
-            <li>
-              <span>10</span> minutes to get and enter information for
-              <span> 1</span> CV into the recruitment system with multiple
-              stages and applications
+          <ul style={{ top: 0 }}>
+            <li style={{ alignItems: "baseline" }}>
+              <p style={{ position: "relative", top: "-1vw" }}>
+                <span>10</span> minutes to get and enter information for 1 CV into the recruitment
+                system with multiple stages and applications
+              </p>
             </li>
-            <li>
-              <span>1000</span> CVs to be processed per week
+            <li style={{ alignItems: "baseline" }}>
+              <p style={{ position: "relative", top: "-1vw" }}>
+                <span>1000</span> CVs to be processed per week
+              </p>
             </li>
           </ul>
         </div>
         <div className={cx("content2")}>
           <h1>Result</h1>
-          <ul>
-            <li>
-              <span>8000</span> hours saved for Human Resource Department
-              annually
+          <ul style={{ top: 0 }}>
+            <li style={{ alignItems: "baseline" }}>
+              <p style={{ position: "relative", top: "-1vw" }}>
+                <span>8000</span> hours saved for Human Resource Department annually
+              </p>
             </li>
           </ul>
         </div>
