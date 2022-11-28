@@ -63,46 +63,34 @@ const HighLight = () => {
 
             <Image className={cx("img")} src={verST} alt="iconRpa" priority={true}></Image>
           </div>
-          <div className={cx("arrowAfterIconRpa")}>
-
-            <div className={cx(["animation-arrow1", "height"])}>
-              <Image
-                src={arrowAfterIconRpa}
-                alt="arrowAfterIconRpa"
-                priority={true}
-              />
-            </div>
-            <div className={cx(["animation-arrow2", "height"])}>
-              <Image
-                src={arrowAfterIconRpa}
-                alt="arrowAfterIconRpa"
-                priority={true}
-              />
-            </div>
-            <div className={cx(["animation-arrow3", "height"])}>
-              <Image
-                src={arrowAfterIconRpa}
-                alt="arrowAfterIconRpa"
-                priority={true}
-              />
-            </div>
-            <div className={cx(["animation-arrow4", "height"])}>
-              <Image
-                src={arrowAfterIconRpa}
-                alt="arrowAfterIconRpa"
-                priority={true}
-              />
-            </div>
-
-          </div>
         </div>
         <div className={cx("right")}>
           <h1 className={cx("title")}>TMA RPA Center</h1>
           <div className={cx("body")}>
-            <p>Everything can be automated</p>
-            <p>Arm all of your employees with virtual assistant</p>
-            <p>Propelling digital transformation forward</p>
-            <p>Your processes are now more intelligent with AI</p>
+            <div className={cx("line")}>
+              <div className={cx("arrow1")}>
+                <Image src={arrowAfterIconRpa} alt="arrowAfterIconRpa" priority={true} />
+              </div>
+              <p>Everything can be automated</p>
+            </div>
+            <div className={cx("line")}>
+              <div className={cx("arrow2")}>
+                <Image src={arrowAfterIconRpa} alt="arrowAfterIconRpa" priority={true} />
+              </div>
+              <p>Arm all of your employees with virtual assistant</p>
+            </div>
+            <div className={cx("line")}>
+              <div className={cx("arrow3")}>
+                <Image src={arrowAfterIconRpa} alt="arrowAfterIconRpa" priority={true} />
+              </div>
+              <p>Propelling digital transformation forward</p>
+            </div>
+            <div className={cx("line")}>
+              <div className={cx("arrow4")}>
+                <Image src={arrowAfterIconRpa} alt="arrowAfterIconRpa" priority={true} />
+              </div>
+              <p>Your processes are now more intelligent with AI</p>
+            </div>
           </div>
         </div>
       </div>

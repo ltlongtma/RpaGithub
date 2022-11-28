@@ -29,86 +29,6 @@
             height: 30vw !important;
           }
         }
-        .arrowAfterIconRpa {
-          margin: auto;
-          position: relative !important;
-          top: 7% !important;
-          display: flex;
-          flex-direction: column;
-          .height {
-            height: 1.5vh;
-          }
-          // animation: arrow 3s infinite;
-          .animation-arrow1 {
-            animation: arrow1 8s infinite;
-            margin-bottom: 2.2vw;
-            // animation-delay: 8s infinite;
-          }
-          .animation-arrow2 {
-            animation: arrow2 8s infinite;
-            margin-bottom: 2.2vw;
-          }
-          .animation-arrow3 {
-            animation: arrow3 8s infinite;
-            margin-bottom: 2.2vw;
-          }
-          .animation-arrow4 {
-            animation: arrow4 8s infinite;
-            margin-bottom: 2.2vw;
-          }
-        }
-        @keyframes arrow1 {
-          0% {
-            transform: translateX(-100%);
-            opacity: 0;
-          }
-          25% {
-            transform: translateX(0);
-            opacity: 1;
-          }
-        }
-        @keyframes arrow2 {
-          0% {
-            transform: translateX(-100%);
-            opacity: 0;
-          }
-          25% {
-            transform: translateX(-100%);
-            opacity: 0;
-          }
-          50% {
-            transform: translateX(0);
-            opacity: 1;
-          }
-        }
-        @keyframes arrow3 {
-          0% {
-            transform: translateX(-100%);
-            opacity: 0;
-          }
-          50% {
-            transform: translateX(-100%);
-            opacity: 0;
-          }
-          75% {
-            transform: translateX(0);
-            opacity: 1;
-          }
-        }
-        @keyframes arrow4 {
-          0% {
-            transform: translateX(-100%);
-            opacity: 0;
-          }
-          70% {
-            transform: translateX(-100%);
-            opacity: 0;
-          }
-          100% {
-            transform: translateX(0);
-            opacity: 1;
-          }
-        }
 
         h1 {
           font-family: "Poppins";
@@ -129,15 +49,18 @@
         position: relative;
         flex-direction: column;
         top: -7.5vw;
-        width: 50%;
+        width: 100%;
 
         .title {
           font-weight: 700;
           font-size: 4vw;
           color: #ffffff;
           position: relative;
-          left: -3%;
-          top: 2vw;
+          top: 3vw;
+          align-items: center;
+          justify-content: center;
+          display: flex;
+          left: -2%;
         }
         .body {
           color: #ffffff;
@@ -152,55 +75,133 @@
           margin-top: 0;
           margin-bottom: 0;
           margin-left: 3%;
-          p {
-            margin-top: 0 !important;
-            margin-bottom: 0 !important;
-          }
-          p:nth-child(1) {
-            opacity: 0;
-            animation: arrow 5s 1s linear forwards;
-            @keyframes arrow {
+
+          .line {
+            display: flex;
+            .arrow1 {
+              animation: arrow1 8s infinite;
+              padding-right: 2%;
+              width: 14vw;
+            }
+            .arrow2 {
+              animation: arrow2 8s infinite;
+              padding-right: 2%;
+              width: 14vw;
+            }
+            .arrow3 {
+              animation: arrow3 8s infinite;
+              padding-right: 2%;
+              width: 14vw;
+            }
+            .arrow4 {
+              animation: arrow4 8s infinite;
+              padding-right: 2%;
+              width: 14vw;
+            }
+            @keyframes arrow1 {
               0% {
+                transform: translateX(-100%);
                 opacity: 0;
               }
-              100% {
+              25% {
+                transform: translateX(0);
                 opacity: 1;
               }
             }
-          }
-          p:nth-child(2) {
-            opacity: 0;
-            animation: arrow 5s 3s linear forwards;
-            @keyframes arrow {
+            @keyframes arrow2 {
               0% {
+                transform: translateX(-100%);
                 opacity: 0;
               }
-              100% {
+              25% {
+                transform: translateX(-100%);
+                opacity: 0;
+              }
+              50% {
+                transform: translateX(0);
                 opacity: 1;
               }
             }
-          }
-          p:nth-child(3) {
-            opacity: 0;
-            animation: arrow 4s 5.5s linear forwards;
-            @keyframes arrow {
+            @keyframes arrow3 {
               0% {
+                transform: translateX(-100%);
                 opacity: 0;
               }
-              100% {
+              50% {
+                transform: translateX(-100%);
+                opacity: 0;
+              }
+              75% {
+                transform: translateX(0);
                 opacity: 1;
               }
             }
-          }
-          p:nth-child(4) {
-            opacity: 0;
-            animation: arrow 4s 7s linear forwards;
-            @keyframes arrow {
+            @keyframes arrow4 {
               0% {
+                transform: translateX(-100%);
+                opacity: 0;
+              }
+              70% {
+                transform: translateX(-100%);
                 opacity: 0;
               }
               100% {
+                transform: translateX(0);
                 opacity: 1;
+              }
+            }
+
+            p {
+              margin-top: 0 !important;
+              margin-bottom: 0 !important;
+              width: 100%;
+            }
+            .arrow1 + p {
+              opacity: 0;
+              animation: arrow 5s 1s linear forwards;
+              @keyframes arrow {
+                0% {
+                  opacity: 0;
+                }
+                100% {
+                  opacity: 1;
+                }
+              }
+            }
+            .arrow2 + p {
+              opacity: 0;
+              animation: arrow 5s 3s linear forwards;
+              @keyframes arrow {
+                0% {
+                  opacity: 0;
+                }
+                100% {
+                  opacity: 1;
+                }
+              }
+            }
+            .arrow3 + p {
+              opacity: 0;
+              animation: arrow 4s 5s linear forwards;
+              @keyframes arrow {
+                0% {
+                  opacity: 0;
+                }
+                100% {
+                  opacity: 1;
+                }
+              }
+            }
+            .arrow4 + p {
+              opacity: 0;
+              animation: arrow 4s 6.5s linear forwards;
+              @keyframes arrow {
+                0% {
+                  opacity: 0;
+                }
+                100% {
+                  opacity: 1;
+                }
               }
             }
           }

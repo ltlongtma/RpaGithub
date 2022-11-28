@@ -10,17 +10,17 @@ const Case5 = () => {
       <div className={cx("content")}>
         <div className={cx("content1")}>
           <h1>Problem</h1>
-          <ul>
-            <li>Inventory needs to be checked and updated regularly​​</li>
-            <li>
-              Late notifications or human errors can result in losing sales
+          <ul style={{ marginTop: "4%" }}>
+            <li style={{ marginBottom: "4%" }}>
+              Inventory needs to be checked and updated regularly​​
             </li>
+            <li>Late notifications or human errors can result in losing sales</li>
           </ul>
         </div>
         <div className={cx("content2")}>
           <h1>Result</h1>
-          <ul>
-            <li>
+          <ul style={{ marginTop: "4%" }}>
+            <li style={{ marginBottom: "4%" }}>
               Inventory can be scheduled to check 24/7
               <span
                 style={{
@@ -34,8 +34,10 @@ const Case5 = () => {
               </span>
               ​
             </li>
-            <li>
-              <span>3500</span> hours returned to office workers annually
+            <li style={{ position: "relative", top: "-0.5vw" }}>
+              <p>
+                <span>3500</span> hours returned to office workers annually
+              </p>
             </li>
           </ul>
         </div>

@@ -9,27 +9,41 @@ const Case3 = () => {
       <div className={cx("content")}>
         <div className={cx("content1")}>
           <h1>Problem</h1>
-          <ul>
-            <li>
-              Hundreds of arrival notices to process with different format from multiple partners
-              daily
+          <ul style={{ top: 0 }}>
+            <li style={{ alignItems: "baseline" }}>
+              <p style={{ position: "relative", top: "-1vw" }}>
+                Hundreds of arrival notices to process with different format from multiple partners
+                daily
+              </p>
             </li>
-            <li>Repeated and time-consuming task</li>
+
+            <li>
+              <p style={{ position: "relative", top: "-1vw" }}>Repeated and time-consuming task</p>
+            </li>
           </ul>
         </div>
         <div className={cx("content2")}>
           <h1>Result</h1>
-          <ul>
-            <li>
-              Reduce <span>90%</span> processing time​{" "}
-              <span
-                style={{ lineHeight: 0, fontSize: "1.5vw", fontWeight: 100, visibility: "hidden" }}
-              >
-                This is the draft sentense for pushing below line down !!!
-              </span>
+          <ul style={{ top: 0 }}>
+            <li style={{ alignItems: "flex-start" }}>
+              <p style={{ position: "relative", top: "-1vw" }}>
+                Reduce <span>90%</span> processing time​{" "}
+                <span
+                  style={{
+                    lineHeight: 0,
+                    fontSize: "1.5vw",
+                    fontWeight: 100,
+                    visibility: "hidden",
+                  }}
+                >
+                  This is the draft sentense for pushing below line down !!!
+                </span>
+              </p>
             </li>
-            <li>
-              <span>3000</span> hours saved to workers annually
+            <li style={{ alignItems: "flex-start" }}>
+              <p style={{ position: "relative", top: "-1vw" }}>
+                <span>3000</span> hours saved to workers annually
+              </p>
             </li>
           </ul>
         </div>
