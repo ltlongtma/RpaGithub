@@ -26,6 +26,7 @@
       top: -1%;
       .tabs {
         border: none;
+        width: 100%;
         .tabLists {
           overflow: visible !important;
           justify-content: space-between;
@@ -33,8 +34,8 @@
           width: 100%;
           button {
             overflow: visible !important;
-            // flex: 1;
             justify-content: center;
+            // width: 100%;
           }
 
           div {
@@ -158,14 +159,6 @@
             position: relative;
             left: 28%;
           }
-          // button:nth-child(5).tabClassStatic:before {
-          //   content: "";
-          //   background: rgb(175, 178, 207);
-          //   width: 1px;
-          //   height: 40px;
-          //   position: relative;
-          //   left: -39%;
-          // }
 
           button:nth-child(4).tabClassDynamic:before {
             content: "";

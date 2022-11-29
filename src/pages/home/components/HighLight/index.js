@@ -57,17 +57,17 @@ const HighLight = () => {
       </div>
       <div className={cx("content")}>
         <div className={cx("left")}>
-          <h1>RPA</h1>
           <div className={cx("mainIcon")}>
-            {/* <Image className={cx("img")} src={iconRpa} alt="iconRpa" priority={true}></Image> */}
-
+          <h1>RPA</h1>
             <Image className={cx("img")} src={ver5_1} alt="iconRpa" priority={true}></Image>
           </div>
         </div>
         <div className={cx("right")}>
+        <div className={cx("mainContent")}>
+
           <h1 className={cx("title")}>TMA RPA Center</h1>
           <div className={cx("body")}>
-            <div className={cx("line")}>
+          <div className={cx("line")}>
               <div className={cx("arrow1")}>
                 <Image src={arrowAfterIconRpa} alt="arrowAfterIconRpa" priority={true} />
               </div>
@@ -91,6 +91,7 @@ const HighLight = () => {
               </div>
               <p>Your processes are now more intelligent with AI</p>
             </div>
+        </div>
           </div>
         </div>
       </div>

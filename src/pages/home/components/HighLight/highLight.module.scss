@@ -16,27 +16,26 @@
         display: flex;
         justify-content: center;
         width: 60%;
-        left: 4%;
-        flex-direction: column;
+        left: 8%;
 
         .mainIcon {
           margin: auto;
+          position: relative;
           scale: 1.5 span {
             overflow: visible !important;
           }
-        }
-
-        h1 {
-          font-family: "Poppins";
-          font-style: normal;
-          font-weight: 800;
-          font-size: 3.5vw;
-          color: #ffffff;
-          position: absolute;
-          margin: auto;
-          z-index: 100;
-          left: 39%;
-          top: 40%;
+          h1 {
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 800;
+            font-size: 3.5vw;
+            color: #ffffff;
+            position: absolute;
+            margin: auto;
+            z-index: 100;
+            left: 39%;
+            top: 40%;
+          }
         }
       }
       .right {
@@ -46,157 +45,157 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        top: -14%;
-        left: -3%;
-
-        .title {
-          font-weight: 700;
-          font-size: 4vw;
-          color: #ffffff;
-          position: relative;
-          top: 3vw;
-          align-items: center;
-          display: flex;
-          padding-left: 15%;
-        }
-        .body {
-          color: #ffffff;
-          font-weight: 500;
-          font-size: 1.5vw;
-          margin-left: 3%;
-          width: 100%;
-          line-height: 3vw;
-          top: 0.5%;
-          position: relative;
-          margin: 0;
-          margin-top: 0;
-          margin-bottom: 0;
-
-          .line {
+        .mainContent {
+          margin-top: -24%;
+          .title {
+            font-weight: 700;
+            font-size: 4vw;
+            color: #ffffff;
+            position: relative;
+            top: 3vw;
+            align-items: center;
             display: flex;
-            .arrow1 {
-              animation: arrow1 8s infinite;
-              padding-right: 2%;
-              width: 14vw;
-            }
-            .arrow2 {
-              animation: arrow2 8s infinite;
-              padding-right: 2%;
-              width: 14vw;
-            }
-            .arrow3 {
-              animation: arrow3 8s infinite;
-              padding-right: 2%;
-              width: 14vw;
-            }
-            .arrow4 {
-              animation: arrow4 8s infinite;
-              padding-right: 2%;
-              width: 14vw;
-            }
-            @keyframes arrow1 {
-              0% {
-                transform: translateX(-100%);
-                opacity: 0;
-              }
-              25% {
-                transform: translateX(0);
-                opacity: 1;
-              }
-            }
-            @keyframes arrow2 {
-              0% {
-                transform: translateX(-100%);
-                opacity: 0;
-              }
-              25% {
-                transform: translateX(-100%);
-                opacity: 0;
-              }
-              50% {
-                transform: translateX(0);
-                opacity: 1;
-              }
-            }
-            @keyframes arrow3 {
-              0% {
-                transform: translateX(-100%);
-                opacity: 0;
-              }
-              50% {
-                transform: translateX(-100%);
-                opacity: 0;
-              }
-              75% {
-                transform: translateX(0);
-                opacity: 1;
-              }
-            }
-            @keyframes arrow4 {
-              0% {
-                transform: translateX(-100%);
-                opacity: 0;
-              }
-              70% {
-                transform: translateX(-100%);
-                opacity: 0;
-              }
-              100% {
-                transform: translateX(0);
-                opacity: 1;
-              }
-            }
+            padding-left: 15%;
+          }
+          .body {
+            color: #ffffff;
+            font-weight: 500;
+            font-size: 1.5vw;
+            margin-left: 3%;
+            width: 100%;
+            line-height: 3vw;
+            top: 0.5%;
+            position: relative;
+            margin: 0;
+            margin-top: 0;
+            margin-bottom: 0;
 
-            p {
-              margin-top: 0 !important;
-              margin-bottom: 0 !important;
-              width: 100%;
-            }
-            .arrow1 + p {
-              opacity: 0;
-              animation: arrow 5s 1s linear forwards;
-              @keyframes arrow {
+            .line {
+              display: flex;
+              .arrow1 {
+                animation: arrow1 8s infinite;
+                padding-right: 2%;
+                width: 14vw;
+              }
+              .arrow2 {
+                animation: arrow2 8s infinite;
+                padding-right: 2%;
+                width: 14vw;
+              }
+              .arrow3 {
+                animation: arrow3 8s infinite;
+                padding-right: 2%;
+                width: 14vw;
+              }
+              .arrow4 {
+                animation: arrow4 8s infinite;
+                padding-right: 2%;
+                width: 14vw;
+              }
+              @keyframes arrow1 {
                 0% {
+                  transform: translateX(-100%);
                   opacity: 0;
                 }
-                100% {
+                25% {
+                  transform: translateX(0);
                   opacity: 1;
                 }
               }
-            }
-            .arrow2 + p {
-              opacity: 0;
-              animation: arrow 5s 3s linear forwards;
-              @keyframes arrow {
+              @keyframes arrow2 {
                 0% {
+                  transform: translateX(-100%);
                   opacity: 0;
                 }
-                100% {
+                25% {
+                  transform: translateX(-100%);
+                  opacity: 0;
+                }
+                50% {
+                  transform: translateX(0);
                   opacity: 1;
                 }
               }
-            }
-            .arrow3 + p {
-              opacity: 0;
-              animation: arrow 4s 5s linear forwards;
-              @keyframes arrow {
+              @keyframes arrow3 {
                 0% {
+                  transform: translateX(-100%);
                   opacity: 0;
                 }
-                100% {
+                50% {
+                  transform: translateX(-100%);
+                  opacity: 0;
+                }
+                75% {
+                  transform: translateX(0);
                   opacity: 1;
                 }
               }
-            }
-            .arrow4 + p {
-              opacity: 0;
-              animation: arrow 4s 6.5s linear forwards;
-              @keyframes arrow {
+              @keyframes arrow4 {
                 0% {
+                  transform: translateX(-100%);
+                  opacity: 0;
+                }
+                70% {
+                  transform: translateX(-100%);
                   opacity: 0;
                 }
                 100% {
+                  transform: translateX(0);
                   opacity: 1;
+                }
+              }
+
+              p {
+                margin-top: 0 !important;
+                margin-bottom: 0 !important;
+                width: 100%;
+              }
+              .arrow1 + p {
+                opacity: 0;
+                animation: arrow 5s 1s linear forwards;
+                @keyframes arrow {
+                  0% {
+                    opacity: 0;
+                  }
+                  100% {
+                    opacity: 1;
+                  }
+                }
+              }
+              .arrow2 + p {
+                opacity: 0;
+                animation: arrow 5s 3s linear forwards;
+                @keyframes arrow {
+                  0% {
+                    opacity: 0;
+                  }
+                  100% {
+                    opacity: 1;
+                  }
+                }
+              }
+              .arrow3 + p {
+                opacity: 0;
+                animation: arrow 4s 5s linear forwards;
+                @keyframes arrow {
+                  0% {
+                    opacity: 0;
+                  }
+                  100% {
+                    opacity: 1;
+                  }
+                }
+              }
+              .arrow4 + p {
+                opacity: 0;
+                animation: arrow 4s 6.5s linear forwards;
+                @keyframes arrow {
+                  0% {
+                    opacity: 0;
+                  }
+                  100% {
+                    opacity: 1;
+                  }
                 }
               }
             }
@@ -240,13 +239,11 @@
           margin: 0;
           left: 2%;
           height: 2vw;
-
+          a {
+            font-size: 1.2vw;
+          }
           &:hover {
-            background: linear-gradient(
-              213.12deg,
-              #396afc 39.51%,
-              #0094ff 80.26%
-            );
+            background: linear-gradient(213.12deg, #396afc 39.51%, #0094ff 80.26%);
             border-radius: 7%;
           }
           svg {
@@ -484,11 +481,7 @@
           min-width: 1px !important;
 
           &:hover {
-            background: linear-gradient(
-              213.12deg,
-              #396afc 39.51%,
-              #0094ff 80.26%
-            );
+            background: linear-gradient(213.12deg, #396afc 39.51%, #0094ff 80.26%);
             border-radius: 7%;
           }
           svg {
