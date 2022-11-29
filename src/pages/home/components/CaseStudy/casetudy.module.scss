@@ -21,7 +21,6 @@
       }
     }
     .body {
-      margin: 0 5%;
       position: relative;
       top: -1%;
       .tabs {
@@ -35,14 +34,14 @@
           button {
             overflow: visible !important;
             justify-content: center;
-            // width: 100%;
+            width: 20%;
           }
 
           div {
             overflow: visible !important;
 
             div {
-              justify-content: space-between;
+              // justify-content: space-between;
             }
           }
           .tabClassDynamic {
@@ -85,7 +84,7 @@
             width: 1px;
             height: 40px;
             position: relative;
-            left: 34%;
+            left: 20%;
           }
           button:nth-child(1).tabClassDynamic:after {
             content: "";
@@ -93,7 +92,7 @@
             width: 3px;
             height: 40px;
             position: relative;
-            left: 34%;
+            left: 20%;
             z-index: 100;
           }
 
@@ -103,7 +102,7 @@
             width: 1px;
             height: 40px;
             position: relative;
-            left: 31%;
+            left: 20%;
           }
           button:nth-child(2).tabClassDynamic:before {
             content: "";
@@ -112,7 +111,7 @@
             height: 40px;
             z-index: 100;
             position: relative;
-            left: -35.5%;
+            left: -23.5%;
           }
           button:nth-child(2).tabClassDynamic:after {
             content: "";
@@ -121,7 +120,7 @@
             height: 40px;
             z-index: 100;
             position: relative;
-            left: 28%;
+            left: 20%;
           }
 
           button:nth-child(3).tabClassStatic:after {
@@ -130,7 +129,7 @@
             width: 1px;
             height: 40px;
             position: relative;
-            left: 30%;
+            left: 13%;
           }
           button:nth-child(3).tabClassDynamic:before {
             content: "";
@@ -139,7 +138,7 @@
             height: 40px;
             z-index: 100;
             position: relative;
-            left: -33%;
+            left: -19%;
           }
           button:nth-child(3).tabClassDynamic:after {
             content: "";
@@ -148,7 +147,7 @@
             height: 40px;
             z-index: 100;
             position: relative;
-            left: 29%;
+            left: 12%;
           }
 
           button:nth-child(4).tabClassStatic:after {
@@ -157,7 +156,7 @@
             width: 1px;
             height: 40px;
             position: relative;
-            left: 28%;
+            left: 20%;
           }
 
           button:nth-child(4).tabClassDynamic:before {
@@ -168,7 +167,7 @@
             height: 40px;
             z-index: 100;
             position: relative;
-            left: -27%;
+            left: -16%;
           }
           button:nth-child(4).tabClassDynamic:after {
             content: "";
@@ -177,7 +176,7 @@
             height: 40px;
             z-index: 100;
             position: relative;
-            left: 27.5%;
+            left: 14%;
           }
           button:nth-child(5).tabClassDynamic:before {
             content: "";
@@ -186,14 +185,17 @@
             height: 40px;
             z-index: 100;
             position: relative;
-            left: -38.5%;
+            left: -19.5%;
           }
         }
       }
-
+      .tabPanel {
+        margin: 0 8%;
+      }
       .case {
         width: 100%;
-        padding: 0 5vw;
+        // margin: 0 5%;
+
         .content {
           display: flex;
           position: relative;

@@ -38,12 +38,13 @@ export default function CaseStudy() {
         <Box sx={{ width: "100%" }}>
           <TabContext value={value}>
             <fieldset className={cx("tabs")}>
-              {/* <Divider sx={{ background: "lightskyblue" }} /> */}
               <TabList
                 onChange={handleChange}
                 // aria-label="tab"
                 TabIndicatorProps={{
-                  style: { backgroundColor: "lightskyblue"},
+                  style: {
+                    backgroundColor: "lightskyblue",
+                  },
                 }}
                 className={cx("tabLists")}
               >
