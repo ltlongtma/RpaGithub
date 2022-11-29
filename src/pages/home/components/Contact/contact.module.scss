@@ -67,50 +67,81 @@
           }
         }
         .buttonContact {
+          position: relative;
+          top: 75%;
+          left: 1%;
           button {
-            width: 11vw;
-            height: 4vw;
-            color: black;
-            background: #ffffff;
-            font-weight: 600;
-            font-size: 1vw;
-            text-transform: none;
-            font-family: "Poppins";
-            font-style: normal;
-            border: 3px solid rgba(64, 161, 255, 1);
+            min-width: 13vw;
+            min-height: 8vh;
+            font-family: "Nunito", sans-serif;
+            font-size: 1.4vw;
+            text-transform: uppercase;
+            letter-spacing: 1.3px;
+            font-weight: 700;
+            color: #ffffff;
+            background: #4d8acf;
+            background: linear-gradient(
+              90deg,
+              rgba(0, 189, 255, 1) 0%,
+              rgba(0, 189, 255, 1) 100%
+            );
+            border: none;
+            border-radius: 1000px;
+            box-shadow: 10px 10px 24px #195b99a3;
+            transition: all 0.3s ease-in-out 0s;
+            cursor: pointer;
+            outline: none;
+            position: relative;
+            padding: 10px;
+          }
+          button::before {
+            content: "";
+            border-radius: 1000px;
+            min-width: calc(13vw + 1vw);
+            min-height: calc(8vh + 2vh);
+            border: 0.2vw solid #98e4ff;
+            box-shadow: 0 0 5px rgba(0, 232, 255, 1);
             position: absolute;
-            top: 75%;
-            left: 43%;
-            transition: all 0.3s;
-            overflow: hidden;
-            z-index: 1;
-            &:after {
-              content: "";
-              position: absolute;
-              bottom: 0;
-              left: 0;
-              width: 100%;
-              height: 100%;
-              border-radius: 10rem;
-              z-index: -2;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            transition: all 0.3s ease-in-out 0s;
+          }
+
+          button:hover::before {
+            opacity: 1;
+          }
+
+          button::after {
+            content: "";
+            width: 30px;
+            height: 30px;
+            border-radius: 1000px;
+            border: 0.2vw solid #ffffff;
+            position: absolute;
+            z-index: -1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: ring 1.5s infinite;
+          }
+          @keyframes ring {
+            0% {
+              width: 13vw;
+              height: 8vh;
+              opacity: 0.5;
             }
-            &:before {
-              content: "";
-              position: absolute;
-              bottom: 0;
-              left: 0;
-              width: 0%;
-              height: 100%;
-              background-color: darken(#2121aa, 15%);
-              transition: all 1s;
-              z-index: -1;
+            100% {
+              width: 14vw;
+              height: 9.5vh;
+              opacity: 0;
             }
-            &:hover {
-              color: #fff;
-              &:before {
-                width: 100%;
-              }
-            }
+          }
+
+          button:hover::after {
+            animation: none;
+            display: none;
           }
         }
       }
