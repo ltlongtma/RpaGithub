@@ -73,6 +73,7 @@ export default function CaseStudy() {
                   iconPosition="start"
                   disableRipple
                 />
+
                 <Tab
                   label="Automatic debt reminder"
                   value="4"

@@ -10,7 +10,7 @@ const Case4 = () => {
       <div className={cx("content")}>
         <div className={cx("content1")}>
           <h1>Problem</h1>
-          <ul style={{ marginTop: "5%" }}>
+          <ul style={{ marginTop: "4%" }}>
             <li>
               <p>Debts need to be checked to remind customers regularly​</p>
             </li>
@@ -23,7 +23,7 @@ const Case4 = () => {
         </div>
         <div className={cx("content2")}>
           <h1>Result</h1>
-          <ul style={{ marginTop: "5%" }}>
+          <ul style={{marginTop: "4%" }}>
             <li style={{ position: "relative", top: "-0.5vw" }}>
               <p>
                 <span>2500</span>

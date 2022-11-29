@@ -11,7 +11,7 @@ const Case3 = () => {
           <h1>Problem</h1>
           <ul style={{ top: 0 }}>
             <li style={{ alignItems: "baseline" }}>
-              <p style={{ position: "relative", top: "-1vw" }}>
+              <p style={{ position: "relative", top: "-1.5vw" }}>
                 Hundreds of arrival notices to process with different format from multiple partners
                 daily
               </p>
@@ -25,7 +25,7 @@ const Case3 = () => {
         <div className={cx("content2")}>
           <h1>Result</h1>
           <ul style={{ top: 0 }}>
-            <li style={{ alignItems: "flex-start" }}>
+            <li style={{ alignItems: "flex-start", marginTop: "-1%" }}>
               <p style={{ position: "relative", top: "-1vw" }}>
                 Reduce <span>90%</span> processing time​{" "}
                 <span
