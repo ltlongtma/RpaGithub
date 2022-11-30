@@ -192,9 +192,9 @@
           font-size: 1vw;
           .icons {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-evenly;
             width: 16vw;
-            left: -1vw;
+            left: -2.5vw;
             position: relative;
             button {
               &:hover {
