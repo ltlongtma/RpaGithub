@@ -12,8 +12,7 @@ const Case3 = () => {
           <ul style={{ top: 0 }}>
             <li style={{ alignItems: "baseline" }}>
               <p style={{ position: "relative", top: "-1.5vw" }}>
-                Hundreds of arrival notices to process with different format from multiple partners
-                daily
+                Hundreds of arrival notices to process with different formats daily
               </p>
             </li>
 
@@ -28,19 +27,10 @@ const Case3 = () => {
             <li style={{ alignItems: "flex-start", marginTop: "-1%" }}>
               <p style={{ position: "relative", top: "-1vw" }}>
                 Reduce <span>90%</span> processing time​{" "}
-                <span
-                  style={{
-                    lineHeight: 0,
-                    fontSize: "1.5vw",
-                    fontWeight: 100,
-                    visibility: "hidden",
-                  }}
-                >
-                  This is the draft sentense for pushing below line down !!!
-                </span>
+                <div style={{ visibility: "hidden" }}>this is the draft sentense</div>
               </p>
             </li>
-            <li style={{ alignItems: "flex-start" }}>
+            <li style={{ marginTop: "3%" }}>
               <p style={{ position: "relative", top: "-1vw" }}>
                 <span>3000</span> hours saved to workers annually
               </p>

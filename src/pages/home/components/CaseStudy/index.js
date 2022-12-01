@@ -40,10 +40,20 @@ export default function CaseStudy() {
             <fieldset className={cx("tabs")}>
               <TabList
                 onChange={handleChange}
-                // aria-label="tab"
                 TabIndicatorProps={{
-                  style: {
-                    backgroundColor: "lightskyblue",
+                  children: <span />,
+                }}
+                sx={{
+                  "& .MuiTabs-indicator": {
+                    display: "flex",
+                    justifyContent: "center",
+                    backgroundColor: "transparent",
+                    "& > span": {
+                      maxWidth: "50%",
+                      width: "100%",
+                      backgroundColor: "#0094ff",
+                      height: "3px",
+                    },
                   },
                 }}
                 className={cx("tabLists")}

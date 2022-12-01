@@ -91,7 +91,7 @@ const Contact = () => {
               </Link>
             </Button>
             <Button>
-              <Link href="https://www.tmasolutions.com/competencies">
+              <Link href="https://www.tmasolutions.com/technology">
                 <a>Technologies</a>
               </Link>
             </Button>
