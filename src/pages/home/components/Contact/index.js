@@ -22,8 +22,9 @@ const Contact = () => {
         <div className={cx(["content", "mask"])}>
           <h1>Find out how we can help you</h1>
           <div className={cx("content1")}>
-            We&apos; d Love To Hear From You. Please indicate your interest in the form below. TMA
-            will contact you shortly after receiving your request.
+            We&apos; d Love To Hear From You. Please indicate your interest in
+            the form below. TMA will contact you shortly after receiving your
+            request.
           </div>
           <div className={cx("content2")}>
             <Image src={downloadIcon} alt="downloadIcon" />{" "}
@@ -55,18 +56,28 @@ const Contact = () => {
           <div className={cx("left")}>
             <div>Connect with us</div>
             <div className={cx("icons")}>
+              <Link href="https://www.linkedin.com/company/tma-solutions/">
+                <IconButton color="inherit">
+                  <LinkedInIcon sx={{ width: 32, height: 32 }} />
+                </IconButton>
+              </Link>
+
+              <Link href="mailto:sales@tma.com.vn">
               <IconButton color="inherit">
-                <TwitterIcon sx={{ width: 32, height: 32 }} />
+                <Image
+                  src={emailIcon}
+                  alt="emailIcon"
+                  sx={{ width: 32, height: 32 }}
+                />
               </IconButton>
-              <IconButton color="inherit">
-                <LinkedInIcon sx={{ width: 32, height: 32 }} />
-              </IconButton>
-              <IconButton color="inherit">
-                <Image src={emailIcon} alt="emailIcon" sx={{ width: 32, height: 32 }} />
-              </IconButton>
+              </Link>
+            
+              <Link href={`tel:${+84839978000}`}>
               <IconButton color="inherit">
                 <PhoneInTalkIcon sx={{ width: 32, height: 32 }} />
               </IconButton>
+              </Link>
+             
             </div>
           </div>
           <div className={cx("right")}>
@@ -112,7 +123,9 @@ const Contact = () => {
             </Button>
           </div>
         </div>
-        <div className={cx("bottomText")}>TMA Solutions &copy;2022 All Rights Reserved </div>
+        <div className={cx("bottomText")}>
+          TMA Solutions &copy;2022 All Rights Reserved{" "}
+        </div>
       </div>
     </div>
   );
