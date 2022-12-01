@@ -1,5 +1,5 @@
 import Image from "next/image";
-import TmaLogo from "../../../../../public/TmaLogo.svg";
+import logoTma from "../../../../../public/logoTma.svg";
 import arrowAfterIconRpa from "../../../../../public/HighlightArrow.svg";
 import energyControlIcon from "../../../../../public/energyControlIcon.svg";
 import clockIcon from "../../../../../public/clockIcon.svg";
@@ -96,7 +96,7 @@ const HighLight = () => {
         </div>
       </div>
       <div className={cx("menuBar")}>
-        <Image src={TmaLogo} alt="tma-logo" priority={true} onClick={() => location.reload()} />
+        <Image src={logoTma} alt="tma-logo" priority={true} onClick={() => location.reload()} />
         <div className={cx("navigate")}>
           <Button>
             <Link href="https://www.tmasolutions.com/">
