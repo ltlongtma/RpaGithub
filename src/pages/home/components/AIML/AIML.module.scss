@@ -121,7 +121,7 @@
         }
       }
       .experience-wraper {
-        margin-top: 33%;
+        margin-top: 37%;
         display: flex;
         line-height: 2.5vw;
         position: relative;
@@ -189,6 +189,7 @@
           }
         }
         .exp {
+          width: 100%;
           h2 {
             font-size: 2.5vw;
             align-items: center;
@@ -205,12 +206,14 @@
           }
           .expandTop10 {
             align-items: center;
+            margin-left: 5%;
           }
           .expand400 {
-            margin-left: 5%;
+            margin: 9% 17%;
             width: 100%;
           }
           .expand10Years {
+            margin-left: 5%;
           }
         }
       }
@@ -230,188 +233,3 @@
     width: 33vw;
   }
 }
-// }
-// @media screen and (max-width: 1023px) {
-//   .container {
-//     background: #fafafa;
-//     height: 100vh;
-//     position: relative;
-//     .triangle {
-//       height: 10%;
-//       display: flex;
-//       flex-direction: row;
-//       justify-content: flex-end;
-//       .triangle-left {
-//         width: 0;
-//         height: 0;
-//         border-top: 0px solid transparent;
-//         border-bottom: 90px solid transparent;
-//         border-left: 93vw solid #fffafa;
-//       }
-
-//       .triangle-right {
-//         width: 0;
-//         height: 0;
-//         border-left: 6vw solid transparent;
-//         border-right: 0vw solid transparent;
-//         border-top: 10vw solid #fffafa;
-//         z-index: 1;
-//       }
-//     }
-//     .AIMLContent {
-//       height: 90%;
-//       position: relative;
-//       top: -2vw;
-//       align-items: center;
-//       display: flex;
-
-//       .head {
-//         text-align: center;
-//         width: 40%;
-//         margin: 0% auto;
-//         position: relative;
-//         height: 236px span {
-//           width: 5vw !important;
-//         }
-//         .title {
-//           color: #333333;
-//           font-size: 3.5vw;
-//           line-height: 4vw !important;
-//           margin: 0%;
-//           position: relative;
-//         }
-//         span {
-//           width: 4vw !important;
-//         }
-//       }
-//       .body {
-//         width: 100vw;
-//         align-items: center;
-//         justify-content: center;
-//         display: flex;
-//         top: -2vw;
-//         position: relative;
-//         span {
-//           width: 53vw !important;
-//           height: 37vw !important;
-//         }
-//         .main-image-wraper {
-//           width: 25vw;
-//         }
-//         .item-center-wrap {
-//           margin-left: 1%;
-//           .image {
-//             span {
-//               z-index: 1;
-//               width: 18vw !important;
-//               height: 18vw !important;
-//             }
-//             &:hover {
-//               transform: scale(1.06);
-//             }
-//           }
-//           .top {
-//             display: flex;
-//             span {
-//               width: 9vw !important;
-//               height: 9vw !important;
-//             }
-//             .left {
-//               position: relative;
-//               left: -4vw;
-//               top: 7vh;
-//             }
-//             .right {
-//               position: relative;
-//               left: -2vw;
-//               top: 2vh;
-//             }
-//           }
-//           .bot {
-//             display: flex;
-//             span {
-//               width: 9vw !important;
-//               height: 9vw !important;
-//             }
-//             .left {
-//               position: relative;
-//               left: -4vw;
-//               top: -9vh;
-//             }
-//             .right {
-//               position: relative;
-//               left: -2vw;
-//               top: -4vh;
-//             }
-//           }
-//           .icons {
-//             &:hover {
-//               transform: scale(1.15);
-//               z-index: 1;
-//             }
-//           }
-//         }
-//         .experience-wraper {
-//           display: flex;
-//           line-height: 2.5vw;
-//           position: relative;
-//           left: -3.5vw;
-//           align-items: center;
-//           .bullet-left {
-//             top: 0.1vw;
-//             position: relative;
-//             width: 10vw;
-//             animation: arrow 3s infinite;
-//             @keyframes arrow {
-//               0% {
-//                 transform: translateX(-100%);
-//                 opacity: 0;
-//               }
-//               100% {
-//                 transform: translateX(0);
-//                 opacity: 1;
-//               }
-//             }
-//           }
-//           .exp {
-//             h2 {
-//               font-size: 2.5vw;
-//               align-items: center;
-//               color: #090909;
-
-//               .span {
-//                 color: #0094ff;
-//               }
-//               .overviewContent {
-//                 font-size: 1.3vw;
-//                 font-weight: 500;
-//               }
-//             }
-//             .expandTop10 {
-//               align-items: center;
-//             }
-//             .expand400 {
-//               margin-left: 5%;
-//               width: 100%;
-//             }
-//             .expand10Years {
-//             }
-//           }
-//         }
-//       }
-//     }
-//     .maskTop {
-//       position: absolute;
-//       top: 0.7vw;
-//       right: 0vw;
-//       overflow: hidden;
-//       width: 20vw;
-//     }
-//     .maskBottom {
-//       position: absolute;
-//       bottom: -9.5vw;
-//       left: -1.5%;
-//       width: 33vw;
-//     }
-//   }
-// }

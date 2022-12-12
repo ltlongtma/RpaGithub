@@ -32,39 +32,34 @@ const AIML = () => {
             </div>
             <div className={cx("body")}>
               <div className={cx("row")}>
-                <div className={cx("col-6", "row")}>
-                  <div className={cx("col-6")}>
-                    <div className={cx("main-image-wraper")}>
-                      <Image src={anaLeftImage} alt="image" priority />
+                <div className={cx("col-3","main-image-wraper")}>
+                  <Image src={anaLeftImage} alt="image" priority />
+                </div>
+                <div className={cx("col-3")}>
+                  <div className={cx("item-center-wrap")}>
+                    <div className={cx("top")}>
+                      <div className={cx(["left", "icons"])}>
+                        <Image src={image} alt="image" />
+                      </div>
+                      <div className={cx(["right", "icons"])}>
+                        <Image src={text} alt="image" />
+                      </div>
                     </div>
-                  </div>
-                  <div className={cx("col-6")}>
-                    <div className={cx("item-center-wrap")}>
-                      <div className={cx("top")}>
-                        <div className={cx(["left", "icons"])}>
-                          <Image src={image} alt="image" />
-                        </div>
-                        <div className={cx(["right", "icons"])}>
-                          <Image src={text} alt="image" />
-                        </div>
-                      </div>
-                      <div className={cx("image")}>
-                        <Image src={anaImage} alt="image" />
-                      </div>
+                    <div className={cx("image")}>
+                      <Image src={anaImage} alt="image" />
+                    </div>
 
-                      <div className={cx("bot")}>
-                        <div className={cx(["left", "icons"])}>
-                          <Image src={data} alt="image" />
-                        </div>
-                        <div className={cx(["right", "icons"])}>
-                          <Image src={voice} alt="image" />
-                        </div>
+                    <div className={cx("bot")}>
+                      <div className={cx(["left", "icons"])}>
+                        <Image src={data} alt="image" />
+                      </div>
+                      <div className={cx(["right", "icons"])}>
+                        <Image src={voice} alt="image" />
                       </div>
                     </div>
                   </div>
                 </div>
-
-                <div className={cx("col-6")}>
+                <div className={cx("col")}>
                   <div className={cx("experience-wraper")}>
                     <div className={cx("bullet-left")}>
                       <div className={cx("animation-arrow1")}>
@@ -81,26 +76,19 @@ const AIML = () => {
                       <div className={cx("expandTop10")}>
                         <h2>
                           <span className={cx("span")}>Top 10</span>
-                          <span className={cx("overviewContent")}>
-                            {" "}
-                            AI & IoT Enterprises
-                          </span>
+                          <span className={cx("overviewContent")}> AI & IoT Enterprises</span>
                         </h2>
                       </div>
                       <div className={cx("expand400")}>
                         <h2>
                           <span className={cx("span")}>400 </span>
-                          <span className={cx("overviewContent")}>
-                            AI/ML & Data Engineers
-                          </span>
+                          <span className={cx("overviewContent")}>AI/ML & Data Engineers</span>
                         </h2>
                       </div>
                       <div className={cx("expand10Years")}>
                         <h2>
                           <span className={cx("span")}>10 Years </span>
-                          <span className={cx("overviewContent")}>
-                            of Experience
-                          </span>
+                          <span className={cx("overviewContent")}>of Experience</span>
                         </h2>
                       </div>
                     </div>
