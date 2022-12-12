@@ -14,58 +14,67 @@ const cx = className.bind(styles);
 const Overview = () => {
   // React.useEffect(() => {
   //   gsap.to(".container", {
-  //     scrollTrigger: ".container", 
+  //     scrollTrigger: ".container",
   //     x: 500,
   //   });
   // }, []);
   return (
     <div className={cx("container")}>
-      <div className={cx("wrapText")}>
-        <div className={cx("logo")}>
-          <Image src={icon2} alt="icon2" />
-        </div>
-        <div className={cx("description")}>
-          <h1 className={cx("title")}>Overview </h1>
-          <span>
-            With a wide range of solutions from AI/ML, document parsing, object detection and
-            popular tools (Automation Anywhere, UiPath, Power Automate, Blueprism, Intelligent), TMA
-            RPA Center have provided robotic automation solutions for RPA projects, including
-            finance, banking, logistics, human resources, and e-commerce.
-          </span>
-          <span>
-            TMA RPA Center provides solutions for an RPA program or dedicated teams for a full
-            automation program with multiple projects.
-          </span>
-        </div>
-        <div className={cx("experience")}>
-          <div className={cx("expand")}>
-            <h2>
-              <span>5 Years</span>
-            </h2>
-            <div className={cx("overviewContent")}>of experience</div>
-          </div>
-          <div className={cx("expand")}>
-            <h2>
-              <span>100</span>
-            </h2>
-            <div className={cx("overviewContent")}>developers</div>
-          </div>
-        </div>
-      </div>
-      <div className={cx("wrapImage")}>
-        <div className={cx("leftImg")}>
-          <Image src={iconAutomation} alt="icon" />
-        </div>
-        <div className={cx("centerImg")}>
-          <div className={cx("topImage")}>
-            <Image src={iconUIpath} alt="icon" />
-          </div>
-          <div className={cx("botImage")}>
-            <Image src={iconPowerAutomate} alt="icon" />
+      <div className={cx("row")}>
+        <div className={cx("col-lg")}>
+          <div className={cx("wrapText")}>
+            <div className={cx("logo")}>
+              <Image src={icon2} alt="icon2" />
+            </div>
+            <div className={cx("description")}>
+              <h1 className={cx("title")}>Overview </h1>
+              <span>
+                With a wide range of solutions from AI/ML, document parsing,
+                object detection and popular tools (Automation Anywhere, UiPath,
+                Power Automate, Blueprism, Intelligent), TMA RPA Center have
+                provided robotic automation solutions for RPA projects,
+                including finance, banking, logistics, human resources, and
+                e-commerce.
+              </span>
+              <span>
+                TMA RPA Center provides solutions for an RPA program or
+                dedicated teams for a full automation program with multiple
+                projects.
+              </span>
+            </div>
+            <div className={cx("experience")}>
+              <div className={cx("expand")}>
+                <h2>
+                  <span>5 Years</span>
+                </h2>
+                <div className={cx("overviewContent")}>of experience</div>
+              </div>
+              <div className={cx("expand")}>
+                <h2>
+                  <span>100</span>
+                </h2>
+                <div className={cx("overviewContent")}>developers</div>
+              </div>
+            </div>
           </div>
         </div>
-        <div className={cx("rightImg")}>
-          <Image src={iconBlueprism} alt="icon" />
+        <div className={cx("col-lg")}>
+          <div className={cx("wrapImage")}>
+            <div className={cx("leftImg")}>
+              <Image src={iconAutomation} alt="icon" />
+            </div>
+            <div className={cx("centerImg")}>
+              <div className={cx("topImage")}>
+                <Image src={iconUIpath} alt="icon" />
+              </div>
+              <div className={cx("botImage")}>
+                <Image src={iconPowerAutomate} alt="icon" />
+              </div>
+            </div>
+            <div className={cx("rightImg")}>
+              <Image src={iconBlueprism} alt="icon" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
