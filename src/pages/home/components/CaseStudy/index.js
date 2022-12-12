@@ -18,7 +18,6 @@ import Case2 from "./Case2";
 import Case3 from "./Case3";
 import Case4 from "./Case4";
 import Case5 from "./Case5";
-import { Divider } from "@mui/material";
 const cx = className.bind(styles);
 
 export default function CaseStudy() {
@@ -101,21 +100,20 @@ export default function CaseStudy() {
                   disableRipple
                 />
               </TabList>
-              {/* <Divider sx={{ background: "lightskyblue" }} /> */}
             </fieldset>
-            <TabPanel value="1" className={cx("tabPanel")}>
+            <TabPanel value="1" className={cx("row","tabPanel")}>
               <Case1 />
             </TabPanel>
-            <TabPanel value="2" className={cx("tabPanel")}>
+            <TabPanel value="2" className={cx("row","tabPanel")}>
               <Case2 />
             </TabPanel>
-            <TabPanel value="3" className={cx("tabPanel")}>
+            <TabPanel value="3" className={cx("row","tabPanel")}>
               <Case3 />
             </TabPanel>
-            <TabPanel value="4" className={cx("tabPanel")}>
+            <TabPanel value="4" className={cx("row","tabPanel")}>
               <Case4 />
             </TabPanel>
-            <TabPanel value="5" className={cx("tabPanel")}>
+            <TabPanel value="5" className={cx("row","tabPanel")}>
               <Case5 />
             </TabPanel>
           </TabContext>

@@ -13,11 +13,9 @@ import Image from "next/image";
 const cx = className.bind(styles);
 
 const Solutions = () => {
-
   return (
     <div className={cx("container")}>
-    <div className={cx("solutions")}>
-     <div className={cx("triangle")}>
+      <div className={cx("triangle")}>
         <div className={cx("triangleLeft")}></div>
         <div className={cx("triangleRight")}></div>
       </div>
@@ -25,8 +23,8 @@ const Solutions = () => {
         <Image src={Icon_Overview} alt="Icon_Overview" />
         <h1>Sample Projects and Solutions</h1>
       </div>
-      <div className={cx("content")}>
-        <div className={cx(["item1", "mask"])}>
+      <div className={cx("row", "content")}>
+        <div className={cx("col-lg-3","item1", "mask")}>
           <div className={cx("itemHead")}>
             <Image src={IconLogistic} alt="IconLogistic" />
             <h1>Logistics</h1>
@@ -41,7 +39,7 @@ const Solutions = () => {
             </ul>
           </div>
         </div>
-        <div className={cx(["item2", "mask"])}>
+        <div className={cx("col-lg-3","item2", "mask")}>
           <div className={cx("itemHead")}>
             <Image src={IconFinance} alt="IconFinance" />
             <h1>Finance</h1>
@@ -57,7 +55,7 @@ const Solutions = () => {
           </div>
         </div>
 
-        <div className={cx(["item3", "mask"])}>
+        <div className={cx("col-lg-3","item3", "mask")}>
           <div className={cx("itemHead")}>
             <Image src={IconEcommerce} alt="IconEcommerce" />
             <h1>E-commerce</h1>
@@ -71,7 +69,7 @@ const Solutions = () => {
             </ul>
           </div>
         </div>
-        <div className={cx(["item4", "mask"])}>
+        <div className={cx("col-lg-3","item4", "mask")}>
           <div className={cx("itemHead")}>
             <Image src={IconHumanResource} alt="IconHumanResource" />
             <h1>Human Resource</h1>
@@ -92,7 +90,6 @@ const Solutions = () => {
       <div className={cx("maskBottom")}>
         <Image src={MaskGroupBottom} alt="MaskGroup" />
       </div>
-    </div>
     </div>
   );
 };

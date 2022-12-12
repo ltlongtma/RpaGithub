@@ -8,15 +8,14 @@ import styles from "./process.module.scss";
 
 const cx = className.bind(styles);
 const RpaProcess = () => {
-
   return (
-    <div className={cx("wrap")}>
+    <div className={cx("container")}>
       <div className={cx("title")}>
         <Image src={Icon_Overview} alt="Icon_Overview" />
         <h1>RPA Process</h1>
       </div>
-      <div className={cx("process1")}>
-        <div className={cx("step1")}>
+      <div className={cx("row", "process1")}>
+        <div className={cx("col-lg-3", "step1")}>
           <h1>UNDERSTAND</h1>
           <div className={cx("arrowIcon")}>
             <Image src={arrowIcon} alt="arrowIcon" />
@@ -28,7 +27,7 @@ const RpaProcess = () => {
             </ul>
           </div>
         </div>
-        <div className={cx("step2")}>
+        <div className={cx("col-lg-3", "step2")}>
           <h1>ANALYZE</h1>
           <div className={cx("arrowIcon")}>
             <Image src={arrowIcon} alt="arrowIcon" />
@@ -42,7 +41,7 @@ const RpaProcess = () => {
             </ul>
           </div>
         </div>
-        <div className={cx("step3")}>
+        <div className={cx("col-lg-3", "step3")}>
           <h1>Structure</h1>
           <div className={cx("arrowIcon")}>
             <Image src={arrowIcon} alt="arrowIcon" />
@@ -53,7 +52,7 @@ const RpaProcess = () => {
             </ul>
           </div>
         </div>
-        <div className={cx("step4")}>
+        <div className={cx("col-lg-3", "step4")}>
           <h1>Proposal</h1>
           <div className={cx("arrowIcon")}>
             <Image src={arrowIcon} alt="arrowIcon" />
@@ -66,23 +65,22 @@ const RpaProcess = () => {
           </div>
         </div>
       </div>
-      <div className={cx("process2")}>
-        <div className={cx("frame")}>
+      <div className={cx("row", "process2")}>
+        <div className={cx("col-lg-3", "frame")}>
           <div className={cx("img")}>
             <Image src={iconGroup} alt="iconGroup" />
           </div>
         </div>
-        <div className={cx("frame")}>
+        <div className={cx("col-lg-3", "frame")}>
           <ul>
             <li>Image</li>
             <li>Video</li>
             <li>Voice</li>
             <li>Text</li>
             <li>Data</li>
-
           </ul>
         </div>
-        <div className={cx("frame")}>
+        <div className={cx("col-lg-3", "frame")}>
           <ul>
             <li>Document Parser</li>
             <li>ID card Parser</li>
@@ -91,7 +89,7 @@ const RpaProcess = () => {
             <li>Video Analysis</li>
           </ul>
         </div>
-        <div className={cx("frame")}>
+        <div className={cx("col-lg-3", "frame")}>
           <ul>
             <li>Options</li>
             <li>Benefits</li>
@@ -103,3 +101,4 @@ const RpaProcess = () => {
   );
 };
 export default RpaProcess;
+          

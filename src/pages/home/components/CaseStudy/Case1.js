@@ -7,8 +7,8 @@ import groupCase1 from "../../../../../public/CaseStudy/groupCase1.svg";
 const Case1_2 = () => {
   return (
     <div className={cx("case")}>
-      <div className={cx("content")}>
-        <div className={cx("content1")}>
+      <div className={cx("row","content")}>
+        <div className={cx("col-lg-6","content1")}>
           <h1>Problem</h1>
           <ul style={{ top: 0 }}>
             <li style={{ alignItems: "baseline" }}>
@@ -24,7 +24,7 @@ const Case1_2 = () => {
             </li>
           </ul>
         </div>
-        <div className={cx("content2")}>
+        <div className={cx("col-lg-6","content2")}>
           <h1>Result</h1>
           <ul style={{ top: 0 }}>
             <li style={{ alignItems: "baseline" }}>

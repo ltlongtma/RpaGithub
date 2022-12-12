@@ -7,8 +7,8 @@ import Image from "next/image";
 const Case2_2 = () => {
   return (
     <div className={cx("case")}>
-      <div className={cx("content")}>
-        <div className={cx("content1")}>
+      <div className={cx("row", "content")}>
+        <div className={cx("col-lg-6", "content1")}>
           <h1>Problem</h1>
           <ul style={{ marginTop: "4%" }}>
             <li>
@@ -17,9 +17,9 @@ const Case2_2 = () => {
             <li>Human errors may occur when collating large data daily</li>
           </ul>
         </div>
-        <div className={cx("content2")}>
+        <div className={cx("col-lg-6", "content2")}>
           <h1>Result</h1>
-          <ul>
+          <ul style={{top:"-10%"}}>
             <li style={{ marginBottom: 0 }}>
               <p>
                 <span>12000</span> hours returned in year one

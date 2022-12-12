@@ -7,8 +7,8 @@ import Image from "next/image";
 const Case4 = () => {
   return (
     <div className={cx("case")}>
-      <div className={cx("content")}>
-        <div className={cx("content1")}>
+      <div className={cx("row","content")}>
+        <div className={cx("col-lg-6","content1")}>
           <h1>Problem</h1>
           <ul style={{ marginTop: "4%" }}>
             <li>
@@ -21,7 +21,7 @@ const Case4 = () => {
             </li>
           </ul>
         </div>
-        <div className={cx("content2")}>
+        <div className={cx("col-lg-6","content2")}>
           <h1>Result</h1>
           <ul style={{marginTop: "4%" }}>
             <li style={{ position: "relative", top: "-0.5vw" }}>
