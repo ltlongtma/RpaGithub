@@ -32,10 +32,7 @@ export default function Document() {
           src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/Draggable.min.js"
           async
         ></script>
-        {/* <script
-          src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/Draggable3.min.js?r=897"
-          async
-        ></script> */}
+
         <link
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
           rel="stylesheet"

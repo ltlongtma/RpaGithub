@@ -11,7 +11,7 @@ import image from "../../../../../public/AnaImageVideo.svg";
 import data from "../../../../../public/AnaData.svg";
 import anaImage from "../../../../../public/AIMLAnaCenter.svg";
 import arrow1 from "../../../../../public/AIMLArrow1.svg";
-import anaLeftImage from "../../../../../public/anaLeftImage.svg";
+import anaLeftImage2 from "../../../../../public/anaLeftImage2.svg";
 
 const cx = className.bind(styles);
 const AIML = () => {
@@ -33,7 +33,7 @@ const AIML = () => {
             <div className={cx("body")}>
               <div className={cx("row")}>
                 <div className={cx("col-3","main-image-wraper")}>
-                  <Image src={anaLeftImage} alt="image" priority />
+                  <Image src={anaLeftImage2} alt="image" priority />
                 </div>
                 <div className={cx("col-3")}>
                   <div className={cx("item-center-wrap")}>

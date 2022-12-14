@@ -33,7 +33,7 @@
         left: 2%;
         height: 2vw;
         a {
-          font-size: 1.2rem;
+          font-size: 1.2vw;
         }
         &:hover {
           background: linear-gradient(213.12deg, #396afc 39.51%, #0094ff 80.26%);
@@ -174,25 +174,42 @@
 
           .line {
             display: flex;
+
             .arrow1 {
               animation: arrow1 8s infinite;
               padding-right: 2%;
               width: 14vw;
+              span {
+                width: 100% !important;
+                height: 100% !important;
+              }
             }
             .arrow2 {
               animation: arrow2 8s infinite;
               padding-right: 2%;
               width: 14vw;
+              span {
+                width: 100% !important;
+                height: 100% !important;
+              }
             }
             .arrow3 {
               animation: arrow3 8s infinite;
               padding-right: 2%;
               width: 14vw;
+              span {
+                width: 100% !important;
+                height: 100% !important;
+              }
             }
             .arrow4 {
               animation: arrow4 8s infinite;
               padding-right: 2%;
               width: 14vw;
+              span {
+                width: 100% !important;
+                height: 100% !important;
+              }
             }
             @keyframes arrow1 {
               0% {

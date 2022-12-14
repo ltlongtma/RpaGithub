@@ -8,6 +8,7 @@ import CaseStudy from "./components/CaseStudy/index";
 import Contact from "./components/Contact/index";
 import { useEffect } from "react";
 import { gsap } from "gsap";
+import Draggable from "gsap/dist/Draggable";
 
 export default function Home() {
   useEffect(() => {
@@ -104,24 +105,25 @@ export default function Home() {
     window.addEventListener("resize", newSize);
 
     // make the container a draggable element
-    // let dragMe = Draggable.create(container, {
-    //   type: "y",
-    //   edgeResistance: 1,
-    //   onDragEnd: slideAnim,
-    //   onDrag: tweenDot,
-    //   onThrowUpdate: tweenDot,
-    //   snap: offsets,~
-    //   inertia: true,
-    //   zIndexBoost: false,
-    //   allowNativeTouchScrolling: false,
-    //   bounds: "#masterWrap",
-    //   activeCursor: "grabbing",
-    //   cursor: "auto",
-    //   // dragClickables: true,
-    //   // clickableTest: (e) => console.log("E >>", e),
-    // });
+    let dragMe = Draggable.create(container, {
+      type: "y",
+      edgeResistance: 1,
+      onDragEnd: slideAnim,
+      onDrag: tweenDot,
+      onThrowUpdate: tweenDot,
+      snap: offsets,
+      inertia: true,
+      zIndexBoost: false,
+      allowNativeTouchScrolling: false,
+      bounds: "#masterWrap",
+      activeCursor: "grabbing",
+      cursor: "auto",
+      allowContextMenu:true
+      // dragClickables: true,
+      // clickableTest: (e) => console.log("E >>", e),
+    });
 
-    // dragMe[0].id = "dragger";
+    dragMe[0].id = "dragger";
     newSize();
 
     // resize all panels and refigure draggable snap array

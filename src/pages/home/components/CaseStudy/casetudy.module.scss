@@ -34,6 +34,8 @@
           overflow: visible !important;
           justify-content: center;
           width: 20%;
+          max-width: inherit;
+          height: 8vh;
         }
 
         div {
@@ -70,6 +72,7 @@
           span {
             overflow: visible !important;
             width: 2vw !important;
+            height: 1.5vw !important;
 
             img {
               margin-right: 37% !important;
@@ -80,7 +83,7 @@
           content: "";
           background: rgb(175, 178, 207);
           width: 1px;
-          height: 40px;
+          height: 2vw;
           position: absolute;
           right: 0%;
           top: 22%;
@@ -91,7 +94,7 @@
           content: "";
           background: #0094ff;
           width: 3px;
-          height: 40px;
+          height: 2vw;
           position: relative;
           left: 20%;
           z-index: 100;
@@ -101,7 +104,7 @@
           content: "";
           background: rgb(175, 178, 207);
           width: 1px;
-          height: 40px;
+          height: 2vw;
           position: absolute;
           right: 0;
           top: 22%;
@@ -111,7 +114,7 @@
           content: "";
           background: #0094ff;
           width: 3px;
-          height: 40px;
+          height: 2vw;
           position: absolute;
           top: 22%;
           left: 0;
@@ -121,7 +124,7 @@
           content: "";
           background: #0094ff;
           width: 3px;
-          height: 40px;
+          height: 2vw;
           position: absolute;
           top: 22%;
           right: 0;
@@ -132,7 +135,7 @@
           content: "";
           background: rgb(175, 178, 207);
           width: 1px;
-          height: 40px;
+          height: 2vw;
           position: absolute;
           right: 0;
           top: 22%;
@@ -142,7 +145,7 @@
           content: "";
           background: #0094ff;
           width: 3px;
-          height: 40px;
+          height: 2vw;
           position: absolute;
           top: 22%;
           left: 0;
@@ -152,7 +155,7 @@
           content: "";
           background: #0094ff;
           width: 3px;
-          height: 40px;
+          height: 2vw;
           position: absolute;
           top: 22%;
           right: 0;
@@ -163,7 +166,7 @@
           content: "";
           background: rgb(175, 178, 207);
           width: 1px;
-          height: 40px;
+          height: 2vw;
           position: absolute;
           right: -0;
           top: 22%;
@@ -174,7 +177,7 @@
           content: "";
           background: #0094ff;
           width: 3px;
-          height: 40px;
+          height: 2vw;
           position: absolute;
           top: 22%;
           left: 0;
@@ -185,7 +188,7 @@
           background: #0094ff;
 
           width: 3px;
-          height: 40px;
+          height: 2vw;
           position: absolute;
           right: -2%;
           top: 22%;
@@ -195,7 +198,7 @@
           content: "";
           background: #0094ff;
           width: 3px;
-          height: 40px;
+          height: 2vw;
           z-index: 100;
           position: absolute;
           left: 0;
@@ -268,6 +271,7 @@
       margin: 4% 7vw 0 7vw;
       span {
         font-weight: 600;
+        width: 100% !important;
       }
     }
   }
