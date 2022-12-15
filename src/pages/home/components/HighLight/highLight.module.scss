@@ -36,7 +36,11 @@
           font-size: 1.2vw;
         }
         &:hover {
-          background: linear-gradient(213.12deg, #396afc 39.51%, #0094ff 80.26%);
+          background: linear-gradient(
+            213.12deg,
+            #396afc 39.51%,
+            #0094ff 80.26%
+          );
           border-radius: 7%;
         }
         a:hover {
@@ -56,7 +60,11 @@
         font-weight: 700;
         color: #ffffff;
         background: #4d8acf;
-        background: linear-gradient(90deg, rgba(0, 189, 255, 1) 0%, rgba(0, 189, 255, 1) 100%);
+        background: linear-gradient(
+          90deg,
+          rgba(0, 189, 255, 1) 0%,
+          rgba(0, 189, 255, 1) 100%
+        );
         border: none;
         border-radius: 1000px;
         box-shadow: 6px 6px 24px #0b345aa3;
@@ -152,13 +160,23 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding-bottom: 9%;
+      padding-bottom: 7%;
       .mainContent {
         .title {
-          font-weight: 700;
-          font-size: 4vw;
           color: #ffffff;
-          padding-left: 17%;
+          display: flex;
+          flex-direction: column;
+          margin: 0 17%;
+          h1 {
+            font-weight: 700;
+            font-size: 4vw;
+          }
+
+          h2 {
+            padding-top: 3%;
+            font-weight: 600;
+            font-size: 2vw;
+          }
         }
         .body {
           color: #ffffff;
@@ -202,15 +220,6 @@
                 height: 100% !important;
               }
             }
-            .arrow4 {
-              animation: arrow4 8s infinite;
-              padding-right: 2%;
-              width: 14vw;
-              span {
-                width: 100% !important;
-                height: 100% !important;
-              }
-            }
             @keyframes arrow1 {
               0% {
                 transform: translateX(-100%);
@@ -221,6 +230,7 @@
                 opacity: 1;
               }
             }
+
             @keyframes arrow2 {
               0% {
                 transform: translateX(-100%);
@@ -245,20 +255,6 @@
                 opacity: 0;
               }
               75% {
-                transform: translateX(0);
-                opacity: 1;
-              }
-            }
-            @keyframes arrow4 {
-              0% {
-                transform: translateX(-100%);
-                opacity: 0;
-              }
-              70% {
-                transform: translateX(-100%);
-                opacity: 0;
-              }
-              100% {
                 transform: translateX(0);
                 opacity: 1;
               }
@@ -305,24 +301,11 @@
                 }
               }
             }
-            .arrow4 + p {
-              opacity: 0;
-              animation: arrow 4s 6.5s linear forwards;
-              @keyframes arrow {
-                0% {
-                  opacity: 0;
-                }
-                100% {
-                  opacity: 1;
-                }
-              }
-            }
           }
         }
       }
     }
   }
-
   .card {
     width: 100%;
     position: absolute;
@@ -331,52 +314,72 @@
     justify-content: center;
     margin-left: 0;
     .cardItem {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
       position: relative;
       height: 100%;
       margin: 0 0.8%;
       display: flex;
       align-items: center;
       width: 18%;
-      height: 8vw;
-
+      height: 9vw;
       background: #ffffff;
       box-shadow: 0px 100px 80px rgba(62, 116, 255, 0.07),
         0px 30.1471px 24.1177px rgba(62, 116, 255, 0.0456112),
         0px 12.5216px 10.0172px rgba(62, 116, 255, 0.035),
         0px 4.5288px 3.62304px rgba(62, 116, 255, 0.0243888);
-    }
-    .cardItem:nth-of-type(1) {
-      display: flex;
-      justify-content: flex-start;
-    }
-    .cardIcon {
-      width: 4vw;
-      margin: 0 1.5vw;
-      span {
-        width: 4vw !important;
-        height: 3vw !important;
+      .cardTitle {
+        // background: linear-gradient(90deg, #37abff -328.36%, #3fd1ff 103.8%);
+        background: #00bdff;
+        width: 100%;
+        color: #ffffff;
+        font-size: 1.5vw;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        height: 31%;
       }
-    }
-    .cardContent {
-      left: -5%;
-      position: relative;
+      .cardContent {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: flex-start;
+        margin: auto;
+        .icon {
+          width: 4vw;
+          margin: 0 1.5vw;
+          span {
+            width: 4vw !important;
+            height: 3vw !important;
+          }
+        }
+        .content {
+          left: -5%;
+          position: relative;
 
-      h1 {
-        color: #0094ff;
-        font-weight: 700;
-        font-size: 3vw;
-        margin: 0;
+          h1 {
+            color: #0094ff;
+            font-weight: 700;
+            font-size: 3vw;
+            margin: 0;
+          }
+          p {
+            color: #333333;
+            font-weight: 500;
+            font-size: 1vw;
+            margin-top: 0;
+            margin-bottom: 0;
+            line-height: 1.3vw;
+            position: relative;
+            top: -0.4vw;
+          }
+        }
       }
-      p {
-        color: #333333;
-        font-weight: 500;
-        font-size: 1vw;
-        margin-top: 0;
-        margin-bottom: 0;
-        line-height: 1.3vw;
-        position: relative;
-        top: -0.4vw;
-      }
+      // .cardItem:nth-of-type(1) {
+      //   display: flex;
+      //   justify-content: flex-start;
+      // }
     }
   }
 
@@ -556,22 +559,22 @@
 //           0px 4.5288px 3.62304px rgba(62, 116, 255, 0.0243888);
 //       }
 //       .cardItem1 {
-//         .cardContent {
+//         .content {
 //           left: -2vw;
 //           position: relative;
 //         }
 //       }
 //       .cardItem2 {
-//         .cardContent {
+//         .content {
 //           position: relative;
 //           top: 2px;
 //         }
 //       }
-//       .cardIcon {
+//       .icon {
 //         width: 4vw;
 //         margin: 0 1.5vw;
 //       }
-//       .cardContent {
+//       .content {
 //         left: -5%;
 //         position: relative;
 
