@@ -51,7 +51,7 @@ const HighLight = () => {
                 <IconButton
                   size="large"
                   sx={{ color: "white", display: viewMobile ? "block" : "none" }}
-                  onClick={() => setShowMenu(!showMenu)}
+                  onTouchStart={() => setShowMenu(!showMenu)}
                 >
                   {showMenu ? <CloseIcon /> : <MenuIcon />}
                 </IconButton>
