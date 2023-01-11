@@ -23,6 +23,7 @@ export default function Home() {
     let offsets = [];
     let toolTipAnims = [];
     let ih = window.innerHeight;
+    let iw = window.innerWidth;
 
     // create nev dots and add tooltip listeners
     for (let i = 0; i < slides.length; i++) {
@@ -43,6 +44,9 @@ export default function Home() {
     // get elements positioned
     gsap.set(".dots", { yPercent: -50 });
     gsap.set(".toolTips", { yPercent: -50 });
+    if (iw < 992) {
+      gsap.set(".dots", { display: "none" });
+    }
 
     // side screen animation with nav dots
     const dotAnim = gsap.timeline({ paused: true });
