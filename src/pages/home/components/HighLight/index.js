@@ -24,17 +24,10 @@ import { IconButton } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 const cx = className.bind(styles);
 
-const HighLight = () => {
-  const [viewMobile, setViewMobile] = useState(false);
+const HighLight = ({ viewMobile }) => {
   const [showMenu, setShowMenu] = useState(false);
 
-  useEffect(() => {
-    const iw = window.innerWidth;
 
-    if (iw < 992) {
-      setViewMobile(true);
-    }
-  }, []);
   return (
     <div className={cx("container")}>
       {/* NavBar */}
@@ -51,7 +44,7 @@ const HighLight = () => {
                 <IconButton
                   size="large"
                   sx={{ color: "white", display: viewMobile ? "block" : "none" }}
-                  onTouchStart={() => setShowMenu(!showMenu)}
+                  onClick={() => setShowMenu(!showMenu)}
                 >
                   {showMenu ? <CloseIcon /> : <MenuIcon />}
                 </IconButton>

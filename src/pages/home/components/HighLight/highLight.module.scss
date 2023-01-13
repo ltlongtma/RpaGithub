@@ -1,5 +1,3 @@
-// @import ".././../../../../node_modules/bootstrap/scss/bootstrap";
-
 @media screen and (min-width: 992px) {
   .container {
     // background: linear-gradient(213.12deg, #396afc 39.51%, #0094ff 80.26%);
@@ -377,10 +375,6 @@
             }
           }
         }
-        // .cardItem:nth-of-type(1) {
-        //   display: flex;
-        //   justify-content: flex-start;
-        // }
       }
     }
 
@@ -388,7 +382,6 @@
       position: absolute;
       bottom: 0;
       width: 100%;
-      // height: 25vh;
       height: 12vw;
       overflow: hidden;
       .triangleLeft {
@@ -542,12 +535,7 @@
           span {
             width: 80% !important;
           }
-          // margin: auto;
-          // position: relative;
-          // top: -2vw;
-          // span {
-          //   overflow: visible !important;
-          // }
+
           h1 {
             font-family: "Poppins";
             font-style: normal;
@@ -563,13 +551,6 @@
       }
       .right {
         position: relative;
-        // bottom: 31vw;
-        // position: relative;
-        // height: 100%;
-        // display: flex;
-        // flex-direction: column;
-        // justify-content: center;
-        // padding-bottom: 12%;
         .mainContent {
           .title {
             position: relative;
@@ -577,11 +558,6 @@
             justify-content: center;
             color: #ffffff;
             font-family: "Poppins";
-
-            // color: #ffffff;
-            // display: flex;
-            // flex-direction: column;
-            // margin: 0 17%;
             h1 {
               font-weight: 700;
               font-size: 8vw;
@@ -604,15 +580,6 @@
             top: 1em;
             padding-right: 8%;
             width: 100%;
-            // font-size: 1.5vw;
-            // margin-left: 3%;
-            // width: 100%;
-            // line-height: 3vw;
-            // top: 0.5%;
-            // margin: 0;
-            // margin-top: 0;
-            // margin-bottom: 0;
-
             .line {
               display: flex;
 
@@ -752,7 +719,6 @@
           0px 12.5216px 10.0172px rgba(62, 116, 255, 0.035),
           0px 4.5288px 3.62304px rgba(62, 116, 255, 0.0243888);
         .cardTitle {
-          // background: linear-gradient(90deg, #37abff -328.36%, #3fd1ff 103.8%);
           background: #00bdff;
           width: 100%;
           color: #ffffff;
@@ -798,10 +764,6 @@
             }
           }
         }
-        // .cardItem:nth-of-type(1) {
-        //   display: flex;
-        //   justify-content: flex-start;
-        // }
       }
     }
 

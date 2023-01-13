@@ -18,10 +18,19 @@ import Case2 from "./Case2";
 import Case3 from "./Case3";
 import Case4 from "./Case4";
 import Case5 from "./Case5";
+import { Collapse } from "react-bootstrap";
+import Button from "@mui/material/Button";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 const cx = className.bind(styles);
 
-export default function CaseStudy() {
+export default function CaseStudy({ viewMobile }) {
   const [value, setValue] = React.useState("1");
+  const [openCase1, setOpenCase1] = React.useState(false);
+  const [openCase2, setOpenCase2] = React.useState(false);
+  const [openCase3, setOpenCase3] = React.useState(false);
+  const [openCase4, setOpenCase4] = React.useState(false);
+  const [openCase5, setOpenCase5] = React.useState(false);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -33,7 +42,8 @@ export default function CaseStudy() {
         <Image src={Icon_Overview} alt="Icon_Overview" />
         <h1>Sample Case Studies</h1>
       </div>
-      <div className={cx("body")}>
+      {/* View desktop */}
+      <div className={cx("body")} style={{ display: viewMobile ? "none" : "block" }}>
         <Box sx={{ width: "100%" }}>
           <TabContext value={value}>
             <fieldset className={cx("tabs")}>
@@ -101,23 +111,94 @@ export default function CaseStudy() {
                 />
               </TabList>
             </fieldset>
-            <TabPanel value="1" className={cx("row","tabPanel")}>
+            <TabPanel value="1" className={cx("row", "tabPanel")}>
               <Case1 />
             </TabPanel>
-            <TabPanel value="2" className={cx("row","tabPanel")}>
+            <TabPanel value="2" className={cx("row", "tabPanel")}>
               <Case2 />
             </TabPanel>
-            <TabPanel value="3" className={cx("row","tabPanel")}>
+            <TabPanel value="3" className={cx("row", "tabPanel")}>
               <Case3 />
             </TabPanel>
-            <TabPanel value="4" className={cx("row","tabPanel")}>
+            <TabPanel value="4" className={cx("row", "tabPanel")}>
               <Case4 />
             </TabPanel>
-            <TabPanel value="5" className={cx("row","tabPanel")}>
+            <TabPanel value="5" className={cx("row", "tabPanel")}>
               <Case5 />
             </TabPanel>
           </TabContext>
         </Box>
+      </div>
+      {/* View mobile */}
+      <div className={cx("body")} style={{ display: viewMobile ? "block" : "none" }}>
+        <div>
+          <Button
+            startIcon={<Image src={tab1} alt="imgTab1" />}
+            endIcon={openCase1 ? <KeyboardArrowDownIcon /> : <KeyboardArrowRightIcon />}
+            onClick={() => setOpenCase1(!openCase1)}
+            className={cx("button")}
+          >
+            Automatic CV input
+          </Button>
+          <Collapse in={openCase1}>
+            <div>
+              <Case1 viewMobile={viewMobile} />
+            </div>
+          </Collapse>
+
+          <Button
+            startIcon={<Image src={tab2} alt="imgTab2" />}
+            endIcon={openCase2 ? <KeyboardArrowDownIcon /> : <KeyboardArrowRightIcon />}
+            onClick={() => setOpenCase2(!openCase2)}
+            className={cx("button")}
+          >
+            COD Status update
+          </Button>
+          <Collapse in={openCase2}>
+            <div>
+              <Case2 viewMobile={viewMobile} />
+            </div>
+          </Collapse>
+          <Button
+            startIcon={<Image src={tab3} alt="imgTab3" />}
+            endIcon={openCase3 ? <KeyboardArrowDownIcon /> : <KeyboardArrowRightIcon />}
+            onClick={() => setOpenCase3(!openCase3)}
+            className={cx("button")}
+          >
+            Logistics data process
+          </Button>
+          <Collapse in={openCase3}>
+            <div>
+              <Case3 viewMobile={viewMobile} />
+            </div>
+          </Collapse>
+          <Button
+            startIcon={<Image src={tab4} alt="imgTab4" />}
+            endIcon={openCase4 ? <KeyboardArrowDownIcon /> : <KeyboardArrowRightIcon />}
+            onClick={() => setOpenCase4(!openCase4)}
+            className={cx("button")}
+          >
+            Automatic debt reminder
+          </Button>
+          <Collapse in={openCase4}>
+            <div>
+              <Case4 viewMobile={viewMobile} />
+            </div>
+          </Collapse>
+          <Button
+            startIcon={<Image src={tab5} alt="imgTab5" />}
+            endIcon={openCase5 ? <KeyboardArrowDownIcon /> : <KeyboardArrowRightIcon />}
+            onClick={() => setOpenCase5(!openCase5)}
+            className={cx("button")}
+          >
+            Inventory alerts
+          </Button>
+          <Collapse in={openCase5}>
+            <div>
+              <Case5 viewMobile={viewMobile} />
+            </div>
+          </Collapse>
+        </div>
       </div>
     </div>
   );

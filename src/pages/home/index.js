@@ -6,10 +6,12 @@ import RpaProcess from "./components/Process/index";
 import Solutions from "./components/Solutions/index";
 import CaseStudy from "./components/CaseStudy/index";
 import Contact from "./components/Contact/index";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { gsap } from "gsap";
 import Draggable from "gsap/dist/Draggable";
 export default function Home() {
+  const [viewMobile, setViewMobile] = useState(false);
+
   useEffect(() => {
     gsap.registerPlugin(Draggable);
     const slides = document.querySelectorAll("section");
@@ -117,7 +119,7 @@ export default function Home() {
       snap: offsets,
       inertia: true,
       zIndexBoost: false,
-      allowNativeTouchScrolling: false,
+      // allowNativeTouchScrolling: false,
       bounds: "#masterWrap",
       activeCursor: "grabbing",
       cursor: "auto",
@@ -149,6 +151,13 @@ export default function Home() {
       });
     }
   }, []);
+  useEffect(() => {
+    const iw = window.innerWidth;
+
+    if (iw < 992) {
+      setViewMobile(true);
+    }
+  }, []);
   return (
     <div>
       <Head>
@@ -162,7 +171,7 @@ export default function Home() {
           <div id="masterWrap">
             <div id="panelWrap">
               <section>
-                <HighLight />
+                <HighLight viewMobile={viewMobile} />
               </section>
               <section>
                 <Overview />
@@ -171,13 +180,13 @@ export default function Home() {
                 <AIML />
               </section>
               <section>
-                <RpaProcess />
+                <RpaProcess viewMobile={viewMobile} />
               </section>
               <section>
-                <Solutions />
+                <Solutions viewMobile={viewMobile} />
               </section>
               <section>
-                <CaseStudy />
+                <CaseStudy viewMobile={viewMobile} />
               </section>
               <section>
                 <Contact />
