@@ -2,27 +2,26 @@ import className from "classnames/bind";
 const cx = className.bind(styles);
 import styles from "./casetudy.module.scss";
 import groupCase5 from "../../../../../public/CaseStudy/groupCase5.svg";
+import groupCase5_ViewMobile from "../../../../../public/CaseStudy/groupCase5_ViewMobile.svg";
 import Image from "next/image";
 
-const Case5 = () => {
+const Case5 = ({ viewMobile }) => {
   return (
     <div className={cx("case")}>
-      <div className={cx("row","content")}>
-        <div className={cx("col-lg-6","content1")}>
+      <div className={cx("row", "content")}>
+        <div className={cx("col-lg-6", "content1")}>
           <h1>Problem</h1>
-          <ul style={{ marginTop: "4%" }}>
-            <li style={{ marginBottom: "4%" }}>
-              Inventory needs to be checked and updated regularly​​
-            </li>
+          <ul>
+            <li>Inventory needs to be checked and updated regularly​​</li>
             <li>Late notifications or human errors can result in losing sales</li>
           </ul>
         </div>
-        <div className={cx("col-lg-6","content2")}>
+        <div className={cx("col-lg-6", "content2")}>
           <h1>Result</h1>
-          <ul style={{ marginTop: "4%" }}>
-            <li style={{ marginBottom: "4%" }}>
+          <ul>
+            <li>
               Inventory can be scheduled to check 24/7
-              <span
+              {/* <span
                 style={{
                   lineHeight: 0,
                   fontSize: "1.5vw",
@@ -31,10 +30,10 @@ const Case5 = () => {
                 }}
               >
                 .draft sentense
-              </span>
+              </span> */}
               ​
             </li>
-            <li style={{ position: "relative", top: "-0.5vw" }}>
+            <li>
               <p>
                 <span>3500</span> hours returned to office workers annually
               </p>
@@ -43,7 +42,7 @@ const Case5 = () => {
         </div>
       </div>
       <div className={cx("diagram")}>
-        <Image src={groupCase5} alt={groupCase5} />
+        <Image src={viewMobile ? groupCase5_ViewMobile : groupCase5} alt={groupCase5} />
       </div>
     </div>
   );

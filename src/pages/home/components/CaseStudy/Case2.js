@@ -2,15 +2,16 @@ import className from "classnames/bind";
 const cx = className.bind(styles);
 import styles from "./casetudy.module.scss";
 import groupCase2 from "../../../../../public/CaseStudy/groupCase2.svg";
+import groupCase2_ViewMobile from "../../../../../public/CaseStudy/groupCase2_ViewMobile.svg";
 import Image from "next/image";
 
-const Case2_2 = () => {
+const Case2 = ({ viewMobile }) => {
   return (
     <div className={cx("case")}>
       <div className={cx("row", "content")}>
         <div className={cx("col-lg-6", "content1")}>
           <h1>Problem</h1>
-          <ul style={{ marginTop: "4%" }}>
+          <ul >
             <li>
               <p>Complex process, need to manipulate files in different systems​</p>
             </li>
@@ -19,7 +20,7 @@ const Case2_2 = () => {
         </div>
         <div className={cx("col-lg-6", "content2")}>
           <h1>Result</h1>
-          <ul style={{top:"-10%"}}>
+          <ul >
             <li style={{ marginBottom: 0 }}>
               <p>
                 <span>12000</span> hours returned in year one
@@ -40,9 +41,9 @@ const Case2_2 = () => {
         </div>
       </div>
       <div className={cx("diagram")}>
-        <Image src={groupCase2} alt={groupCase2} />
+        <Image src={viewMobile ? groupCase2_ViewMobile : groupCase2} alt={groupCase2} />
       </div>
     </div>
   );
 };
-export default Case2_2;
+export default Case2;
