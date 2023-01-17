@@ -12,9 +12,11 @@ import Button from "@mui/material/Button";
 import { IconButton } from "@mui/material";
 import KeyboardDoubleArrowUpIcon from "@mui/icons-material/KeyboardDoubleArrowUp";
 import Tooltip from "@mui/material/Tooltip";
+import Divider from '@mui/material/Divider';
+
 
 const cx = className.bind(styles);
-const Contact = () => {
+const Contact = ({viewMobile}) => {
   return (
     <div className={cx("container")}>
       <div className={cx("contact")}>
@@ -40,16 +42,6 @@ const Contact = () => {
             </Button>
           </div>
         </div>
-
-        {/* <div className={cx("iconJumpUp")}>
-          <Link href="/">
-            <Tooltip title="Back to top" placement="bottom">
-              <IconButton color="primary">
-                <KeyboardDoubleArrowUpIcon sx={{ width: 32, height: 32 }} />
-              </IconButton>
-            </Tooltip>
-          </Link>
-        </div> */}
       </div>
       <div className={cx("footer", "maskFooter")}>
         <div className={cx("mainContent")}>
@@ -58,72 +50,75 @@ const Contact = () => {
             <div className={cx("icons")}>
               <Link href="https://www.linkedin.com/company/tma-solutions/">
                 <IconButton color="inherit">
-                  <LinkedInIcon sx={{ width: 32, height: 32 }} />
+                  <LinkedInIcon  />
                 </IconButton>
               </Link>
 
               <Link href="mailto:sales@tma.com.vn">
-              <IconButton color="inherit">
-                <Image
-                  src={emailIcon}
-                  alt="emailIcon"
-                  sx={{ width: 32, height: 32 }}
-                />
-              </IconButton>
+                <IconButton color="inherit">
+                  <Image
+                    src={emailIcon}
+                    alt="emailIcon"
+                  />
+                </IconButton>
               </Link>
-            
+
               <Link href={`tel:${+84839978000}`}>
-              <IconButton color="inherit">
-                <PhoneInTalkIcon sx={{ width: 32, height: 32 }} />
-              </IconButton>
+                <IconButton color="inherit">
+                  <PhoneInTalkIcon  />
+                </IconButton>
               </Link>
-             
             </div>
           </div>
           <div className={cx("right")}>
-            <Button>
-              <Link href="https://www.tmasolutions.com/">
-                <a>Home</a>
-              </Link>
-            </Button>
-            <Button>
-              <Link href="https://www.tmasolutions.com/about-us">
-                <a>About TMA</a>
-              </Link>
-            </Button>
-            <Button>
-              <Link href="https://www.tmasolutions.com/services">
-                <a>Solutions</a>
-              </Link>
-            </Button>
-            <Button>
-              <Link href="https://www.tmasolutions.com/industries">
-                <a>Industries</a>
-              </Link>
-            </Button>
-            <Button>
-              <Link href="https://www.tmasolutions.com/technology">
-                <a>Technologies</a>
-              </Link>
-            </Button>
-            <Button>
-              <Link href="https://www.tmasolutions.com/news-events">
-                <a>News</a>
-              </Link>
-            </Button>
-            <Button>
-              <Link href="https://www.tmasolutions.com/contact">
-                <a>Contact</a>
-              </Link>
-            </Button>
-            <Button>
-              <Link href="https://www.tma.vn/Why-TMA/Hoat-dong-ngoai-khoa-phong-phu">
-                <a>Others</a>
-              </Link>
-            </Button>
+            <div className= {viewMobile ?"m-auto":null}>
+              <Button>
+                <Link href="https://www.tmasolutions.com/">
+                  <a>Home</a>
+                </Link>
+              </Button>
+              <Button>
+                <Link href="https://www.tmasolutions.com/about-us">
+                  <a>About TMA</a>
+                </Link>
+              </Button>
+              <Button>
+                <Link href="https://www.tmasolutions.com/services">
+                  <a>Solutions</a>
+                </Link>
+              </Button>
+              <Button>
+                <Link href="https://www.tmasolutions.com/industries">
+                  <a>Industries</a>
+                </Link>
+              </Button>
+            </div>
+            <div className= {viewMobile?"m-auto":null}>
+              <Button>
+                <Link href="https://www.tmasolutions.com/technology">
+                  <a>Technologies</a>
+                </Link>
+              </Button>
+              <Button>
+                <Link href="https://www.tmasolutions.com/news-events">
+                  <a>News</a>
+                </Link>
+              </Button>
+              <Button>
+                <Link href="https://www.tmasolutions.com/contact">
+                  <a>Contact</a>
+                </Link>
+              </Button>
+              <Button>
+                <Link href="https://www.tma.vn/Why-TMA/Hoat-dong-ngoai-khoa-phong-phu">
+                  <a>Others</a>
+                </Link>
+              </Button>
+            </div>
           </div>
         </div>
         <div className={cx("bottomText")}>
+       { viewMobile? <Divider variant = "fullWidth" sx={{width:"80%", m:"2% auto"}}/> :null}
           TMA Solutions &copy;2022 All Rights Reserved{" "}
         </div>
       </div>

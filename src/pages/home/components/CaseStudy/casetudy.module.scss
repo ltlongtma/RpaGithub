@@ -1,423 +1,383 @@
-.container {
-  width: 100%;
-  .header {
+@media screen and (min-width: 992px) {
+  .container {
     width: 100%;
-    padding-left: 5%;
-    display: flex;
-    flex-direction: column;
-    span {
-      width: 3vw !important;
-    }
-    h1 {
-      font-weight: 600;
-      font-size: 4vw;
-      color: #333333;
-      margin-top: 3%;
-      margin: 0;
-      position: relative;
-    }
-  }
-  .body {
-    position: relative;
-    // top: -1%;
-    // width: 100vw;
-    .tabs {
-      border: none;
+    .header {
       width: 100%;
-      padding: 0 2%;
-      .tabLists {
-        // overflow: visible !important;
-        // justify-content: space-between;
-        // display: flex;
-        // width: 100%;
-        button {
-          overflow: visible !important;
-          justify-content: center;
-          width: 20%;
-          max-width: inherit;
-          height: 8vh;
-        }
-
-        div {
-          overflow: visible !important;
-        }
-
-        .tabClassDynamic {
-          font-weight: 500;
-          font-size: 0.8vw;
-          font-family: "Poppins";
-          font-style: normal;
-          color: #0094ff;
-          display: flex;
-          justify-content: center;
-          padding: 0;
-          font-weight: bolder;
-          outline: none;
-          span {
-            overflow: visible !important;
-            width: 2vw !important;
-            img {
-              margin-right: 37% !important;
-            }
-          }
-        }
-        .tabClassStatic {
-          color: #9f9f9f;
-          font-weight: 500;
-          font-size: 0.8vw;
-          font-family: "Poppins";
-          display: flex;
-          justify-content: center;
-          padding: 0;
-          span {
-            overflow: visible !important;
-            width: 2vw !important;
-            height: 1.5vw !important;
-
-            img {
-              margin-right: 37% !important;
-            }
-          }
-        }
-        button:nth-child(1).tabClassStatic:after {
-          content: "";
-          background: rgb(175, 178, 207);
-          width: 1px;
-          height: 2vw;
-          position: absolute;
-          right: 0%;
-          top: 22%;
-          transform: translate(-22%, 0%);
-        }
-
-        button:nth-child(1).tabClassDynamic:after {
-          content: "";
-          background: #0094ff;
-          width: 3px;
-          height: 2vw;
-          position: relative;
-          left: 20%;
-          z-index: 100;
-        }
-
-        button:nth-child(2).tabClassStatic:after {
-          content: "";
-          background: rgb(175, 178, 207);
-          width: 1px;
-          height: 2vw;
-          position: absolute;
-          right: 0;
-          top: 22%;
-          transform: translate(-22%, 0%);
-        }
-        button:nth-child(2).tabClassDynamic:before {
-          content: "";
-          background: #0094ff;
-          width: 3px;
-          height: 2vw;
-          position: absolute;
-          top: 22%;
-          left: 0;
-          transform: translate(-22%, 0%);
-        }
-        button:nth-child(2).tabClassDynamic:after {
-          content: "";
-          background: #0094ff;
-          width: 3px;
-          height: 2vw;
-          position: absolute;
-          top: 22%;
-          right: 0;
-          transform: translate(-22%, 0%);
-        }
-
-        button:nth-child(3).tabClassStatic:after {
-          content: "";
-          background: rgb(175, 178, 207);
-          width: 1px;
-          height: 2vw;
-          position: absolute;
-          right: 0;
-          top: 22%;
-          transform: translate(-22%, 0%);
-        }
-        button:nth-child(3).tabClassDynamic:before {
-          content: "";
-          background: #0094ff;
-          width: 3px;
-          height: 2vw;
-          position: absolute;
-          top: 22%;
-          left: 0;
-          transform: translate(-22%, 0%);
-        }
-        button:nth-child(3).tabClassDynamic:after {
-          content: "";
-          background: #0094ff;
-          width: 3px;
-          height: 2vw;
-          position: absolute;
-          top: 22%;
-          right: 0;
-          transform: translate(-22%, 0%);
-        }
-
-        button:nth-child(4).tabClassStatic:after {
-          content: "";
-          background: rgb(175, 178, 207);
-          width: 1px;
-          height: 2vw;
-          position: absolute;
-          right: -0;
-          top: 22%;
-          transform: translate(-22%, 0%);
-        }
-
-        button:nth-child(4).tabClassDynamic:before {
-          content: "";
-          background: #0094ff;
-          width: 3px;
-          height: 2vw;
-          position: absolute;
-          top: 22%;
-          left: 0;
-          transform: translate(-22%, 0%);
-        }
-        button:nth-child(4).tabClassDynamic:after {
-          content: "";
-          background: #0094ff;
-
-          width: 3px;
-          height: 2vw;
-          position: absolute;
-          right: -2%;
-          top: 22%;
-          transform: translate(-22%, 0%);
-        }
-        button:nth-child(5).tabClassDynamic:before {
-          content: "";
-          background: #0094ff;
-          width: 3px;
-          height: 2vw;
-          z-index: 100;
-          position: absolute;
-          left: 0;
-          top: 22%;
-          transform: translate(-22%, 0%);
-        }
+      padding-left: 5%;
+      display: flex;
+      flex-direction: column;
+      span {
+        width: 3vw !important;
+      }
+      h1 {
+        font-weight: 600;
+        font-size: 4vw;
+        color: #333333;
+        margin-top: 3%;
+        margin: 0;
+        position: relative;
       }
     }
-    .tabPanel {
-      margin: 0 8%;
-      margin-top: 1%;
-    }
-    .case {
-      width: 100%;
-      .content {
-        // display: flex;
-        position: relative;
-        top: -0.5vw;
+    .body {
+      position: relative;
 
-        h1 {
-          font-family: "Poppins";
-          font-style: normal;
-          font-weight: 700;
-          font-size: 2vw;
-          color: #090909;
-          margin-bottom: 5%;
-        }
-        ul {
-          list-style: none;
-          position: relative;
-          top: -1vw;
-          left: -5%;
-          li {
+      .tabs {
+        border: none;
+        width: 100%;
+        padding: 0 2%;
+        .tabLists {
+          button {
+            overflow: visible !important;
+            justify-content: center;
+            width: 20%;
+            max-width: inherit;
+            height: 8vh;
+          }
+
+          div {
+            overflow: visible !important;
+          }
+
+          .tabClassDynamic {
+            font-weight: 500;
+            font-size: 0.8vw;
             font-family: "Poppins";
             font-style: normal;
-            font-weight: 500;
-            font-size: 1.5vw;
-            color: #090909;
+            color: #0094ff;
             display: flex;
-            align-items: center;
-            p {
-              margin: 0;
-            }
+            justify-content: center;
+            padding: 0;
+            font-weight: bolder;
+            outline: none;
             span {
-              font-family: "Poppins";
-              font-style: normal;
-              font-weight: 600;
-              font-size: 2vw;
-              color: #0094ff;
+              overflow: visible !important;
+              width: 2vw !important;
+              img {
+                margin-right: 37% !important;
+              }
             }
           }
-          li:nth-child(1) {
-            margin-bottom: 2%;
+          .tabClassStatic {
+            color: #9f9f9f;
+            font-weight: 500;
+            font-size: 0.8vw;
+            font-family: "Poppins";
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            span {
+              overflow: visible !important;
+              width: 2vw !important;
+              height: 1.5vw !important;
+
+              img {
+                margin-right: 37% !important;
+              }
+            }
           }
-          li:before {
-            content: "\261E";
-            color: #0094ef;
-            font-size: 150%;
+          button:nth-child(1).tabClassStatic:after {
+            content: "";
+            background: rgb(175, 178, 207);
+            width: 1px;
+            height: 2vw;
+            position: absolute;
+            right: 0%;
+            top: 22%;
+            transform: translate(-22%, 0%);
+          }
+
+          button:nth-child(1).tabClassDynamic:after {
+            content: "";
+            background: #0094ff;
+            width: 3px;
+            height: 2vw;
             position: relative;
-            left: -2%;
-            top: -1vw;
+            left: 20%;
+            z-index: 100;
+          }
+
+          button:nth-child(2).tabClassStatic:after {
+            content: "";
+            background: rgb(175, 178, 207);
+            width: 1px;
+            height: 2vw;
+            position: absolute;
+            right: 0;
+            top: 22%;
+            transform: translate(-22%, 0%);
+          }
+          button:nth-child(2).tabClassDynamic:before {
+            content: "";
+            background: #0094ff;
+            width: 3px;
+            height: 2vw;
+            position: absolute;
+            top: 22%;
+            left: 0;
+            transform: translate(-22%, 0%);
+          }
+          button:nth-child(2).tabClassDynamic:after {
+            content: "";
+            background: #0094ff;
+            width: 3px;
+            height: 2vw;
+            position: absolute;
+            top: 22%;
+            right: 0;
+            transform: translate(-22%, 0%);
+          }
+
+          button:nth-child(3).tabClassStatic:after {
+            content: "";
+            background: rgb(175, 178, 207);
+            width: 1px;
+            height: 2vw;
+            position: absolute;
+            right: 0;
+            top: 22%;
+            transform: translate(-22%, 0%);
+          }
+          button:nth-child(3).tabClassDynamic:before {
+            content: "";
+            background: #0094ff;
+            width: 3px;
+            height: 2vw;
+            position: absolute;
+            top: 22%;
+            left: 0;
+            transform: translate(-22%, 0%);
+          }
+          button:nth-child(3).tabClassDynamic:after {
+            content: "";
+            background: #0094ff;
+            width: 3px;
+            height: 2vw;
+            position: absolute;
+            top: 22%;
+            right: 0;
+            transform: translate(-22%, 0%);
+          }
+
+          button:nth-child(4).tabClassStatic:after {
+            content: "";
+            background: rgb(175, 178, 207);
+            width: 1px;
+            height: 2vw;
+            position: absolute;
+            right: -0;
+            top: 22%;
+            transform: translate(-22%, 0%);
+          }
+
+          button:nth-child(4).tabClassDynamic:before {
+            content: "";
+            background: #0094ff;
+            width: 3px;
+            height: 2vw;
+            position: absolute;
+            top: 22%;
+            left: 0;
+            transform: translate(-22%, 0%);
+          }
+          button:nth-child(4).tabClassDynamic:after {
+            content: "";
+            background: #0094ff;
+
+            width: 3px;
+            height: 2vw;
+            position: absolute;
+            right: -2%;
+            top: 22%;
+            transform: translate(-22%, 0%);
+          }
+          button:nth-child(5).tabClassDynamic:before {
+            content: "";
+            background: #0094ff;
+            width: 3px;
+            height: 2vw;
+            z-index: 100;
+            position: absolute;
+            left: 0;
+            top: 22%;
+            transform: translate(-22%, 0%);
           }
         }
       }
-    }
-    .diagram {
-      position: relative;
-      top: -3vw;
-      scale: 1.3;
-      margin: 4% 7vw 0 7vw;
-      span {
-        font-weight: 600;
-        width: 100% !important;
+      .tabPanel {
+        margin: 0 8%;
+        margin-top: 1%;
+      }
+      .case {
+        width: 100%;
+        .content {
+          // display: flex;
+          position: relative;
+          top: -0.5vw;
+
+          h1 {
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 2vw;
+            color: #090909;
+            margin-bottom: 5%;
+          }
+          ul {
+            list-style: none;
+            position: relative;
+            top: -1vw;
+            left: -5%;
+            li {
+              font-family: "Poppins";
+              font-style: normal;
+              font-weight: 500;
+              font-size: 1.5vw;
+              color: #090909;
+              display: flex;
+              // align-items: center;
+              p {
+                margin: 0;
+              }
+              span {
+                font-family: "Poppins";
+                font-style: normal;
+                font-weight: 600;
+                font-size: 2vw;
+                color: #0094ff;
+              }
+            }
+            li:nth-child(1) {
+              margin-bottom: 2%;
+            }
+            li:before {
+              content: "\261E";
+              color: #0094ef;
+              font-size: 150%;
+              position: relative;
+              left: -2%;
+              // top: -1vw;
+            }
+          }
+        }
+      }
+      .diagram {
+        position: relative;
+        top: -3vw;
+        scale: 1.3;
+        margin: 4% 7vw 0 7vw;
+        span {
+          font-weight: 600;
+          width: 100% !important;
+        }
       }
     }
   }
 }
+@media screen and (max-width: 992px) {
+  .container {
+    width: 100%;
+    height: 100%;
+    .header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 6%;
+      span {
+        width: 9vw !important;
+      }
+      h1 {
+        font-weight: 600;
+        margin-top: 4%;
+      }
+    }
+    .body {
+      .button {
+        position: relative;
+        background: #f1f9ff;
+        height: 6vh;
+        color: #1ea0ff;
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 700;
+        margin: 5% 5%;
+        width: 90%;
+        display: flex;
+        justify-content: flex-start;
+        span:nth-child(1) {
+          width: 5vw;
+        }
+        span:nth-child(2) {
+          width: 5vw;
+          position: absolute;
+          right: 2vw;
+        }
+      
+      }
+      .buttonCollapse {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        color: #1ea0ff;
+        text-transform: none;
+        text-align: center;
+        width: 100%;
+      }
 
-// @media screen and (max-width: 1023px) {
-//   .container {
-//     top: 80vw;
-//     position: relative;
-//     .tabs {
-//       border: none;
-//       .tabLists {
-//         button {
-//           overflow: visible !important;
-//           min-height: 1px;
-//           min-width: 1px !important;
-//           height: 5vw;
-//         }
-//       }
-//     }
+      .case {
+        .content {
+          position: relative;
+          margin: 2% 3%;
+          h1 {
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 600;
+            color: #090909;
+            font-size: 3.5vw;
+          }
+          ul {
+            list-style: none;
+            position: relative;
+            padding-left: 3% !important;
 
-//     .header {
-//       position: relative;
-//       width: 100%;
-//       top: 7vw;
-//       padding-left: 5%;
-//       span {
-//         width: 6vw !important;
-//       }
-//       h1 {
-//         font-weight: 600;
-//         font-size: 4vw;
-//         color: #333333;
-//         margin-top: 3%;
-//       }
-//     }
-//     .body {
-//       padding: 0 5%;
-//       .tabs {
-//         position: relative;
-//         top: 8vw;
-//         height: 7vw;
-//       }
-
-//       .tabClassDynamic {
-//         background: #f1f9ff;
-//         color: #0094ff;
-//         width: 15vw;
-//         min-width: 1px;
-//         font-weight: 700;
-//         font-size: 1vw;
-//         font-family: "Poppins";
-//         font-style: normal;
-//         display: flex;
-//         justify-content: space-evenly;
-//         padding: 0;
-
-//         span {
-//           width: 3vw !important;
-//         }
-//       }
-//       .tabClassStatic {
-//         color: #9f9f9f;
-//         width: 19vw;
-//         min-width: 1px;
-//         font-weight: 500;
-//         font-size: 1vw;
-//         font-family: "Poppins";
-//         font-style: normal;
-
-//         display: flex;
-//         justify-content: center;
-//         padding: 0;
-
-//         span {
-//           overflow: visible !important;
-//           width: 3vw !important;
-//           img {
-//             margin-right: 37% !important;
-//           }
-//         }
-//       }
-//       .tabPanel {
-//         padding: 0;
-//         .case {
-//           padding: 0;
-//           margin-left: 5.5%;
-//           position: relative;
-//           top: 9vw;
-//           .content {
-//           }
-//           margin-left: 5.5%;
-//           margin-top: 2%;
-//           h1 {
-//             font-family: "Poppins";
-//             font-style: normal;
-//             font-weight: 700;
-//             font-size: 2vw;
-//             color: #090909;
-//           }
-//           ul {
-//             list-style: none;
-//             padding: 0;
-//             margin: 0;
-//             li {
-//               font-family: "Poppins";
-//               font-style: normal;
-//               font-weight: 500;
-//               font-size: 1.5vw;
-//               margin-bottom: 1vw;
-//               color: #090909;
-
-//               span {
-//                 font-family: "Poppins";
-//                 font-style: normal;
-//                 font-weight: 600;
-//                 font-size: 2vw;
-//                 line-height: 200%;
-//                 color: #0094ff;
-//               }
-//             }
-//             li:before {
-//               content: "\2022";
-//               color: #0094ff;
-//               font-weight: bold;
-//               display: inline-block;
-//               width: 1em;
-//               font-size: 170%;
-//             }
-//           }
-
-//           .content2 {
-//             margin-top: 3vw;
-//           }
-//         }
-//         .diagram {
-//           position: relative;
-//           margin-left: 5.5%;
-//           margin-top: 4%;
-//           margin-bottom: 8vw;
-
-//           span {
-//             font-weight: 600;
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
+            li {
+              font-family: "Poppins";
+              font-style: normal;
+              font-weight: 500;
+              color: #090909;
+              display: flex;
+              margin-bottom: 5%;
+              // align-items: center;
+              p {
+                margin: 0;
+                max-width: 100%;
+              }
+              span {
+                font-family: "Poppins";
+                font-style: normal;
+                font-weight: 600;
+                color: #0094ff;
+              }
+            }
+            li:nth-child(1) {
+              // margin-bottom: 2%;
+            }
+            li:before {
+              content: "\261E";
+              color: #0094ef;
+              font-size: 150%;
+              position: relative;
+              left: -2%;
+              top: -1vw;
+            }
+          }
+        }
+        .diagram {
+          display: flex;
+          justify-content: center;
+          position: relative;
+          top: -6vw;
+        }
+      }
+    }
+  }
+}

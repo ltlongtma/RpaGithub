@@ -1,634 +1,809 @@
-.container {
-  // background: linear-gradient(213.12deg, #396afc 39.51%, #0094ff 80.26%);
-  background: #0066ff;
-  width: 100%;
-  height: 100%;
-  position: relative;
-  .menuBar {
-    justify-content: center;
-    position: absolute;
-    top: 2%;
-    align-items: center;
-    z-index: 2;
-
-    span {
-      img:hover {
-        cursor: pointer;
-      }
-    }
-    .navigate {
-      display: flex;
-      justify-content: center;
-      width: 75%;
-      align-items: center;
-      button {
-        color: aliceblue;
-        text-transform: none;
-        font-family: "Poppins";
-        font-style: normal;
-        font-weight: 500;
-        font-size: 1vw;
-        padding: 1.3vw;
-        margin: 0;
-        left: 2%;
-        height: 2vw;
-        a {
-          font-size: 1.2vw;
-        }
-        &:hover {
-          background: linear-gradient(
-            213.12deg,
-            #396afc 39.51%,
-            #0094ff 80.26%
-          );
-          border-radius: 7%;
-        }
-        a:hover {
-          color: white;
-        }
-      }
-    }
-    .buttonContact {
-      z-index: 1;
-      button {
-        min-width: 8.5vw;
-        // min-height: 0.5vh;
-        font-family: "Nunito", sans-serif;
-        font-size: 0.8vw;
-        text-transform: uppercase;
-        letter-spacing: 1.3px;
-        font-weight: 700;
-        color: #ffffff;
-        background: #4d8acf;
-        background: linear-gradient(
-          90deg,
-          rgba(0, 189, 255, 1) 0%,
-          rgba(0, 189, 255, 1) 100%
-        );
-        border: none;
-        border-radius: 1000px;
-        box-shadow: 6px 6px 24px #0b345aa3;
-        transition: all 0.3s ease-in-out 0s;
-        cursor: pointer;
-        outline: none;
-        position: relative;
-        padding: 10px;
-      }
-      button::before {
-        content: "";
-        border-radius: 1000px;
-        min-width: calc(8.5vw + 0.5vw);
-        min-height: calc(0.5vh + 4.8vh);
-        border: 0.2vw solid #98e4ff;
-        box-shadow: 0 0 5px rgba(0, 232, 255, 1);
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        opacity: 0;
-        transition: all 0.3s ease-in-out 0s;
-        z-index: -1;
-      }
-
-      button:hover::before {
-        opacity: 1;
-      }
-
-      button::after {
-        content: "";
-        width: 30px;
-        height: 30px;
-        border-radius: 1000px;
-        border: 0.2vw solid #ffffff;
-        position: absolute;
-        z-index: -1;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        animation: ring 1.5s infinite;
-      }
-      @keyframes ring {
-        0% {
-          width: 8vw;
-          height: 5vh;
-          opacity: 0.5;
-        }
-        100% {
-          width: 10vw;
-          height: 7.5vh;
-          opacity: 0;
-        }
-      }
-
-      button:hover::after {
-        animation: none;
-        display: none;
-      }
-    }
-  }
-  .content {
-    position: absolute;
+@media screen and (min-width: 992px) {
+  .container {
+    // background: linear-gradient(213.12deg, #396afc 39.51%, #0094ff 80.26%);
+    background: #0066ff;
     width: 100%;
     height: 100%;
-    align-items: center;
-    .left {
-      position: relative;
-      left: 8%;
-      .mainIcon {
-        margin: auto;
-        position: relative;
-        scale: 1.5 span {
-          overflow: visible !important;
+    position: relative;
+    .menuBar {
+      margin: 0 2em;
+      z-index: 2;
+      .menuBar-desktop-header {
+        display: flex;
+        justify-content: space-between;
+      }
+      .menuBar-desktop-body {
+        justify-content: space-around;
+      }
+
+      .brand {
+        width: 8em;
+        &:hover {
+          cursor: pointer;
         }
-        h1 {
+      }
+
+      .navigate {
+        button {
+          color: aliceblue;
+          text-transform: none;
           font-family: "Poppins";
           font-style: normal;
-          font-weight: 800;
-          font-size: 3.5vw;
-          color: #ffffff;
-          position: absolute;
-          margin: auto;
-          z-index: 100;
-          left: 39.5%;
-          top: 42%;
-        }
-      }
-    }
-    .right {
-      position: relative;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding-bottom: 7%;
-      .mainContent {
-        .title {
-          color: #ffffff;
-          display: flex;
-          flex-direction: column;
-          margin: 0 17%;
-          h1 {
-            font-weight: 700;
-            font-size: 4vw;
-          }
-
-          h2 {
-            padding-top: 3%;
-            font-weight: 600;
-            font-size: 2vw;
-          }
-        }
-        .body {
-          color: #ffffff;
           font-weight: 500;
-          font-size: 1.5vw;
-          margin-left: 3%;
-          width: 100%;
-          line-height: 3vw;
-          top: 0.5%;
+          font-size: 1vw;
+          padding: 1.3vw;
           margin: 0;
-          margin-top: 0;
-          margin-bottom: 0;
-
-          .line {
-            display: flex;
-
-            .arrow1 {
-              animation: arrow1 8s infinite;
-              padding-right: 2%;
-              width: 14vw;
-              span {
-                width: 100% !important;
-                height: 100% !important;
-              }
-            }
-            .arrow2 {
-              animation: arrow2 8s infinite;
-              padding-right: 2%;
-              width: 14vw;
-              span {
-                width: 100% !important;
-                height: 100% !important;
-              }
-            }
-            .arrow3 {
-              animation: arrow3 8s infinite;
-              padding-right: 2%;
-              width: 14vw;
-              span {
-                width: 100% !important;
-                height: 100% !important;
-              }
-            }
-            @keyframes arrow1 {
-              0% {
-                transform: translateX(-100%);
-                opacity: 0;
-              }
-              25% {
-                transform: translateX(0);
-                opacity: 1;
-              }
-            }
-
-            @keyframes arrow2 {
-              0% {
-                transform: translateX(-100%);
-                opacity: 0;
-              }
-              25% {
-                transform: translateX(-100%);
-                opacity: 0;
-              }
-              50% {
-                transform: translateX(0);
-                opacity: 1;
-              }
-            }
-            @keyframes arrow3 {
-              0% {
-                transform: translateX(-100%);
-                opacity: 0;
-              }
-              50% {
-                transform: translateX(-100%);
-                opacity: 0;
-              }
-              75% {
-                transform: translateX(0);
-                opacity: 1;
-              }
-            }
-
-            p {
-              margin-top: 0 !important;
-              margin-bottom: 0 !important;
-              width: 100%;
-            }
-            .arrow1 + p {
-              opacity: 0;
-              animation: arrow 5s 1s linear forwards;
-              @keyframes arrow {
-                0% {
-                  opacity: 0;
-                }
-                100% {
-                  opacity: 1;
-                }
-              }
-            }
-            .arrow2 + p {
-              opacity: 0;
-              animation: arrow 5s 3s linear forwards;
-              @keyframes arrow {
-                0% {
-                  opacity: 0;
-                }
-                100% {
-                  opacity: 1;
-                }
-              }
-            }
-            .arrow3 + p {
-              opacity: 0;
-              animation: arrow 4s 5s linear forwards;
-              @keyframes arrow {
-                0% {
-                  opacity: 0;
-                }
-                100% {
-                  opacity: 1;
-                }
-              }
-            }
+          left: 2%;
+          height: 2vw;
+          a {
+            font-size: 1.2vw;
           }
+          &:hover {
+            background: linear-gradient(213.12deg, #396afc 39.51%, #0094ff 80.26%);
+            border-radius: 7%;
+          }
+          a:hover {
+            color: white;
+          }
+        }
+      }
+      .buttonContact {
+        z-index: 1;
+        button {
+          min-width: 8.5vw;
+          // min-height: 0.5vh;
+          font-family: "Nunito", sans-serif;
+          font-size: 0.8vw;
+          text-transform: uppercase;
+          letter-spacing: 1.3px;
+          font-weight: 700;
+          color: #ffffff;
+          background: #4d8acf;
+          background: linear-gradient(90deg, rgba(0, 189, 255, 1) 0%, rgba(0, 189, 255, 1) 100%);
+          border: none;
+          border-radius: 1000px;
+          box-shadow: 6px 6px 24px #0b345aa3;
+          transition: all 0.3s ease-in-out 0s;
+          cursor: pointer;
+          outline: none;
+          position: relative;
+          padding: 10px;
+        }
+        button::before {
+          content: "";
+          border-radius: 1000px;
+          min-width: calc(8.5vw + 0.5vw);
+          min-height: calc(0.5vh + 4.8vh);
+          border: 0.2vw solid #98e4ff;
+          box-shadow: 0 0 5px rgba(0, 232, 255, 1);
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          opacity: 0;
+          transition: all 0.3s ease-in-out 0s;
+          z-index: -1;
+        }
+
+        button:hover::before {
+          opacity: 1;
+        }
+
+        button::after {
+          content: "";
+          width: 30px;
+          height: 30px;
+          border-radius: 1000px;
+          border: 0.2vw solid #ffffff;
+          position: absolute;
+          z-index: -1;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          animation: ring 1.5s infinite;
+        }
+        @keyframes ring {
+          0% {
+            width: 8vw;
+            height: 5vh;
+            opacity: 0.5;
+          }
+          100% {
+            width: 10vw;
+            height: 7.5vh;
+            opacity: 0;
+          }
+        }
+
+        button:hover::after {
+          animation: none;
+          display: none;
         }
       }
     }
-  }
-  .card {
-    width: 100%;
-    position: absolute;
-    bottom: 3%;
-    z-index: 2;
-    justify-content: center;
-    margin-left: 0;
-    .cardItem {
-      display: flex;
-      flex-direction: column;
-      padding: 0;
-      position: relative;
+
+    .content {
+      position: absolute;
+      width: 100%;
       height: 100%;
-      margin: 0 0.8%;
-      display: flex;
       align-items: center;
-      width: 18%;
-      height: 9vw;
-      background: #ffffff;
-      box-shadow: 0px 100px 80px rgba(62, 116, 255, 0.07),
-        0px 30.1471px 24.1177px rgba(62, 116, 255, 0.0456112),
-        0px 12.5216px 10.0172px rgba(62, 116, 255, 0.035),
-        0px 4.5288px 3.62304px rgba(62, 116, 255, 0.0243888);
-      .cardTitle {
-        // background: linear-gradient(90deg, #37abff -328.36%, #3fd1ff 103.8%);
-        background: #00bdff;
-        width: 100%;
-        color: #ffffff;
-        font-size: 1.5vw;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        height: 31%;
-      }
-      .cardContent {
-        display: flex;
-        align-items: center;
-        width: 100%;
-        justify-content: flex-start;
-        margin: auto;
-        .icon {
-          width: 4vw;
-          margin: 0 1.5vw;
+      top: 1%;
+      .left {
+        position: relative;
+        left: 8%;
+        .mainIcon {
+          margin: auto;
+          position: relative;
+          top: -2vw;
+          // scale: 1.5
           span {
-            width: 4vw !important;
-            height: 3vw !important;
+            overflow: visible !important;
+          }
+          h1 {
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 800;
+            font-size: 3.5vw;
+            color: #ffffff;
+            position: absolute;
+            margin: auto;
+            z-index: 100;
+            left: 39.5%;
+            top: 42%;
           }
         }
-        .content {
-          left: -5%;
-          position: relative;
+      }
+      .right {
+        position: relative;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 12%;
+        .mainContent {
+          .title {
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            margin: 0 17%;
+            h1 {
+              font-weight: 700;
+              font-size: 4vw;
+            }
 
-          h1 {
-            color: #0094ff;
-            font-weight: 700;
-            font-size: 3vw;
-            margin: 0;
+            h2 {
+              padding-top: 3%;
+              font-weight: 600;
+              font-size: 2vw;
+            }
           }
-          p {
-            color: #333333;
+          .body {
+            color: #ffffff;
             font-weight: 500;
-            font-size: 1vw;
+            font-size: 1.5vw;
+            margin-left: 3%;
+            width: 100%;
+            line-height: 3vw;
+            top: 0.5%;
+            margin: 0;
             margin-top: 0;
             margin-bottom: 0;
-            line-height: 1.3vw;
-            position: relative;
-            top: -0.4vw;
+
+            .line {
+              display: flex;
+
+              .arrow1 {
+                animation: arrow1 8s infinite;
+                padding-right: 2%;
+                width: 14vw;
+                span {
+                  width: 100% !important;
+                  height: 100% !important;
+                }
+              }
+              .arrow2 {
+                animation: arrow2 8s infinite;
+                padding-right: 2%;
+                width: 14vw;
+                span {
+                  width: 100% !important;
+                  height: 100% !important;
+                }
+              }
+              .arrow3 {
+                animation: arrow3 8s infinite;
+                padding-right: 2%;
+                width: 14vw;
+                span {
+                  width: 100% !important;
+                  height: 100% !important;
+                }
+              }
+              @keyframes arrow1 {
+                0% {
+                  transform: translateX(-100%);
+                  opacity: 0;
+                }
+                25% {
+                  transform: translateX(0);
+                  opacity: 1;
+                }
+              }
+
+              @keyframes arrow2 {
+                0% {
+                  transform: translateX(-100%);
+                  opacity: 0;
+                }
+                25% {
+                  transform: translateX(-100%);
+                  opacity: 0;
+                }
+                50% {
+                  transform: translateX(0);
+                  opacity: 1;
+                }
+              }
+              @keyframes arrow3 {
+                0% {
+                  transform: translateX(-100%);
+                  opacity: 0;
+                }
+                50% {
+                  transform: translateX(-100%);
+                  opacity: 0;
+                }
+                75% {
+                  transform: translateX(0);
+                  opacity: 1;
+                }
+              }
+
+              p {
+                margin-top: 0 !important;
+                margin-bottom: 0 !important;
+                width: 100%;
+              }
+              .arrow1 + p {
+                opacity: 0;
+                animation: arrow 5s 1s linear forwards;
+                @keyframes arrow {
+                  0% {
+                    opacity: 0;
+                  }
+                  100% {
+                    opacity: 1;
+                  }
+                }
+              }
+              .arrow2 + p {
+                opacity: 0;
+                animation: arrow 5s 3s linear forwards;
+                @keyframes arrow {
+                  0% {
+                    opacity: 0;
+                  }
+                  100% {
+                    opacity: 1;
+                  }
+                }
+              }
+              .arrow3 + p {
+                opacity: 0;
+                animation: arrow 4s 5s linear forwards;
+                @keyframes arrow {
+                  0% {
+                    opacity: 0;
+                  }
+                  100% {
+                    opacity: 1;
+                  }
+                }
+              }
+            }
           }
         }
       }
-      // .cardItem:nth-of-type(1) {
-      //   display: flex;
-      //   justify-content: flex-start;
-      // }
     }
-  }
-
-  .triangle {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    // height: 25vh;
-    height: 12vw;
-    overflow: hidden;
-    .triangleLeft {
+    .card {
+      width: 100%;
       position: absolute;
-      border-bottom: 0vw solid transparent;
-      border-top: 10vw solid transparent;
-      border-left: 11vw solid #fffafa;
-      border-right: 0vw solid transparent;
-      width: 0;
-      height: 0;
-      bottom: 0vw;
+      bottom: 3%;
+      z-index: 2;
+      justify-content: center;
+      margin-left: 0;
+      .cardItem {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        position: relative;
+        height: 100%;
+        margin: 0 0.8%;
+        display: flex;
+        align-items: center;
+        width: 18%;
+        height: 9vw;
+        background: #ffffff;
+        box-shadow: 0px 100px 80px rgba(62, 116, 255, 0.07),
+          0px 30.1471px 24.1177px rgba(62, 116, 255, 0.0456112),
+          0px 12.5216px 10.0172px rgba(62, 116, 255, 0.035),
+          0px 4.5288px 3.62304px rgba(62, 116, 255, 0.0243888);
+        .cardTitle {
+          // background: linear-gradient(90deg, #37abff -328.36%, #3fd1ff 103.8%);
+          background: #00bdff;
+          width: 100%;
+          color: #ffffff;
+          font-size: 1.5vw;
+          align-items: center;
+          display: flex;
+          justify-content: center;
+          height: 31%;
+        }
+        .cardContent {
+          display: flex;
+          align-items: center;
+          width: 100%;
+          justify-content: flex-start;
+          margin: auto;
+          .icon {
+            width: 4vw;
+            margin: 0 1.5vw;
+            span {
+              width: 4vw !important;
+              height: 3vw !important;
+            }
+          }
+          .content {
+            left: -5%;
+            position: relative;
+
+            h1 {
+              color: #0094ff;
+              font-weight: 700;
+              font-size: 3vw;
+              margin: 0;
+            }
+            p {
+              color: #333333;
+              font-weight: 500;
+              font-size: 1vw;
+              margin-top: 0;
+              margin-bottom: 0;
+              line-height: 1.3vw;
+              position: relative;
+              top: -0.4vw;
+            }
+          }
+        }
+      }
     }
-    .triangleBottom {
+
+    .triangle {
       position: absolute;
       bottom: 0;
-      width: 0;
-      height: 8vw;
-      border-bottom: 0vw solid transparent;
-      border-top: 6vw solid transparent;
-      border-right: 100vw solid #fffafa;
-    }
-    .triangleRight {
-      position: absolute;
-      width: 0;
-      height: 0;
-      right: 0;
-      border-bottom: 0vw solid transparent;
-      border-top: 20vw solid transparent;
-      border-right: 15vw solid #fffafa;
-      border-left: 85vw solid transparent;
+      width: 100%;
+      height: 12vw;
+      overflow: hidden;
+      .triangleLeft {
+        position: absolute;
+        border-bottom: 0vw solid transparent;
+        border-top: 10vw solid transparent;
+        border-left: 11vw solid #fffafa;
+        border-right: 0vw solid transparent;
+        width: 0;
+        height: 0;
+        bottom: 0vw;
+      }
+      .triangleBottom {
+        position: absolute;
+        bottom: 0;
+        width: 0;
+        height: 8vw;
+        border-bottom: 0vw solid transparent;
+        border-top: 6vw solid transparent;
+        border-right: 100vw solid #fffafa;
+      }
+      .triangleRight {
+        position: absolute;
+        width: 0;
+        height: 0;
+        right: 0;
+        border-bottom: 0vw solid transparent;
+        border-top: 20vw solid transparent;
+        border-right: 15vw solid #fffafa;
+        border-left: 85vw solid transparent;
+      }
     }
   }
 }
+@media screen and (max-width: 992px) {
+  .container {
+    background: #0066ff;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    .menuBar {
+      margin: 0 2%;
+      z-index: 2;
+      .menuBar-mobile-header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+      .menuBar-mobile-body {
+        border-top: 1px solid #31a8ff;
+      }
+      .brand {
+        width: 4em;
+        &:hover {
+          cursor: pointer;
+        }
+      }
 
-// @media screen and (max-width: 1023px) {
-//   .container {
-//     background: linear-gradient(213.12deg, #396afc 39.51%, #0094ff 80.26%);
-//     width: 100%;
-//     height: 100%;
-//     position: relative;
-//     .content {
-//       position: absolute;
-//       display: flex;
-//       justify-content: center;
-//       width: 100%;
-//       height: 67%;
-//       top: 14%;
-//       .left {
-//         // border: solid;
-//         width: 50%;
-//         position: relative;
-//         display: flex;
-//         justify-content: center;
-//         margin-left: 14%;
-//       }
-//       .right {
-//         // border:red solid 1px;
-//         width: 50%;
-//         display: flex;
-//         justify-content: center;
-//         position: relative;
-//         flex-direction: column;
-//         top: -5%;
-//         left: -1%;
-//         line-height: 2vw;
-//         .title {
-//           font-weight: 700;
-//           font-size: 4vw;
-//           color: #ffffff;
-//           position: relative;
-//           left: -3%;
-//         }
-//         .body {
-//           color: #ffffff;
-//           font-weight: 500;
-//           font-size: 1.5vw;
-//           margin-left: 3%;
-//         }
-//       }
-//     }
-//     .menuBar {
-//       display: flex;
-//       width: 100%;
-//       justify-content: center;
-//       position: absolute;
-//       top: 3%;
-//       align-items: center;
-//       img {
-//         width: 6vw !important;
-//       }
-//       span {
-//         margin: 1% 0;
-//         position: relative;
-//         left: 2vw;
-//       }
+      .navigate {
+        padding: 0 1em;
+        button {
+          color: aliceblue;
+          text-transform: none;
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 500;
+          display: flex;
+          justify-content: space-between;
+          height: 11.5vh;
+          font-size: 2.5vh;
+        }
+      }
+      .buttonContact {
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        button {
+          width: 100%;
+          min-width: 8.5vw;
+          font-family: "Nunito", sans-serif;
+          text-transform: uppercase;
+          letter-spacing: 1.3px;
+          font-weight: 700;
+          color: #ffffff;
+          background: #4d8acf;
+          background: linear-gradient(90deg, rgba(0, 189, 255, 1) 0%, rgba(0, 189, 255, 1) 100%);
+          border: none;
+          border-radius: 1000px;
+          box-shadow: 6px 6px 24px #0b345aa3;
+          transition: all 0.3s ease-in-out 0s;
+          outline: none;
+          position: relative;
+          padding: 10px;
+        }
+        button::before {
+          content: "";
+          border-radius: 1000px;
+          min-width: calc(8.5vw + 0.5vw);
+          min-height: calc(0.5vh + 4.8vh);
+          border: 0.2vw solid #98e4ff;
+          box-shadow: 0 0 5px rgba(0, 232, 255, 1);
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          opacity: 0;
+          transition: all 0.3s ease-in-out 0s;
+          z-index: -1;
+        }
 
-//       .navigate {
-//         display: flex;
-//         justify-content: center;
-//         width: 75%;
-//         align-items: center;
-//         height: 3vw;
-//         position: relative;
-//         left: 2vw;
-//         button {
-//           color: aliceblue;
-//           text-transform: none;
-//           font-family: "Poppins";
-//           font-style: normal;
-//           font-weight: 500;
-//           font-size: 1vw;
-//           padding: 1.3vw;
-//           margin: 0;
-//           left: 2%;
-//           height: 2vw;
-//           min-width: 1px !important;
+        button::after {
+          content: "";
+          width: 30px;
+          height: 30px;
+          border-radius: 1000px;
+          border: 0.2vw solid #ffffff;
+          position: absolute;
+          z-index: -1;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          animation: ring 1.5s infinite;
+        }
+        @keyframes ring {
+          0% {
+            width: 10vw;
+            height: 1vh;
+            opacity: 0;
+          }
+          100% {
+            width: 100vw;
+            height: 8vh;
+            opacity: 1;
+          }
+        }
+      }
+    }
 
-//           &:hover {
-//             background: linear-gradient(213.12deg, #396afc 39.51%, #0094ff 80.26%);
-//             border-radius: 7%;
-//           }
-//           svg {
-//             width: 2vw;
-//             position: relative;
-//             top: -1px;
-//           }
-//         }
-//       }
-//       .buttonContact {
-//         display: flex;
-//         align-items: center;
-//         button {
-//           color: black;
-//           background: #ffffff;
-//           font-weight: 600;
-//           font-size: 1vw;
-//           text-transform: none;
-//           font-family: "Poppins";
-//           font-style: normal;
-//           border: 3px solid rgba(64, 161, 255, 1);
-//           right: 10%;
-//           margin: 1% 0;
-//           padding: 1vw !important;
-//           min-width: 1px;
-//           height: 1vw;
-//         }
-//       }
-//     }
-//     .card {
-//       display: flex;
-//       width: 100%;
-//       position: absolute;
-//       bottom: -4%;
-//       justify-content: center;
-//       z-index: 2;
-//       .cardItem {
-//         position: relative;
-//         left: 3%;
-//         margin: 0 0.8%;
-//         display: flex;
-//         justify-content: space-evenly;
-//         align-items: center;
-//         width: 18%;
-//         height: 9vw;
-//         background: #ffffff;
-//         box-shadow: 0px 100px 80px rgba(62, 116, 255, 0.07),
-//           0px 30.1471px 24.1177px rgba(62, 116, 255, 0.0456112),
-//           0px 12.5216px 10.0172px rgba(62, 116, 255, 0.035),
-//           0px 4.5288px 3.62304px rgba(62, 116, 255, 0.0243888);
-//       }
-//       .cardItem1 {
-//         .content {
-//           left: -2vw;
-//           position: relative;
-//         }
-//       }
-//       .cardItem2 {
-//         .content {
-//           position: relative;
-//           top: 2px;
-//         }
-//       }
-//       .icon {
-//         width: 4vw;
-//         margin: 0 1.5vw;
-//       }
-//       .content {
-//         left: -5%;
-//         position: relative;
+    .content {
+      .left {
+        position: relative;
+        top: 8vw;
+        .mainIcon {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          align-items: center;
+          top: -6%;
+          span {
+            width: 80% !important;
+          }
 
-//         h1 {
-//           color: #0094ff;
-//           font-weight: 700;
-//           font-size: 3vw;
-//           margin: 0;
-//         }
-//         p {
-//           color: #333333;
-//           font-weight: 500;
-//           font-size: 1vw;
-//           margin-top: 0;
-//           line-height: 1.3vw;
-//           position: relative;
-//           top: -0.4vw;
-//         }
-//       }
-//     }
-//     .triangle {
-//       position: absolute;
-//       bottom: 0;
-//       width: 100%;
-//       height: 25vh;
-//       overflow: hidden;
-//       .triangleLeft {
-//         position: absolute;
-//         border-bottom: 0vw solid transparent;
-//         border-top: 18vh solid transparent;
-//         border-left: 18vh solid #fffafa;
-//         border-right: 0vw solid transparent;
-//         width: 0;
-//         height: 0;
-//         bottom: 0vw;
-//       }
-//       .triangleBottom {
-//         position: absolute;
-//         bottom: 0;
-//         width: 0;
-//         height: 16vh;
-//         border-bottom: 0vw solid transparent;
-//         border-top: 6vw solid transparent;
-//         border-right: 100vw solid #fffafa;
-//       }
-//       .triangleRight {
-//         position: absolute;
-//         width: 0;
-//         height: 0;
-//         border-bottom: 0vw solid transparent;
-//         border-top: 20vw solid transparent;
-//         border-right: 15vw solid #fffafa;
-//         border-left: 85vw solid transparent;
-//       }
-//     }
-//   }
-// }
+          h1 {
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 800;
+            color: #ffffff;
+            position: absolute;
+            z-index: 1;
+            margin-right: 4%;
+            margin-bottom: 6%;
+            font-size: 6vw;
+          }
+        }
+      }
+      .right {
+        position: relative;
+        .mainContent {
+          .title {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            color: #ffffff;
+            font-family: "Poppins";
+            h1 {
+              font-weight: 700;
+              font-size: 8vw;
+              position: absolute;
+              bottom: 58vw;
+            }
+
+            h2 {
+              text-align: center;
+              position: absolute;
+              top: -8vw;
+              font-weight: 600;
+              font-size: 5vw;
+            }
+          }
+          .body {
+            color: #ffffff;
+            font-weight: 500;
+            position: absolute;
+            top: 1em;
+            padding-right: 8%;
+            width: 100%;
+            .line {
+              display: flex;
+
+              p {
+                max-width: fit-content;
+                position: relative;
+                top: 0.5rem;
+                margin-bottom: 2% !important;
+                width: 100%;
+              }
+              .arrow1,
+              .arrow2,
+              .arrow3 {
+                width: 14vw;
+                scale: 4;
+                padding-right: 6%;
+                span {
+                  width: 100% !important;
+                  height: 100% !important;
+                }
+              }
+              .arrow1 {
+                animation: arrow1 8s infinite;
+              }
+              .arrow2 {
+                animation: arrow2 8s infinite;
+              }
+              .arrow3 {
+                animation: arrow3 8s infinite;
+              }
+              @keyframes arrow1 {
+                0% {
+                  transform: translateX(-100%);
+                  opacity: 0;
+                }
+                25% {
+                  transform: translateX(0);
+                  opacity: 1;
+                }
+              }
+
+              @keyframes arrow2 {
+                0% {
+                  transform: translateX(-100%);
+                  opacity: 0;
+                }
+                25% {
+                  transform: translateX(-100%);
+                  opacity: 0;
+                }
+                50% {
+                  transform: translateX(0);
+                  opacity: 1;
+                }
+              }
+              @keyframes arrow3 {
+                0% {
+                  transform: translateX(-100%);
+                  opacity: 0;
+                }
+                50% {
+                  transform: translateX(-100%);
+                  opacity: 0;
+                }
+                75% {
+                  transform: translateX(0);
+                  opacity: 1;
+                }
+              }
+
+              .arrow1 + p {
+                opacity: 0;
+                animation: arrow 5s 1s linear forwards;
+                @keyframes arrow {
+                  0% {
+                    opacity: 0;
+                  }
+                  100% {
+                    opacity: 1;
+                  }
+                }
+              }
+              .arrow2 + p {
+                opacity: 0;
+                animation: arrow 5s 3s linear forwards;
+                @keyframes arrow {
+                  0% {
+                    opacity: 0;
+                  }
+                  100% {
+                    opacity: 1;
+                  }
+                }
+              }
+              .arrow3 + p {
+                opacity: 0;
+                animation: arrow 4s 5s linear forwards;
+                @keyframes arrow {
+                  0% {
+                    opacity: 0;
+                  }
+                  100% {
+                    opacity: 1;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .card {
+      width: 100%;
+      height:100%;
+      // position: absolute;
+      bottom: 3%;
+      z-index: 2;
+      justify-content: center;
+      margin-left: 0;
+      overflow: visible;
+      .cardItem {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        position: relative;
+        margin: 0 0.8%;
+        display: flex;
+        align-items: center;
+        width: 26%;
+        height: 7vw;
+        background: #ffffff;
+        scale: 3.5;
+        top: -5vw;
+        left: 24vw;
+        background: #ffffff;
+        box-shadow: 0px 100px 80px rgba(62, 116, 255, 0.07),
+          0px 30.1471px 24.1177px rgba(62, 116, 255, 0.0456112),
+          0px 12.5216px 10.0172px rgba(62, 116, 255, 0.035),
+          0px 4.5288px 3.62304px rgba(62, 116, 255, 0.0243888);
+        .cardTitle {
+          background: #00bdff;
+          width: 100%;
+          color: #ffffff;
+          font-size: 1vw;
+          align-items: center;
+          display: flex;
+          justify-content: center;
+          height: 22%;
+        }
+        .cardContent {
+          display: flex;
+          align-items: center;
+          width: 100%;
+          justify-content: flex-start;
+          margin: auto;
+          .icon {
+            width: 4vw;
+            margin: 0 1.5vw;
+            span {
+              width: 4vw !important;
+              height: 3vw !important;
+            }
+          }
+          .content {
+            left: -5%;
+            position: relative;
+
+            h1 {
+              color: #0094ff;
+              font-weight: 700;
+              font-size: 2vw;
+              margin: 0;
+            }
+            p {
+              color: #333333;
+              font-weight: 500;
+              font-size: 1vw;
+              margin-top: 0;
+              margin-bottom: 0;
+              line-height: 1.3vw;
+              position: relative;
+              top: -0.4vw;
+            }
+          }
+        }
+      }
+    }
+
+    .triangle {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      // height: 25vh;
+      height: 12vw;
+      overflow: hidden;
+      .triangleLeft {
+        position: absolute;
+        border-bottom: 0vw solid transparent;
+        border-top: 10vw solid transparent;
+        border-left: 11vw solid #fffafa;
+        border-right: 0vw solid transparent;
+        width: 0;
+        height: 0;
+        bottom: 0vw;
+      }
+      .triangleBottom {
+        position: absolute;
+        bottom: 0;
+        width: 0;
+        height: 8vw;
+        border-bottom: 0vw solid transparent;
+        border-top: 6vw solid transparent;
+        border-right: 100vw solid #fffafa;
+      }
+      .triangleRight {
+        position: absolute;
+        width: 0;
+        height: 0;
+        right: 0;
+        border-bottom: 0vw solid transparent;
+        border-top: 20vw solid transparent;
+        border-right: 15vw solid #fffafa;
+        border-left: 85vw solid transparent;
+      }
+    }
+  }
+}
