@@ -402,21 +402,17 @@
           font-style: normal;
           font-weight: 400;
           font-size: 3vw;
-          width:100%;
+          width: 100%;
           .icons {
-            display: flex;
-            justify-content: space-evenly;
-            position: relative;
             svg {
               width: 6vw;
             }
-           
           }
         }
         .right {
           display: flex;
           justify-content: space-evenly;
-          margin-right:  2% ;
+          margin-right: 2%;
           button {
             font-family: "THICCCBOI";
             font-style: normal;
@@ -446,7 +442,6 @@
         width: 100%;
         text-align: right;
         font-size: 3vw;
-
       }
     }
   }

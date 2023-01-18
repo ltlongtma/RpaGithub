@@ -8,6 +8,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import emailIcon from "../../../../../public/emailIcon.png";
 import Link from "next/link";
 import PhoneInTalkIcon from "@mui/icons-material/PhoneInTalk";
+import EmailIcon from '@mui/icons-material/Email';
 import Button from "@mui/material/Button";
 import { IconButton } from "@mui/material";
 import KeyboardDoubleArrowUpIcon from "@mui/icons-material/KeyboardDoubleArrowUp";
@@ -55,11 +56,14 @@ const Contact = ({viewMobile}) => {
               </Link>
 
               <Link href="mailto:sales@tma.com.vn">
-                <IconButton color="inherit">
+                {/* <IconButton color="inherit">
                   <Image
                     src={emailIcon}
                     alt="emailIcon"
                   />
+                </IconButton> */}
+                <IconButton color="inherit">
+                  <EmailIcon  />
                 </IconButton>
               </Link>
 

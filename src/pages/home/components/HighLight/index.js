@@ -26,11 +26,17 @@ const cx = className.bind(styles);
 
 const HighLight = ({ viewMobile }) => {
   const [showMenu, setShowMenu] = useState(false);
+  // const handleScroll = (e)=>{
+  //   e.preventDefault();
+  //   e.stopPropagation();
+
+  //   return false;
+  // }
 
   return (
     <div className={cx("container")}>
       {/* NavBar */}
-      <Navbar expand="lg" className={cx("menuBar")}>
+      <Navbar expand="lg" className={cx("menuBar")} >
         <div
           className={
             viewMobile
@@ -63,7 +69,6 @@ const HighLight = ({ viewMobile }) => {
 
         <Navbar.Collapse
           id="basic-navbar-nav "
-          // className="justify-content-around -lg"
           className={
             viewMobile ? cx("menuBar-mobile-body") : cx("menuBar-desktop-body")
           }
@@ -120,7 +125,10 @@ const HighLight = ({ viewMobile }) => {
         </Navbar.Collapse>
       </Navbar>
       {/* Content */}
-      <div style={{ display: showMenu ? "none" : "flex" }} className="h-100 flex-column justify-content-between">
+      <div
+        style={{ display: showMenu ? "none" : "flex" }}
+        className="h-100 flex-column justify-content-between"
+      >
         {/* Main content */}
         <div className={cx("row", "content")}>
           <div className={cx("col-lg-5", "left")}>
@@ -240,7 +248,12 @@ const HighLight = ({ viewMobile }) => {
           </div>
         </div>
         {/* Sub content on screen <992 */}
-        <div style={{ display: viewMobile ? "block" : "none", marginBottom:"28%"}}  >
+        <div
+          style={{
+            display: viewMobile ? "block" : "none",
+            paddingBottom: "28%", zIndex:"100"
+          }}
+        >
           <Swiper
             slidesPerView={1.5}
             spaceBetween={30}
