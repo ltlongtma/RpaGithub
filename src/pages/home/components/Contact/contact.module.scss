@@ -80,11 +80,7 @@
             font-weight: 700;
             color: #ffffff;
             background: #4d8acf;
-            background: linear-gradient(
-              90deg,
-              rgb(0, 189, 255) 0%,
-              rgb(0, 189, 255) 100%
-            );
+            background: linear-gradient(90deg, rgb(0, 189, 255) 0%, rgb(0, 189, 255) 100%);
             border: none;
             border-radius: 1000px;
             box-shadow: 10px 10px 24px rgb(25 91 153 / 64%);
@@ -184,8 +180,8 @@
             position: relative;
             button {
               &:hover {
-                filter: invert(48%) sepia(79%) saturate(2476%)
-                  hue-rotate(190deg) brightness(118%) contrast(119%);
+                filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(190deg) brightness(118%)
+                  contrast(119%);
               }
               svg,
               span {
@@ -211,11 +207,7 @@
             height: 50%;
 
             &:hover {
-              background: linear-gradient(
-                209.47deg,
-                #396afc 38.93%,
-                #0094ff 81.95%
-              );
+              background: linear-gradient(209.47deg, #396afc 38.93%, #0094ff 81.95%);
             }
             a:hover {
               color: white !important;
@@ -320,11 +312,7 @@
             font-weight: 700;
             color: #ffffff;
             background: #4d8acf;
-            background: linear-gradient(
-              90deg,
-              rgb(0, 189, 255) 0%,
-              rgb(0, 189, 255) 100%
-            );
+            background: linear-gradient(90deg, rgb(0, 189, 255) 0%, rgb(0, 189, 255) 100%);
             border: none;
             border-radius: 1000px;
             box-shadow: 10px 10px 24px rgb(25 91 153 / 64%);
@@ -401,7 +389,7 @@
           font-family: "Poppins";
           font-style: normal;
           font-weight: 400;
-          font-size: 3vw;
+          font-size: 2.5vw;
           width: 100%;
           .icons {
             svg {
@@ -420,12 +408,10 @@
             text-transform: uppercase;
             color: #fffafa;
             margin-bottom: 8%;
+            width: 100%;
+            justify-content: flex-start;
             &:hover {
-              background: linear-gradient(
-                209.47deg,
-                #396afc 38.93%,
-                #0094ff 81.95%
-              );
+              background: linear-gradient(209.47deg, #396afc 38.93%, #0094ff 81.95%);
             }
           }
         }
@@ -441,7 +427,7 @@
         margin-bottom: 2%;
         width: 100%;
         text-align: right;
-        font-size: 3vw;
+        font-size: 2.5vw;
       }
     }
   }

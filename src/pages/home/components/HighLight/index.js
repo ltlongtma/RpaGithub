@@ -22,6 +22,7 @@ import { useEffect, useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import { IconButton } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
+import disableScroll from "disable-scroll";
 const cx = className.bind(styles);
 
 const HighLight = ({ viewMobile }) => {
@@ -36,14 +37,8 @@ const HighLight = ({ viewMobile }) => {
   return (
     <div className={cx("container")}>
       {/* NavBar */}
-      <Navbar expand="lg" className={cx("menuBar")} >
-        <div
-          className={
-            viewMobile
-              ? cx("menuBar-mobile-header")
-              : cx("menuBar-desktop-header")
-          }
-        >
+      <Navbar expand="lg" className={cx("menuBar")} onTouchMove={(e) => e.preventDefault()}>
+        <div className={viewMobile ? cx("menuBar-mobile-header") : cx("menuBar-desktop-header")}>
           <Navbar.Brand href="/" className={cx("brand")}>
             <Image src={logoTmaV2} alt="tma-logo" priority={true} />
           </Navbar.Brand>
@@ -58,7 +53,9 @@ const HighLight = ({ viewMobile }) => {
                     color: "white",
                     display: viewMobile ? "block" : "none",
                   }}
-                  onClick={() => setShowMenu(!showMenu)}
+                  onClick={() => {
+                    setShowMenu(!showMenu), disableScroll[showMenu ? "off" : "on"]();
+                  }}
                 >
                   {showMenu ? <CloseIcon /> : <MenuIcon />}
                 </IconButton>
@@ -69,12 +66,10 @@ const HighLight = ({ viewMobile }) => {
 
         <Navbar.Collapse
           id="basic-navbar-nav "
-          className={
-            viewMobile ? cx("menuBar-mobile-body") : cx("menuBar-desktop-body")
-          }
+          className={viewMobile ? cx("menuBar-mobile-body") : cx("menuBar-desktop-body")}
           style={{ display: showMenu ? "block" : "none" }}
         >
-          <div>
+          <div className="h-80">
             <Nav className={cx("navigate")}>
               <Button>
                 <Link href="https://www.tmasolutions.com/">
@@ -134,12 +129,7 @@ const HighLight = ({ viewMobile }) => {
           <div className={cx("col-lg-5", "left")}>
             <div className={cx("mainIcon")}>
               <h1>RPA</h1>
-              <Image
-                className={cx("img")}
-                src={ver5_1}
-                alt="iconRpa"
-                priority={true}
-              ></Image>
+              <Image className={cx("img")} src={ver5_1} alt="iconRpa" priority={true}></Image>
             </div>
           </div>
           <div className={cx("col-lg-7", "right")}>
@@ -153,36 +143,22 @@ const HighLight = ({ viewMobile }) => {
                 <div className={cx("line")}></div>
                 <div className={cx("line")}>
                   <div className={cx("arrow1")}>
-                    <Image
-                      src={arrowAfterIconRpa}
-                      alt="arrowAfterIconRpa"
-                      priority={true}
-                    />
+                    <Image src={arrowAfterIconRpa} alt="arrowAfterIconRpa" priority={true} />
                   </div>
                   <p>Arm all of your employees with virtual assistant</p>
                 </div>
                 <div className={cx("line")}>
                   <div className={cx("arrow2")}>
-                    <Image
-                      src={arrowAfterIconRpa}
-                      alt="arrowAfterIconRpa"
-                      priority={true}
-                    />
+                    <Image src={arrowAfterIconRpa} alt="arrowAfterIconRpa" priority={true} />
                   </div>
                   <p>
                     Propelling digital transformation forward
-                    <span style={{ visibility: "hidden" }}>
-                      Draft text for css
-                    </span>
+                    <span style={{ visibility: "hidden" }}>Draft text for css</span>
                   </p>
                 </div>
                 <div className={cx("line")}>
                   <div className={cx("arrow3")}>
-                    <Image
-                      src={arrowAfterIconRpa}
-                      alt="arrowAfterIconRpa"
-                      priority={true}
-                    />
+                    <Image src={arrowAfterIconRpa} alt="arrowAfterIconRpa" priority={true} />
                   </div>
                   <p>Your processes are now more intelligent with AI</p>
                 </div>
@@ -191,10 +167,7 @@ const HighLight = ({ viewMobile }) => {
           </div>
         </div>
         {/* Sub content on screen > 992px */}
-        <div
-          className={cx("row", "card")}
-          style={{ display: viewMobile ? "none" : "flex" }}
-        >
+        <div className={cx("row", "card")} style={{ display: viewMobile ? "none" : "flex" }}>
           <div className={cx("cardItem", "col-lg-3")}>
             <div className={cx("cardTitle")}>Insurance</div>
             <div className={cx("cardContent")}>
@@ -251,7 +224,8 @@ const HighLight = ({ viewMobile }) => {
         <div
           style={{
             display: viewMobile ? "block" : "none",
-            paddingBottom: "28%", zIndex:"100"
+            paddingBottom: "28%",
+            zIndex: "100",
           }}
         >
           <Swiper
