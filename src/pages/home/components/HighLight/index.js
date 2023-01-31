@@ -13,6 +13,8 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import className from "classnames/bind";
 import styles from "./highLight.module.scss";
 import ver5_1 from "../../../../../public/ver5_1.gif";
+import iconRpa from "../../../../../public/iconRpa.svg";
+
 import { Carousel, Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
@@ -27,13 +29,6 @@ const cx = className.bind(styles);
 
 const HighLight = ({ viewMobile }) => {
   const [showMenu, setShowMenu] = useState(false);
-  // const handleScroll = (e)=>{
-  //   e.preventDefault();
-  //   e.stopPropagation();
-
-  //   return false;
-  // }
-
   return (
     <div className={cx("container")}>
       {/* NavBar */}
@@ -129,14 +124,28 @@ const HighLight = ({ viewMobile }) => {
           <div className={cx("col-lg-5", "left")}>
             <div className={cx("mainIcon")}>
               <h1>RPA</h1>
-              <Image className={cx("img")} src={ver5_1} alt="iconRpa" priority={true}></Image>
+              {viewMobile ? (
+                <>
+                  <h1>TMA RPA Center</h1>
+
+                  <Image className={cx("img")} src={iconRpa} alt="iconRpa" priority={true}></Image>
+                </>
+              ) : (
+                <Image className={cx("img")} src={ver5_1} alt="iconRpa" priority={true}></Image>
+              )}
             </div>
           </div>
           <div className={cx("col-lg-7", "right")}>
             <div className={cx("mainContent")}>
               <div className={cx("title")}>
-                <h1>TMA RPA Center</h1>
-                <h2>Now your business processes can be automated</h2>
+                {viewMobile ? (
+                  <h2>Now your business processes can be automated</h2>
+                ) : (
+                  <>
+                    <h1>TMA RPA Center</h1>
+                    <h2>Now your business processes can be automated</h2>
+                  </>
+                )}
               </div>
 
               <div className={cx("body")}>

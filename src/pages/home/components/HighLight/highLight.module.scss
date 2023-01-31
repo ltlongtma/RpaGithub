@@ -39,11 +39,7 @@
             font-size: 1.2vw;
           }
           &:hover {
-            background: linear-gradient(
-              213.12deg,
-              #396afc 39.51%,
-              #0094ff 80.26%
-            );
+            background: linear-gradient(213.12deg, #396afc 39.51%, #0094ff 80.26%);
             border-radius: 7%;
           }
           a:hover {
@@ -63,11 +59,7 @@
           font-weight: 700;
           color: #ffffff;
           background: #4d8acf;
-          background: linear-gradient(
-            90deg,
-            rgba(0, 189, 255, 1) 0%,
-            rgba(0, 189, 255, 1) 100%
-          );
+          background: linear-gradient(90deg, rgba(0, 189, 255, 1) 0%, rgba(0, 189, 255, 1) 100%);
           border: none;
           border-radius: 1000px;
           box-shadow: 6px 6px 24px #0b345aa3;
@@ -426,7 +418,8 @@
 }
 @media screen and (max-width: 992px) {
   .container {
-    background: #0066ff;
+    // background: #0066ff;
+    background: linear-gradient(76.34deg, #0573fd 6.74%, #1eb2ff 93.55%);
     width: 100%;
     height: 100vh;
     position: relative;
@@ -478,11 +471,7 @@
             letter-spacing: 1.3px;
             font-weight: 700;
             color: #ffffff;
-            background: linear-gradient(
-              90deg,
-              rgba(0, 189, 255, 1) 0%,
-              rgba(0, 189, 255, 1) 100%
-            );
+            background: linear-gradient(90deg, rgba(0, 189, 255, 1) 0%, rgba(0, 189, 255, 1) 100%);
             border: none;
             border-radius: 1000px;
             box-shadow: 6px 6px 24px #0b345aa3;
@@ -537,9 +526,12 @@
     }
 
     .content {
+      height: 70%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       .left {
         position: relative;
-        top: -5vh;
         .mainIcon {
           position: relative;
           display: flex;
@@ -547,26 +539,32 @@
           flex-direction: column;
           align-items: center;
           span {
-            width: 93% !important;
+            width: 85% !important;
           }
 
-          h1 {
+          h1:nth-child(1) {
             font-family: "Poppins";
             font-style: normal;
             font-weight: 800;
             color: #ffffff;
             position: absolute;
             z-index: 1;
-            margin-right: 4%;
-            margin-bottom: 6%;
-            font-size: 6vw;
+            font-size: 8vw;
+          }
+          h1:nth-child(2) {
+            font-weight: 700;
+            font-size: 7.5vw;
+            color: #ffffff;
+            position: absolute;
+            top: -15%;
           }
         }
       }
       .right {
         position: relative;
+        top: 5vh;
         .mainContent {
-          position:relative;
+          position: relative;
           .title {
             position: relative;
             display: flex;
@@ -574,26 +572,26 @@
             color: #ffffff;
             font-family: "Poppins";
             h1 {
-              font-weight: 700;
-              font-size: 7.5vw;
-              position: absolute;
-              bottom: 91vw;
+              // font-weight: 700;
+              // font-size: 7.5vw;
+              // position: fixed;
+              // top: 10.5vh;
             }
-
             h2 {
               text-align: center;
               position: absolute;
-              top: -28vw;
+              top: -5vh;
               font-weight: 600;
-              font-size: 5vw;
+              font-size: 2.5vh;
             }
           }
           .body {
             color: #ffffff;
             font-weight: 500;
-            position: absolute;
-            top: -8vh;
+            font-size: 2vh;
             padding-right: 8%;
+            padding-top: 2%;
+            padding-bottom: 2%;
             width: 100%;
             .line {
               display: flex;
@@ -780,7 +778,6 @@
           }
         }
       }
-    
     }
 
     .triangle {
