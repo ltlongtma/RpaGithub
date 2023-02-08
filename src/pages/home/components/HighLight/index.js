@@ -32,7 +32,7 @@ const HighLight = ({ viewMobile }) => {
   return (
     <div className={cx("container")}>
       {/* NavBar */}
-      <Navbar expand="lg" className={cx("menuBar")} onTouchMove={(e) => e.preventDefault()}>
+      <Navbar expand="lg" className={cx("menuBar")} >
         <div className={viewMobile ? cx("menuBar-mobile-header") : cx("menuBar-desktop-header")}>
           <Navbar.Brand href="/" className={cx("brand")}>
             <Image src={logoTmaV2} alt="tma-logo" priority={true} />
@@ -233,9 +233,10 @@ const HighLight = ({ viewMobile }) => {
         <div
           style={{
             display: viewMobile ? "block" : "none",
-            paddingBottom: "28%",
-            zIndex: "100",
+            // paddingBottom: "28%",
+            // zIndex: "100",
           }}
+          className={cx("swiperCard")}
         >
           <Swiper
             slidesPerView={1.5}
