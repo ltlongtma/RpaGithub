@@ -152,11 +152,159 @@
     }
   }
 }
-@media screen and (max-width: 991px) and (min-width: 488px) {
+@media screen and (max-width: 991px) and (min-width: 640px) {
   .container {
     width: 100%;
-    height: 100vh;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    .title {
+      text-align: center;
+      position: relative;
+      span {
+        width: 5vw !important;
+      }
+
+      h1 {
+        font-weight: 600;
+        color: #090909;
+        position: relative;
+      }
+    }
+    .slide {
+      overflow: visible;
+      .slideItem {
+        width: 100% !important;
+      }
+      .step1,
+      .step2,
+      .step3,
+      .step4 {
+        height: 43vw;
+        margin-bottom: 7vw;
+        h1 {
+          font-weight: 600;
+          text-align: center;
+          text-transform: uppercase;
+          color: white;
+          top: 17%;
+          position: absolute;
+          width: 100%;
+          font-size: 3vw;
+          left: -3%;
+        }
+
+        .arrowIcon {
+          position: relative;
+          bottom: -44vw;
+          text-align: center;
+          left: -2vw;
+          span {
+            width: 3vw !important;
+            height: 3vw !important;
+          }
+        }
+        .content1,
+        .content2,
+        .content3,
+        .content4 {
+          position: absolute;
+          top: 45%;
+          left: -1%;
+          font-weight: 400;
+          color: #001835;
+          ul {
+            list-style: none;
+            padding: 0 10%;
+            margin-top: 3%;
+            font-size: 2.5vw;
+            padding: 0 30vw;
+            li {
+              padding-bottom: 6%;
+            }
+            li:before {
+              content: "\2022";
+              color: #0094ff;
+              font-weight: bold;
+              display: inline-block;
+              width: 1em;
+              margin-left: -1em;
+            }
+          }
+        }
+      }
+      .step1 {
+        background: url(../../../../../public/step1Frame.svg);
+        position: relative;
+        background-repeat: round;
+        background-size: cover;
+      }
+      .step2 {
+        background: url(../../../../../public/step2Frame.svg);
+        position: relative;
+        background-repeat: round;
+        background-size: cover;
+      }
+      .step3 {
+        background: url(../../../../../public/step3Frame.svg);
+        position: relative;
+        background-repeat: round;
+        background-size: cover;
+      }
+      .step4 {
+        background: url(../../../../../public/step4Frame.svg);
+        position: relative;
+        background-repeat: round;
+        background-size: cover;
+      }
+      .frame {
+        position: relative;
+        background: #ededed;
+        opacity: 0.7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 32vw;
+        width: 51vw;
+        margin: auto;
+
+        .img {
+          width: 25vw;
+        }
+
+        ul {
+          list-style: none;
+          position: absolute;
+          top: 8%;
+          left: 4%;
+          font-size: 2.5vw;
+          text-align: start;
+          li {
+            font-weight: 400;
+          }
+          li:before {
+            content: "\2022";
+            color: #0094ff;
+            font-weight: bold;
+            display: inline-block;
+            margin-left: -1em;
+            margin-right: 2vw;
+          }
+        }
+      }
+      div:nth-child(2) {
+        bottom: 1vw;
+      }
+    }
+
+ 
+  }
+}
+@media screen and (max-width: 640px) {
+  .container {
+    width: 100%;
+    // height: 100vh;
+    // position: relative;
     display: flex;
     flex-direction: column;
     .title {
@@ -174,14 +322,18 @@
       }
     }
     .slide {
-      height: 100%;
-      top: -6%;
+      margin-top: 7%;
+      overflow: visible;
+      .slideItem {
+        width: 100% !important;
+      }
       .step1,
       .step2,
       .step3,
       .step4 {
         height: 65vw;
         margin-bottom: 5vh;
+        scale: 1.2;
         h1 {
           font-weight: 600;
           text-align: center;
@@ -215,154 +367,8 @@
             list-style: none;
             padding: 0 10%;
             margin-top: 3%;
-            font-size: 3vw;
-            li {
-              padding-bottom: 6%;
-            }
-            li:before {
-              content: "\2022";
-              color: #0094ff;
-              font-weight: bold;
-              display: inline-block;
-              width: 1em;
-              margin-left: -1em;
-            }
-          }
-        }
-      }
-      .step1 {
-        background: url(../../../../../public/step1Frame.svg);
-        position: relative;
-        background-repeat: round;
-        background-size: cover;
-      }
-      .step2 {
-        background: url(../../../../../public/step2Frame.svg);
-        position: relative;
-        background-repeat: round;
-        background-size: cover;
-      }
-      .step3 {
-        background: url(../../../../../public/step3Frame.svg);
-        position: relative;
-        background-repeat: round;
-        background-size: cover;
-      }
-      .step4 {
-        background: url(../../../../../public/step4Frame.svg);
-        position: relative;
-        background-repeat: round;
-        background-size: cover;
-      }
-      .frame {
-        position: relative;
-        background: #ededed;
-        opacity: 0.7;
-        margin: 0 0.7%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 25vh;
-        .img {
-          width: 25vw;
-        }
-
-        ul {
-          list-style: none;
-          position: absolute;
-          top: 8%;
-          left: 4%;
-          font-size: 3vw;
-          li {
-            font-weight: 400;
-          }
-          li:before {
-            content: "\2022";
-            color: #0094ff;
-            font-weight: bold;
-            display: inline-block;
-            margin-left: -1em;
-            margin-right: 2vw;
-          }
-        }
-      }
-    }
-
-    .arrowIcon {
-      position: relative;
-      left: 40%;
-      bottom: -19.5vw;
-      span {
-        width: 3vw !important;
-        height: 2vw !important;
-      }
-    }
-  }
-}
-@media screen and (max-width: 487px) {
-  .container {
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    .title {
-      text-align: center;
-      position: relative;
-      margin-top: 4vh;
-      span {
-        width: 12vw !important;
-      }
-
-      h1 {
-        font-weight: 600;
-        color: #090909;
-        position: relative;
-      }
-    }
-    .slide {
-      height: 100%;
-      top: -6%;
-      .step1,
-      .step2,
-      .step3,
-      .step4 {
-        height: 65vw;
-        margin-bottom: 5vh;
-        h1 {
-          font-weight: 600;
-          text-align: center;
-          text-transform: uppercase;
-          color: white;
-          top: 17%;
-          position: absolute;
-          width: 100%;
-          font-size: 6vw;
-          left: -5%;
-        }
-
-        .arrowIcon {
-          position: relative;
-          bottom: -66vw;
-          span {
-            width: 10vw !important;
-            height: 6vw !important;
-          }
-        }
-        .content1,
-        .content2,
-        .content3,
-        .content4 {
-          position: absolute;
-          top: 45%;
-          left: -1%;
-          font-weight: 400;
-          color: #001835;
-          ul {
-            list-style: none;
-            padding: 0 10%;
-            margin-top: 3%;
             font-size: 4vw;
+            padding: 0 21vw;
             li {
               padding-bottom: 6%;
             }
@@ -409,7 +415,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 25vh;
+        height: 30vh;
+        width: 86vw;
+        margin: 6vw 4vw;
+
         .img {
           width: 25vw;
         }
@@ -419,7 +428,7 @@
           position: absolute;
           top: 8%;
           left: 4%;
-          font-size: 4vw;
+          font-size: 5vw;
           li {
             font-weight: 400;
           }
@@ -432,6 +441,9 @@
             margin-right: 2vw;
           }
         }
+      }
+      div:nth-child(2) {
+        bottom: 1vw;
       }
     }
 

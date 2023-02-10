@@ -123,20 +123,6 @@ const HighLight = ({ viewMobile }) => {
               ) : (
                 <Image className={cx("img")} src={ver5_1} alt="iconRpa" priority={true}></Image>
               )}
-              {/* {!viewMobile ? (
-                <>
-                  <h1>RPA</h1>
-                  <h1>TMA RPA Center</h1>
-                  <Image className={cx("img")} src={ver5_1} alt="iconRpa" priority={true}></Image>
-                </>
-              ) : null}
-              {viewMobile ? (
-                <>
-                  <h1>RPA</h1>
-                  <h1>TMA RPA Center</h1>
-                  <Image className={cx("img")} src={iconRpa} alt="iconRpa" priority={true}></Image>
-                </>
-              ) : null} */}
             </div>
           </div>
           <div className={cx("col-lg-7", "right")}>
@@ -153,7 +139,6 @@ const HighLight = ({ viewMobile }) => {
               </div>
 
               <div className={cx("body")}>
-                <div className={cx("line")}></div>
                 <div className={cx("line")}>
                   <div className={cx("arrow1")}>
                     <Image src={arrowAfterIconRpa} alt="arrowAfterIconRpa" priority={true} />
@@ -164,10 +149,7 @@ const HighLight = ({ viewMobile }) => {
                   <div className={cx("arrow2")}>
                     <Image src={arrowAfterIconRpa} alt="arrowAfterIconRpa" priority={true} />
                   </div>
-                  <p>
-                    Propelling digital transformation forward
-                    <span style={{ visibility: "hidden" }}>Draft text for css</span>
-                  </p>
+                  <p>Propelling digital transformation forward</p>
                 </div>
                 <div className={cx("line")}>
                   <div className={cx("arrow3")}>
@@ -237,21 +219,19 @@ const HighLight = ({ viewMobile }) => {
         {viewMobile ? (
           <div className={cx("swiperCard")}>
             <Swiper
-              autoplay={{
-                delay: 5000,
-                disableOnInteraction: false,
-              }}
               slidesPerView={1.5}
               spaceBetween={20}
               pagination={{
                 clickable: true,
                 type: "bullets",
               }}
-              modules={[Pagination, Autoplay, Navigation]}
-              className={cx("row", "card")}
               loop
-              // navigation={true}
-              // centeredSlides={true}
+              modules={[Pagination, Autoplay, Navigation]}
+              className={cx("card")}
+              autoplay={{
+                delay: 4000,
+                disableOnInteraction: false,
+              }}
             >
               <SwiperSlide>
                 <div className={cx("cardItem", "col-lg-3")}>

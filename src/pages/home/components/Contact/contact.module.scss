@@ -236,11 +236,10 @@
     }
   }
 }
-@media screen and (max-width: 991px) and (min-width: 488px) {
+@media screen and (max-width: 991px) and (min-width: 640px) {
   .container {
     width: 100%;
     height: 100vh;
-
     .contact {
       background-color: #008df3;
       position: absolute;
@@ -275,7 +274,7 @@
           font-weight: 600;
           text-align: center;
           margin: 3% 5%;
-          font-size: 6vw;
+          font-size: 5vw;
         }
         .content1 {
           position: absolute;
@@ -290,9 +289,10 @@
           position: absolute;
           bottom: 25%;
           font-weight: 400;
+          font-size: 3vw;
+
           span {
             overflow: visible !important;
-            font-size: 3vw;
           }
           img {
             top: 4vw !important;
@@ -322,6 +322,8 @@
             outline: none;
             position: relative;
             padding: 10px;
+            width: 25vw;
+            height: 8vw;
           }
           button::before {
             content: "";
@@ -354,12 +356,12 @@
           @keyframes ring {
             0% {
               width: 0vw;
-              height: 4vh;
+              height: 7vh;
               opacity: 0;
             }
             100% {
-              width: 22vw;
-              height: 6vh;
+              width: 30vw;
+              height: 7vh;
               opacity: 1;
             }
           }
@@ -391,7 +393,7 @@
           font-family: "Poppins";
           font-style: normal;
           font-weight: 400;
-          font-size: 2vw;
+          font-size: 2.5vw;
           width: 100%;
           .icons {
             svg {
@@ -434,7 +436,7 @@
     }
   }
 }
-@media screen and (max-width: 487px) {
+@media screen and (max-width: 640px) {
   .container {
     width: 100%;
     height: 100vh;

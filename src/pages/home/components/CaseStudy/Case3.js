@@ -2,7 +2,7 @@ import className from "classnames/bind";
 const cx = className.bind(styles);
 import styles from "./casetudy.module.scss";
 import groupCase3 from "../../../../../public/CaseStudy/groupCase3.svg";
-import groupCase5_ViewMobile from "../../../../../public/CaseStudy/groupCase5_ViewMobile.svg";
+import groupCase3_ViewMobile from "../../../../../public/CaseStudy/groupCase3_ViewMobile.svg";
 
 import Image from "next/image";
 const Case3 = ({ viewMobile }) => {
@@ -39,7 +39,7 @@ const Case3 = ({ viewMobile }) => {
         </div>
       </div>
       <div className={cx("diagram")}>
-        <Image src={viewMobile ? groupCase5_ViewMobile : groupCase3} alt={groupCase3} />
+        <Image src={viewMobile ? groupCase3_ViewMobile : groupCase3} alt={groupCase3} />
       </div>
     </div>
   );
