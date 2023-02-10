@@ -14,10 +14,9 @@ import className from "classnames/bind";
 import styles from "./highLight.module.scss";
 import ver5_1 from "../../../../../public/ver5_1.gif";
 import iconRpa from "../../../../../public/iconRpa.svg";
-
-import { Carousel, Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
+import { Carousel, Container, Dropdown, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper";
+import SwiperCore, { Autoplay, Navigation, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import { useEffect, useState } from "react";
@@ -27,12 +26,13 @@ import CloseIcon from "@mui/icons-material/Close";
 import disableScroll from "disable-scroll";
 const cx = className.bind(styles);
 
+// SwiperCore.use([Autoplay]);
 const HighLight = ({ viewMobile }) => {
   const [showMenu, setShowMenu] = useState(false);
   return (
     <div className={cx("container")}>
       {/* NavBar */}
-      <Navbar expand="lg" className={cx("menuBar")} >
+      <Navbar expand="lg" className={cx("menuBar")}>
         <div className={viewMobile ? cx("menuBar-mobile-header") : cx("menuBar-desktop-header")}>
           <Navbar.Brand href="/" className={cx("brand")}>
             <Image src={logoTmaV2} alt="tma-logo" priority={true} />
@@ -48,8 +48,11 @@ const HighLight = ({ viewMobile }) => {
                     color: "white",
                     display: viewMobile ? "block" : "none",
                   }}
+                  // onClick={() => {
+                  //   setShowMenu(!showMenu), disableScroll[showMenu ? "off" : "on"]();
+                  // }}
                   onClick={() => {
-                    setShowMenu(!showMenu), disableScroll[showMenu ? "off" : "on"]();
+                    setShowMenu(!showMenu);
                   }}
                 >
                   {showMenu ? <CloseIcon /> : <MenuIcon />}
@@ -64,52 +67,40 @@ const HighLight = ({ viewMobile }) => {
           className={viewMobile ? cx("menuBar-mobile-body") : cx("menuBar-desktop-body")}
           style={{ display: showMenu ? "block" : "none" }}
         >
-          <div className="h-80">
+          <div>
             <Nav className={cx("navigate")}>
-              <Button>
-                <Link href="https://www.tmasolutions.com/">
-                  <a>Home</a>
-                </Link>
-              </Button>
-              <Button>
-                <Link href="https://www.tmasolutions.com/about-us">
-                  <a>About TMA</a>
-                </Link>
-              </Button>
-              <Button>
-                <Link href="https://www.tmasolutions.com/services">
-                  <a>Solutions</a>
-                </Link>
-              </Button>
-              <Button>
-                <Link href="https://www.tmasolutions.com/industries">
-                  <a>Industries</a>
-                </Link>
-                <KeyboardArrowDownIcon />
-              </Button>
-              <Button>
-                <Link href="https://www.tmasolutions.com/technology">
-                  <a>Technologies</a>
-                </Link>
-                <KeyboardArrowDownIcon />
-              </Button>
-              <Button>
-                <Link href="https://www.tmasolutions.com/news-events">
-                  <a>News</a>
-                </Link>
-              </Button>
-              <Button>
-                <Link href="https://www.tma.vn/Why-TMA/Hoat-dong-ngoai-khoa-phong-phu">
-                  <a>Others</a>
-                </Link>
+              <Button href="https://www.tmasolutions.com/">Home</Button>
+              <Button href="https://www.tmasolutions.com/about-us">About TMA</Button>
+              <Button href="https://www.tmasolutions.com/services">Solutions</Button>
+
+              <Dropdown className={cx("dropDownBtn")}>
+                <Dropdown.Toggle>Industries</Dropdown.Toggle>
+
+                <Dropdown.Menu className={cx("dropDownMenu")}>
+                  <Dropdown.Item href="#">Action</Dropdown.Item>
+                  <Dropdown.Item href="#">Another action</Dropdown.Item>
+                  <Dropdown.Item href="#">Something else</Dropdown.Item>
+                </Dropdown.Menu>
+              </Dropdown>
+              <Dropdown className={cx("dropDownBtn")}>
+                <Dropdown.Toggle>Technologies</Dropdown.Toggle>
+
+                <Dropdown.Menu className={cx("dropDownMenu")}>
+                  <Dropdown.Item href="#">Action</Dropdown.Item>
+                  <Dropdown.Item href="#">Another action</Dropdown.Item>
+                  <Dropdown.Item href="#">Something else</Dropdown.Item>
+                </Dropdown.Menu>
+              </Dropdown>
+
+              <Button href="https://www.tmasolutions.com/news-events">News</Button>
+              <Button href="https://www.tma.vn/Why-TMA/Hoat-dong-ngoai-khoa-phong-phu">
+                Others
               </Button>
             </Nav>
           </div>
           <div className={cx("buttonContact")}>
-            <Button variant="contained">
-              <Link href="https://www.tmasolutions.com/contact">
-                <a>Contact us</a>
-              </Link>
+            <Button variant="contained" href="https://www.tmasolutions.com/contact">
+              Contact us
             </Button>
           </div>
         </Navbar.Collapse>
@@ -127,12 +118,25 @@ const HighLight = ({ viewMobile }) => {
               {viewMobile ? (
                 <>
                   <h1>TMA RPA Center</h1>
-
                   <Image className={cx("img")} src={iconRpa} alt="iconRpa" priority={true}></Image>
                 </>
               ) : (
                 <Image className={cx("img")} src={ver5_1} alt="iconRpa" priority={true}></Image>
               )}
+              {/* {!viewMobile ? (
+                <>
+                  <h1>RPA</h1>
+                  <h1>TMA RPA Center</h1>
+                  <Image className={cx("img")} src={ver5_1} alt="iconRpa" priority={true}></Image>
+                </>
+              ) : null}
+              {viewMobile ? (
+                <>
+                  <h1>RPA</h1>
+                  <h1>TMA RPA Center</h1>
+                  <Image className={cx("img")} src={iconRpa} alt="iconRpa" priority={true}></Image>
+                </>
+              ) : null} */}
             </div>
           </div>
           <div className={cx("col-lg-7", "right")}>
@@ -230,82 +234,85 @@ const HighLight = ({ viewMobile }) => {
           </div>
         </div>
         {/* Sub content on screen <992 */}
-        <div
-          style={{
-            display: viewMobile ? "block" : "none",
-            // paddingBottom: "28%",
-            // zIndex: "100",
-          }}
-          className={cx("swiperCard")}
-        >
-          <Swiper
-            slidesPerView={1.5}
-            spaceBetween={30}
-            pagination={{
-              clickable: true,
-              type: "bullets",
-            }}
-            modules={[Pagination]}
-            className={cx("row", "card")}
-          >
-            <SwiperSlide>
-              <div className={cx("cardItem", "col-lg-3")}>
-                <div className={cx("cardTitle")}>Insurance</div>
-                <div className={cx("cardContent")}>
-                  <div className={cx("icon")}>
-                    <Image src={energyControlIcon} alt="energyControlIcon" />
-                  </div>
-                  <div className={cx("content")}>
-                    <h1>83%</h1>
-                    <p>Effiency Gain</p>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className={cx("cardItem", "col-lg-3")}>
-                <div className={cx("cardTitle")}>Banking</div>
-                <div className={cx("cardContent")}>
-                  <div className={cx("icon")}>
-                    <Image src={clockIcon} alt="clockIcon" />
-                  </div>
-                  <div className={cx("content")}>
-                    <h1>90%</h1>
-                    <p>Processing Time Reduction</p>
+        {viewMobile ? (
+          <div className={cx("swiperCard")}>
+            <Swiper
+              autoplay={{
+                delay: 5000,
+                disableOnInteraction: false,
+              }}
+              slidesPerView={1.5}
+              spaceBetween={20}
+              pagination={{
+                clickable: true,
+                type: "bullets",
+              }}
+              modules={[Pagination, Autoplay, Navigation]}
+              className={cx("row", "card")}
+              loop
+              // navigation={true}
+              // centeredSlides={true}
+            >
+              <SwiperSlide>
+                <div className={cx("cardItem", "col-lg-3")}>
+                  <div className={cx("cardTitle")}>Insurance</div>
+                  <div className={cx("cardContent")}>
+                    <div className={cx("icon")}>
+                      <Image src={energyControlIcon} alt="energyControlIcon" />
+                    </div>
+                    <div className={cx("content")}>
+                      <h1>83%</h1>
+                      <p>Effiency Gain</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className={cx("cardItem", "col-lg-3")}>
-                <div className={cx("cardTitle")}>Healthcare</div>
-                <div className={cx("cardContent")}>
-                  <div className={cx("icon")}>
-                    <Image src={saveMoneyicon} alt="saveMoneyicon" />
-                  </div>
-                  <div className={cx("content")}>
-                    <h1>80%</h1>
-                    <p>Operating Cost Saving</p>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className={cx("cardItem", "col-lg-3")}>
-                <div className={cx("cardTitle")}>BFSI</div>
-                <div className={cx("cardContent")}>
-                  <div className={cx("icon")}>
-                    <Image src={cogWheel} alt="cogWheel" />
-                  </div>
-                  <div className={cx("content")}>
-                    <h1>95%</h1>
-                    <p>Manual Effort Reduction</p>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className={cx("cardItem", "col-lg-3")}>
+                  <div className={cx("cardTitle")}>Banking</div>
+                  <div className={cx("cardContent")}>
+                    <div className={cx("icon")}>
+                      <Image src={clockIcon} alt="clockIcon" />
+                    </div>
+                    <div className={cx("content")}>
+                      <h1>90%</h1>
+                      <p>Processing Time Reduction</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </SwiperSlide>
-          </Swiper>
-        </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className={cx("cardItem", "col-lg-3")}>
+                  <div className={cx("cardTitle")}>Healthcare</div>
+                  <div className={cx("cardContent")}>
+                    <div className={cx("icon")}>
+                      <Image src={saveMoneyicon} alt="saveMoneyicon" />
+                    </div>
+                    <div className={cx("content")}>
+                      <h1>80%</h1>
+                      <p>Operating Cost Saving</p>
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className={cx("cardItem", "col-lg-3")}>
+                  <div className={cx("cardTitle")}>BFSI</div>
+                  <div className={cx("cardContent")}>
+                    <div className={cx("icon")}>
+                      <Image src={cogWheel} alt="cogWheel" />
+                    </div>
+                    <div className={cx("content")}>
+                      <h1>95%</h1>
+                      <p>Manual Effort Reduction</p>
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+            </Swiper>
+          </div>
+        ) : null}
+
         {/* CSS triangle */}
         <div className={cx("triangle")}>
           <div className={cx("triangleLeft")}></div>
