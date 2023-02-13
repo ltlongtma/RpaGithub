@@ -9,11 +9,12 @@ import Contact from "./components/Contact/index";
 import { useEffect, useState } from "react";
 import { gsap } from "gsap";
 import Draggable from "gsap/dist/Draggable";
+
 export default function Home() {
   const [viewMobile, setViewMobile] = useState(false);
+  const [windowCondition, setWindowCondition] = useState(false);
 
   useEffect(() => {
-    let iw = window.innerWidth;
     gsap.registerPlugin(Draggable);
     const slides = document.querySelectorAll("section");
     const container = document.querySelector("#panelWrap");
@@ -26,7 +27,10 @@ export default function Home() {
     let offsets = [];
     let toolTipAnims = [];
     let ih = window.innerHeight;
-    if (iw > 992) {
+    const iw = window.innerWidth;
+    if (iw >= 992) {
+      setWindowCondition(true);
+
       // create nev dots and add tooltip listeners
       for (let i = 0; i < slides.length; i++) {
         let tl = gsap.timeline({ paused: true, reversed: true });
@@ -139,12 +143,13 @@ export default function Home() {
           time: Math.abs(gsap.getProperty(container, "y") / ih) + 1,
         });
       }
-    } else {
+    } else if (iw < 992) {
+      setWindowCondition(true);
       setViewMobile(true), gsap.set(".hideMe", { opacity: 1 });
       gsap.set("#masterWrap", { height: "auto" });
       gsap.set(".dots", { display: "none" });
       gsap.set("#panelWrap", { height: "100%" });
-    }
+    } else return null;
   }, []);
 
   return (
@@ -160,7 +165,7 @@ export default function Home() {
           <div id="masterWrap">
             <div id="panelWrap">
               <section>
-                <HighLight viewMobile={viewMobile} />
+                <HighLight viewMobile={viewMobile} windowCondition={windowCondition} />
               </section>
               <section>
                 <Overview />

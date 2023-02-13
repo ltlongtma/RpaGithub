@@ -11,6 +11,7 @@
       .menuBar-desktop-header {
         display: flex;
         justify-content: space-between;
+       
       }
       .menuBar-desktop-body {
         justify-content: space-around;
@@ -24,28 +25,30 @@
       }
 
       .navigate {
-        button {
-          color: aliceblue;
-          text-transform: none;
-          font-family: "Poppins";
-          font-style: normal;
-          font-weight: 500;
-          font-size: 1vw;
-          padding: 1.3vw;
-          margin: 0;
-          left: 2%;
-          height: 2vw;
-          a {
-            font-size: 1.2vw;
-          }
-          &:hover {
-            background: linear-gradient(213.12deg, #396afc 39.51%, #0094ff 80.26%);
-            border-radius: 7%;
-          }
-          a:hover {
-            color: white;
-          }
-        }
+        // button {
+        //   color: aliceblue;
+        //   text-transform: none;
+        //   font-family: "Poppins";
+        //   font-style: normal;
+        //   font-weight: 500;
+        //   font-size: 1vw;
+        //   padding: 1.3vw;
+        //   margin: 0;
+        //   left: 2%;
+        //   height: 2vw;
+        //   a {
+        //     font-size: 1.2vw;
+            
+            
+        //   }
+        //   &:hover {
+        //     background: linear-gradient(213.12deg, #396afc 39.51%, #0094ff 80.26%);
+        //     border-radius: 7%;
+        //   }
+        //   a:hover {
+        //     color: white;
+        //   }
+        // }
       }
       .buttonContact {
         z-index: 1;
